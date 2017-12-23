@@ -1,5 +1,7 @@
 # Bitshares HUG API
 
+![BTS HUG API Banner](https://i.imgur.com/secsyPh.png "BTS HUG API Banner")
+
 ## TODO
 
     Improve the NGINX & Gunicorn configurations.
@@ -48,8 +50,6 @@ We create the 'btsapi' user, however you could rename this to whatever you want,
     sudo apt-get install libffi-dev libssl-dev python3-pip python3-dev build-essential git nginx python3-setuptools virtualenv
 
 #### Create Python virtual environment
-
-    For some reason, I couldn't get past 'bist_wheel' errors & bitshares complained about the --user option, so for now venv is out of the equation.
 
     mkdir HUG
     virtualenv -p python3 HUG
