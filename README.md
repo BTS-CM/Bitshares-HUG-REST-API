@@ -118,9 +118,9 @@ If you want to monitor Gunicorn:
 
 ### chain_info
 
-#### Purpose
-
 A high level overview of the Bitshares chain information.
+
+Use: website/chain_info?&api_key=API_KEY
 
 #### Example JSON output
 
@@ -147,9 +147,9 @@ A high level overview of the Bitshares chain information.
 
 ### account_balances
 
-#### Purpose
-
 Given a valid account name, output the user's balances in JSON.
+
+Use: website/account_balances?account=example_usera&api_key=API_KEY
 
 #### Example JSON output
 
@@ -165,5 +165,24 @@ Note: 'balances' has been concatenated to save space in this example.
  "valid_account": true,
  "valid_key": true,
  "took": 0.50434
+}
+```
+
+### account_open_orders
+
+Given a valid account name, output the user's open orders in JSON.
+
+Use: website/account_open_orders?account=example_usera&api_key=API_KEY
+
+#### Example JSON output
+
+```
+{
+  "open_orders": [{"Sell: USD": "558.8355", "Buy: OPEN.PPY": "553.30247", "USD/OPEN.PPY": 1.0100000095788477},
+                 {"Sell: BEYONDBIT": "500", "Buy: WHALESHARE": "12500", "BEYONDBIT/WHALESHARE": 0.04}],
+  "account_has_open_orders": true,
+  "valid_account": true,
+  "valid_key": true,
+  "took": 0.24319
 }
 ```
