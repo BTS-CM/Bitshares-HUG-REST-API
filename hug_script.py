@@ -22,7 +22,7 @@ def check_api_token(api_key):
 def chain_info(api_key: hug.types.text, hug_timer=5):
 	"""
 	Bitshares current chain information!
-	URL: http://HOST:PORT/function?variable=example_var_data&api_key=API_KEY
+	URL: http://HOST:PORT/chain_info?&api_key=API_KEY
 	"""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
@@ -94,7 +94,7 @@ def account_balances(account_name: hug.types.text, api_key: hug.types.text, hug_
 def account_open_orders(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
 	"""
 	Bitshares account open orders! Simply supply an account name & provide the API key!
-	URL: http://HOST:PORT/account_balances?account=example_usera&api_key=API_KEY
+	URL: http://HOST:PORT/account_open_orders?account=example_usera&api_key=API_KEY
 	"""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
@@ -129,6 +129,40 @@ def account_open_orders(account_name: hug.types.text, api_key: hug.types.text, h
 					'took': float(hug_timer)}
 		else:
 			return {'account_has_open_orders': False,
+					'valid_account': True,
+					'valid_key': True,
+					'took': float(hug_timer)}
+	else:
+	# API KEY INVALID!
+		return {'valid_key': False,
+				'took': float(hug_timer)}
+
+@hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
+def account_callpositions(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
+	"""
+	Bitshares account call positions! Simply supply an account name & provide the API key!
+	URL: http://HOST:PORT/account_callpositions?account=example_usera&api_key=API_KEY
+	"""
+	if (check_api_token(api_key) == True): # Check the api key
+	# API KEY VALID
+
+		try:
+		  target_account = Account(account_name)
+		except:
+		  print("Account doesn't exist.")
+		  return {'valid_account': False,
+		  		  'valid_key': True,
+				  'took': float(hug_timer)}
+
+		target_account_callpos = target_account.callpositions
+		if (len(target_account_callpos) > 0):
+  			return {'call_positions': target_account_callpos,
+  					'account_has_call_positions': True,
+  					'valid_account': True,
+  					'valid_key': True,
+  					'took': float(hug_timer)}
+		else:
+			return {'account_has_call_positions': False,
 					'valid_account': True,
 					'valid_key': True,
 					'took': float(hug_timer)}
