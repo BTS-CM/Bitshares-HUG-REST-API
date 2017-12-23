@@ -170,3 +170,42 @@ def account_callpositions(account_name: hug.types.text, api_key: hug.types.text,
 	# API KEY INVALID!
 		return {'valid_key': False,
 				'took': float(hug_timer)}
+
+@hug.get(examples='account_name=blahblahblah&tx_limit=100&api_key=API_KEY')
+def account_history(account_name: hug.types.text, tx_limit: hug.types.number, api_key: hug.types.text, hug_timer=5):
+	"""
+	Given a valid account name, output the user's history in JSON.
+	URL: http://HOST:PORT/account_history?account=example_user&tx_limit=10&api_key=API_KEY
+	"""
+	if (check_api_token(api_key) == True): # Check the api key
+	# API KEY VALID
+
+		try:
+		  target_account = Account(account_name)
+		except:
+		  # Accoun is not valid!
+		  return {'valid_account': False,
+		  		  'valid_key': True,
+				  'took': float(hug_timer)}
+
+		target_account_history = target_account.history(first=0, limit=tx_limit)
+
+		tx_container = []
+		for transaction in target_account_history:
+		  tx_container.append(transaction)
+
+		if (len(tx_container) > 0):
+  			return {'tx_history': tx_container,
+  					'account_has_tx_history': True,
+  					'valid_account': True,
+  					'valid_key': True,
+  					'took': float(hug_timer)}
+		else:
+			return {'account_has_tx_history': False,
+					'valid_account': True,
+					'valid_key': True,
+					'took': float(hug_timer)}
+	else:
+	# API KEY INVALID!
+		return {'valid_key': False,
+				'took': float(hug_timer)}

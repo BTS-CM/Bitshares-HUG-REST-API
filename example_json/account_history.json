@@ -1,0 +1,84 @@
+{
+  "tx_history": [
+    {
+      "id": "1.11.105920639",
+      "op": [
+        23,
+        {
+          "fee": {
+            "amount": 6251,
+            "asset_id": "1.3.0"
+          },
+          "fee_paying_account": "1.2.282",
+          "proposal": "1.10.6311",
+          "active_approvals_to_add": [
+            "1.2.282"
+          ],
+          "active_approvals_to_remove": [],
+          "owner_approvals_to_add": [],
+          "owner_approvals_to_remove": [],
+          "key_approvals_to_add": [],
+          "key_approvals_to_remove": [],
+          "extensions": []
+        }
+      ],
+      "result": [
+        0,
+        {}
+      ],
+      "block_num": 22818585,
+      "trx_in_block": 7,
+      "op_in_trx": 0,
+      "virtual_op": 64908
+    },
+    {
+      "id": "1.11.102652202",
+      "op": [
+        6,
+        {
+          "fee": {
+            "amount": 1213,
+            "asset_id": "1.3.0"
+          },
+          "account": "1.2.100876",
+          "active": {
+            "weight_threshold": 3,
+            "account_auths": [
+              [
+                "1.2.282",
+                1
+              ],
+              [
+                "1.2.12376",
+                1
+              ],
+              [
+                "1.2.25010",
+                1
+              ],
+              [
+                "1.2.133999",
+                1
+              ]
+            ],
+            "key_auths": [],
+            "address_auths": []
+          },
+          "extensions": {}
+        }
+      ],
+      "result": [
+        0,
+        {}
+      ],
+      "block_num": 22556743,
+      "trx_in_block": 2,
+      "op_in_trx": 0,
+      "virtual_op": 14869
+    }
+  ],
+  "account_has_tx_history": true,
+  "valid_account": true,
+  "valid_key": true,
+  "took": 0.27559
+}

@@ -186,3 +186,19 @@ Use: website/account_open_orders?account=example_usera&api_key=API_KEY
   "took": 0.24319
 }
 ```
+
+### account_callpositions
+
+Given a valid account name, output the user's call positions in JSON.
+
+Use: website/account_callpositions?account=example_usera&api_key=API_KEY
+
+#### [Example JSON output](https://github.com/BTS-CM/Bitshares-HUG-REST-API/blob/master/example_json/account_callposition.json)
+
+### account_history
+
+Given a valid account name, output the user's history in JSON.
+
+Use: website/account_history?account=example_user&tx_limit=10&api_key=API_KEY
+
+#### [Example JSON output](https://github.com/BTS-CM/Bitshares-HUG-REST-API/blob/master/example_json/account_history.json)
