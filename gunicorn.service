@@ -1,0 +1,14 @@
+[Unit]
+Description=Gunicorn instance to serve HUG
+After=network.target
+
+[Service]
+PIDFile=/home/btsapi/pid
+User=btsapi
+Group=www-data
+WorkingDirectory=/home/btsapi/
+Environment="PATH=/home/btsapi/HUG/bin/"
+ExecStart=/home/btsapi/HUG/bin/gunicorn -b unix:/home/btsapi/hug.sock --pid /home/btsapi/pid --error-logfile /home/btsapi/gunicorn_error_log --access-logfile /home/btsapi/gunicorn_access_log --timeout 10 --workers=4  hug_script:__hug_wsgi__
+
+[Install]
+WantedBy=multi-user.target
