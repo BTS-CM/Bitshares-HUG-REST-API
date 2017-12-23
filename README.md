@@ -22,7 +22,9 @@ https://github.com/xeroc/python-bitshares/tree/develop
 
 Created by xeroc, it's a thorough Bitshares python library which will be extensively used throughout this API. We won't be using it for any serious wallet control, purely the read-only blockchain/account/asset monitoring functionality.
 
-Documentation: http://docs.pybitshares.com/en/latest/
+Web Docs: http://docs.pybitshares.com/en/latest/
+
+PDF Docs: https://media.readthedocs.org/pdf/python-bitshares/latest/python-bitshares.pdf
 
 ---
 
@@ -111,3 +113,57 @@ If you want to monitor Gunicorn:
     tail -f gunicorn_access_log
     tail -f gunicorn_error_log
     sudo systemctl status gunicorn
+
+## Available functions
+
+### chain_info
+
+#### Purpose
+
+A high level overview of the Bitshares chain information.
+
+#### Example JSON output
+
+```
+{
+ "id": "2.1.0",
+ "head_block_number": 22901637,
+ "head_block_id": "015d73858661412b31201155f6f77c772d044a95",
+ "time": "2017-12-23T14:04:03",
+ "current_witness": "1.6.16",
+ "next_maintenance_time": "2017-12-23T15:00:00",
+ "last_budget_time": "2017-12-23T14:00:00",
+ "witness_budget": 112200000,
+ "accounts_registered_this_interval": 10,
+ "recently_missed_count": 0,
+ "current_aslot": 23041161,
+ "recent_slots_filled": "340282366920938463463374607431768211455",
+ "dynamic_flags": 0,
+ "last_irreversible_block_num": 22901622,
+ "valid_key": true,
+ "took": 0.12855
+}
+```
+
+### account_balances
+
+#### Purpose
+
+Given a valid account name, output the user's balances in JSON.
+
+#### Example JSON output
+
+Note: 'balances' has been concatenated to save space in this example.
+
+```
+{
+  "balances": [{"BTS": 780.3515},
+              {"ROSE": 999.0},
+              {"FASTCASS": 8.0},
+              {"DELETIP": 12760.0}],
+ "account_has_balances": true,
+ "valid_account": true,
+ "valid_key": true,
+ "took": 0.50434
+}
+```
