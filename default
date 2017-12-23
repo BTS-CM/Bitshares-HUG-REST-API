@@ -1,0 +1,12 @@
+server {
+  listen 443 ssl;
+  server_name btsapi.grcnode.co.uk;
+
+  client_max_body_size 4G;
+  keepalive_timeout 5;
+
+  location / {
+    proxy_set_header Host $host;
+    proxy_pass http://unix:/home/btsapi/hug.sock;
+  }
+}
