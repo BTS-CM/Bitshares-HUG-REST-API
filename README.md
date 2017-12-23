@@ -202,3 +202,21 @@ Given a valid account name, output the user's history in JSON.
 Use: website/account_history?account=example_user&tx_limit=10&api_key=API_KEY
 
 #### [Example JSON output](https://github.com/BTS-CM/Bitshares-HUG-REST-API/blob/master/example_json/account_history.json)
+
+### account_is_ltm
+
+Given a valid account name, check if the user has LTM.
+
+Use: website/account_is_ltm?account=example_user&api_key=API_KEY
+
+#### Example JSON output
+
+```
+{
+  "account_is_ltm": true,
+  "account": "xeroc",
+  "valid_account": true,
+  "valid_key": true,
+  "took": 0.14034
+}
+```

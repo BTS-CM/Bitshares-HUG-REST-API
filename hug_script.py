@@ -65,6 +65,7 @@ def account_balances(account_name: hug.types.text, api_key: hug.types.text, hug_
 		except:
 		  print("Account doesn't exist.")
 		  return {'valid_account': False,
+				  'account': account_name,
 		  		  'valid_key': True,
 				  'took': float(hug_timer)}
 
@@ -77,11 +78,13 @@ def account_balances(account_name: hug.types.text, api_key: hug.types.text, hug_
 
 			return {'balances': balance_json_list,
 					'account_has_balances': True,
-					'valid_account': True,
+					'account': account_name,
+  					'valid_account': True,
 					'valid_key': True,
 					'took': float(hug_timer)}
 		else:
 			return {'account_has_balances': False,
+					'account': account_name,
 					'valid_account': True,
 					'valid_key': True,
 					'took': float(hug_timer)}
@@ -104,6 +107,7 @@ def account_open_orders(account_name: hug.types.text, api_key: hug.types.text, h
 		except:
 		  print("Account doesn't exist.")
 		  return {'valid_account': False,
+		  		  'account': account_name,
 		  		  'valid_key': True,
 				  'took': float(hug_timer)}
 
@@ -124,11 +128,12 @@ def account_open_orders(account_name: hug.types.text, api_key: hug.types.text, h
 
 			return {'open_orders': open_order_list,
 					'account_has_open_orders': True,
-					'valid_account': True,
-					'valid_key': True,
+					'account': account_name,
+  					'valid_account': True,
 					'took': float(hug_timer)}
 		else:
 			return {'account_has_open_orders': False,
+					'account': account_name,
 					'valid_account': True,
 					'valid_key': True,
 					'took': float(hug_timer)}
@@ -151,6 +156,7 @@ def account_callpositions(account_name: hug.types.text, api_key: hug.types.text,
 		except:
 		  print("Account doesn't exist.")
 		  return {'valid_account': False,
+		  		  'account': account_name,
 		  		  'valid_key': True,
 				  'took': float(hug_timer)}
 
@@ -158,11 +164,13 @@ def account_callpositions(account_name: hug.types.text, api_key: hug.types.text,
 		if (len(target_account_callpos) > 0):
   			return {'call_positions': target_account_callpos,
   					'account_has_call_positions': True,
+					'account': account_name,
   					'valid_account': True,
   					'valid_key': True,
   					'took': float(hug_timer)}
 		else:
 			return {'account_has_call_positions': False,
+					'account': account_name,
 					'valid_account': True,
 					'valid_key': True,
 					'took': float(hug_timer)}
@@ -185,6 +193,7 @@ def account_history(account_name: hug.types.text, tx_limit: hug.types.number, ap
 		except:
 		  # Accoun is not valid!
 		  return {'valid_account': False,
+				  'account': account_name,
 		  		  'valid_key': True,
 				  'took': float(hug_timer)}
 
@@ -197,14 +206,47 @@ def account_history(account_name: hug.types.text, tx_limit: hug.types.number, ap
 		if (len(tx_container) > 0):
   			return {'tx_history': tx_container,
   					'account_has_tx_history': True,
+					'account': account_name,
   					'valid_account': True,
   					'valid_key': True,
   					'took': float(hug_timer)}
 		else:
 			return {'account_has_tx_history': False,
+					'account': account_name,
 					'valid_account': True,
 					'valid_key': True,
 					'took': float(hug_timer)}
+	else:
+	# API KEY INVALID!
+		return {'valid_key': False,
+				'took': float(hug_timer)}
+
+@hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
+def account_is_ltm(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
+	"""
+	Given a valid account name, check if they're LTM & output confirmation as JSON.
+	URL: http://HOST:PORT/account_is_ltm?account=example_user&api_key=API_KEY
+	"""
+	if (check_api_token(api_key) == True): # Check the api key
+	# API KEY VALID
+
+		try:
+		  target_account = Account(account_name)
+		except:
+		  # Accoun is not valid!
+		  return {'valid_account': False,
+				  'account': account_name,
+		  		  'valid_key': True,
+				  'took': float(hug_timer)}
+
+		target_account_ltm = target_account.is_ltm
+
+		return {'account_is_ltm': target_account_ltm,
+				'account': account_name,
+				'valid_account': True,
+				'valid_key': True,
+				'took': float(hug_timer)}
+
 	else:
 	# API KEY INVALID!
 		return {'valid_key': False,
