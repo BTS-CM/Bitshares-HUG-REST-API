@@ -316,7 +316,7 @@ def market_24hr_vol(market_pair: hug.types.text, api_key: hug.types.text, hug_ti
 
 @hug.get(examples='market_pair=USD:BTS&tx_limit=10&api_key=API_KEY')
 def market_trade_history(market_pair: hug.types.text, tx_limit: hug.types.number, api_key: hug.types.text, hug_timer=5):
-	"""Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the trade history in JSON."""
+	"""Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the market's trade history in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
 		if (tx_limit > 0):
