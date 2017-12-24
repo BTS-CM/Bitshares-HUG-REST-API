@@ -203,7 +203,7 @@ Note: Highly verbose! Example contains 26k lines of JSON!
 
 Use: website/account_callpositions?account=example_usera&api_key=API_KEY
 
-#### [Example JSON output](https://github.com/BTS-CM/Bitshares-HUG-REST-API/blob/master/example_json/account_callposition.json)
+#### [Example JSON output](./example_json/account_callposition.json)
 
 ### account_history
 
@@ -211,7 +211,7 @@ Given a valid account name and transaction history limit (int), output the user'
 
 Use: website/account_history?account=example_user&tx_limit=10&api_key=API_KEY
 
-#### [Example JSON output](https://github.com/BTS-CM/Bitshares-HUG-REST-API/blob/master/example_json/account_history.json)
+#### [Example JSON output](./example_json/account_history.json)
 
 ### account_is_ltm
 
@@ -237,16 +237,48 @@ Use: website/account_is_ltm?account=example_user&api_key=API_KEY
 
 Given a valid market pair (e.g. USD:BTS), output the market pair's ticker information in JSON.
 
-#### [Example JSON output](https://github.com/BTS-CM/Bitshares-HUG-REST-API/blob/master/example_json/market_ticker.json)
+#### [Example JSON output](./example_json/market_ticker.json)
 
 ### market_orderbook
 
 Given a valid market pair (e.g. USD:BTS) and your desired orderbook size limit, output the market pair's orderbook (buy/sell order) information in JSON.
 
-#### [Example JSON output](https://github.com/BTS-CM/Bitshares-HUG-REST-API/blob/master/example_json/market_orderbook.json)
+#### [Example JSON output](./example_json/market_orderbook.json)
 
 ### market_24hr_vol
 
 Given a valid market_pair (e.g. USD:BTS), output their 24hr market volume in JSON.
 
 #### [Example JSON output](./example_json/market_24hr_vol.json)
+
+### market_trade_history
+
+Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the market's trade history in JSON.
+
+#### Example JSON output
+
+```
+{
+  "market_trade_history": [
+    {
+      "date": "2017-12-24",
+      "time": "15:54:36",
+      "bought": "55.7395 USD",
+      "sold": "107.13165 BTS",
+      "rate ": "1.922005938 BTS/USD"
+    },
+    {
+      "date": "2017-12-24",
+      "time": "15:54:36",
+      "bought": "100.0000 USD",
+      "sold": "192.19944 BTS",
+      "rate ": "1.921994400 BTS/USD"
+    }
+  ],
+  "market": "USD:BTS",
+  "valid_market": true,
+  "valid_tx_limit": true,
+  "valid_key": true,
+  "took": 0.17249
+}
+```
