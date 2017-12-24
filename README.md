@@ -26,6 +26,12 @@ Web Docs: http://docs.pybitshares.com/en/latest/
 
 PDF Docs: https://media.readthedocs.org/pdf/python-bitshares/latest/python-bitshares.pdf
 
+### About: HUG
+
+HUG is used to produce a low complexity & high performance REST API for Bitshares.
+
+Official link: http://www.hug.rest/
+
 ---
 
 ## Install guide
@@ -114,7 +120,7 @@ If you want to monitor Gunicorn:
     tail -f gunicorn_error_log
     sudo systemctl status gunicorn
 
-## Available functions
+## Network information functions
 
 ### chain_info
 
@@ -144,6 +150,8 @@ Use: website/chain_info?&api_key=API_KEY
  "took": 0.12855
 }
 ```
+
+## Account information functions
 
 ### account_balances
 
@@ -220,3 +228,5 @@ Use: website/account_is_ltm?account=example_user&api_key=API_KEY
   "took": 0.14034
 }
 ```
+
+##
