@@ -1,0 +1,714 @@
+{
+  "market_ticker": {
+    "core_exchange_rate": {
+      "base": {
+        "asset": {
+          "id": "1.3.0",
+          "symbol": "BTS",
+          "precision": 5,
+          "issuer": "1.2.3",
+          "options": {
+            "max_supply": "360057050210207",
+            "market_fee_percent": 0,
+            "max_market_fee": "1000000000000000",
+            "issuer_permissions": 0,
+            "flags": 0,
+            "core_exchange_rate": {
+              "base": {
+                "amount": 1,
+                "asset_id": "1.3.0"
+              },
+              "quote": {
+                "amount": 1,
+                "asset_id": "1.3.0"
+              }
+            },
+            "whitelist_authorities": [],
+            "blacklist_authorities": [],
+            "whitelist_markets": [],
+            "blacklist_markets": [],
+            "description": "",
+            "extensions": []
+          },
+          "dynamic_asset_data_id": "2.3.0",
+          "permissions": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": false,
+            "committee_fed_asset": false
+          },
+          "flags": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": false,
+            "committee_fed_asset": false
+          },
+          "description": ""
+        },
+        "symbol": "BTS",
+        "amount": 0.42109
+      },
+      "quote": {
+        "asset": {
+          "id": "1.3.121",
+          "symbol": "USD",
+          "precision": 4,
+          "issuer": "1.2.0",
+          "options": {
+            "max_supply": "1000000000000000",
+            "market_fee_percent": 0,
+            "max_market_fee": "1000000000000000",
+            "issuer_permissions": 511,
+            "flags": 128,
+            "core_exchange_rate": {
+              "base": {
+                "amount": 2559,
+                "asset_id": "1.3.121"
+              },
+              "quote": {
+                "amount": 42109,
+                "asset_id": "1.3.0"
+              }
+            },
+            "whitelist_authorities": [],
+            "blacklist_authorities": [],
+            "whitelist_markets": [],
+            "blacklist_markets": [],
+            "description": "1 United States dollar",
+            "extensions": []
+          },
+          "dynamic_asset_data_id": "2.3.121",
+          "bitasset_data_id": "2.4.21",
+          "permissions": {
+            "charge_market_fee": true,
+            "white_list": true,
+            "override_authority": true,
+            "transfer_restricted": true,
+            "disable_force_settle": true,
+            "global_settle": true,
+            "disable_confidential": true,
+            "witness_fed_asset": true,
+            "committee_fed_asset": true
+          },
+          "flags": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": true,
+            "committee_fed_asset": false
+          },
+          "description": "1 United States dollar"
+        },
+        "symbol": "USD",
+        "amount": 0.2559
+      },
+      "price": 1.6455255959359125
+    },
+    "quoteSettlement_price": {
+      "base": {
+        "asset": {
+          "id": "1.3.0",
+          "symbol": "BTS",
+          "precision": 5,
+          "issuer": "1.2.3",
+          "options": {
+            "max_supply": "360057050210207",
+            "market_fee_percent": 0,
+            "max_market_fee": "1000000000000000",
+            "issuer_permissions": 0,
+            "flags": 0,
+            "core_exchange_rate": {
+              "base": {
+                "amount": 1,
+                "asset_id": "1.3.0"
+              },
+              "quote": {
+                "amount": 1,
+                "asset_id": "1.3.0"
+              }
+            },
+            "whitelist_authorities": [],
+            "blacklist_authorities": [],
+            "whitelist_markets": [],
+            "blacklist_markets": [],
+            "description": "",
+            "extensions": []
+          },
+          "dynamic_asset_data_id": "2.3.0",
+          "permissions": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": false,
+            "committee_fed_asset": false
+          },
+          "flags": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": false,
+            "committee_fed_asset": false
+          },
+          "description": ""
+        },
+        "symbol": "BTS",
+        "amount": 8881
+      },
+      "quote": {
+        "asset": {
+          "id": "1.3.121",
+          "symbol": "USD",
+          "precision": 4,
+          "issuer": "1.2.0",
+          "options": {
+            "max_supply": "1000000000000000",
+            "market_fee_percent": 0,
+            "max_market_fee": "1000000000000000",
+            "issuer_permissions": 511,
+            "flags": 128,
+            "core_exchange_rate": {
+              "base": {
+                "amount": 2559,
+                "asset_id": "1.3.121"
+              },
+              "quote": {
+                "amount": 42109,
+                "asset_id": "1.3.0"
+              }
+            },
+            "whitelist_authorities": [],
+            "blacklist_authorities": [],
+            "whitelist_markets": [],
+            "blacklist_markets": [],
+            "description": "1 United States dollar",
+            "extensions": []
+          },
+          "dynamic_asset_data_id": "2.3.121",
+          "bitasset_data_id": "2.4.21",
+          "permissions": {
+            "charge_market_fee": true,
+            "white_list": true,
+            "override_authority": true,
+            "transfer_restricted": true,
+            "disable_force_settle": true,
+            "global_settle": true,
+            "disable_confidential": true,
+            "witness_fed_asset": true,
+            "committee_fed_asset": true
+          },
+          "flags": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": true,
+            "committee_fed_asset": false
+          },
+          "description": "1 United States dollar"
+        },
+        "symbol": "USD",
+        "amount": 4507
+      },
+      "price": 1.9704903483470158
+    },
+    "baseVolume": {
+      "asset": {
+        "id": "1.3.0",
+        "symbol": "BTS",
+        "precision": 5,
+        "issuer": "1.2.3",
+        "options": {
+          "max_supply": "360057050210207",
+          "market_fee_percent": 0,
+          "max_market_fee": "1000000000000000",
+          "issuer_permissions": 0,
+          "flags": 0,
+          "core_exchange_rate": {
+            "base": {
+              "amount": 1,
+              "asset_id": "1.3.0"
+            },
+            "quote": {
+              "amount": 1,
+              "asset_id": "1.3.0"
+            }
+          },
+          "whitelist_authorities": [],
+          "blacklist_authorities": [],
+          "whitelist_markets": [],
+          "blacklist_markets": [],
+          "description": "",
+          "extensions": []
+        },
+        "dynamic_asset_data_id": "2.3.0",
+        "permissions": {
+          "charge_market_fee": false,
+          "white_list": false,
+          "override_authority": false,
+          "transfer_restricted": false,
+          "disable_force_settle": false,
+          "global_settle": false,
+          "disable_confidential": false,
+          "witness_fed_asset": false,
+          "committee_fed_asset": false
+        },
+        "flags": {
+          "charge_market_fee": false,
+          "white_list": false,
+          "override_authority": false,
+          "transfer_restricted": false,
+          "disable_force_settle": false,
+          "global_settle": false,
+          "disable_confidential": false,
+          "witness_fed_asset": false,
+          "committee_fed_asset": false
+        },
+        "description": ""
+      },
+      "amount": 7704761.025130026,
+      "symbol": "BTS"
+    },
+    "quoteVolume": {
+      "asset": {
+        "id": "1.3.121",
+        "symbol": "USD",
+        "precision": 4,
+        "issuer": "1.2.0",
+        "options": {
+          "max_supply": "1000000000000000",
+          "market_fee_percent": 0,
+          "max_market_fee": "1000000000000000",
+          "issuer_permissions": 511,
+          "flags": 128,
+          "core_exchange_rate": {
+            "base": {
+              "amount": 2559,
+              "asset_id": "1.3.121"
+            },
+            "quote": {
+              "amount": 42109,
+              "asset_id": "1.3.0"
+            }
+          },
+          "whitelist_authorities": [],
+          "blacklist_authorities": [],
+          "whitelist_markets": [],
+          "blacklist_markets": [],
+          "description": "1 United States dollar",
+          "extensions": []
+        },
+        "dynamic_asset_data_id": "2.3.121",
+        "bitasset_data_id": "2.4.21",
+        "permissions": {
+          "charge_market_fee": true,
+          "white_list": true,
+          "override_authority": true,
+          "transfer_restricted": true,
+          "disable_force_settle": true,
+          "global_settle": true,
+          "disable_confidential": true,
+          "witness_fed_asset": true,
+          "committee_fed_asset": true
+        },
+        "flags": {
+          "charge_market_fee": false,
+          "white_list": false,
+          "override_authority": false,
+          "transfer_restricted": false,
+          "disable_force_settle": false,
+          "global_settle": false,
+          "disable_confidential": false,
+          "witness_fed_asset": true,
+          "committee_fed_asset": false
+        },
+        "description": "1 United States dollar"
+      },
+      "amount": 4350446.534799977,
+      "symbol": "USD"
+    },
+    "lowestAsk": {
+      "quote": {
+        "asset": {
+          "id": "1.3.121",
+          "symbol": "USD",
+          "precision": 4,
+          "issuer": "1.2.0",
+          "options": {
+            "max_supply": "1000000000000000",
+            "market_fee_percent": 0,
+            "max_market_fee": "1000000000000000",
+            "issuer_permissions": 511,
+            "flags": 128,
+            "core_exchange_rate": {
+              "base": {
+                "amount": 2559,
+                "asset_id": "1.3.121"
+              },
+              "quote": {
+                "amount": 42109,
+                "asset_id": "1.3.0"
+              }
+            },
+            "whitelist_authorities": [],
+            "blacklist_authorities": [],
+            "whitelist_markets": [],
+            "blacklist_markets": [],
+            "description": "1 United States dollar",
+            "extensions": []
+          },
+          "dynamic_asset_data_id": "2.3.121",
+          "bitasset_data_id": "2.4.21",
+          "permissions": {
+            "charge_market_fee": true,
+            "white_list": true,
+            "override_authority": true,
+            "transfer_restricted": true,
+            "disable_force_settle": true,
+            "global_settle": true,
+            "disable_confidential": true,
+            "witness_fed_asset": true,
+            "committee_fed_asset": true
+          },
+          "flags": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": true,
+            "committee_fed_asset": false
+          },
+          "description": "1 United States dollar"
+        },
+        "amount": 17531,
+        "symbol": "USD"
+      },
+      "base": {
+        "asset": {
+          "id": "1.3.0",
+          "symbol": "BTS",
+          "precision": 5,
+          "issuer": "1.2.3",
+          "options": {
+            "max_supply": "360057050210207",
+            "market_fee_percent": 0,
+            "max_market_fee": "1000000000000000",
+            "issuer_permissions": 0,
+            "flags": 0,
+            "core_exchange_rate": {
+              "base": {
+                "amount": 1,
+                "asset_id": "1.3.0"
+              },
+              "quote": {
+                "amount": 1,
+                "asset_id": "1.3.0"
+              }
+            },
+            "whitelist_authorities": [],
+            "blacklist_authorities": [],
+            "whitelist_markets": [],
+            "blacklist_markets": [],
+            "description": "",
+            "extensions": []
+          },
+          "dynamic_asset_data_id": "2.3.0",
+          "permissions": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": false,
+            "committee_fed_asset": false
+          },
+          "flags": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": false,
+            "committee_fed_asset": false
+          },
+          "description": ""
+        },
+        "amount": 33527,
+        "symbol": "BTS"
+      },
+      "price": 1.9124408191204152
+    },
+    "highestBid": {
+      "quote": {
+        "asset": {
+          "id": "1.3.121",
+          "symbol": "USD",
+          "precision": 4,
+          "issuer": "1.2.0",
+          "options": {
+            "max_supply": "1000000000000000",
+            "market_fee_percent": 0,
+            "max_market_fee": "1000000000000000",
+            "issuer_permissions": 511,
+            "flags": 128,
+            "core_exchange_rate": {
+              "base": {
+                "amount": 2559,
+                "asset_id": "1.3.121"
+              },
+              "quote": {
+                "amount": 42109,
+                "asset_id": "1.3.0"
+              }
+            },
+            "whitelist_authorities": [],
+            "blacklist_authorities": [],
+            "whitelist_markets": [],
+            "blacklist_markets": [],
+            "description": "1 United States dollar",
+            "extensions": []
+          },
+          "dynamic_asset_data_id": "2.3.121",
+          "bitasset_data_id": "2.4.21",
+          "permissions": {
+            "charge_market_fee": true,
+            "white_list": true,
+            "override_authority": true,
+            "transfer_restricted": true,
+            "disable_force_settle": true,
+            "global_settle": true,
+            "disable_confidential": true,
+            "witness_fed_asset": true,
+            "committee_fed_asset": true
+          },
+          "flags": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": true,
+            "committee_fed_asset": false
+          },
+          "description": "1 United States dollar"
+        },
+        "amount": 87647,
+        "symbol": "USD"
+      },
+      "base": {
+        "asset": {
+          "id": "1.3.0",
+          "symbol": "BTS",
+          "precision": 5,
+          "issuer": "1.2.3",
+          "options": {
+            "max_supply": "360057050210207",
+            "market_fee_percent": 0,
+            "max_market_fee": "1000000000000000",
+            "issuer_permissions": 0,
+            "flags": 0,
+            "core_exchange_rate": {
+              "base": {
+                "amount": 1,
+                "asset_id": "1.3.0"
+              },
+              "quote": {
+                "amount": 1,
+                "asset_id": "1.3.0"
+              }
+            },
+            "whitelist_authorities": [],
+            "blacklist_authorities": [],
+            "whitelist_markets": [],
+            "blacklist_markets": [],
+            "description": "",
+            "extensions": []
+          },
+          "dynamic_asset_data_id": "2.3.0",
+          "permissions": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": false,
+            "committee_fed_asset": false
+          },
+          "flags": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": false,
+            "committee_fed_asset": false
+          },
+          "description": ""
+        },
+        "amount": 166786,
+        "symbol": "BTS"
+      },
+      "price": 1.9029287939119421
+    },
+    "latest": {
+      "quote": {
+        "asset": {
+          "id": "1.3.121",
+          "symbol": "USD",
+          "precision": 4,
+          "issuer": "1.2.0",
+          "options": {
+            "max_supply": "1000000000000000",
+            "market_fee_percent": 0,
+            "max_market_fee": "1000000000000000",
+            "issuer_permissions": 511,
+            "flags": 128,
+            "core_exchange_rate": {
+              "base": {
+                "amount": 2559,
+                "asset_id": "1.3.121"
+              },
+              "quote": {
+                "amount": 42109,
+                "asset_id": "1.3.0"
+              }
+            },
+            "whitelist_authorities": [],
+            "blacklist_authorities": [],
+            "whitelist_markets": [],
+            "blacklist_markets": [],
+            "description": "1 United States dollar",
+            "extensions": []
+          },
+          "dynamic_asset_data_id": "2.3.121",
+          "bitasset_data_id": "2.4.21",
+          "permissions": {
+            "charge_market_fee": true,
+            "white_list": true,
+            "override_authority": true,
+            "transfer_restricted": true,
+            "disable_force_settle": true,
+            "global_settle": true,
+            "disable_confidential": true,
+            "witness_fed_asset": true,
+            "committee_fed_asset": true
+          },
+          "flags": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": true,
+            "committee_fed_asset": false
+          },
+          "description": "1 United States dollar"
+        },
+        "amount": 1,
+        "symbol": "USD"
+      },
+      "base": {
+        "asset": {
+          "id": "1.3.0",
+          "symbol": "BTS",
+          "precision": 5,
+          "issuer": "1.2.3",
+          "options": {
+            "max_supply": "360057050210207",
+            "market_fee_percent": 0,
+            "max_market_fee": "1000000000000000",
+            "issuer_permissions": 0,
+            "flags": 0,
+            "core_exchange_rate": {
+              "base": {
+                "amount": 1,
+                "asset_id": "1.3.0"
+              },
+              "quote": {
+                "amount": 1,
+                "asset_id": "1.3.0"
+              }
+            },
+            "whitelist_authorities": [],
+            "blacklist_authorities": [],
+            "whitelist_markets": [],
+            "blacklist_markets": [],
+            "description": "",
+            "extensions": []
+          },
+          "dynamic_asset_data_id": "2.3.0",
+          "permissions": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": false,
+            "committee_fed_asset": false
+          },
+          "flags": {
+            "charge_market_fee": false,
+            "white_list": false,
+            "override_authority": false,
+            "transfer_restricted": false,
+            "disable_force_settle": false,
+            "global_settle": false,
+            "disable_confidential": false,
+            "witness_fed_asset": false,
+            "committee_fed_asset": false
+          },
+          "description": ""
+        },
+        "amount": 2,
+        "symbol": "BTS"
+      },
+      "price": 2
+    },
+    "percentChange": 7.0000044940002
+  },
+  "market": "USD:BTS",
+  "valid_market": true,
+  "valid_key": true,
+  "took": 0.14502
+}

@@ -199,13 +199,15 @@ Use: website/account_open_orders?account=example_usera&api_key=API_KEY
 
 Given a valid account name, output the user's call positions in JSON.
 
+Note: Highly verbose! Example contains 26k lines of JSON!
+
 Use: website/account_callpositions?account=example_usera&api_key=API_KEY
 
 #### [Example JSON output](https://github.com/BTS-CM/Bitshares-HUG-REST-API/blob/master/example_json/account_callposition.json)
 
 ### account_history
 
-Given a valid account name, output the user's history in JSON.
+Given a valid account name and transaction history limit (int), output the user's transaction history in JSON.
 
 Use: website/account_history?account=example_user&tx_limit=10&api_key=API_KEY
 
@@ -229,4 +231,22 @@ Use: website/account_is_ltm?account=example_user&api_key=API_KEY
 }
 ```
 
-##
+## Market information functions
+
+### market_ticker
+
+Given a valid market pair (e.g. USD:BTS), output the market pair's ticker information in JSON.
+
+#### [Example JSON output](https://github.com/BTS-CM/Bitshares-HUG-REST-API/blob/master/example_json/market_ticker.json)
+
+### market_orderbook
+
+Given a valid market pair (e.g. USD:BTS) and your desired orderbook size limit, output the market pair's orderbook (buy/sell order) information in JSON.
+
+#### [Example JSON output](https://github.com/BTS-CM/Bitshares-HUG-REST-API/blob/master/example_json/market_orderbook.json)
+
+### market_24hr_vol
+
+Given a valid market_pair (e.g. USD:BTS), output their 24hr market volume in JSON.
+
+#### [Example JSON output](./example_json/market_24hr_vol.json)

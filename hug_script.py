@@ -1,18 +1,17 @@
 # Required for rest of hug scripts
 import bitshares
-from bitshares.blockchain import Blockchain
 from bitshares.account import Account
 from bitshares.amount import Amount
 from bitshares.asset import Asset
+from bitshares.blockchain import Blockchain
+from bitshares.market import Market
 from bitshares.instance import shared_bitshares_instance # Used to reduce bitshares instance load
 import hug
 
 # uptick set node <host>  # THIS CHANGES THE WSS NODE!
 
 def check_api_token(api_key):
-	"""
-	Check if the user's API key is valid.
-	"""
+	"""Check if the user's API key is valid."""
 	if (api_key == '123abc'):
 		return True
 	else:
@@ -20,10 +19,7 @@ def check_api_token(api_key):
 
 @hug.get(examples='api_key=API_KEY')
 def chain_info(api_key: hug.types.text, hug_timer=5):
-	"""
-	Bitshares current chain information!
-	URL: http://HOST:PORT/chain_info?&api_key=API_KEY
-	"""
+	"""Bitshares current chain information!"""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
 
@@ -53,10 +49,7 @@ def chain_info(api_key: hug.types.text, hug_timer=5):
 
 @hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
 def account_balances(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
-	"""
-	Bitshares account balances! Simply supply an account name & provide the API key!
-	URL: http://HOST:PORT/account_balances?account=example_usera&api_key=API_KEY
-	"""
+	"""Bitshares account balances! Simply supply an account name & provide the API key!"""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
 
@@ -95,10 +88,7 @@ def account_balances(account_name: hug.types.text, api_key: hug.types.text, hug_
 
 @hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
 def account_open_orders(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
-	"""
-	Bitshares account open orders! Simply supply an account name & provide the API key!
-	URL: http://HOST:PORT/account_open_orders?account=example_usera&api_key=API_KEY
-	"""
+	"""Bitshares account open orders! Simply supply an account name & provide the API key!"""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
 
@@ -144,10 +134,7 @@ def account_open_orders(account_name: hug.types.text, api_key: hug.types.text, h
 
 @hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
 def account_callpositions(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
-	"""
-	Bitshares account call positions! Simply supply an account name & provide the API key!
-	URL: http://HOST:PORT/account_callpositions?account=example_usera&api_key=API_KEY
-	"""
+	"""Bitshares account call positions! Simply supply an account name & provide the API key!"""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
 
@@ -181,10 +168,7 @@ def account_callpositions(account_name: hug.types.text, api_key: hug.types.text,
 
 @hug.get(examples='account_name=blahblahblah&tx_limit=100&api_key=API_KEY')
 def account_history(account_name: hug.types.text, tx_limit: hug.types.number, api_key: hug.types.text, hug_timer=5):
-	"""
-	Given a valid account name, output the user's history in JSON.
-	URL: http://HOST:PORT/account_history?account=example_user&tx_limit=10&api_key=API_KEY
-	"""
+	"""Given a valid account name, output the user's history in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
 
@@ -223,10 +207,7 @@ def account_history(account_name: hug.types.text, tx_limit: hug.types.number, ap
 
 @hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
 def account_is_ltm(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
-	"""
-	Given a valid account name, check if they're LTM & output confirmation as JSON.
-	URL: http://HOST:PORT/account_is_ltm?account=example_user&api_key=API_KEY
-	"""
+	"""Given a valid account name, check if they're LTM & output confirmation as JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
 
@@ -247,6 +228,87 @@ def account_is_ltm(account_name: hug.types.text, api_key: hug.types.text, hug_ti
 				'valid_key': True,
 				'took': float(hug_timer)}
 
+	else:
+	# API KEY INVALID!
+		return {'valid_key': False,
+				'took': float(hug_timer)}
+
+@hug.get(examples='market_pair=USD:BTS&api_key=API_KEY')
+def market_ticker(market_pair: hug.types.text, api_key: hug.types.text, hug_timer=5):
+	"""Given a valid market pair, retrieve ticker data & output as JSON."""
+	if (check_api_token(api_key) == True): # Check the api key
+	# API KEY VALID
+
+		try:
+		  target_market = Market(market_pair)
+		except:
+		  # Market is not valid
+		  return {'valid_market': False,
+		  		  'valid_key': True,
+				  'took': float(hug_timer)}
+
+		target_market_ticker_data = target_market.ticker()
+
+		return {'market_ticker': target_market_ticker_data,
+				'market': market_pair,
+				'valid_market': True,
+				'valid_key': True,
+				'took': float(hug_timer)}
+
+	else:
+	# API KEY INVALID!
+		return {'valid_key': False,
+				'took': float(hug_timer)}
+
+@hug.get(examples='market_pair=USD:BTS&orderbook_limit=25&api_key=API_KEY')
+def market_orderbook(market_pair: hug.types.text, orderbook_limit: hug.types.number, api_key: hug.types.text, hug_timer=5):
+	"""Given a valid market pair (e.g. USD:BTS) and your desired orderbook size limit, output the market pair's orderbook (buy/sell order) information in JSON."""
+	if (check_api_token(api_key) == True): # Check the api key
+	# API KEY VALID
+		if (orderbook_limit > 0):
+			try:
+			  target_market = Market(market_pair)
+			except:
+			  # Market is not valid
+			  return {'valid_market': False,
+			  		  'valid_key': True,
+					  'took': float(hug_timer)}
+
+			target_market_orderbook_data = target_market.orderbook(limit=orderbook_limit)
+
+			return {'market_orderbook': target_market_orderbook_data,
+					'market': market_pair,
+					'valid_market': True,
+					'valid_key': True,
+					'took': float(hug_timer)}
+		else:
+			return {'invalid_orderbook_limit': True,
+					'valid_key': True,
+				  	'took': float(hug_timer)}
+
+	else:
+	# API KEY INVALID!
+		return {'valid_key': False,
+				'took': float(hug_timer)}
+
+@hug.get(examples='market_pair=USD:BTS&api_key=API_KEY')
+def market_24hr_vol(market_pair: hug.types.text, api_key: hug.types.text, hug_timer=5):
+	"""Given a valid market_pair (e.g. USD:BTS), output their 24hr market volume in JSON."""
+	if (check_api_token(api_key) == True): # Check the api key
+	# API KEY VALID
+		try:
+		  target_market = Market(market_pair)
+		except:
+		  # Market is not valid
+		  return {'valid_market': False,
+		  		  'valid_key': True,
+				  'took': float(hug_timer)}
+
+		return {'market_volume_24hr': target_market.volume24h(),
+				'market': market_pair,
+				'valid_market': True,
+				'valid_key': True,
+				'took': float(hug_timer)}
 	else:
 	# API KEY INVALID!
 		return {'valid_key': False,
