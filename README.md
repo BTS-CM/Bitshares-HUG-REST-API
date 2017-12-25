@@ -2,9 +2,23 @@
 
 ![BTS HUG API Banner](https://i.imgur.com/secsyPh.png "BTS HUG API Banner")
 
+## About
+
+The intention of this Bitshares HUG REST API repo is to provide the Bitshares network an open-source high performance interface to the Bitshares network through simple GET requests.
+
+By following the readme, you can easily recreate the API in your own control. Do remember to change the API key and the Bitshares FULL/API node you're connecting to. If you're creating a service which will produce a large amount of traffic, alert the node operator or consider running your own Bitshares node.
+
+This HUG REST API makes heavy use of the [python-bitshares]()
+
 ## TODO
 
     Improve the NGINX & Gunicorn configurations.
+    Implement additional HUG functions.
+    Work on ./WIP.py - Difficult broken code staging file.
+
+## Future usage plans
+
+Once this API is completed, I'll be looking into creating an open source (MIT Licensed) [Google Assistant](https://developers.google.com/actions/) for Bitshares.
 
 ## License
 
@@ -28,9 +42,12 @@ PDF Docs: https://media.readthedocs.org/pdf/python-bitshares/latest/python-bitsh
 
 ### About: HUG
 
-HUG is used to produce a low complexity & high performance REST API for Bitshares.
-
-Official link: http://www.hug.rest/
+> ##### Embrace the APIs of the future
+> Drastically simplify API development over multiple interfaces. With hug, design and develop your API once, then expose it however your clients need to consume it. Be it locally, over HTTP, or through the command line - hug is the fastest and most modern way to create APIs on Python3.
+> ##### Unparalleled performance
+> hug has been built from the ground up with performance in mind. It is built to consume resources only when necessary and is then compiled with Cython to achieve amazing performance. As a result, hug consistently benchmarks as one of the fastest Python frameworks and without question takes the crown as the fastest high-level framework for Python 3.
+>
+> Source: [Official website](http://www.hug.rest/).
 
 ---
 
@@ -120,13 +137,23 @@ If you want to monitor Gunicorn:
     tail -f gunicorn_error_log
     sudo systemctl status gunicorn
 
-## Network information functions
+---
+
+# Available HUG REST API functionality
+
+This section will detail the functionality which will be available to the public through GET requests.
+
+The functions are currently all read-only functions, allowing you to request data from the network without the risk of exposing wallet controls to the public.
+
+## Blockchain functions
+
+More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/blockchain.html)
 
 ### chain_info
 
 A high level overview of the Bitshares chain information.
 
-Use: website/chain_info?&api_key=API_KEY
+Usage: website/chain_info?&api_key=API_KEY
 
 #### Example JSON output
 
@@ -153,11 +180,13 @@ Use: website/chain_info?&api_key=API_KEY
 
 ## Account information functions
 
+More info: [python-bitshares docs]()
+
 ### account_balances
 
 Given a valid account name, output the user's balances in JSON.
 
-Use: website/account_balances?account=example_usera&api_key=API_KEY
+Usage: website/account_balances?account=example_usera&api_key=API_KEY
 
 #### Example JSON output
 
@@ -180,7 +209,7 @@ Note: 'balances' has been concatenated to save space in this example.
 
 Given a valid account name, output the user's open orders in JSON.
 
-Use: website/account_open_orders?account=example_usera&api_key=API_KEY
+Usage: website/account_open_orders?account=example_usera&api_key=API_KEY
 
 #### Example JSON output
 
@@ -201,7 +230,7 @@ Given a valid account name, output the user's call positions in JSON.
 
 Note: Highly verbose! Example contains 26k lines of JSON!
 
-Use: website/account_callpositions?account=example_usera&api_key=API_KEY
+Usage: website/account_callpositions?account=example_usera&api_key=API_KEY
 
 #### [Example JSON output](./example_json/account_callposition.json)
 
@@ -209,7 +238,7 @@ Use: website/account_callpositions?account=example_usera&api_key=API_KEY
 
 Given a valid account name and transaction history limit (int), output the user's transaction history in JSON.
 
-Use: website/account_history?account=example_user&tx_limit=10&api_key=API_KEY
+Usage: website/account_history?account=example_user&tx_limit=10&api_key=API_KEY
 
 #### [Example JSON output](./example_json/account_history.json)
 
@@ -217,7 +246,7 @@ Use: website/account_history?account=example_user&tx_limit=10&api_key=API_KEY
 
 Given a valid account name, check if the user has LTM.
 
-Use: website/account_is_ltm?account=example_user&api_key=API_KEY
+Usage: website/account_is_ltm?account=example_user&api_key=API_KEY
 
 #### Example JSON output
 
@@ -233,6 +262,8 @@ Use: website/account_is_ltm?account=example_user&api_key=API_KEY
 
 ## Market information functions
 
+More info: [python-bitshares docs]()
+
 ### market_ticker
 
 Given a valid market pair (e.g. USD:BTS), output the market pair's ticker information in JSON.
@@ -242,6 +273,8 @@ Given a valid market pair (e.g. USD:BTS), output the market pair's ticker inform
 ### market_orderbook
 
 Given a valid market pair (e.g. USD:BTS) and your desired orderbook size limit, output the market pair's orderbook (buy/sell order) information in JSON.
+
+Usage:
 
 #### [Example JSON output](./example_json/market_orderbook.json)
 
@@ -281,4 +314,122 @@ Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the market's trade
   "valid_key": true,
   "took": 0.17249
 }
+```
+
+# TODO
+
+## Blockchain functions
+
+More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/blockchain.html)
+
+###  get_chain_properties
+
+ get_chain_properties()
+
+#### Example JSON output
+
+```
+
+```
+
+###  get_network
+
+Identify the network.
+
+get_network()
+
+#### Example JSON output
+
+```
+
+```
+
+### get_info
+
+This call returns the dynamic global properties in JSON.
+
+#### Example JSON output
+
+```
+
+```
+
+### get_config
+
+Returns object 2.0.0 in JSON.
+
+#### Example JSON output
+
+```
+
+```
+
+### get_all_accounts
+
+Retrieve all Bitshares account names. Takes a while!
+
+#### Example JSON output
+
+```
+
+```
+
+## DEX functions
+
+More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/dex.html)
+
+### list_fees
+
+Retrieve the currently implemented fees in JSON format.
+
+#### Roadblock: [Issue #28 - "Dex.returnFees() returns invalid JSON?"](https://github.com/xeroc/python-bitshares/issues/28)
+
+## Witness functions
+
+More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/witness.html)
+
+### find_witness
+
+Find details about a specific witness.
+
+#### Example JSON output
+
+```
+
+```
+
+### list_of_witnesses
+
+Retrieve a list of available witnesses.
+
+#### Example JSON output
+
+```
+
+```
+
+## Worker Proposal functions
+
+More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/proposal.html)
+
+May not be possible - tx proposals, not worker proposals?
+
+### list_worker_proposals
+
+Retrieve a list of worker proposals.
+
+#### Example JSON output
+
+```
+
+```
+
+### find_worker_proposal
+
+Find a specific worker proposal.
+
+#### Example JSON output
+
+```
+
 ```
