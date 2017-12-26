@@ -143,7 +143,7 @@ If you want to monitor Gunicorn:
 
 This section will detail the functionality which will be available to the public through GET requests.
 
-The functions are currently all read-only functions, allowing you to request data from the network without the risk of exposing wallet controls to the public.
+The functions are currently all read-only functions, enabling the public to request data from the network without the risk of exposing critical wallet controls.
 
 ## Blockchain functions
 
@@ -153,7 +153,7 @@ More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/blockch
 
 A high level overview of the Bitshares chain information.
 
-Usage: website/chain_info?&api_key=API_KEY
+Usage: `website/chain_info?&api_key=API_KEY`
 
 #### Example JSON output
 
@@ -178,15 +178,116 @@ Usage: website/chain_info?&api_key=API_KEY
 }
 ```
 
+###  get_chain_properties
+
+Get chain properties, return in JSON.
+
+Usage: `website/get_chain_properties?api_key=API_KEY`
+
+#### Example JSON output
+
+```
+{
+  "chain_properties": {
+    "id": "2.11.0",
+    "chain_id": "4018d7844c78f6a6c41c6a552b898022310fc5dec06da467ee7905a8dad512c8",
+    "immutable_parameters": {
+      "min_committee_member_count": 11,
+      "min_witness_count": 11,
+      "num_special_accounts": 100,
+      "num_special_assets": 100
+    }
+  },
+  "valid_key": true,
+  "took": 0.01332
+}
+```
+
+###  get_network
+
+Return BTS network information in JSON.
+
+Usage: `website/get_network?api_key=API_KEY`
+
+#### Example JSON output
+
+```
+{
+  "get_network": {
+    "chain_id": "4018d7844c78f6a6c41c6a552b898022310fc5dec06da467ee7905a8dad512c8",
+    "core_symbol": "BTS",
+    "prefix": "BTS"
+  },
+  "valid_key": true,
+  "took": 0.12271
+}
+```
+
+### get_info
+
+This call returns the dynamic global properties in JSON.
+
+Usage: `website/get_info?api_key=API_KEY`
+
+#### Example JSON output
+
+```
+{
+  "chain_info": {
+    "id": "2.1.0",
+    "head_block_number": 22988592,
+    "head_block_id": "015ec73077ef571e12193ae0ae512f7f55b971fb",
+    "time": "2017-12-26T14:42:48",
+    "current_witness": "1.6.75",
+    "next_maintenance_time": "2017-12-26T15:00:00",
+    "last_budget_time": "2017-12-26T14:00:00",
+    "witness_budget": 34700000,
+    "accounts_registered_this_interval": 118,
+    "recently_missed_count": 0,
+    "current_aslot": 23128120,
+    "recent_slots_filled": "340282366920938463463374607431768211455",
+    "dynamic_flags": 0,
+    "last_irreversible_block_num": 22988579
+  },
+  "valid_key": true,
+  "took": 0.13397
+}
+```
+
+### get_config
+
+Returns object 2.0.0 in JSON.
+
+Usage: `website/get_config?api_key=API_KEY`
+
+#### [Example JSON output](./example_json/get_config.json)
+
+### get_all_accounts
+
+Retrieve all Bitshares account names. Takes a while!
+
+Usage: `website/get_all_accounts?api_key=API_KEY`
+
+#### Example JSON output
+
+```
+{
+  'accounts': [{acc1, acc2, ...}],
+  'num_accounts': 500000,
+  'valid_key': True,
+  'took': 20.5
+}
+```
+
 ## Account information functions
 
-More info: [python-bitshares docs]()
+More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/account.html)
 
 ### account_balances
 
 Given a valid account name, output the user's balances in JSON.
 
-Usage: website/account_balances?account=example_usera&api_key=API_KEY
+Usage: `website/account_balances?account=example_usera&api_key=API_KEY`
 
 #### Example JSON output
 
@@ -209,7 +310,7 @@ Note: 'balances' has been concatenated to save space in this example.
 
 Given a valid account name, output the user's open orders in JSON.
 
-Usage: website/account_open_orders?account=example_usera&api_key=API_KEY
+Usage: `website/account_open_orders?account=example_usera&api_key=API_KEY`
 
 #### Example JSON output
 
@@ -230,7 +331,7 @@ Given a valid account name, output the user's call positions in JSON.
 
 Note: Highly verbose! Example contains 26k lines of JSON!
 
-Usage: website/account_callpositions?account=example_usera&api_key=API_KEY
+Usage: `website/account_callpositions?account=example_usera&api_key=API_KEY`
 
 #### [Example JSON output](./example_json/account_callposition.json)
 
@@ -238,7 +339,7 @@ Usage: website/account_callpositions?account=example_usera&api_key=API_KEY
 
 Given a valid account name and transaction history limit (int), output the user's transaction history in JSON.
 
-Usage: website/account_history?account=example_user&tx_limit=10&api_key=API_KEY
+Usage: `website/account_history?account=example_user&tx_limit=10&api_key=API_KEY`
 
 #### [Example JSON output](./example_json/account_history.json)
 
@@ -246,7 +347,7 @@ Usage: website/account_history?account=example_user&tx_limit=10&api_key=API_KEY
 
 Given a valid account name, check if the user has LTM.
 
-Usage: website/account_is_ltm?account=example_user&api_key=API_KEY
+Usage: `website/account_is_ltm?account=example_user&api_key=API_KEY`
 
 #### Example JSON output
 
@@ -274,7 +375,7 @@ Given a valid market pair (e.g. USD:BTS), output the market pair's ticker inform
 
 Given a valid market pair (e.g. USD:BTS) and your desired orderbook size limit, output the market pair's orderbook (buy/sell order) information in JSON.
 
-Usage:
+Usage: `website/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=API_KEY`
 
 #### [Example JSON output](./example_json/market_orderbook.json)
 
@@ -282,11 +383,15 @@ Usage:
 
 Given a valid market_pair (e.g. USD:BTS), output their 24hr market volume in JSON.
 
+Usage: `website/market_24hr_vol?market_pair=USD:BTS&api_key=API_KEY`
+
 #### [Example JSON output](./example_json/market_24hr_vol.json)
 
 ### market_trade_history
 
 Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the market's trade history in JSON.
+
+Usage: `website/market_trade_history?market_pair=USD:BTS&tx_limit=10&api_key=API_KEY`
 
 #### Example JSON output
 
@@ -316,63 +421,29 @@ Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the market's trade
 }
 ```
 
+## Witness functions
+
+More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/witness.html)
+
+### find_witness
+
+Find details about a specific witness.
+
+Usage: `website/find_witness?witness_name=blockchained&api_key=API_KEY`
+
+#### [Example JSON output](./example_json/find_witness.json)
+
+### list_of_witnesses
+
+Retrieve a list of available witnesses.
+
+Usage: `website/list_of_witnesses?api_key=API_KEY`
+
+#### [Example JSON output](./example_json/list_of_witnesses.json)
+
+---
+
 # TODO
-
-## Blockchain functions
-
-More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/blockchain.html)
-
-###  get_chain_properties
-
- get_chain_properties()
-
-#### Example JSON output
-
-```
-
-```
-
-###  get_network
-
-Identify the network.
-
-get_network()
-
-#### Example JSON output
-
-```
-
-```
-
-### get_info
-
-This call returns the dynamic global properties in JSON.
-
-#### Example JSON output
-
-```
-
-```
-
-### get_config
-
-Returns object 2.0.0 in JSON.
-
-#### Example JSON output
-
-```
-
-```
-
-### get_all_accounts
-
-Retrieve all Bitshares account names. Takes a while!
-
-#### Example JSON output
-
-```
-
-```
 
 ## DEX functions
 
@@ -384,30 +455,6 @@ Retrieve the currently implemented fees in JSON format.
 
 #### Roadblock: [Issue #28 - "Dex.returnFees() returns invalid JSON?"](https://github.com/xeroc/python-bitshares/issues/28)
 
-## Witness functions
-
-More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/witness.html)
-
-### find_witness
-
-Find details about a specific witness.
-
-#### Example JSON output
-
-```
-
-```
-
-### list_of_witnesses
-
-Retrieve a list of available witnesses.
-
-#### Example JSON output
-
-```
-
-```
-
 ## Worker Proposal functions
 
 More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/proposal.html)
@@ -418,18 +465,6 @@ May not be possible - tx proposals, not worker proposals?
 
 Retrieve a list of worker proposals.
 
-#### Example JSON output
-
-```
-
-```
-
 ### find_worker_proposal
 
 Find a specific worker proposal.
-
-#### Example JSON output
-
-```
-
-```

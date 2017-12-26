@@ -1,0 +1,79 @@
+{
+  "id": "1.6.82",
+  "witness_account": "1.2.166442",
+  "witness_account_data": [
+    {
+      "id": "1.2.166442",
+      "membership_expiration_date": "1969-12-31T23:59:59",
+      "registrar": "1.2.166442",
+      "referrer": "1.2.166442",
+      "lifetime_referrer": "1.2.166442",
+      "network_fee_percentage": 2000,
+      "lifetime_referrer_fee_percentage": 8000,
+      "referrer_rewards_percentage": 0,
+      "name": "sc-ol",
+      "owner": {
+        "weight_threshold": 1,
+        "account_auths": [],
+        "key_auths": [
+          [
+            "BTS5AtihYi36icBnXVFyUTpxkPe8kpsXjHPaDtwG87nqPmRi1KRvB",
+            1
+          ]
+        ],
+        "address_auths": []
+      },
+      "active": {
+        "weight_threshold": 1,
+        "account_auths": [],
+        "key_auths": [
+          [
+            "BTS5C5ay6DU512g7xk2SurbnGL5phGMCU86rkkoaciBxvVTo26Sbh",
+            1
+          ]
+        ],
+        "address_auths": []
+      },
+      "options": {
+        "memo_key": "BTS5C5ay6DU512g7xk2SurbnGL5phGMCU86rkkoaciBxvVTo26Sbh",
+        "voting_account": "1.2.21106",
+        "num_witness": 1,
+        "num_committee": 2,
+        "votes": [
+          "0:82",
+          "0:147",
+          "1:227",
+          "2:228"
+        ],
+        "extensions": []
+      },
+      "statistics": "2.6.166442",
+      "whitelisting_accounts": [],
+      "blacklisting_accounts": [],
+      "whitelisted_accounts": [],
+      "blacklisted_accounts": [],
+      "cashback_vb": "1.13.1655",
+      "owner_special_authority": [
+        0,
+        {}
+      ],
+      "active_special_authority": [
+        0,
+        {}
+      ],
+      "top_n_control_flags": 0
+    }
+  ],
+  "last_aslot": 0,
+  "signing_key": "BTS5AtihYi36icBnXVFyUTpxkPe8kpsXjHPaDtwG87nqPmRi1KRvB",
+  "vote_id": "1:227",
+  "total_votes": "4427640271500",
+  "url": "https://steemit.com/bitshares/@sc-steemit/joining-in-as-bitshares-witness",
+  "total_missed": 0,
+  "last_confirmed_block_num": 0,
+  "witness_name": "sc-ol",
+  "active_witness": false,
+  "valid_witness": true,
+  "valid_key": true,
+  "took": 0.16105
+}

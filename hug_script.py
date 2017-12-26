@@ -137,6 +137,41 @@ def get_all_accounts(api_key: hug.types.text, hug_timer=5):
 		return {'valid_key': False,
 				'took': float(hug_timer)}
 
+@hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
+def account_info(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
+	"""Retrieve verbose information about an individual Bitshares account!"""
+	try:
+	  target_account = Account(account_name)
+	except:
+	  return {'valid_account': False,
+			  'account': account_name,
+			  'valid_key': True,
+			  'took': float(hug_timer)}
+
+	return {'id': target_account['id'],
+			'membership_expiration_date': target_account['membership_expiration_date'],
+			'registrar': target_account['registrar'],
+			'referrer': target_account['referrer'],
+			'lifetime_referrer': target_account['lifetime_referrer'],
+			'network_fee_percentage': target_account['network_fee_percentage'],
+			'lifetime_referrer_fee_percentage': target_account['lifetime_referrer_fee_percentage'],
+			'referrer_rewards_percentage': target_account['referrer_rewards_percentage'],
+			'name': target_account['name'],
+			'owner': target_account['owner'],
+			'active': target_account['active'],
+			'options': target_account['options'],
+			'statistics': target_account['statistics'],
+			'whitelisting_accounts': target_account['whitelisting_accounts'],
+			'blacklisting_accounts': target_account['blacklisting_accounts'],
+			'whitelisted_accounts': target_account['whitelisted_accounts'],
+			'blacklisted_accounts': target_account['blacklisted_accounts'],
+			'cashback_vb': target_account['cashback_vb'],
+			'owner_special_authority': target_account['owner_special_authority'],
+			'active_special_authority': target_account['active_special_authority'],
+			'top_n_control_flags': target_account['top_n_control_flags'],
+			'account': account_name,
+			'valid_key': True,
+			'took': float(hug_timer)}
 
 @hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
 def account_balances(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
@@ -150,7 +185,7 @@ def account_balances(account_name: hug.types.text, api_key: hug.types.text, hug_
 		  print("Account doesn't exist.")
 		  return {'valid_account': False,
 				  'account': account_name,
-		  		  'valid_key': True,
+				  'valid_key': True,
 				  'took': float(hug_timer)}
 
 		target_account_balances = target_account.balances
@@ -163,7 +198,7 @@ def account_balances(account_name: hug.types.text, api_key: hug.types.text, hug_
 			return {'balances': balance_json_list,
 					'account_has_balances': True,
 					'account': account_name,
-  					'valid_account': True,
+					'valid_account': True,
 					'valid_key': True,
 					'took': float(hug_timer)}
 		else:
@@ -188,8 +223,8 @@ def account_open_orders(account_name: hug.types.text, api_key: hug.types.text, h
 		except:
 		  print("Account doesn't exist.")
 		  return {'valid_account': False,
-		  		  'account': account_name,
-		  		  'valid_key': True,
+				  'account': account_name,
+				  'valid_key': True,
 				  'took': float(hug_timer)}
 
 		target_account_oo = target_account.openorders
@@ -210,7 +245,7 @@ def account_open_orders(account_name: hug.types.text, api_key: hug.types.text, h
 			return {'open_orders': open_order_list,
 					'account_has_open_orders': True,
 					'account': account_name,
-  					'valid_account': True,
+					'valid_account': True,
 					'took': float(hug_timer)}
 		else:
 			return {'account_has_open_orders': False,
@@ -234,18 +269,18 @@ def account_callpositions(account_name: hug.types.text, api_key: hug.types.text,
 		except:
 		  print("Account doesn't exist.")
 		  return {'valid_account': False,
-		  		  'account': account_name,
-		  		  'valid_key': True,
+				  'account': account_name,
+				  'valid_key': True,
 				  'took': float(hug_timer)}
 
 		target_account_callpos = target_account.callpositions
 		if (len(target_account_callpos) > 0):
-  			return {'call_positions': target_account_callpos,
-  					'account_has_call_positions': True,
+			return {'call_positions': target_account_callpos,
+					'account_has_call_positions': True,
 					'account': account_name,
-  					'valid_account': True,
-  					'valid_key': True,
-  					'took': float(hug_timer)}
+					'valid_account': True,
+					'valid_key': True,
+					'took': float(hug_timer)}
 		else:
 			return {'account_has_call_positions': False,
 					'account': account_name,
@@ -269,7 +304,7 @@ def account_history(account_name: hug.types.text, tx_limit: hug.types.number, ap
 		  # Accoun is not valid!
 		  return {'valid_account': False,
 				  'account': account_name,
-		  		  'valid_key': True,
+				  'valid_key': True,
 				  'took': float(hug_timer)}
 
 		target_account_history = target_account.history(first=0, limit=tx_limit)
@@ -279,12 +314,12 @@ def account_history(account_name: hug.types.text, tx_limit: hug.types.number, ap
 		  tx_container.append(transaction)
 
 		if (len(tx_container) > 0):
-  			return {'tx_history': tx_container,
-  					'account_has_tx_history': True,
+			return {'tx_history': tx_container,
+					'account_has_tx_history': True,
 					'account': account_name,
-  					'valid_account': True,
-  					'valid_key': True,
-  					'took': float(hug_timer)}
+					'valid_account': True,
+					'valid_key': True,
+					'took': float(hug_timer)}
 		else:
 			return {'account_has_tx_history': False,
 					'account': account_name,
@@ -308,7 +343,7 @@ def account_is_ltm(account_name: hug.types.text, api_key: hug.types.text, hug_ti
 		  # Accoun is not valid!
 		  return {'valid_account': False,
 				  'account': account_name,
-		  		  'valid_key': True,
+				  'valid_key': True,
 				  'took': float(hug_timer)}
 
 		target_account_ltm = target_account.is_ltm
@@ -335,7 +370,7 @@ def market_ticker(market_pair: hug.types.text, api_key: hug.types.text, hug_time
 		except:
 		  # Market is not valid
 		  return {'valid_market': False,
-		  		  'valid_key': True,
+				  'valid_key': True,
 				  'took': float(hug_timer)}
 
 		target_market_ticker_data = target_market.ticker()
@@ -362,7 +397,7 @@ def market_orderbook(market_pair: hug.types.text, orderbook_limit: hug.types.num
 			except:
 			  # Market is not valid
 			  return {'valid_market': False,
-			  		  'valid_key': True,
+					  'valid_key': True,
 					  'took': float(hug_timer)}
 
 			target_market_orderbook_data = target_market.orderbook(limit=orderbook_limit)
@@ -375,7 +410,7 @@ def market_orderbook(market_pair: hug.types.text, orderbook_limit: hug.types.num
 		else:
 			return {'invalid_orderbook_limit': True,
 					'valid_key': True,
-				  	'took': float(hug_timer)}
+					'took': float(hug_timer)}
 
 	else:
 	# API KEY INVALID!
@@ -392,7 +427,7 @@ def market_24hr_vol(market_pair: hug.types.text, api_key: hug.types.text, hug_ti
 		except:
 		  # Market is not valid
 		  return {'valid_market': False,
-		  		  'valid_key': True,
+				  'valid_key': True,
 				  'took': float(hug_timer)}
 
 		return {'market_volume_24hr': target_market.volume24h(),
@@ -416,8 +451,8 @@ def market_trade_history(market_pair: hug.types.text, tx_limit: hug.types.number
 			except:
 			  # Market is not valid
 			  return {'valid_market': False,
-			  		  'valid_tx_limit': True,
-			  		  'valid_key': True,
+					  'valid_tx_limit': True,
+					  'valid_key': True,
 					  'took': float(hug_timer)}
 
 			temp_market_history = list(target_market.trades(limit=tx_limit))
@@ -458,48 +493,122 @@ def find_witness(witness_name: hug.types.text, api_key: hug.types.text, hug_time
 		except:
 		  # Market is not valid
 		  return {'valid_witness': False,
-		  		  'valid_key': True,
+				  'valid_key': True,
 				  'took': float(hug_timer)}
 
-		return {'id': target_witness['id'],
-				'witness_account': target_witness['witness_account'],
-				'last_aslot': target_witness['last_aslot'],
-				'signing_key': target_witness['signing_key'],
-				'pay_vb': target_witness['pay_vb'],
-				'vote_id': target_witness['vote_id'],
-				'total_votes': target_witness['total_votes'],
-				'url': target_witness['url'],
-				'total_missed': target_witness['total_missed'],
-				'last_confirmed_block_num': target_witness['last_confirmed_block_num'],
-				'witness_name': witness_name,
-				'valid_witness': True,
-				'valid_key': True,
-				'took': float(hug_timer)}
+		target_account = Account(target_witness['witness_account'])
+		witness_account_data = []
+		witness_account_data.append({'id': target_account['id'],
+							'membership_expiration_date': target_account['membership_expiration_date'],
+							'registrar': target_account['registrar'],
+							'referrer': target_account['referrer'],
+							'lifetime_referrer': target_account['lifetime_referrer'],
+							'network_fee_percentage': target_account['network_fee_percentage'],
+							'lifetime_referrer_fee_percentage': target_account['lifetime_referrer_fee_percentage'],
+							'referrer_rewards_percentage': target_account['referrer_rewards_percentage'],
+							'name': target_account['name'],
+							'owner': target_account['owner'],
+							'active': target_account['active'],
+							'options': target_account['options'],
+							'statistics': target_account['statistics'],
+							'whitelisting_accounts': target_account['whitelisting_accounts'],
+							'blacklisting_accounts': target_account['blacklisting_accounts'],
+							'whitelisted_accounts': target_account['whitelisted_accounts'],
+							'blacklisted_accounts': target_account['blacklisted_accounts'],
+							'cashback_vb': target_account['cashback_vb'],
+							'owner_special_authority': target_account['owner_special_authority'],
+							'active_special_authority': target_account['active_special_authority'],
+							'top_n_control_flags': target_account['top_n_control_flags']})
+
+		# Checking the existence of the pay_vb indicates whether the found witness is active (voted into power).
+		try:
+		  pay_vb = target_witness['pay_vb']
+		except:
+		  pay_vb = None
+
+		if pay_vb is not None:
+			return {'id': target_witness['id'],
+					'witness_account': target_witness['witness_account'],
+					'witness_account_data': witness_account_data,
+					'last_aslot': target_witness['last_aslot'],
+					'signing_key': target_witness['signing_key'],
+					'pay_vb': pay_vb,
+					'vote_id': target_witness['vote_id'],
+					'total_votes': target_witness['total_votes'],
+					'url': target_witness['url'],
+					'total_missed': target_witness['total_missed'],
+					'last_confirmed_block_num': target_witness['last_confirmed_block_num'],
+					'witness_name': witness_name,
+					'active_witness': True,
+					'valid_witness': True,
+					'valid_key': True,
+					'took': float(hug_timer)}
+		else:
+			return {'id': target_witness['id'],
+					'witness_account': target_witness['witness_account'],
+					'witness_account_data': witness_account_data,
+					'last_aslot': target_witness['last_aslot'],
+					'signing_key': target_witness['signing_key'],
+					'vote_id': target_witness['vote_id'],
+					'total_votes': target_witness['total_votes'],
+					'url': target_witness['url'],
+					'total_missed': target_witness['total_missed'],
+					'last_confirmed_block_num': target_witness['last_confirmed_block_num'],
+					'witness_name': witness_name,
+					'active_witness': False,
+					'valid_witness': True,
+					'valid_key': True,
+					'took': float(hug_timer)}
 	else:
 	# API KEY INVALID!
 		return {'valid_key': False,
 				'took': float(hug_timer)}
 
-@hug.get(examples='witness_name=blockchained&api_key=API_KEY')
-def list_of_witnesses(witness_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
-	"""Given a valid witness name, output witness data in JSON."""
+@hug.get(examples='api_key=API_KEY')
+def list_of_witnesses(api_key: hug.types.text, hug_timer=5):
+	"""Output the list of active witnesses in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
 
 		list_of_witnesses = Witnesses()
 
 		witness_data = []
-		for witness in list_of_accounts:
-			witness_data.append({'id': witness_data['id'],
-							     'witness_account': witness_data['witness_account'],
-								 'last_aslot': witness_data['last_aslot'],
-								 'signing_key': witness_data['signing_key'],
-								 'pay_vb': witness_data['pay_vb'],
-								 'vote_id': witness_data['vote_id'],
-								 'total_votes': witness_data['total_votes'],
-								 'url': witness_data['url'],
-								 'total_missed': witness_data['total_missed'],
-								 'last_confirmed_block_num': witness_data['last_confirmed_block_num']
+		for witness in list_of_witnesses:
+			target_account = Account(witness['witness_account'])
+			witness_account_data = []
+			witness_account_data.append({'id': target_account['id'],
+								'membership_expiration_date': target_account['membership_expiration_date'],
+								'registrar': target_account['registrar'],
+								'referrer': target_account['referrer'],
+								'lifetime_referrer': target_account['lifetime_referrer'],
+								'network_fee_percentage': target_account['network_fee_percentage'],
+								'lifetime_referrer_fee_percentage': target_account['lifetime_referrer_fee_percentage'],
+								'referrer_rewards_percentage': target_account['referrer_rewards_percentage'],
+								'name': target_account['name'],
+								'owner': target_account['owner'],
+								'active': target_account['active'],
+								'options': target_account['options'],
+								'statistics': target_account['statistics'],
+								'whitelisting_accounts': target_account['whitelisting_accounts'],
+								'blacklisting_accounts': target_account['blacklisting_accounts'],
+								'whitelisted_accounts': target_account['whitelisted_accounts'],
+								'blacklisted_accounts': target_account['blacklisted_accounts'],
+								'cashback_vb': target_account['cashback_vb'],
+								'owner_special_authority': target_account['owner_special_authority'],
+								'active_special_authority': target_account['active_special_authority'],
+								'top_n_control_flags': target_account['top_n_control_flags']})
+
+			witness_data.append({'id': witness['id'],
+								 'witness_account': witness['witness_account'],
+								 'witness_account_data': witness_account_data,
+								 'last_aslot': witness['last_aslot'],
+								 'signing_key': witness['signing_key'],
+								 'pay_vb': witness['pay_vb'],
+								 'vote_id': witness['vote_id'],
+								 'total_votes': witness['total_votes'],
+								 'url': witness['url'],
+								 'total_missed': witness['total_missed'],
+								 'last_confirmed_block_num': witness['last_confirmed_block_num']
 								})
 
 		return {'witnesses': witness_data,

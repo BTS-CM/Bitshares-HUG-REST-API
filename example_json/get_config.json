@@ -1,0 +1,341 @@
+{
+  "chain_config": {
+    "id": "2.0.0",
+    "parameters": {
+      "current_fees": {
+        "parameters": [
+          [
+            0,
+            {
+              "fee": 21851,
+              "price_per_kbyte": 12139
+            }
+          ],
+          [
+            1,
+            {
+              "fee": 1213
+            }
+          ],
+          [
+            2,
+            {
+              "fee": 121
+            }
+          ],
+          [
+            3,
+            {
+              "fee": 1213
+            }
+          ],
+          [
+            4,
+            {}
+          ],
+          [
+            5,
+            {
+              "basic_fee": 121396,
+              "premium_fee": 6069837,
+              "price_per_kbyte": 8497
+            }
+          ],
+          [
+            6,
+            {
+              "fee": 1213,
+              "price_per_kbyte": 8497
+            }
+          ],
+          [
+            7,
+            {
+              "fee": 121396
+            }
+          ],
+          [
+            8,
+            {
+              "membership_annual_fee": "12139675270075",
+              "membership_lifetime_fee": 145676103
+            }
+          ],
+          [
+            9,
+            {
+              "fee": 6069837
+            }
+          ],
+          [
+            10,
+            {
+              "symbol3": "9711740216",
+              "symbol4": 2427935054,
+              "long_symbol": 60698376,
+              "price_per_kbyte": 12139
+            }
+          ],
+          [
+            11,
+            {
+              "fee": 2427935,
+              "price_per_kbyte": 8497
+            }
+          ],
+          [
+            12,
+            {
+              "fee": 6069837
+            }
+          ],
+          [
+            13,
+            {
+              "fee": 6069837
+            }
+          ],
+          [
+            14,
+            {
+              "fee": 21851,
+              "price_per_kbyte": 12139
+            }
+          ],
+          [
+            15,
+            {
+              "fee": 1213
+            }
+          ],
+          [
+            16,
+            {
+              "fee": 606983
+            }
+          ],
+          [
+            17,
+            {
+              "fee": 60698
+            }
+          ],
+          [
+            18,
+            {
+              "fee": 6069837
+            }
+          ],
+          [
+            19,
+            {
+              "fee": 121
+            }
+          ],
+          [
+            20,
+            {
+              "fee": 60698376
+            }
+          ],
+          [
+            21,
+            {
+              "fee": 12139
+            }
+          ],
+          [
+            22,
+            {
+              "fee": 182095,
+              "price_per_kbyte": 60698
+            }
+          ],
+          [
+            23,
+            {
+              "fee": 6069,
+              "price_per_kbyte": 8497
+            }
+          ],
+          [
+            24,
+            {
+              "fee": 0
+            }
+          ],
+          [
+            25,
+            {
+              "fee": 182095
+            }
+          ],
+          [
+            26,
+            {
+              "fee": 12139
+            }
+          ],
+          [
+            27,
+            {
+              "fee": 17481,
+              "price_per_kbyte": 8497
+            }
+          ],
+          [
+            28,
+            {
+              "fee": 0
+            }
+          ],
+          [
+            29,
+            {
+              "fee": 6069837
+            }
+          ],
+          [
+            30,
+            {
+              "fee": 12139675
+            }
+          ],
+          [
+            31,
+            {
+              "fee": 0
+            }
+          ],
+          [
+            32,
+            {
+              "fee": 6069837
+            }
+          ],
+          [
+            33,
+            {
+              "fee": 2427935
+            }
+          ],
+          [
+            34,
+            {
+              "fee": 60698376
+            }
+          ],
+          [
+            35,
+            {
+              "fee": 12139,
+              "price_per_kbyte": 60698
+            }
+          ],
+          [
+            36,
+            {
+              "fee": 606983
+            }
+          ],
+          [
+            37,
+            {}
+          ],
+          [
+            38,
+            {
+              "fee": 1213967,
+              "price_per_kbyte": 8497
+            }
+          ],
+          [
+            39,
+            {
+              "fee": 254933,
+              "price_per_output": 84977
+            }
+          ],
+          [
+            41,
+            {
+              "fee": 254933
+            }
+          ],
+          [
+            43,
+            {
+              "fee": 1213967
+            }
+          ]
+        ],
+        "scale": 10000
+      },
+      "block_interval": 3,
+      "maintenance_interval": 3600,
+      "maintenance_skip_slots": 3,
+      "committee_proposal_review_period": 3600,
+      "maximum_transaction_size": 98304,
+      "maximum_block_size": 2000000,
+      "maximum_time_until_expiration": 86400,
+      "maximum_proposal_lifetime": 2419200,
+      "maximum_asset_whitelist_authorities": 10,
+      "maximum_asset_feed_publishers": 10,
+      "maximum_witness_count": 1001,
+      "maximum_committee_count": 1001,
+      "maximum_authority_membership": 10,
+      "reserve_percent_of_fee": 2000,
+      "network_percent_of_fee": 2000,
+      "lifetime_referrer_percent_of_fee": 3000,
+      "cashback_vesting_period_seconds": 7776000,
+      "cashback_vesting_threshold": 10000000,
+      "count_non_member_votes": true,
+      "allow_non_member_whitelists": false,
+      "witness_pay_per_block": 100000,
+      "worker_budget_per_day": "50000000000",
+      "max_predicate_opcode": 1,
+      "fee_liquidation_threshold": 10000000,
+      "accounts_per_fee_scale": 1000,
+      "account_fee_scale_bitshifts": 0,
+      "max_authority_depth": 2,
+      "extensions": []
+    },
+    "next_available_vote_id": 281,
+    "active_committee_members": [
+      "1.5.15",
+      "1.5.25",
+      "1.5.33",
+      "1.5.27",
+      "1.5.16",
+      "1.5.17",
+      "1.5.20",
+      "1.5.30",
+      "1.5.13",
+      "1.5.23",
+      "1.5.28"
+    ],
+    "active_witnesses": [
+      "1.6.17",
+      "1.6.18",
+      "1.6.20",
+      "1.6.22",
+      "1.6.28",
+      "1.6.34",
+      "1.6.35",
+      "1.6.45",
+      "1.6.59",
+      "1.6.63",
+      "1.6.64",
+      "1.6.65",
+      "1.6.69",
+      "1.6.71",
+      "1.6.73",
+      "1.6.74",
+      "1.6.75",
+      "1.6.76",
+      "1.6.84"
+    ]
+  },
+  "valid_key": true,
+  "took": 0.36879
+}
