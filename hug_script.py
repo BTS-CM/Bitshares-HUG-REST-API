@@ -135,6 +135,54 @@ def get_network(api_key: hug.types.text, hug_timer=5):
 		return {'valid_key': False,
 				'took': float(hug_timer)}
 
+@hug.get(examples='block_number=50&api_key=API_KEY')
+def get_block_details(block_number: hug.types.number, api_key: hug.types.text, hug_timer=5):
+	"""Retrieve a specific block's details (date & time) & output in JSON!"""
+	if (check_api_token(api_key) == True): # Check the api key
+	# API KEY VALID
+		if (block_number > 0):
+			chain = Blockchain()
+			block_date = chain.block_time(block_number)
+			block_timestamp = chain.block_timestamp(block_number)
+
+			return {'block_date': block_date,
+					'block_timestamp': block_timestamp,
+					'block_number': block_number,
+					'valid_block_number': True,
+					'valid_key': True,
+					'took': float(hug_timer)}
+		else:
+			return {'valid_block_number': False,
+					'valid_key': True,
+					'took': float(hug_timer)}
+	else:
+	# API KEY INVALID!
+		return {'valid_key': False,
+				'took': float(hug_timer)}
+
+@hug.get(examples='api_key=API_KEY')
+def get_latest_block(api_key: hug.types.text, hug_timer=5):
+	"""Retrieve the latest block's details (date & time) & output in JSON!"""
+	if (check_api_token(api_key) == True): # Check the api key
+	# API KEY VALID
+		chain = Blockchain()
+		current_block_number = chain.get_current_block_num()
+		block_date = chain.block_time(current_block_number)
+		block_timestamp = chain.block_timestamp(current_block_number)
+
+		return {'block_date': block_date,
+				'block_timestamp': block_timestamp,
+				'block_number': current_block_number,
+				'valid_block_number': True,
+				'valid_key': True,
+				'took': float(hug_timer)}
+	else:
+	# API KEY INVALID!
+		return {'valid_key': False,
+				'took': float(hug_timer)}
+
+##################
+
 @hug.get(examples='api_key=API_KEY')
 def get_all_accounts(api_key: hug.types.text, hug_timer=5):
 	"""Retrieve all Bitshares account names. Takes a while!"""

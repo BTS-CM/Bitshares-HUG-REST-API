@@ -42,19 +42,3 @@ def specific_market_trade_history(market_pair: hug.types.text, tx_limit: hug.typ
 	# API KEY INVALID!
 		return {'valid_key': False,
 				'took': float(hug_timer)}
-
-######################################################
-
-@hug.get(examples='api_key=API_KEY')
-def list_fees(api_key: hug.types.text, hug_timer=5):
-	"""Output the current Bitshares network fees in JSON."""
-	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
-
-		return {'current_fees': Dex().returnFees(),
-				'valid_key': True,
-				'took': float(hug_timer)}
-	else:
-	# API KEY INVALID!
-		return {'valid_key': False,
-				'took': float(hug_timer)}

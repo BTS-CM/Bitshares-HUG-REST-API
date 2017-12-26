@@ -12,9 +12,11 @@ This HUG REST API makes heavy use of the [python-bitshares]()
 
 ## TODO
 
-    Improve the NGINX & Gunicorn configurations.
+    Improve the NGINX & Gunicorn configurations
     Implement additional HUG functions.
     Work on ./WIP.py - Difficult broken code staging file.
+    Use [websocketrpc](http://docs.pybitshares.com/en/latest/websocketrpc.html) to expose additional functionality (worker proposal, item search (committee info & worker proposal lists)) to HUG.
+    Correctly handle 'datetime' user input for ranges of data requests (E.g. TX history between Feb & Mar 2017).
 
 ## Future usage plans
 
@@ -48,6 +50,14 @@ PDF Docs: https://media.readthedocs.org/pdf/python-bitshares/latest/python-bitsh
 > hug has been built from the ground up with performance in mind. It is built to consume resources only when necessary and is then compiled with Cython to achieve amazing performance. As a result, hug consistently benchmarks as one of the fastest Python frameworks and without question takes the crown as the fastest high-level framework for Python 3.
 >
 > Source: [Official website](http://www.hug.rest/).
+
+### About: Extensibility
+
+If your HUG functions takes a long time to compute, then you must account for NGINX & Gunicorn worker timeouts (both the systemctl service file & the 'default' NGINX sites-available file). If you fail to account for this, the user will experience unhandled timeouts.
+
+Since HUG utilizes Python, any Python library can be used to process/manipulate Bitshares data.
+
+Ideally, rather than over-scraping data we should cache it or limit scraping functions to large batches (1000 instead of 500k etc).
 
 ---
 
@@ -272,6 +282,48 @@ Usage: `https://subdomain.domain.tld/get_config?api_key=API_KEY`
 
 #### [Example JSON output](./example_json/get_config.json)
 
+### get_block_details
+
+Retrieve the specified block's date/time details, return in JSON.
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_block_details?api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/get_block_details?api_key=API_KEY`
+
+#### Example JSON output
+
+```
+{
+  "block_date": "2015-10-13T14:13:00",
+  "block_timestamp": 1444745580,
+  "block_number": 10,
+  "valid_block_number": true,
+  "valid_key": true,
+  "took": 0.05997
+}
+```
+
+### get_latest_block
+
+Retrieve the details of the latest block, return in JSON.
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_latest_block?api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/get_latest_block?api_key=API_KEY`
+
+#### Example JSON Output
+
+```
+{
+  "block_date": "2017-12-26T23:54:03",
+  "block_timestamp": 1514332443,
+  "block_number": 22999590,
+  "valid_block_number": true,
+  "valid_key": true,
+  "took": 0.14057
+}
+```
+
 ### get_all_accounts
 
 Retrieve all Bitshares account names. Takes a while!
@@ -399,7 +451,7 @@ Usage: `https://subdomain.domain.tld/list_fees?api_key=API_KEY`
 
 ## Market information functions
 
-More info: [python-bitshares docs]()
+More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/market.html)
 
 ### market_ticker
 
