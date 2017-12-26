@@ -1,0 +1,142 @@
+{
+  "transfer": {
+    "fee": 0.21851,
+    "price_per_kbyte": 0.12139
+  },
+  "limit_order_create": {
+    "fee": 0.01213
+  },
+  "limit_order_cancel": {
+    "fee": 0.00121
+  },
+  "call_order_update": {
+    "fee": 0.01213
+  },
+  "fill_order": {},
+  "account_create": {
+    "basic_fee": 1.21396,
+    "premium_fee": 60.69837,
+    "price_per_kbyte": 0.08497
+  },
+  "account_update": {
+    "fee": 0.01213,
+    "price_per_kbyte": 0.08497
+  },
+  "account_whitelist": {
+    "fee": 1.21396
+  },
+  "account_upgrade": {
+    "membership_annual_fee": 121396752.70075,
+    "membership_lifetime_fee": 1456.76103
+  },
+  "account_transfer": {
+    "fee": 60.69837
+  },
+  "asset_create": {
+    "symbol3": 97117.40216,
+    "symbol4": 24279.35054,
+    "long_symbol": 606.98376,
+    "price_per_kbyte": 0.12139
+  },
+  "asset_update": {
+    "fee": 24.27935,
+    "price_per_kbyte": 0.08497
+  },
+  "asset_update_bitasset": {
+    "fee": 60.69837
+  },
+  "asset_update_feed_producers": {
+    "fee": 60.69837
+  },
+  "asset_issue": {
+    "fee": 0.21851,
+    "price_per_kbyte": 0.12139
+  },
+  "asset_reserve": {
+    "fee": 0.01213
+  },
+  "asset_fund_fee_pool": {
+    "fee": 6.06983
+  },
+  "asset_settle": {
+    "fee": 0.60698
+  },
+  "asset_global_settle": {
+    "fee": 60.69837
+  },
+  "asset_publish_feed": {
+    "fee": 0.00121
+  },
+  "witness_create": {
+    "fee": 606.98376
+  },
+  "witness_update": {
+    "fee": 0.12139
+  },
+  "proposal_create": {
+    "fee": 1.82095,
+    "price_per_kbyte": 0.60698
+  },
+  "proposal_update": {
+    "fee": 0.06069,
+    "price_per_kbyte": 0.08497
+  },
+  "proposal_delete": {
+    "fee": 0
+  },
+  "withdraw_permission_create": {
+    "fee": 1.82095
+  },
+  "withdraw_permission_update": {
+    "fee": 0.12139
+  },
+  "withdraw_permission_claim": {
+    "fee": 0.17481,
+    "price_per_kbyte": 0.08497
+  },
+  "withdraw_permission_delete": {
+    "fee": 0
+  },
+  "committee_member_create": {
+    "fee": 60.69837
+  },
+  "committee_member_update": {
+    "fee": 121.39675
+  },
+  "committee_member_update_global_parameters": {
+    "fee": 0
+  },
+  "vesting_balance_create": {
+    "fee": 60.69837
+  },
+  "vesting_balance_withdraw": {
+    "fee": 24.27935
+  },
+  "worker_create": {
+    "fee": 606.98376
+  },
+  "custom": {
+    "fee": 0.12139,
+    "price_per_kbyte": 0.60698
+  },
+  "assert": {
+    "fee": 6.06983
+  },
+  "balance_claim": {},
+  "override_transfer": {
+    "fee": 12.13967,
+    "price_per_kbyte": 0.08497
+  },
+  "transfer_to_blind": {
+    "fee": 2.54933,
+    "price_per_output": 0.84977
+  },
+  "transfer_from_blind": {
+    "fee": 2.54933
+  },
+  "asset_claim_fees": {
+    "fee": 12.13967
+  },
+  "valid_key": true,
+  "took": 0.02124
+}

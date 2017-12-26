@@ -153,7 +153,9 @@ More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/blockch
 
 A high level overview of the Bitshares chain information.
 
-Usage: `website/chain_info?&api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/chain_info?&api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/chain_info?&api_key=API_KEY`
 
 #### Example JSON output
 
@@ -182,7 +184,9 @@ Usage: `website/chain_info?&api_key=API_KEY`
 
 Get chain properties, return in JSON.
 
-Usage: `website/get_chain_properties?api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/get_chain_properties?api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/get_chain_properties?api_key=API_KEY`
 
 #### Example JSON output
 
@@ -207,7 +211,9 @@ Usage: `website/get_chain_properties?api_key=API_KEY`
 
 Return BTS network information in JSON.
 
-Usage: `website/get_network?api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/get_network?api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/get_network?api_key=API_KEY`
 
 #### Example JSON output
 
@@ -227,7 +233,9 @@ Usage: `website/get_network?api_key=API_KEY`
 
 This call returns the dynamic global properties in JSON.
 
-Usage: `website/get_info?api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/get_info?api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/get_info?api_key=API_KEY`
 
 #### Example JSON output
 
@@ -258,7 +266,9 @@ Usage: `website/get_info?api_key=API_KEY`
 
 Returns object 2.0.0 in JSON.
 
-Usage: `website/get_config?api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/get_config?api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/get_config?api_key=API_KEY`
 
 #### [Example JSON output](./example_json/get_config.json)
 
@@ -266,7 +276,9 @@ Usage: `website/get_config?api_key=API_KEY`
 
 Retrieve all Bitshares account names. Takes a while!
 
-Usage: `website/get_all_accounts?api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/get_all_accounts?api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/get_all_accounts?api_key=API_KEY`
 
 #### Example JSON output
 
@@ -287,7 +299,9 @@ More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/account
 
 Given a valid account name, output the user's balances in JSON.
 
-Usage: `website/account_balances?account=example_usera&api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/account_balances?account=example_usera&api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/account_balances?account=example_usera&api_key=API_KEY`
 
 #### Example JSON output
 
@@ -310,7 +324,9 @@ Note: 'balances' has been concatenated to save space in this example.
 
 Given a valid account name, output the user's open orders in JSON.
 
-Usage: `website/account_open_orders?account=example_usera&api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/account_open_orders?account=example_usera&api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/account_open_orders?account=example_usera&api_key=API_KEY`
 
 #### Example JSON output
 
@@ -331,7 +347,9 @@ Given a valid account name, output the user's call positions in JSON.
 
 Note: Highly verbose! Example contains 26k lines of JSON!
 
-Usage: `website/account_callpositions?account=example_usera&api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/account_callpositions?account=example_usera&api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/account_callpositions?account=example_usera&api_key=API_KEY`
 
 #### [Example JSON output](./example_json/account_callposition.json)
 
@@ -339,7 +357,9 @@ Usage: `website/account_callpositions?account=example_usera&api_key=API_KEY`
 
 Given a valid account name and transaction history limit (int), output the user's transaction history in JSON.
 
-Usage: `website/account_history?account=example_user&tx_limit=10&api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/account_history?account=example_user&tx_limit=10&api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/account_history?account=example_user&tx_limit=10&api_key=API_KEY`
 
 #### [Example JSON output](./example_json/account_history.json)
 
@@ -347,7 +367,9 @@ Usage: `website/account_history?account=example_user&tx_limit=10&api_key=API_KEY
 
 Given a valid account name, check if the user has LTM.
 
-Usage: `website/account_is_ltm?account=example_user&api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/account_is_ltm?account=example_user&api_key=123abc`
+
+Usage: `https://subdomain.domain.tld/account_is_ltm?account=example_user&api_key=API_KEY`
 
 #### Example JSON output
 
@@ -361,6 +383,20 @@ Usage: `website/account_is_ltm?account=example_user&api_key=API_KEY`
 }
 ```
 
+## DEX functions
+
+More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/dex.html)
+
+### list_fees
+
+Retrieve the currently implemented fees in JSON format.
+
+#### [Run Command](https://btsapi.grcnode.co.uk/list_fees?api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/list_fees?api_key=API_KEY`
+
+#### [Example JSON output](./example_json/list_fees.json)
+
 ## Market information functions
 
 More info: [python-bitshares docs]()
@@ -369,13 +405,19 @@ More info: [python-bitshares docs]()
 
 Given a valid market pair (e.g. USD:BTS), output the market pair's ticker information in JSON.
 
+#### [Run Command](https://btsapi.grcnode.co.uk/market_ticker?market_pair=USD:BTS&api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/market_ticker?market_pair=USD:BTS&api_key=API_KEY`
+
 #### [Example JSON output](./example_json/market_ticker.json)
 
 ### market_orderbook
 
 Given a valid market pair (e.g. USD:BTS) and your desired orderbook size limit, output the market pair's orderbook (buy/sell order) information in JSON.
 
-Usage: `website/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=API_KEY`
 
 #### [Example JSON output](./example_json/market_orderbook.json)
 
@@ -383,7 +425,9 @@ Usage: `website/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=
 
 Given a valid market_pair (e.g. USD:BTS), output their 24hr market volume in JSON.
 
-Usage: `website/market_24hr_vol?market_pair=USD:BTS&api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/market_24hr_vol?market_pair=USD:BTS&api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/market_24hr_vol?market_pair=USD:BTS&api_key=API_KEY`
 
 #### [Example JSON output](./example_json/market_24hr_vol.json)
 
@@ -391,7 +435,9 @@ Usage: `website/market_24hr_vol?market_pair=USD:BTS&api_key=API_KEY`
 
 Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the market's trade history in JSON.
 
-Usage: `website/market_trade_history?market_pair=USD:BTS&tx_limit=10&api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/market_trade_history?market_pair=USD:BTS&tx_limit=10&api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/market_trade_history?market_pair=USD:BTS&tx_limit=10&api_key=API_KEY`
 
 #### Example JSON output
 
@@ -429,7 +475,9 @@ More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/witness
 
 Find details about a specific witness.
 
-Usage: `website/find_witness?witness_name=blockchained&api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/find_witness?witness_name=blockchained&api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/find_witness?witness_name=blockchained&api_key=API_KEY`
 
 #### [Example JSON output](./example_json/find_witness.json)
 
@@ -437,23 +485,15 @@ Usage: `website/find_witness?witness_name=blockchained&api_key=API_KEY`
 
 Retrieve a list of available witnesses.
 
-Usage: `website/list_of_witnesses?api_key=API_KEY`
+#### [Run Command](https://btsapi.grcnode.co.uk/list_of_witnesses?api_key=123abc)
+
+Usage: `https://subdomain.domain.tld/list_of_witnesses?api_key=API_KEY`
 
 #### [Example JSON output](./example_json/list_of_witnesses.json)
 
 ---
 
 # TODO
-
-## DEX functions
-
-More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/dex.html)
-
-### list_fees
-
-Retrieve the currently implemented fees in JSON format.
-
-#### Roadblock: [Issue #28 - "Dex.returnFees() returns invalid JSON?"](https://github.com/xeroc/python-bitshares/issues/28)
 
 ## Worker Proposal functions
 

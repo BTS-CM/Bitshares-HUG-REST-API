@@ -1,18 +1,38 @@
 # Required for rest of hug scripts
 import bitshares
+from bitshares import BitShares
 from bitshares.account import Account
 from bitshares.amount import Amount
 from bitshares.asset import Asset
 from bitshares.blockchain import Blockchain
+from bitshares.dex import Dex
 from bitshares.market import Market
 from bitshares.witness import Witness # Retrieving 1
 from bitshares.witness import Witnesses # Listing many
 from bitshares.proposal import Proposal # Retrieving 1
 from bitshares.proposal import Proposals # Listing many
 from bitshares.instance import shared_bitshares_instance # Used to reduce bitshares instance load
+from bitshares.instance import set_shared_bitshares_instance # Used to reduce bitshares instance load
 import hug
 
-# uptick set node <host>  # THIS CHANGES THE WSS NODE!
+# Configure Full/API node for querying network info
+# Only enable ONE of the following API nodes!
+bitshares_full_node = BitShares(
+	#"wss://singapore.bitshares.apasia.tech/ws", # Singapore. Telegram: @murda_ra
+	#"wss://japan.bitshares.apasia.tech/ws", # Tokyo, Japan. Telegram: @murda_ra
+	#"wss://seattle.bitshares.apasia.tech/ws", # Seattle, WA, USA. Telegram: @murda_ra
+	#"wss://us-ny.bitshares.apasia.tech/ws", # New York, NY, USA. Telegram: @murda_ra
+	#"wss://bitshares.apasia.tech/ws", # Bangkok, Thailand. Telegram: @murda_ra
+	#"wss://slovenia.bitshares.apasia.tech/ws", # Slovenia. Telegram: @murda_ra
+	#"wss://openledger.hk/ws", # Hone Kong. Telegram: @ronnyb
+	#"wss://dex.rnglab.org", # Netherlands. Telegram: @naueh
+	"wss://bitshares.openledger.info/ws", # Berlin, Germany. Telegram: @xeroc
+	#"wss://bitshares.crypto.fans/ws", # https://crypto.fans/ Telegram: @startail
+	#"wss://eu.openledger.info/ws", # Nuremberg, Germany. Telegram: @xeroc
+    nobroadcast=False
+)
+set_shared_bitshares_instance(bitshares_full_node)
+# End of node configuration
 
 def check_api_token(api_key):
 	"""Check if the user's API key is valid."""
@@ -613,6 +633,62 @@ def list_of_witnesses(api_key: hug.types.text, hug_timer=5):
 
 		return {'witnesses': witness_data,
 				'witness_count': len(list_of_witnesses),
+				'valid_key': True,
+				'took': float(hug_timer)}
+	else:
+	# API KEY INVALID!
+		return {'valid_key': False,
+				'took': float(hug_timer)}
+
+@hug.get(examples='api_key=API_KEY')
+def list_fees(api_key: hug.types.text, hug_timer=5):
+	"""Output the current Bitshares network fees in JSON."""
+	if (check_api_token(api_key) == True): # Check the api key
+	# API KEY VALID
+		network_fees = Dex().returnFees()
+
+		return {'transfer': network_fees['transfer'],
+				'limit_order_create': network_fees['limit_order_create'],
+				'limit_order_cancel': network_fees['limit_order_cancel'],
+				'call_order_update': network_fees['call_order_update'],
+				'fill_order': network_fees['fill_order'],
+				'account_create': network_fees['account_create'],
+				'account_update': network_fees['account_update'],
+				'account_whitelist': network_fees['account_whitelist'],
+				'account_upgrade': network_fees['account_upgrade'],
+				'account_transfer': network_fees['account_transfer'],
+				'asset_create': network_fees['asset_create'],
+				'asset_update': network_fees['asset_update'],
+				'asset_update_bitasset': network_fees['asset_update_bitasset'],
+				'asset_update_feed_producers': network_fees['asset_update_feed_producers'],
+				'asset_issue': network_fees['asset_issue'],
+				'asset_reserve': network_fees['asset_reserve'],
+				'asset_fund_fee_pool': network_fees['asset_fund_fee_pool'],
+				'asset_settle': network_fees['asset_settle'],
+				'asset_global_settle': network_fees['asset_global_settle'],
+				'asset_publish_feed': network_fees['asset_publish_feed'],
+				'witness_create': network_fees['witness_create'],
+				'witness_update': network_fees['witness_update'],
+				'proposal_create': network_fees['proposal_create'],
+				'proposal_update': network_fees['proposal_update'],
+				'proposal_delete': network_fees['proposal_delete'],
+				'withdraw_permission_create': network_fees['withdraw_permission_create'],
+				'withdraw_permission_update': network_fees['withdraw_permission_update'],
+				'withdraw_permission_claim': network_fees['withdraw_permission_claim'],
+				'withdraw_permission_delete': network_fees['withdraw_permission_delete'],
+				'committee_member_create': network_fees['committee_member_create'],
+				'committee_member_update': network_fees['committee_member_update'],
+				'committee_member_update_global_parameters': network_fees['committee_member_update_global_parameters'],
+				'vesting_balance_create': network_fees['vesting_balance_create'],
+				'vesting_balance_withdraw': network_fees['vesting_balance_withdraw'],
+				'worker_create': network_fees['worker_create'],
+				'custom': network_fees['custom'],
+				'assert': network_fees['assert'],
+				'balance_claim': network_fees['balance_claim'],
+				'override_transfer': network_fees['override_transfer'],
+				'transfer_to_blind': network_fees['transfer_to_blind'],
+				'transfer_from_blind': network_fees['transfer_from_blind'],
+				'asset_claim_fees': network_fees['asset_claim_fees'],
 				'valid_key': True,
 				'took': float(hug_timer)}
 	else:
