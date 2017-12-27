@@ -286,9 +286,9 @@ Usage: `https://subdomain.domain.tld/get_config?api_key=API_KEY`
 
 Retrieve the specified block's date/time details, return in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_block_details?api_key=123abc)
+#### [Run Command](https://btsapi.grcnode.co.uk/get_block_details?block_number=10&api_key=123abc)
 
-Usage: `https://subdomain.domain.tld/get_block_details?api_key=API_KEY`
+Usage: `https://subdomain.domain.tld/get_block_details?block_number=10&api_key=API_KEY`
 
 #### Example JSON output
 
@@ -351,7 +351,7 @@ More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/account
 
 Given a valid account name, output the user's balances in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_balances?account=example_usera&api_key=123abc)
+#### [Run Command](https://btsapi.grcnode.co.uk/account_balances?account_name=xeroc&api_key=123abc)
 
 Usage: `https://subdomain.domain.tld/account_balances?account=example_usera&api_key=API_KEY`
 
@@ -376,7 +376,7 @@ Note: 'balances' has been concatenated to save space in this example.
 
 Given a valid account name, output the user's open orders in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_open_orders?account=example_usera&api_key=123abc)
+#### [Run Command](https://btsapi.grcnode.co.uk/account_open_orders?account=xeroc&api_key=123abc)
 
 Usage: `https://subdomain.domain.tld/account_open_orders?account=example_usera&api_key=API_KEY`
 
@@ -399,7 +399,7 @@ Given a valid account name, output the user's call positions in JSON.
 
 Note: Highly verbose! Example contains 26k lines of JSON!
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_callpositions?account=example_usera&api_key=123abc)
+#### [Run Command](https://btsapi.grcnode.co.uk/account_callpositions?account_name=abit&api_key=123abc)
 
 Usage: `https://subdomain.domain.tld/account_callpositions?account=example_usera&api_key=API_KEY`
 
@@ -409,7 +409,7 @@ Usage: `https://subdomain.domain.tld/account_callpositions?account=example_usera
 
 Given a valid account name and transaction history limit (int), output the user's transaction history in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_history?account=example_user&tx_limit=10&api_key=123abc)
+#### [Run Command](https://btsapi.grcnode.co.uk/account_history?account=xeroc&tx_limit=10&api_key=123abc)
 
 Usage: `https://subdomain.domain.tld/account_history?account=example_user&tx_limit=10&api_key=API_KEY`
 
@@ -419,7 +419,7 @@ Usage: `https://subdomain.domain.tld/account_history?account=example_user&tx_lim
 
 Given a valid account name, check if the user has LTM.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_is_ltm?account=example_user&api_key=123abc`
+#### [Run Command](https://btsapi.grcnode.co.uk/account_is_ltm?account=xeroc&api_key=123abc)
 
 Usage: `https://subdomain.domain.tld/account_is_ltm?account=example_user&api_key=API_KEY`
 
@@ -527,7 +527,7 @@ More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/witness
 
 Find details about a specific witness.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/find_witness?witness_name=blockchained&api_key=123abc)
+#### [Run Command](https://btsapi.grcnode.co.uk/find_witness?witness_name=sc-ol&api_key=123abc)
 
 Usage: `https://subdomain.domain.tld/find_witness?witness_name=blockchained&api_key=API_KEY`
 
