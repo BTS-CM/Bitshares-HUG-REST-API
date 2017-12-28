@@ -8,19 +8,14 @@ The intention of this Bitshares HUG REST API repo is to provide the Bitshares ne
 
 By following the readme, you can easily recreate the API in your own control. Do remember to change the API key and the Bitshares FULL/API node you're connecting to. If you're creating a service which will produce a large amount of traffic, alert the node operator or consider running your own Bitshares node.
 
-This HUG REST API makes heavy use of the [python-bitshares]()
+This HUG REST API makes heavy use of the [python-bitshares](https://github.com/xeroc/python-bitshares)
 
 ## TODO
 
     Improve the NGINX & Gunicorn configurations
     Implement additional HUG functions.
     Work on ./WIP.py - Difficult broken code staging file.
-    Use [websocketrpc](http://docs.pybitshares.com/en/latest/websocketrpc.html) to expose additional functionality (worker proposal, item search (committee info & worker proposal lists)) to HUG.
     Correctly handle 'datetime' user input for ranges of data requests (E.g. TX history between Feb & Mar 2017).
-
-## Future usage plans
-
-Once this API is completed, I'll be looking into creating an open source (MIT Licensed) [Google Assistant](https://developers.google.com/actions/) for Bitshares.
 
 ## License
 
@@ -29,8 +24,6 @@ The contents of this entire repo should be considered MIT licenced.
 ## How to contribute
 
 It's difficult to debug development issues whilst running behind Gunicorn & NGINX, you're best running the HUG REST API directly with HUG during development "hug -f bts_api.py". Note that running HUG directly in this manner should only be performed during development, it is not suitable for exposing directly to the public as a production ready API.
-
-If you want to donate: [Customminer](http://cryptofresh.com/u/customminer)
 
 ### About : Python-Bitshares
 
@@ -164,8 +157,6 @@ More info: [python-bitshares docs](https://python-bitshares.readthedocs.io/en/la
 
 Retrieve basic information about an individual asset & return in JSON!
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_asset?asset_name=USD&api_key=123abc
-
 ##### Parameters
 
 * asset_name `string`
@@ -174,7 +165,27 @@ Retrieve basic information about an individual asset & return in JSON!
 ##### Usage
 `https://subdomain.domain.tld/get_asset?asset_name=USD&api_key=123abc`
 
+#### [Run Command](https://btsapi.grcnode.co.uk/get_asset?asset_name=USD&api_key=123abc)
+
 #### [Example JSON output](./example_json/get_asset.json)
+
+## MISC functions
+
+### get_bts_oject
+
+Request any Bitshares object's high level overview. Does not provide in depth details (ie asset/account/witness/.. details).
+
+[List of possible objects](http://docs.bitshares.org/development/blockchain/objects.html)
+
+##### Parameters
+
+* object_id `2.0.0` (`string`)
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/get_bts_oject?object_id=2.0.0&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_bts_oject?object_id=2.13.1&api_key=123abc)
 
 ## Blockchain functions
 
@@ -442,13 +453,13 @@ Given a valid account name, output the user's open orders in JSON.
 
 ##### Parameters
 
-* account `string`
+* account_name `string`
 * api_key `string`
 
 ##### Usage
-`https://subdomain.domain.tld/account_open_orders?account=example_usera&api_key=API_KEY`
+`https://subdomain.domain.tld/account_open_orders?account_name=example_usera&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_open_orders?account=xeroc&api_key=123abc)
+#### [Run Command](https://btsapi.grcnode.co.uk/account_open_orders?account_name=abit&api_key=123abc)
 
 #### Example JSON output
 
@@ -488,14 +499,14 @@ Given a valid account name and transaction history limit (int), output the user'
 
 ##### Parameters
 
-* account `string`
+* account_name `string`
 * tx_limit `number`
 * api_key `string`
 
 ##### Usage
-`https://subdomain.domain.tld/account_history?account=example_user&tx_limit=10&api_key=API_KEY`
+`https://subdomain.domain.tld/account_history?account_name=example_user&tx_limit=10&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_history?account=xeroc&tx_limit=10&api_key=123abc)
+#### [Run Command](https://btsapi.grcnode.co.uk/account_history?account_name=xeroc&tx_limit=10&api_key=123abc)
 
 #### [Example JSON output](./example_json/account_history.json)
 
@@ -505,13 +516,13 @@ Given a valid account name, check if the user has LTM.
 
 ##### Parameters
 
-* account `string`
+* account_name `string`
 * api_key `string`
 
 ##### Usage
-`https://subdomain.domain.tld/account_is_ltm?account=example_user&api_key=API_KEY`
+`https://subdomain.domain.tld/account_is_ltm?account_name=example_user&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_is_ltm?account=xeroc&api_key=123abc)
+#### [Run Command](https://btsapi.grcnode.co.uk/account_is_ltm?account_name=xeroc&api_key=123abc)
 
 #### Example JSON output
 
@@ -535,8 +546,7 @@ Retrieve the currently implemented fees in JSON format.
 
 ##### Parameters
 
-* list_fees
-* api_key
+* api_key `string`
 
 ##### Usage
 `https://subdomain.domain.tld/list_fees?api_key=API_KEY`
@@ -555,8 +565,8 @@ Given a valid market pair (e.g. USD:BTS), output the market pair's ticker inform
 
 ##### Parameters
 
-* market_pair `ASSET1:ASSET2`
-* api_key
+* market_pair `ASSET1:ASSET2` (`string`)
+* api_key `string`
 
 ##### Usage
 `https://subdomain.domain.tld/market_ticker?market_pair=USD:BTS&api_key=API_KEY`
@@ -572,9 +582,9 @@ Given a valid market pair (e.g. USD:BTS) and your desired orderbook size limit, 
 
 ##### Parameters
 
-* market_pair `ASSET1:ASSET2`
-* orderbook_limit `25`
-* api_key
+* market_pair `ASSET1:ASSET2` (`string`)
+* orderbook_limit `number`
+* api_key `string`
 
 ##### Usage
 `https://subdomain.domain.tld/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=API_KEY`
@@ -590,8 +600,8 @@ Given a valid market_pair (e.g. USD:BTS), output their 24hr market volume in JSO
 ##### Parameters
 
 * market_pair `ASSET1:ASSET2`
-* tx_limit
-* api_key
+* tx_limit `number`
+* api_key `string`
 
 ##### Usage
 `https://subdomain.domain.tld/market_24hr_vol?market_pair=USD:BTS&api_key=API_KEY`
@@ -607,8 +617,8 @@ Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the market's trade
 ##### Parameters
 
 * market_pair `ASSET1:ASSET2`
-* tx_limit
-* api_key
+* tx_limit `number`
+* api_key `string`
 
 ##### Usage
 `https://subdomain.domain.tld/market_trade_history?market_pair=USD:BTS&tx_limit=10&api_key=API_KEY`
@@ -653,8 +663,8 @@ Find details about a specific witness.
 
 ##### Parameters
 
-* witness_name
-* api_key
+* witness_name `string`
+* api_key `string`
 
 ##### Usage
 `https://subdomain.domain.tld/find_witness?witness_name=blockchained&api_key=API_KEY`
@@ -669,7 +679,7 @@ Retrieve a list of available witnesses.
 
 ##### Parameters
 
-* api_key
+* api_key `string`
 
 ##### Usage
 `https://subdomain.domain.tld/list_of_witnesses?api_key=API_KEY`
@@ -703,8 +713,8 @@ Retrieve an individual worker proposal & its associated proposer account details
 
 ##### Parameters:
 
-* worker_id `1.14.x`
-* api_key
+* worker_id `1.14.x` (`string`)
+* api_key `string`
 
 ##### Usage
 `https://subdomain.domain.tld/get_worker?worker_id=1.14.x&api_key=API_KEY`
@@ -719,7 +729,7 @@ Retrieve a list of all worker proposals (including past/inactive) and the worker
 
 ##### Parameters:
 
-* api_key
+* api_key `string`
 
 ##### Usage
 `https://subdomain.domain.tld/get_worker_proposals?api_key=API_KEY`

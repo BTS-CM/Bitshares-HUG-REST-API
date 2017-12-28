@@ -46,7 +46,7 @@ def check_api_token(api_key):
 def request_json(input_data):
 	"""Request JSON data from full node, given request data input.
 	   More info: http://docs.python-requests.org/en/master/"""
-	request_url = full_node_url.replace("wss://", "https://")
+	request_url = full_node_url.replace("wss://", "https://") # Your selected full node must have HTTPS configured properly!
 	requested_data = requests.get(request_url, data=input_data)
 	return requested_data
 
@@ -62,6 +62,69 @@ if request.status_code is not 200:
 valid_request_json = request.json()
 """
 
+def extract_object(input_object):
+	"""Chunk of code to extract the inner JSON from objects.
+	   Required to reduce unneccessary lines in HUG script & improve maintainability."""
+	temp_dict = {}
+	for item in input_object:
+		temp_dict[str(item)] = input_object[item]
+	return temp_dict
+
+@hug.get(examples='object_id=1.2.0&api_key=API_KEY')
+def get_bts_oject(object_id: hug.types.text, api_key: hug.types.text, hug_timer=15):
+	"""Enable retrieving and displaying any BTS object in JSON."""
+	if (check_api_token(api_key) == True): # Check the api key
+		try:
+			retrieved_object = bitshares_full_node.rpc.get_objects([object_id])[0]
+		except:
+			return {'valid_object_id': False,
+					'valid_key': True,
+					'took': float(hug_timer)}
+		if retrieved_object is not None:
+			return {'retrieved_object': retrieved_object,
+					'valid_object_id': True,
+					'valid_key': True,
+					'took': float(hug_timer)}
+		else:
+			return {'valid_object_id': False,
+					'valid_key': True,
+					'took': float(hug_timer)}
+	else:
+	# API KEY INVALID!
+		return {'valid_key': False,
+				'took': float(hug_timer)}
+
+@hug.get(examples='committee_id=1.5.10&api_key=API_KEY')
+def get_committee_member(committee_id: hug.types.text, api_key: hug.types.text, hug_timer=15):
+	"""Retrieve information about a single committee member (inc full account details)!"""
+	if (check_api_token(api_key) == True): # Check the api key
+		try:
+			target_committee_member = bitshares_full_node.rpc.get_objects([committee_id])[0]
+		except:
+			return {'valid_committee_id': False,
+					'valid_key': True,
+					'took': float(hug_timer)}
+
+		target_account = Account(target_committee_member['committee_member_account'], full=True) # Full info!
+		target_account_data = extract_object(target_account)
+
+		active_committee_members = Blockchain().config()['active_committee_members']
+
+		if committee_id in active_committee_members:
+			target_account_data['status'] = True
+		else:
+			target_account_data['status'] = False
+
+		target_committee_member['committee_member_details'] = target_account_data
+
+		return {'committee_member_details': target_committee_member,
+				'valid_key': True,
+				'took': float(hug_timer)}
+	else:
+	# API KEY INVALID!
+		return {'valid_key': False,
+				'took': float(hug_timer)}
+
 @hug.get(examples='api_key=API_KEY')
 def get_committee_members(api_key: hug.types.text, hug_timer=15):
 	"""Get a list of all committee members!"""
@@ -76,6 +139,8 @@ def get_committee_members(api_key: hug.types.text, hug_timer=15):
 				  'valid_key': True,
 				  'took': float(hug_timer)}
 
+		active_committee_members = Blockchain().config()['active_committee_members']
+
 		num_committee_members = num_committee_members_request.json()['result']
 
 		committee_member_list = []
@@ -83,28 +148,10 @@ def get_committee_members(api_key: hug.types.text, hug_timer=15):
 			committee_id = "1.5." + str(member)
 			current_committee_member = bitshares_full_node.rpc.get_objects([committee_id])[0]
 
-			target_account = Account(current_committee_member['committee_member_account'])
-
-			target_account_data = {'registrar': target_account['registrar'],
-									'referrer': target_account['referrer'],
-									'lifetime_referrer': target_account['lifetime_referrer'],
-									'network_fee_percentage': target_account['network_fee_percentage'],
-									'lifetime_referrer_fee_percentage': target_account['lifetime_referrer_fee_percentage'],
-									'referrer_rewards_percentage': target_account['referrer_rewards_percentage'],
-									'name': target_account['name'],
-									'owner': target_account['owner'],
-									'active': target_account['active'],
-									'options': target_account['options'],
-									'statistics': target_account['statistics'],
-									'whitelisting_accounts': target_account['whitelisting_accounts'],
-									'blacklisting_accounts': target_account['blacklisting_accounts'],
-									'whitelisted_accounts': target_account['whitelisted_accounts'],
-									'blacklisted_accounts': target_account['blacklisted_accounts'],
-									'owner_special_authority': target_account['owner_special_authority'],
-									'active_special_authority': target_account['active_special_authority'],
-									'top_n_control_flags': target_account['top_n_control_flags']}
-
-			current_committee_member['committee_member_details'] = target_account_data
+			if committee_id in active_committee_members:
+				current_committee_member['status'] = True
+			else:
+				current_committee_member['status'] = False
 
 			committee_member_list.append(current_committee_member)
 
@@ -118,7 +165,7 @@ def get_committee_members(api_key: hug.types.text, hug_timer=15):
 
 @hug.get(examples='worker_id=1.14.50&api_key=API_KEY')
 def get_worker(worker_id: hug.types.text, api_key: hug.types.text, hug_timer=15):
-	"""Retrieve a specific worker proposal!"""
+	"""Retrieve a specific worker proposal & the details of the worker's account."""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
 		try:
@@ -128,26 +175,9 @@ def get_worker(worker_id: hug.types.text, api_key: hug.types.text, hug_timer=15)
 					'valid_key': True,
 					'took': float(hug_timer)}
 
-		target_account = Account(target_worker['worker_account'])
+		target_account = Account(target_worker['worker_account'], full=True)
 
-		target_account_data = {'registrar': target_account['registrar'],
-								'referrer': target_account['referrer'],
-								'lifetime_referrer': target_account['lifetime_referrer'],
-								'network_fee_percentage': target_account['network_fee_percentage'],
-								'lifetime_referrer_fee_percentage': target_account['lifetime_referrer_fee_percentage'],
-								'referrer_rewards_percentage': target_account['referrer_rewards_percentage'],
-								'name': target_account['name'],
-								'owner': target_account['owner'],
-								'active': target_account['active'],
-								'options': target_account['options'],
-								'statistics': target_account['statistics'],
-								'whitelisting_accounts': target_account['whitelisting_accounts'],
-								'blacklisting_accounts': target_account['blacklisting_accounts'],
-								'whitelisted_accounts': target_account['whitelisted_accounts'],
-								'blacklisted_accounts': target_account['blacklisted_accounts'],
-								'owner_special_authority': target_account['owner_special_authority'],
-								'active_special_authority': target_account['active_special_authority'],
-								'top_n_control_flags': target_account['top_n_control_flags']}
+		target_account_data = extract_object(target_account)
 
 		target_worker['worker_account_details'] = target_account_data
 
@@ -182,25 +212,7 @@ def get_worker_proposals(api_key: hug.types.text, hug_timer=15):
 			current_worker = bitshares_full_node.rpc.get_objects([worker_id])[0]
 
 			target_account = Account(current_worker['worker_account'])
-
-			target_account_data = {'registrar': target_account['registrar'],
-									'referrer': target_account['referrer'],
-									'lifetime_referrer': target_account['lifetime_referrer'],
-									'network_fee_percentage': target_account['network_fee_percentage'],
-									'lifetime_referrer_fee_percentage': target_account['lifetime_referrer_fee_percentage'],
-									'referrer_rewards_percentage': target_account['referrer_rewards_percentage'],
-									'name': target_account['name'],
-									'owner': target_account['owner'],
-									'active': target_account['active'],
-									'options': target_account['options'],
-									'statistics': target_account['statistics'],
-									'whitelisting_accounts': target_account['whitelisting_accounts'],
-									'blacklisting_accounts': target_account['blacklisting_accounts'],
-									'whitelisted_accounts': target_account['whitelisted_accounts'],
-									'blacklisted_accounts': target_account['blacklisted_accounts'],
-									'owner_special_authority': target_account['owner_special_authority'],
-									'active_special_authority': target_account['active_special_authority'],
-									'top_n_control_flags': target_account['top_n_control_flags']}
+			target_account_data = extract_object(target_account)
 
 			current_worker['worker_account_details'] = target_account_data
 
@@ -232,36 +244,12 @@ def get_asset(asset_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
 		except:
 		  bitasset_data = None
 
-		if bitasset_data is not None:
-			return {'id': target_asset['id'],
-					'symbol': target_asset['symbol'],
-					'precision': target_asset['precision'],
-					'issuer': target_asset['issuer'],
-					'options': target_asset['options'],
-					'dynamic_asset_data_id': target_asset['dynamic_asset_data_id'],
-					'dynamic_asset_data': target_asset['dynamic_asset_data'],
-					'bitasset_data_id': target_asset['bitasset_data_id'],
-					'bitasset_data': target_asset['bitasset_data'],
-					'permissions': target_asset['permissions'],
-					'flags': target_asset['flags'],
-					'description': target_asset['description'],
-					'valid_asset': True,
-					'valid_key': True,
-					'took': float(hug_timer)}
-		else:
-			return {'id': target_asset['id'],
-					'symbol': target_asset['symbol'],
-					'precision': target_asset['precision'],
-					'issuer': target_asset['issuer'],
-					'options': target_asset['options'],
-					'dynamic_asset_data_id': target_asset['dynamic_asset_data_id'],
-					'dynamic_asset_data': target_asset['dynamic_asset_data'],
-					'permissions': target_asset['permissions'],
-					'flags': target_asset['flags'],
-					'description': target_asset['description'],
-					'valid_asset': True,
-					'valid_key': True,
-					'took': float(hug_timer)}
+		extracted_object = extract_object(target_asset)
+
+		return {'asset_data': extracted_object,
+				'valid_asset': True,
+				'valid_key': True,
+				'took': float(hug_timer)}
 	else:
 	# API KEY INVALID!
 		return {'valid_key': False,
@@ -276,20 +264,9 @@ def chain_info(api_key: hug.types.text, hug_timer=5):
 		chain = Blockchain()
 		chain_info = chain.info()
 
-		return {'id': chain_info['id'],
-				'head_block_number': chain_info['head_block_number'],
-				'head_block_id': chain_info['head_block_id'],
-				'time': chain_info['time'],
-				'current_witness': chain_info['current_witness'],
-				'next_maintenance_time': chain_info['next_maintenance_time'],
-				'last_budget_time': chain_info['last_budget_time'],
-				'witness_budget': chain_info['witness_budget'],
-				'accounts_registered_this_interval': chain_info['accounts_registered_this_interval'],
-				'recently_missed_count': chain_info['recently_missed_count'],
-				'current_aslot': chain_info['current_aslot'],
-				'recent_slots_filled': chain_info['recent_slots_filled'],
-				'dynamic_flags': chain_info['dynamic_flags'],
-				'last_irreversible_block_num': chain_info['last_irreversible_block_num'],
+		extracted_object = extract_object(chain_info)
+
+		return {'chain_info': extracted_object,
 				'valid_key': True,
 				'took': float(hug_timer)}
 	else:
@@ -459,28 +436,9 @@ def account_info(account_name: hug.types.text, api_key: hug.types.text, hug_time
 			  'valid_key': True,
 			  'took': float(hug_timer)}
 
-	return {'id': target_account['id'],
-			'membership_expiration_date': target_account['membership_expiration_date'],
-			'registrar': target_account['registrar'],
-			'referrer': target_account['referrer'],
-			'lifetime_referrer': target_account['lifetime_referrer'],
-			'network_fee_percentage': target_account['network_fee_percentage'],
-			'lifetime_referrer_fee_percentage': target_account['lifetime_referrer_fee_percentage'],
-			'referrer_rewards_percentage': target_account['referrer_rewards_percentage'],
-			'name': target_account['name'],
-			'owner': target_account['owner'],
-			'active': target_account['active'],
-			'options': target_account['options'],
-			'statistics': target_account['statistics'],
-			'whitelisting_accounts': target_account['whitelisting_accounts'],
-			'blacklisting_accounts': target_account['blacklisting_accounts'],
-			'whitelisted_accounts': target_account['whitelisted_accounts'],
-			'blacklisted_accounts': target_account['blacklisted_accounts'],
-			'cashback_vb': target_account['cashback_vb'],
-			'owner_special_authority': target_account['owner_special_authority'],
-			'active_special_authority': target_account['active_special_authority'],
-			'top_n_control_flags': target_account['top_n_control_flags'],
-			'account': account_name,
+	extracted_object = extract_object(target_account)
+
+	return {'account_info': extracted_object,
 			'valid_key': True,
 			'took': float(hug_timer)}
 
@@ -495,41 +453,9 @@ def full_account_info(account_name: hug.types.text, api_key: hug.types.text, hug
 			  'valid_key': True,
 			  'took': float(hug_timer)}
 
-	return {'id': target_account['id'],
-			'membership_expiration_date': target_account['membership_expiration_date'],
-			'registrar': target_account['registrar'],
-			'referrer': target_account['referrer'],
-			'lifetime_referrer': target_account['lifetime_referrer'],
-			'network_fee_percentage': target_account['network_fee_percentage'],
-			'lifetime_referrer_fee_percentage': target_account['lifetime_referrer_fee_percentage'],
-			'referrer_rewards_percentage': target_account['referrer_rewards_percentage'],
-			'name': target_account['name'],
-			'owner': target_account['owner'],
-			'active': target_account['active'],
-			'options': target_account['options'],
-			'statistics': target_account['statistics'],
-			'whitelisting_accounts': target_account['whitelisting_accounts'],
-			'blacklisting_accounts': target_account['blacklisting_accounts'],
-			'whitelisted_accounts': target_account['whitelisted_accounts'],
-			'blacklisted_accounts': target_account['blacklisted_accounts'],
-			'cashback_vb': target_account['cashback_vb'],
-			'owner_special_authority': target_account['owner_special_authority'],
-			'active_special_authority': target_account['active_special_authority'],
-			'top_n_control_flags': target_account['top_n_control_flags'],
-			'registrar_name': target_account['registrar_name'],
-			'referrer_name': target_account['referrer_name'],
-			'lifetime_referrer_name': target_account['lifetime_referrer_name'],
-			'votes': target_account['votes'],
-			'cashback_balance': target_account['cashback_balance'],
-			'balances': target_account['balances'],
-			'vesting_balances': target_account['vesting_balances'],
-			'limit_orders': target_account['limit_orders'],
-			'call_orders': target_account['call_orders'],
-			'settle_orders': target_account['settle_orders'],
-			'proposals': target_account['proposals'],
-			'assets': target_account['assets'],
-			'withdraws': target_account['withdraws'],
-			'account': account_name,
+	extracted_object = extract_object(target_account)
+
+	return {'full_account_info': extracted_object,
 			'valid_key': True,
 			'took': float(hug_timer)}
 
@@ -540,7 +466,7 @@ def account_balances(account_name: hug.types.text, api_key: hug.types.text, hug_
 	# API KEY VALID
 
 		try:
-		  target_account = Account(account_name)
+		  target_account = Account(account_name, full=True)
 		except:
 		  print("Account doesn't exist.")
 		  return {'valid_account': False,
@@ -550,10 +476,11 @@ def account_balances(account_name: hug.types.text, api_key: hug.types.text, hug_
 
 		target_account_balances = target_account.balances
 		if (len(target_account_balances) > 0):
-			balance_json_list = []
+
+			balance_json_list = {}
 			for balance in target_account_balances:
 			  current_balance_target = Amount(balance)
-			  balance_json_list.append({current_balance_target.symbol: current_balance_target.amount})
+			  balance_json_list[current_balance_target.symbol] = current_balance_target.amount
 
 			return {'balances': balance_json_list,
 					'account_has_balances': True,
@@ -856,69 +783,23 @@ def find_witness(witness_name: hug.types.text, api_key: hug.types.text, hug_time
 				  'valid_key': True,
 				  'took': float(hug_timer)}
 
-		target_account = Account(target_witness['witness_account'])
-		witness_account_data = []
-		witness_account_data.append({'id': target_account['id'],
-							'membership_expiration_date': target_account['membership_expiration_date'],
-							'registrar': target_account['registrar'],
-							'referrer': target_account['referrer'],
-							'lifetime_referrer': target_account['lifetime_referrer'],
-							'network_fee_percentage': target_account['network_fee_percentage'],
-							'lifetime_referrer_fee_percentage': target_account['lifetime_referrer_fee_percentage'],
-							'referrer_rewards_percentage': target_account['referrer_rewards_percentage'],
-							'name': target_account['name'],
-							'owner': target_account['owner'],
-							'active': target_account['active'],
-							'options': target_account['options'],
-							'statistics': target_account['statistics'],
-							'whitelisting_accounts': target_account['whitelisting_accounts'],
-							'blacklisting_accounts': target_account['blacklisting_accounts'],
-							'whitelisted_accounts': target_account['whitelisted_accounts'],
-							'blacklisted_accounts': target_account['blacklisted_accounts'],
-							'cashback_vb': target_account['cashback_vb'],
-							'owner_special_authority': target_account['owner_special_authority'],
-							'active_special_authority': target_account['active_special_authority'],
-							'top_n_control_flags': target_account['top_n_control_flags']})
+		target_account = Account(target_witness['witness_account'], full=True)
+		witness_account_data = extract_object(target_account)
+		witness_role_data = extract_object(target_witness)
 
-		# Checking the existence of the pay_vb indicates whether the found witness is active (voted into power).
-		try:
-		  pay_vb = target_witness['pay_vb']
-		except:
-		  pay_vb = None
+		active_witnesses = Blockchain().config()['active_witnesses']
 
-		if pay_vb is not None:
-			return {'id': target_witness['id'],
-					'witness_account': target_witness['witness_account'],
-					'witness_account_data': witness_account_data,
-					'last_aslot': target_witness['last_aslot'],
-					'signing_key': target_witness['signing_key'],
-					'pay_vb': pay_vb,
-					'vote_id': target_witness['vote_id'],
-					'total_votes': target_witness['total_votes'],
-					'url': target_witness['url'],
-					'total_missed': target_witness['total_missed'],
-					'last_confirmed_block_num': target_witness['last_confirmed_block_num'],
-					'witness_name': witness_name,
-					'active_witness': True,
-					'valid_witness': True,
-					'valid_key': True,
-					'took': float(hug_timer)}
+		if witness_role_data['id'] in active_witnesses:
+			witness_status = True
 		else:
-			return {'id': target_witness['id'],
-					'witness_account': target_witness['witness_account'],
-					'witness_account_data': witness_account_data,
-					'last_aslot': target_witness['last_aslot'],
-					'signing_key': target_witness['signing_key'],
-					'vote_id': target_witness['vote_id'],
-					'total_votes': target_witness['total_votes'],
-					'url': target_witness['url'],
-					'total_missed': target_witness['total_missed'],
-					'last_confirmed_block_num': target_witness['last_confirmed_block_num'],
-					'witness_name': witness_name,
-					'active_witness': False,
-					'valid_witness': True,
-					'valid_key': True,
-					'took': float(hug_timer)}
+			witness_status = False
+
+		return {'witness_role_data': witness_role_data,
+				'witness_account_data': witness_account_data,
+				'active_witness': witness_status,
+				'valid_witness': True,
+				'valid_key': True,
+				'took': float(hug_timer)}
 	else:
 	# API KEY INVALID!
 		return {'valid_key': False,
@@ -935,40 +816,19 @@ def list_of_witnesses(api_key: hug.types.text, hug_timer=5):
 		witness_data = []
 		for witness in list_of_witnesses:
 			target_account = Account(witness['witness_account'])
-			witness_account_data = {'id': target_account['id'],
-								'membership_expiration_date': target_account['membership_expiration_date'],
-								'registrar': target_account['registrar'],
-								'referrer': target_account['referrer'],
-								'lifetime_referrer': target_account['lifetime_referrer'],
-								'network_fee_percentage': target_account['network_fee_percentage'],
-								'lifetime_referrer_fee_percentage': target_account['lifetime_referrer_fee_percentage'],
-								'referrer_rewards_percentage': target_account['referrer_rewards_percentage'],
-								'name': target_account['name'],
-								'owner': target_account['owner'],
-								'active': target_account['active'],
-								'options': target_account['options'],
-								'statistics': target_account['statistics'],
-								'whitelisting_accounts': target_account['whitelisting_accounts'],
-								'blacklisting_accounts': target_account['blacklisting_accounts'],
-								'whitelisted_accounts': target_account['whitelisted_accounts'],
-								'blacklisted_accounts': target_account['blacklisted_accounts'],
-								'cashback_vb': target_account['cashback_vb'],
-								'owner_special_authority': target_account['owner_special_authority'],
-								'active_special_authority': target_account['active_special_authority'],
-								'top_n_control_flags': target_account['top_n_control_flags']}
+			witness_account_data = extract_object(target_account)
+			witness_role_data = extract_object(witness)
 
-			witness_data.append({'id': witness['id'],
-								 'witness_account': witness['witness_account'],
+			active_witnesses = Blockchain().config()['active_witnesses']
+
+			if witness_role_data['id'] in active_witnesses:
+				witness_status = True
+			else:
+				witness_status = False
+
+			witness_data.append({'witness_role_data': witness_role_data,
 								 'witness_account_data': witness_account_data,
-								 'last_aslot': witness['last_aslot'],
-								 'signing_key': witness['signing_key'],
-								 'pay_vb': witness['pay_vb'],
-								 'vote_id': witness['vote_id'],
-								 'total_votes': witness['total_votes'],
-								 'url': witness['url'],
-								 'total_missed': witness['total_missed'],
-								 'last_confirmed_block_num': witness['last_confirmed_block_num']
-								})
+								 'witness_status': witness_status})
 
 		return {'witnesses': witness_data,
 				'witness_count': len(list_of_witnesses),
@@ -986,48 +846,9 @@ def list_fees(api_key: hug.types.text, hug_timer=5):
 	# API KEY VALID
 		network_fees = Dex().returnFees()
 
-		return {'transfer': network_fees['transfer'],
-				'limit_order_create': network_fees['limit_order_create'],
-				'limit_order_cancel': network_fees['limit_order_cancel'],
-				'call_order_update': network_fees['call_order_update'],
-				'fill_order': network_fees['fill_order'],
-				'account_create': network_fees['account_create'],
-				'account_update': network_fees['account_update'],
-				'account_whitelist': network_fees['account_whitelist'],
-				'account_upgrade': network_fees['account_upgrade'],
-				'account_transfer': network_fees['account_transfer'],
-				'asset_create': network_fees['asset_create'],
-				'asset_update': network_fees['asset_update'],
-				'asset_update_bitasset': network_fees['asset_update_bitasset'],
-				'asset_update_feed_producers': network_fees['asset_update_feed_producers'],
-				'asset_issue': network_fees['asset_issue'],
-				'asset_reserve': network_fees['asset_reserve'],
-				'asset_fund_fee_pool': network_fees['asset_fund_fee_pool'],
-				'asset_settle': network_fees['asset_settle'],
-				'asset_global_settle': network_fees['asset_global_settle'],
-				'asset_publish_feed': network_fees['asset_publish_feed'],
-				'witness_create': network_fees['witness_create'],
-				'witness_update': network_fees['witness_update'],
-				'proposal_create': network_fees['proposal_create'],
-				'proposal_update': network_fees['proposal_update'],
-				'proposal_delete': network_fees['proposal_delete'],
-				'withdraw_permission_create': network_fees['withdraw_permission_create'],
-				'withdraw_permission_update': network_fees['withdraw_permission_update'],
-				'withdraw_permission_claim': network_fees['withdraw_permission_claim'],
-				'withdraw_permission_delete': network_fees['withdraw_permission_delete'],
-				'committee_member_create': network_fees['committee_member_create'],
-				'committee_member_update': network_fees['committee_member_update'],
-				'committee_member_update_global_parameters': network_fees['committee_member_update_global_parameters'],
-				'vesting_balance_create': network_fees['vesting_balance_create'],
-				'vesting_balance_withdraw': network_fees['vesting_balance_withdraw'],
-				'worker_create': network_fees['worker_create'],
-				'custom': network_fees['custom'],
-				'assert': network_fees['assert'],
-				'balance_claim': network_fees['balance_claim'],
-				'override_transfer': network_fees['override_transfer'],
-				'transfer_to_blind': network_fees['transfer_to_blind'],
-				'transfer_from_blind': network_fees['transfer_from_blind'],
-				'asset_claim_fees': network_fees['asset_claim_fees'],
+		extracted_fees = extract_object(network_fees)
+
+		return {'network_fees': extracted_fees,
 				'valid_key': True,
 				'took': float(hug_timer)}
 	else:
