@@ -1,0 +1,7066 @@
+{
+  "workers": [
+    {
+      "id": "1.14.0",
+      "worker_account": "1.2.90742",
+      "work_begin_date": "2015-10-20T17:30:00",
+      "work_end_date": "2035-12-31T00:00:00",
+      "daily_pay": "40000000000",
+      "worker": [
+        0,
+        {
+          "total_burned": "17968536894200"
+        }
+      ],
+      "vote_for": "2:65",
+      "vote_against": "2:66",
+      "total_votes_for": "54927751876995",
+      "total_votes_against": 0,
+      "name": "refund400k",
+      "url": "",
+      "worker_account_details": {
+        "registrar": "1.2.90742",
+        "referrer": "1.2.90742",
+        "lifetime_referrer": "1.2.90742",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "init0",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5kNeoCM1ZGutGKQbooTpnDZsvc2vTbyCTG2VMvUi1MF6isAtxj",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5HNDFu3yHgh3pXsbTReWEQ5xv1x9e6YcgtKRzE56dRS1oDT4zT",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5HNDFu3yHgh3pXsbTReWEQ5xv1x9e6YcgtKRzE56dRS1oDT4zT",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.90742",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.1",
+      "worker_account": "1.2.22517",
+      "work_begin_date": "2015-10-23T00:00:00",
+      "work_end_date": "2015-11-23T00:00:00",
+      "daily_pay": 10000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.232"
+        }
+      ],
+      "vote_for": "2:67",
+      "vote_against": "2:68",
+      "total_votes_for": "217902528338",
+      "total_votes_against": 0,
+      "name": "mindphlux-bitasset-poolfund",
+      "url": "",
+      "worker_account_details": {
+        "registrar": "1.2.22517",
+        "referrer": "1.2.22517",
+        "lifetime_referrer": "1.2.22517",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "mindphlux",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+          "voting_account": "1.2.5",
+          "num_witness": 18,
+          "num_committee": 8,
+          "votes": [
+            "1:22",
+            "1:23",
+            "1:24",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:29",
+            "1:30",
+            "1:31",
+            "1:35",
+            "1:36",
+            "1:37",
+            "1:44",
+            "1:45",
+            "0:50",
+            "1:53",
+            "1:56",
+            "1:60",
+            "2:65",
+            "0:76",
+            "0:84",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:141",
+            "0:147",
+            "2:148",
+            "2:150",
+            "2:152",
+            "2:154",
+            "2:171",
+            "2:177"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.22517",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.2",
+      "worker_account": "1.2.22517",
+      "work_begin_date": "2015-10-23T00:00:00",
+      "work_end_date": "2015-11-23T00:00:00",
+      "daily_pay": 1000000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.233"
+        }
+      ],
+      "vote_for": "2:69",
+      "vote_against": "2:70",
+      "total_votes_for": 0,
+      "total_votes_against": 0,
+      "name": "mindphlux-bitasset-poolfund",
+      "url": "",
+      "worker_account_details": {
+        "registrar": "1.2.22517",
+        "referrer": "1.2.22517",
+        "lifetime_referrer": "1.2.22517",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "mindphlux",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+          "voting_account": "1.2.5",
+          "num_witness": 18,
+          "num_committee": 8,
+          "votes": [
+            "1:22",
+            "1:23",
+            "1:24",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:29",
+            "1:30",
+            "1:31",
+            "1:35",
+            "1:36",
+            "1:37",
+            "1:44",
+            "1:45",
+            "0:50",
+            "1:53",
+            "1:56",
+            "1:60",
+            "2:65",
+            "0:76",
+            "0:84",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:141",
+            "0:147",
+            "2:148",
+            "2:150",
+            "2:152",
+            "2:154",
+            "2:171",
+            "2:177"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.22517",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.3",
+      "worker_account": "1.2.22517",
+      "work_begin_date": "2015-10-23T00:00:00",
+      "work_end_date": "2015-11-23T00:00:00",
+      "daily_pay": 1000000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.234"
+        }
+      ],
+      "vote_for": "2:71",
+      "vote_against": "2:72",
+      "total_votes_for": 0,
+      "total_votes_against": 0,
+      "name": "mindphlux-bitasset-poolfund",
+      "url": "https://bitsharestalk.org/index.php/topic,19317.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.22517",
+        "referrer": "1.2.22517",
+        "lifetime_referrer": "1.2.22517",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "mindphlux",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+          "voting_account": "1.2.5",
+          "num_witness": 18,
+          "num_committee": 8,
+          "votes": [
+            "1:22",
+            "1:23",
+            "1:24",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:29",
+            "1:30",
+            "1:31",
+            "1:35",
+            "1:36",
+            "1:37",
+            "1:44",
+            "1:45",
+            "0:50",
+            "1:53",
+            "1:56",
+            "1:60",
+            "2:65",
+            "0:76",
+            "0:84",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:141",
+            "0:147",
+            "2:148",
+            "2:150",
+            "2:152",
+            "2:154",
+            "2:171",
+            "2:177"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.22517",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.4",
+      "worker_account": "1.2.22517",
+      "work_begin_date": "2015-10-21T11:00:00",
+      "work_end_date": "2015-11-21T11:00:00",
+      "daily_pay": 1000000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.235"
+        }
+      ],
+      "vote_for": "2:73",
+      "vote_against": "2:74",
+      "total_votes_for": "244525980276",
+      "total_votes_against": 0,
+      "name": "bitasset-fund-pool",
+      "url": "https://bitsharestalk.org/index.php/topic,19317.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.22517",
+        "referrer": "1.2.22517",
+        "lifetime_referrer": "1.2.22517",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "mindphlux",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+          "voting_account": "1.2.5",
+          "num_witness": 18,
+          "num_committee": 8,
+          "votes": [
+            "1:22",
+            "1:23",
+            "1:24",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:29",
+            "1:30",
+            "1:31",
+            "1:35",
+            "1:36",
+            "1:37",
+            "1:44",
+            "1:45",
+            "0:50",
+            "1:53",
+            "1:56",
+            "1:60",
+            "2:65",
+            "0:76",
+            "0:84",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:141",
+            "0:147",
+            "2:148",
+            "2:150",
+            "2:152",
+            "2:154",
+            "2:171",
+            "2:177"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.22517",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.5",
+      "worker_account": "1.2.6004",
+      "work_begin_date": "2015-10-28T00:00:00",
+      "work_end_date": "2016-01-31T00:00:00",
+      "daily_pay": 3966,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.278"
+        }
+      ],
+      "vote_for": "2:78",
+      "vote_against": "2:79",
+      "total_votes_for": 45229673,
+      "total_votes_against": 0,
+      "name": "Debian/Ubuntu-based PPA",
+      "url": "https://bitsharestalk.org/index.php/topic,19485.msg250031.html",
+      "worker_account_details": {
+        "registrar": "1.2.6004",
+        "referrer": "1.2.6004",
+        "lifetime_referrer": "1.2.6004",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "maqifrnswa",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6ZAsDtXw198BqFXjoMxnVCiAschqCkz1AemhsnD4YTbZ1x9Sec",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6ZAsDtXw198BqFXjoMxnVCiAschqCkz1AemhsnD4YTbZ1x9Sec",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6ZAsDtXw198BqFXjoMxnVCiAschqCkz1AemhsnD4YTbZ1x9Sec",
+          "voting_account": "1.2.5",
+          "num_witness": 3,
+          "num_committee": 0,
+          "votes": [
+            "1:24",
+            "1:25",
+            "1:54",
+            "2:65",
+            "2:80"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.6004",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.6",
+      "worker_account": "1.2.6004",
+      "work_begin_date": "2015-10-28T00:00:00",
+      "work_end_date": "2016-01-31T00:00:00",
+      "daily_pay": 396600000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.279"
+        }
+      ],
+      "vote_for": "2:80",
+      "vote_against": "2:81",
+      "total_votes_for": 425568073,
+      "total_votes_against": 0,
+      "name": "Debian/Ubuntu-based PPA",
+      "url": "https://bitsharestalk.org/index.php/topic,19485.msg250031.html",
+      "worker_account_details": {
+        "registrar": "1.2.6004",
+        "referrer": "1.2.6004",
+        "lifetime_referrer": "1.2.6004",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "maqifrnswa",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6ZAsDtXw198BqFXjoMxnVCiAschqCkz1AemhsnD4YTbZ1x9Sec",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6ZAsDtXw198BqFXjoMxnVCiAschqCkz1AemhsnD4YTbZ1x9Sec",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6ZAsDtXw198BqFXjoMxnVCiAschqCkz1AemhsnD4YTbZ1x9Sec",
+          "voting_account": "1.2.5",
+          "num_witness": 3,
+          "num_committee": 0,
+          "votes": [
+            "1:24",
+            "1:25",
+            "1:54",
+            "2:65",
+            "2:80"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.6004",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.7",
+      "worker_account": "1.2.97845",
+      "work_begin_date": "2015-11-21T00:00:00",
+      "work_end_date": "2015-12-30T00:00:00",
+      "daily_pay": "5000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.385"
+        }
+      ],
+      "vote_for": "2:92",
+      "vote_against": "2:93",
+      "total_votes_for": "224421991026",
+      "total_votes_against": 0,
+      "name": "Refund Create Order Fees on Cancel",
+      "url": "https://github.com/cryptonomex/graphene/issues/445",
+      "worker_account_details": {
+        "registrar": "1.2.97845",
+        "referrer": "1.2.97845",
+        "lifetime_referrer": "1.2.97845",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "bunkerchainlabs-com",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7tK9hJNrSMF8vK1dprCTt6h4moUoF7p1Ed46mxzrFgNRkHcxPp",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7h3FmiMd5zCxEU6zzpc1PSoEVXLMdrkid8qFhGs8hk5wV7neis",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7h3FmiMd5zCxEU6zzpc1PSoEVXLMdrkid8qFhGs8hk5wV7neis",
+          "voting_account": "1.2.5",
+          "num_witness": 22,
+          "num_committee": 9,
+          "votes": [
+            "1:23",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:30",
+            "1:32",
+            "1:36",
+            "1:37",
+            "1:38",
+            "1:40",
+            "1:44",
+            "1:45",
+            "1:47",
+            "1:51",
+            "1:56",
+            "0:82",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:112",
+            "0:141",
+            "0:147",
+            "1:190",
+            "1:196",
+            "1:212",
+            "1:214",
+            "1:216",
+            "0:223",
+            "2:224",
+            "2:233",
+            "2:244",
+            "2:246",
+            "2:251",
+            "1:253",
+            "2:256",
+            "2:258",
+            "2:260",
+            "2:262",
+            "2:264",
+            "2:266",
+            "2:269"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.97845",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.8",
+      "worker_account": "1.2.21594",
+      "work_begin_date": "2015-11-21T00:00:00",
+      "work_end_date": "2016-02-21T00:00:00",
+      "daily_pay": 500000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.398"
+        }
+      ],
+      "vote_for": "2:94",
+      "vote_against": "2:95",
+      "total_votes_for": 282893867,
+      "total_votes_against": 0,
+      "name": "Bitshares UI Project Manager",
+      "url": "https://docs.google.com/document/d/14d9bBAyUoB9wcBpFnYoGpE1MF0RnOwMKpF2Z8eh0QkI/edit?usp=sharing",
+      "worker_account_details": {
+        "registrar": "1.2.21594",
+        "referrer": "1.2.21594",
+        "lifetime_referrer": "1.2.21594",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "billbutler",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS62cZit4AJKV4Z7gGb9TVvPXfbQM7HBAL7XBWCptrdv8hMnSCVT",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS62cZit4AJKV4Z7gGb9TVvPXfbQM7HBAL7XBWCptrdv8hMnSCVT",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS62cZit4AJKV4Z7gGb9TVvPXfbQM7HBAL7XBWCptrdv8hMnSCVT",
+          "voting_account": "1.2.5",
+          "num_witness": 21,
+          "num_committee": 13,
+          "votes": [
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:30",
+            "1:32",
+            "1:36",
+            "1:38",
+            "1:44",
+            "1:45",
+            "1:47",
+            "0:50",
+            "1:56",
+            "0:82",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:112",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:165",
+            "0:173",
+            "1:190",
+            "1:196",
+            "1:212",
+            "0:213",
+            "1:214",
+            "0:215",
+            "1:216",
+            "1:218",
+            "0:223",
+            "2:224",
+            "2:233",
+            "1:235",
+            "2:244",
+            "2:246",
+            "2:251",
+            "1:253",
+            "2:258",
+            "2:260",
+            "2:262",
+            "2:264",
+            "2:266",
+            "2:269",
+            "2:277"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.21594",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.9",
+      "worker_account": "1.2.21594",
+      "work_begin_date": "2015-11-24T00:00:00",
+      "work_end_date": "2016-02-24T00:00:00",
+      "daily_pay": 500000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.402"
+        }
+      ],
+      "vote_for": "2:96",
+      "vote_against": "2:97",
+      "total_votes_for": "15988607976",
+      "total_votes_against": 0,
+      "name": "Bitshares UI Project Coordinator",
+      "url": "https://docs.google.com/document/d/14d9bBAyUoB9wcBpFnYoGpE1MF0RnOwMKpF2Z8eh0QkI/edit?usp=sharing",
+      "worker_account_details": {
+        "registrar": "1.2.21594",
+        "referrer": "1.2.21594",
+        "lifetime_referrer": "1.2.21594",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "billbutler",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS62cZit4AJKV4Z7gGb9TVvPXfbQM7HBAL7XBWCptrdv8hMnSCVT",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS62cZit4AJKV4Z7gGb9TVvPXfbQM7HBAL7XBWCptrdv8hMnSCVT",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS62cZit4AJKV4Z7gGb9TVvPXfbQM7HBAL7XBWCptrdv8hMnSCVT",
+          "voting_account": "1.2.5",
+          "num_witness": 21,
+          "num_committee": 13,
+          "votes": [
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:30",
+            "1:32",
+            "1:36",
+            "1:38",
+            "1:44",
+            "1:45",
+            "1:47",
+            "0:50",
+            "1:56",
+            "0:82",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:112",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:165",
+            "0:173",
+            "1:190",
+            "1:196",
+            "1:212",
+            "0:213",
+            "1:214",
+            "0:215",
+            "1:216",
+            "1:218",
+            "0:223",
+            "2:224",
+            "2:233",
+            "1:235",
+            "2:244",
+            "2:246",
+            "2:251",
+            "1:253",
+            "2:258",
+            "2:260",
+            "2:262",
+            "2:264",
+            "2:266",
+            "2:269",
+            "2:277"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.21594",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.10",
+      "worker_account": "1.2.98347",
+      "work_begin_date": "2015-12-01T00:00:00",
+      "work_end_date": "2016-03-01T00:00:00",
+      "daily_pay": "6000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.415"
+        }
+      ],
+      "vote_for": "2:99",
+      "vote_against": "2:100",
+      "total_votes_for": 109004252,
+      "total_votes_against": 0,
+      "name": "BTS Cryptoexchange worker 1",
+      "url": "https://bitsharestalk.org/index.php/topic,19351.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.98347",
+        "referrer": "1.2.98347",
+        "lifetime_referrer": "1.2.98347",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "btscx",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7SvCLD6dmWSza8VMyHiqdhJr1zhj9DPyU32hQTigvVkSGGv5WY",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8B5syi92uHXK7NHkRBozahG6qwJUVJxrGVrN357ZfDVqKiwmGe",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8B5syi92uHXK7NHkRBozahG6qwJUVJxrGVrN357ZfDVqKiwmGe",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.98347",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.11",
+      "worker_account": "1.2.98347",
+      "work_begin_date": "2015-12-01T00:00:00",
+      "work_end_date": "2016-03-01T00:00:00",
+      "daily_pay": "6000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.417"
+        }
+      ],
+      "vote_for": "2:101",
+      "vote_against": "2:102",
+      "total_votes_for": 109004252,
+      "total_votes_against": 0,
+      "name": "BTS Cryptoexchange worker 2",
+      "url": "https://bitsharestalk.org/index.php/topic,19351.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.98347",
+        "referrer": "1.2.98347",
+        "lifetime_referrer": "1.2.98347",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "btscx",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7SvCLD6dmWSza8VMyHiqdhJr1zhj9DPyU32hQTigvVkSGGv5WY",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8B5syi92uHXK7NHkRBozahG6qwJUVJxrGVrN357ZfDVqKiwmGe",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8B5syi92uHXK7NHkRBozahG6qwJUVJxrGVrN357ZfDVqKiwmGe",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.98347",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.12",
+      "worker_account": "1.2.98347",
+      "work_begin_date": "2015-12-01T00:00:00",
+      "work_end_date": "2016-03-01T00:00:00",
+      "daily_pay": "6000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.418"
+        }
+      ],
+      "vote_for": "2:103",
+      "vote_against": "2:104",
+      "total_votes_for": 109004252,
+      "total_votes_against": 0,
+      "name": "BTS Cryptoexchange worker 3",
+      "url": "https://bitsharestalk.org/index.php/topic,19351.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.98347",
+        "referrer": "1.2.98347",
+        "lifetime_referrer": "1.2.98347",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "btscx",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7SvCLD6dmWSza8VMyHiqdhJr1zhj9DPyU32hQTigvVkSGGv5WY",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8B5syi92uHXK7NHkRBozahG6qwJUVJxrGVrN357ZfDVqKiwmGe",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8B5syi92uHXK7NHkRBozahG6qwJUVJxrGVrN357ZfDVqKiwmGe",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.98347",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.13",
+      "worker_account": "1.2.98347",
+      "work_begin_date": "2015-12-01T00:00:00",
+      "work_end_date": "2016-03-01T00:00:00",
+      "daily_pay": "6000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.419"
+        }
+      ],
+      "vote_for": "2:105",
+      "vote_against": "2:106",
+      "total_votes_for": 109004252,
+      "total_votes_against": 0,
+      "name": "BTS Cryptoexchange worker 4",
+      "url": "https://bitsharestalk.org/index.php/topic,19351.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.98347",
+        "referrer": "1.2.98347",
+        "lifetime_referrer": "1.2.98347",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "btscx",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7SvCLD6dmWSza8VMyHiqdhJr1zhj9DPyU32hQTigvVkSGGv5WY",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8B5syi92uHXK7NHkRBozahG6qwJUVJxrGVrN357ZfDVqKiwmGe",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8B5syi92uHXK7NHkRBozahG6qwJUVJxrGVrN357ZfDVqKiwmGe",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.98347",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.14",
+      "worker_account": "1.2.98347",
+      "work_begin_date": "2015-12-01T00:00:00",
+      "work_end_date": "2016-03-01T00:00:00",
+      "daily_pay": "6000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.420"
+        }
+      ],
+      "vote_for": "2:107",
+      "vote_against": "2:108",
+      "total_votes_for": 103119706,
+      "total_votes_against": 0,
+      "name": "BTS Cryptoexchange worker 5",
+      "url": "https://bitsharestalk.org/index.php/topic,19351.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.98347",
+        "referrer": "1.2.98347",
+        "lifetime_referrer": "1.2.98347",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "btscx",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7SvCLD6dmWSza8VMyHiqdhJr1zhj9DPyU32hQTigvVkSGGv5WY",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8B5syi92uHXK7NHkRBozahG6qwJUVJxrGVrN357ZfDVqKiwmGe",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8B5syi92uHXK7NHkRBozahG6qwJUVJxrGVrN357ZfDVqKiwmGe",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.98347",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.15",
+      "worker_account": "1.2.98347",
+      "work_begin_date": "2015-12-01T00:00:00",
+      "work_end_date": "2016-03-01T00:00:00",
+      "daily_pay": "6000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.421"
+        }
+      ],
+      "vote_for": "2:109",
+      "vote_against": "2:110",
+      "total_votes_for": 109004252,
+      "total_votes_against": 0,
+      "name": "BTS Cryptoexchange worker 6",
+      "url": "https://bitsharestalk.org/index.php/topic,19351.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.98347",
+        "referrer": "1.2.98347",
+        "lifetime_referrer": "1.2.98347",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "btscx",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7SvCLD6dmWSza8VMyHiqdhJr1zhj9DPyU32hQTigvVkSGGv5WY",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8B5syi92uHXK7NHkRBozahG6qwJUVJxrGVrN357ZfDVqKiwmGe",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8B5syi92uHXK7NHkRBozahG6qwJUVJxrGVrN357ZfDVqKiwmGe",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.98347",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.16",
+      "worker_account": "1.2.30665",
+      "work_begin_date": "2015-12-21T00:00:00",
+      "work_end_date": "2016-03-21T00:00:00",
+      "daily_pay": 1904761904,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.481"
+        }
+      ],
+      "vote_for": "2:115",
+      "vote_against": "2:116",
+      "total_votes_for": "571884799900",
+      "total_votes_against": 0,
+      "name": "GUI Development and Maintenance by svk",
+      "url": "https://docs.google.com/document/d/1c4acxn0BAAln2EPd9WcE6cU3fqpxbeyOTL0JrfMbT7E/edit?usp=sharing",
+      "worker_account_details": {
+        "registrar": "1.2.30665",
+        "referrer": "1.2.30665",
+        "lifetime_referrer": "1.2.30665",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "dev.bitsharesblocks",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8eLeqSZZtB1YHdw7KjQxRSRmaKAseCxhUSqaLxUdqvdGpp6nck",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8eLeqSZZtB1YHdw7KjQxRSRmaKAseCxhUSqaLxUdqvdGpp6nck",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8eLeqSZZtB1YHdw7KjQxRSRmaKAseCxhUSqaLxUdqvdGpp6nck",
+          "voting_account": "1.2.24157",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.30665",
+        "whitelisting_accounts": [
+          "1.2.126253"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.17",
+      "worker_account": "1.2.282",
+      "work_begin_date": "2016-01-01T00:00:00",
+      "work_end_date": "2016-02-29T00:00:00",
+      "daily_pay": 2950000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.486"
+        }
+      ],
+      "vote_for": "2:117",
+      "vote_against": "2:118",
+      "total_votes_for": "569226105169",
+      "total_votes_against": 0,
+      "name": "Documentation/Technical Support/Python+UI Development",
+      "url": "https://github.com/xeroc/worker-proposals",
+      "worker_account_details": {
+        "registrar": "1.2.282",
+        "referrer": "1.2.282",
+        "lifetime_referrer": "1.2.282",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "xeroc",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5WaszCsqVN9hDkXZPMyiUib3dyrEA4yd5kSMgu28Wz47B3wUqa",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5TPTziKkLexhVKsQKtSpo4bAv5RnB8oXcG4sMHEwCcTf3r7dqE",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5TPTziKkLexhVKsQKtSpo4bAv5RnB8oXcG4sMHEwCcTf3r7dqE",
+          "voting_account": "1.2.5",
+          "num_witness": 15,
+          "num_committee": 9,
+          "votes": [
+            "1:27",
+            "1:30",
+            "1:32",
+            "1:38",
+            "1:44",
+            "1:45",
+            "1:56",
+            "0:82",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:190",
+            "1:196",
+            "1:212",
+            "1:214",
+            "0:215",
+            "1:216",
+            "0:223",
+            "2:224",
+            "2:231",
+            "2:233",
+            "1:235",
+            "2:244",
+            "2:246",
+            "1:253",
+            "2:256",
+            "2:258",
+            "2:260",
+            "2:262",
+            "2:264",
+            "2:266",
+            "2:269"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.282",
+        "whitelisting_accounts": [
+          "1.2.5178",
+          "1.2.12376"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.18",
+      "worker_account": "1.2.282",
+      "work_begin_date": "2015-12-19T00:00:00",
+      "work_end_date": "2016-01-18T00:00:00",
+      "daily_pay": 333333333,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.490"
+        }
+      ],
+      "vote_for": "2:119",
+      "vote_against": "2:120",
+      "total_votes_for": "541235780931",
+      "total_votes_against": 0,
+      "name": "STEALTH",
+      "url": "https://github.com/bitshares/bsips/blob/master/bsip-0008.md",
+      "worker_account_details": {
+        "registrar": "1.2.282",
+        "referrer": "1.2.282",
+        "lifetime_referrer": "1.2.282",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "xeroc",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5WaszCsqVN9hDkXZPMyiUib3dyrEA4yd5kSMgu28Wz47B3wUqa",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5TPTziKkLexhVKsQKtSpo4bAv5RnB8oXcG4sMHEwCcTf3r7dqE",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5TPTziKkLexhVKsQKtSpo4bAv5RnB8oXcG4sMHEwCcTf3r7dqE",
+          "voting_account": "1.2.5",
+          "num_witness": 15,
+          "num_committee": 9,
+          "votes": [
+            "1:27",
+            "1:30",
+            "1:32",
+            "1:38",
+            "1:44",
+            "1:45",
+            "1:56",
+            "0:82",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:190",
+            "1:196",
+            "1:212",
+            "1:214",
+            "0:215",
+            "1:216",
+            "0:223",
+            "2:224",
+            "2:231",
+            "2:233",
+            "1:235",
+            "2:244",
+            "2:246",
+            "1:253",
+            "2:256",
+            "2:258",
+            "2:260",
+            "2:262",
+            "2:264",
+            "2:266",
+            "2:269"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.282",
+        "whitelisting_accounts": [
+          "1.2.5178",
+          "1.2.12376"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.19",
+      "worker_account": "1.2.0",
+      "work_begin_date": "2016-01-01T00:00:00",
+      "work_end_date": "2016-12-31T23:59:59",
+      "daily_pay": "10000000000",
+      "worker": [
+        2,
+        {
+          "total_burned": "122732380621"
+        }
+      ],
+      "vote_for": "2:121",
+      "vote_against": "2:122",
+      "total_votes_for": "248076638846",
+      "total_votes_against": 0,
+      "name": "burn-100k-1",
+      "url": "http://bitshares.org",
+      "worker_account_details": {
+        "registrar": "1.2.0",
+        "referrer": "1.2.0",
+        "lifetime_referrer": "1.2.0",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "committee-account",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 168453,
+          "account_auths": [
+            [
+              "1.2.121",
+              41072
+            ],
+            [
+              "1.2.159",
+              21951
+            ],
+            [
+              "1.2.282",
+              35088
+            ],
+            [
+              "1.2.8891",
+              31395
+            ],
+            [
+              "1.2.12376",
+              40054
+            ],
+            [
+              "1.2.21106",
+              19100
+            ],
+            [
+              "1.2.25010",
+              32299
+            ],
+            [
+              "1.2.35939",
+              21627
+            ],
+            [
+              "1.2.97845",
+              31516
+            ],
+            [
+              "1.2.130258",
+              37250
+            ],
+            [
+              "1.2.158781",
+              25552
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS1111111111111111111111111111111114T1Anm",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.0",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.20",
+      "worker_account": "1.2.0",
+      "work_begin_date": "2016-01-01T00:00:00",
+      "work_end_date": "2016-12-31T23:59:59",
+      "daily_pay": "10000000000",
+      "worker": [
+        2,
+        {
+          "total_burned": "178461895990"
+        }
+      ],
+      "vote_for": "2:123",
+      "vote_against": "2:124",
+      "total_votes_for": "248076638846",
+      "total_votes_against": 0,
+      "name": "burn-100k-2",
+      "url": "http://bitshares.org",
+      "worker_account_details": {
+        "registrar": "1.2.0",
+        "referrer": "1.2.0",
+        "lifetime_referrer": "1.2.0",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "committee-account",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 168453,
+          "account_auths": [
+            [
+              "1.2.121",
+              41072
+            ],
+            [
+              "1.2.159",
+              21951
+            ],
+            [
+              "1.2.282",
+              35088
+            ],
+            [
+              "1.2.8891",
+              31395
+            ],
+            [
+              "1.2.12376",
+              40054
+            ],
+            [
+              "1.2.21106",
+              19100
+            ],
+            [
+              "1.2.25010",
+              32299
+            ],
+            [
+              "1.2.35939",
+              21627
+            ],
+            [
+              "1.2.97845",
+              31516
+            ],
+            [
+              "1.2.130258",
+              37250
+            ],
+            [
+              "1.2.158781",
+              25552
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS1111111111111111111111111111111114T1Anm",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.0",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.21",
+      "worker_account": "1.2.0",
+      "work_begin_date": "2016-01-01T00:00:00",
+      "work_end_date": "2016-12-31T23:59:59",
+      "daily_pay": "10000000000",
+      "worker": [
+        2,
+        {
+          "total_burned": 0
+        }
+      ],
+      "vote_for": "2:125",
+      "vote_against": "2:126",
+      "total_votes_for": "262609114621",
+      "total_votes_against": 0,
+      "name": "burn-100k-3",
+      "url": "http://bitshares.org",
+      "worker_account_details": {
+        "registrar": "1.2.0",
+        "referrer": "1.2.0",
+        "lifetime_referrer": "1.2.0",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "committee-account",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 168453,
+          "account_auths": [
+            [
+              "1.2.121",
+              41072
+            ],
+            [
+              "1.2.159",
+              21951
+            ],
+            [
+              "1.2.282",
+              35088
+            ],
+            [
+              "1.2.8891",
+              31395
+            ],
+            [
+              "1.2.12376",
+              40054
+            ],
+            [
+              "1.2.21106",
+              19100
+            ],
+            [
+              "1.2.25010",
+              32299
+            ],
+            [
+              "1.2.35939",
+              21627
+            ],
+            [
+              "1.2.97845",
+              31516
+            ],
+            [
+              "1.2.130258",
+              37250
+            ],
+            [
+              "1.2.158781",
+              25552
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS1111111111111111111111111111111114T1Anm",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.0",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.22",
+      "worker_account": "1.2.0",
+      "work_begin_date": "2016-01-01T00:00:00",
+      "work_end_date": "2016-12-31T23:59:59",
+      "daily_pay": "10000000000",
+      "worker": [
+        2,
+        {
+          "total_burned": 0
+        }
+      ],
+      "vote_for": "2:127",
+      "vote_against": "2:128",
+      "total_votes_for": "284438342120",
+      "total_votes_against": 0,
+      "name": "burn-100k-4",
+      "url": "http://bitshares.org",
+      "worker_account_details": {
+        "registrar": "1.2.0",
+        "referrer": "1.2.0",
+        "lifetime_referrer": "1.2.0",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "committee-account",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 168453,
+          "account_auths": [
+            [
+              "1.2.121",
+              41072
+            ],
+            [
+              "1.2.159",
+              21951
+            ],
+            [
+              "1.2.282",
+              35088
+            ],
+            [
+              "1.2.8891",
+              31395
+            ],
+            [
+              "1.2.12376",
+              40054
+            ],
+            [
+              "1.2.21106",
+              19100
+            ],
+            [
+              "1.2.25010",
+              32299
+            ],
+            [
+              "1.2.35939",
+              21627
+            ],
+            [
+              "1.2.97845",
+              31516
+            ],
+            [
+              "1.2.130258",
+              37250
+            ],
+            [
+              "1.2.158781",
+              25552
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS1111111111111111111111111111111114T1Anm",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.0",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.23",
+      "worker_account": "1.2.0",
+      "work_begin_date": "2016-01-01T00:00:00",
+      "work_end_date": "2016-12-31T23:59:59",
+      "daily_pay": "10000000000",
+      "worker": [
+        0,
+        {
+          "total_burned": "393930723211"
+        }
+      ],
+      "vote_for": "2:129",
+      "vote_against": "2:130",
+      "total_votes_for": "499885520976",
+      "total_votes_against": 0,
+      "name": "refund-100k-1",
+      "url": "http://bitshares.org",
+      "worker_account_details": {
+        "registrar": "1.2.0",
+        "referrer": "1.2.0",
+        "lifetime_referrer": "1.2.0",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "committee-account",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 168453,
+          "account_auths": [
+            [
+              "1.2.121",
+              41072
+            ],
+            [
+              "1.2.159",
+              21951
+            ],
+            [
+              "1.2.282",
+              35088
+            ],
+            [
+              "1.2.8891",
+              31395
+            ],
+            [
+              "1.2.12376",
+              40054
+            ],
+            [
+              "1.2.21106",
+              19100
+            ],
+            [
+              "1.2.25010",
+              32299
+            ],
+            [
+              "1.2.35939",
+              21627
+            ],
+            [
+              "1.2.97845",
+              31516
+            ],
+            [
+              "1.2.130258",
+              37250
+            ],
+            [
+              "1.2.158781",
+              25552
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS1111111111111111111111111111111114T1Anm",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.0",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.24",
+      "worker_account": "1.2.0",
+      "work_begin_date": "2016-01-01T00:00:00",
+      "work_end_date": "2016-12-31T23:59:59",
+      "daily_pay": "10000000000",
+      "worker": [
+        0,
+        {
+          "total_burned": "119518070348"
+        }
+      ],
+      "vote_for": "2:131",
+      "vote_against": "2:132",
+      "total_votes_for": "499891236706",
+      "total_votes_against": 0,
+      "name": "refund-100k-2",
+      "url": "http://bitshares.org",
+      "worker_account_details": {
+        "registrar": "1.2.0",
+        "referrer": "1.2.0",
+        "lifetime_referrer": "1.2.0",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "committee-account",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 168453,
+          "account_auths": [
+            [
+              "1.2.121",
+              41072
+            ],
+            [
+              "1.2.159",
+              21951
+            ],
+            [
+              "1.2.282",
+              35088
+            ],
+            [
+              "1.2.8891",
+              31395
+            ],
+            [
+              "1.2.12376",
+              40054
+            ],
+            [
+              "1.2.21106",
+              19100
+            ],
+            [
+              "1.2.25010",
+              32299
+            ],
+            [
+              "1.2.35939",
+              21627
+            ],
+            [
+              "1.2.97845",
+              31516
+            ],
+            [
+              "1.2.130258",
+              37250
+            ],
+            [
+              "1.2.158781",
+              25552
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS1111111111111111111111111111111114T1Anm",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.0",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.25",
+      "worker_account": "1.2.0",
+      "work_begin_date": "2016-01-01T00:00:00",
+      "work_end_date": "2016-12-31T23:59:59",
+      "daily_pay": "10000000000",
+      "worker": [
+        0,
+        {
+          "total_burned": "315013012780"
+        }
+      ],
+      "vote_for": "2:133",
+      "vote_against": "2:134",
+      "total_votes_for": "503545016886",
+      "total_votes_against": 0,
+      "name": "refund-100k-3",
+      "url": "http://bitshares.org",
+      "worker_account_details": {
+        "registrar": "1.2.0",
+        "referrer": "1.2.0",
+        "lifetime_referrer": "1.2.0",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "committee-account",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 168453,
+          "account_auths": [
+            [
+              "1.2.121",
+              41072
+            ],
+            [
+              "1.2.159",
+              21951
+            ],
+            [
+              "1.2.282",
+              35088
+            ],
+            [
+              "1.2.8891",
+              31395
+            ],
+            [
+              "1.2.12376",
+              40054
+            ],
+            [
+              "1.2.21106",
+              19100
+            ],
+            [
+              "1.2.25010",
+              32299
+            ],
+            [
+              "1.2.35939",
+              21627
+            ],
+            [
+              "1.2.97845",
+              31516
+            ],
+            [
+              "1.2.130258",
+              37250
+            ],
+            [
+              "1.2.158781",
+              25552
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS1111111111111111111111111111111114T1Anm",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.0",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.26",
+      "worker_account": "1.2.0",
+      "work_begin_date": "2016-01-01T00:00:00",
+      "work_end_date": "2016-12-31T23:59:59",
+      "daily_pay": "10000000000",
+      "worker": [
+        0,
+        {
+          "total_burned": "137699763557"
+        }
+      ],
+      "vote_for": "2:135",
+      "vote_against": "2:136",
+      "total_votes_for": "499885620977",
+      "total_votes_against": 0,
+      "name": "refund-100k-4",
+      "url": "http://bitshares.org",
+      "worker_account_details": {
+        "registrar": "1.2.0",
+        "referrer": "1.2.0",
+        "lifetime_referrer": "1.2.0",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "committee-account",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 168453,
+          "account_auths": [
+            [
+              "1.2.121",
+              41072
+            ],
+            [
+              "1.2.159",
+              21951
+            ],
+            [
+              "1.2.282",
+              35088
+            ],
+            [
+              "1.2.8891",
+              31395
+            ],
+            [
+              "1.2.12376",
+              40054
+            ],
+            [
+              "1.2.21106",
+              19100
+            ],
+            [
+              "1.2.25010",
+              32299
+            ],
+            [
+              "1.2.35939",
+              21627
+            ],
+            [
+              "1.2.97845",
+              31516
+            ],
+            [
+              "1.2.130258",
+              37250
+            ],
+            [
+              "1.2.158781",
+              25552
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS1111111111111111111111111111111114T1Anm",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.0",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.27",
+      "worker_account": "1.2.5178",
+      "work_begin_date": "2016-01-15T00:00:00",
+      "work_end_date": "2016-04-15T00:00:00",
+      "daily_pay": 2124000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.510"
+        }
+      ],
+      "vote_for": "2:137",
+      "vote_against": "2:138",
+      "total_votes_for": "12736786623",
+      "total_votes_against": 0,
+      "name": "Graphic Design / UI/UX Design / Web Development",
+      "url": "https://github.com/cassiopaia/worker-proposals-bts",
+      "worker_account_details": {
+        "registrar": "1.2.5178",
+        "referrer": "1.2.5178",
+        "lifetime_referrer": "1.2.5178",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "cass",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS4y5WCqafHYtLHrVdFNN1aCfHDcDzSAADTdXhjarkMJ8DYzwr4y",
+              1
+            ],
+            [
+              "BTS5Cej8Uqbj3w8VQTWNSPZ8LoKYn8g5qf2gYuyijqbxJB1xf7r2n",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS4y5WCqafHYtLHrVdFNN1aCfHDcDzSAADTdXhjarkMJ8DYzwr4y",
+              1
+            ],
+            [
+              "BTS5Cej8Uqbj3w8VQTWNSPZ8LoKYn8g5qf2gYuyijqbxJB1xf7r2n",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS4y5WCqafHYtLHrVdFNN1aCfHDcDzSAADTdXhjarkMJ8DYzwr4y",
+          "voting_account": "1.2.5",
+          "num_witness": 6,
+          "num_committee": 5,
+          "votes": [
+            "1:30",
+            "1:31",
+            "1:41",
+            "1:45",
+            "0:82",
+            "0:85",
+            "0:88",
+            "0:141",
+            "0:147",
+            "1:185",
+            "1:214",
+            "2:231",
+            "2:233",
+            "2:244",
+            "2:246",
+            "2:260",
+            "2:262"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.5178",
+        "whitelisting_accounts": [
+          "1.2.793"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [
+          "1.2.282",
+          "1.2.793",
+          "1.2.126986"
+        ],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.28",
+      "worker_account": "1.2.5178",
+      "work_begin_date": "2016-01-15T00:00:00",
+      "work_end_date": "2016-04-15T00:00:00",
+      "daily_pay": 2730700000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.511"
+        }
+      ],
+      "vote_for": "2:139",
+      "vote_against": "2:140",
+      "total_votes_for": "282548512348",
+      "total_votes_against": 0,
+      "name": "Graphic Design / UI/UX Design / Web Development",
+      "url": "https://github.com/cassiopaia/worker-proposals-bts",
+      "worker_account_details": {
+        "registrar": "1.2.5178",
+        "referrer": "1.2.5178",
+        "lifetime_referrer": "1.2.5178",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "cass",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS4y5WCqafHYtLHrVdFNN1aCfHDcDzSAADTdXhjarkMJ8DYzwr4y",
+              1
+            ],
+            [
+              "BTS5Cej8Uqbj3w8VQTWNSPZ8LoKYn8g5qf2gYuyijqbxJB1xf7r2n",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS4y5WCqafHYtLHrVdFNN1aCfHDcDzSAADTdXhjarkMJ8DYzwr4y",
+              1
+            ],
+            [
+              "BTS5Cej8Uqbj3w8VQTWNSPZ8LoKYn8g5qf2gYuyijqbxJB1xf7r2n",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS4y5WCqafHYtLHrVdFNN1aCfHDcDzSAADTdXhjarkMJ8DYzwr4y",
+          "voting_account": "1.2.5",
+          "num_witness": 6,
+          "num_committee": 5,
+          "votes": [
+            "1:30",
+            "1:31",
+            "1:41",
+            "1:45",
+            "0:82",
+            "0:85",
+            "0:88",
+            "0:141",
+            "0:147",
+            "1:185",
+            "1:214",
+            "2:231",
+            "2:233",
+            "2:244",
+            "2:246",
+            "2:260",
+            "2:262"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.5178",
+        "whitelisting_accounts": [
+          "1.2.793"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [
+          "1.2.282",
+          "1.2.793",
+          "1.2.126986"
+        ],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.29",
+      "worker_account": "1.2.100886",
+      "work_begin_date": "2016-02-15T00:00:00",
+      "work_end_date": "2016-05-15T00:00:00",
+      "daily_pay": "5000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.558"
+        }
+      ],
+      "vote_for": "2:145",
+      "vote_against": "2:146",
+      "total_votes_for": "1321846656508",
+      "total_votes_against": 0,
+      "name": "[BSIP10] Percentage-based transfer fee solution based on CER",
+      "url": "https://github.com/bitshares/bsips/blob/master/bsip-0010.md",
+      "worker_account_details": {
+        "registrar": "1.2.100886",
+        "referrer": "1.2.100886",
+        "lifetime_referrer": "1.2.100886",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "bsip10-worker",
+        "owner": {
+          "weight_threshold": 2,
+          "account_auths": [
+            [
+              "1.2.0",
+              1
+            ],
+            [
+              "1.2.12376",
+              1
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 2,
+          "account_auths": [
+            [
+              "1.2.0",
+              1
+            ],
+            [
+              "1.2.12376",
+              1
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6fUJfBNkD88eDmoBhHGu3r98aTnieVwwqZVSzkzDaxzF57c4ce",
+          "voting_account": "1.2.12376",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.100886",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.30",
+      "worker_account": "1.2.8284",
+      "work_begin_date": "2016-02-08T00:00:00",
+      "work_end_date": "2016-08-31T23:59:59",
+      "daily_pay": "6000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.582"
+        }
+      ],
+      "vote_for": "2:148",
+      "vote_against": "2:149",
+      "total_votes_for": "1389795191857",
+      "total_votes_against": 0,
+      "name": "Blockchain maintenance developer",
+      "url": "https://bitsharestalk.org/index.php/topic,21296.msg276680.html#msg276680",
+      "worker_account_details": {
+        "registrar": "1.2.8284",
+        "referrer": "1.2.8284",
+        "lifetime_referrer": "1.2.8284",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "btsnow",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6PfhMkuPoh976TPF8bsSPn4pqZEYGfzbQmydC2Zs3M1M7xUuM7",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6PfhMkuPoh976TPF8bsSPn4pqZEYGfzbQmydC2Zs3M1M7xUuM7",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6PfhMkuPoh976TPF8bsSPn4pqZEYGfzbQmydC2Zs3M1M7xUuM7",
+          "voting_account": "1.2.5",
+          "num_witness": 22,
+          "num_committee": 0,
+          "votes": [
+            "1:22",
+            "1:23",
+            "1:24",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:29",
+            "1:30",
+            "1:31",
+            "1:32",
+            "1:33",
+            "1:34",
+            "1:35",
+            "1:36",
+            "1:37",
+            "1:38",
+            "1:39",
+            "1:42",
+            "1:43",
+            "1:44",
+            "1:51",
+            "2:115",
+            "2:117",
+            "2:139",
+            "2:148",
+            "2:150",
+            "2:152",
+            "2:154",
+            "2:156"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.8284",
+        "whitelisting_accounts": [
+          "1.2.398619"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.31",
+      "worker_account": "1.2.100665",
+      "work_begin_date": "2016-03-01T00:00:00",
+      "work_end_date": "2016-06-30T00:00:00",
+      "daily_pay": 2146666666,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.586"
+        }
+      ],
+      "vote_for": "2:150",
+      "vote_against": "2:151",
+      "total_votes_for": "1371864351613",
+      "total_votes_against": 0,
+      "name": "Python Library and Applications",
+      "url": "https://github.com/xeroc/worker-proposals",
+      "worker_account_details": {
+        "registrar": "1.2.100665",
+        "referrer": "1.2.100665",
+        "lifetime_referrer": "1.2.100665",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "pay.xeroc",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.282",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS4vkQj9k4cf4WmYzGwm9EW435A29AzSBoQyZn5hHVvruZeUgU1U",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.282",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS5AjtESJLTuBmL5hDSLeuigpkWDTe4ZUSjugwAvHSzMJWEUbDAf",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5AjtESJLTuBmL5hDSLeuigpkWDTe4ZUSjugwAvHSzMJWEUbDAf",
+          "voting_account": "1.2.282",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.100665",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.32",
+      "worker_account": "1.2.100665",
+      "work_begin_date": "2016-03-01T00:00:00",
+      "work_end_date": "2016-06-30T00:00:00",
+      "daily_pay": 1073333333,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.587"
+        }
+      ],
+      "vote_for": "2:152",
+      "vote_against": "2:153",
+      "total_votes_for": "1369470081149",
+      "total_votes_against": 0,
+      "name": "Documentation and Technical Support",
+      "url": "https://github.com/xeroc/worker-proposals",
+      "worker_account_details": {
+        "registrar": "1.2.100665",
+        "referrer": "1.2.100665",
+        "lifetime_referrer": "1.2.100665",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "pay.xeroc",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.282",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS4vkQj9k4cf4WmYzGwm9EW435A29AzSBoQyZn5hHVvruZeUgU1U",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.282",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS5AjtESJLTuBmL5hDSLeuigpkWDTe4ZUSjugwAvHSzMJWEUbDAf",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5AjtESJLTuBmL5hDSLeuigpkWDTe4ZUSjugwAvHSzMJWEUbDAf",
+          "voting_account": "1.2.282",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.100665",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.33",
+      "worker_account": "1.2.31890",
+      "work_begin_date": "2016-03-01T00:00:00",
+      "work_end_date": "2016-05-31T23:59:59",
+      "daily_pay": 3000000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.607"
+        }
+      ],
+      "vote_for": "2:154",
+      "vote_against": "2:155",
+      "total_votes_for": "1344227609442",
+      "total_votes_against": 0,
+      "name": "Blockchain Explorer and API Development",
+      "url": "https://bitsharestalk.org/index.php/topic,21532.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.31890",
+        "referrer": "1.2.31890",
+        "lifetime_referrer": "1.2.31890",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "roadscape",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8QhCpQSAxoJGXYfpqaG3WGrEYRg6Ht1uUnGfdYx5vnTcR6XDcf",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8QhCpQSAxoJGXYfpqaG3WGrEYRg6Ht1uUnGfdYx5vnTcR6XDcf",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8QhCpQSAxoJGXYfpqaG3WGrEYRg6Ht1uUnGfdYx5vnTcR6XDcf",
+          "voting_account": "1.2.282",
+          "num_witness": 2,
+          "num_committee": 1,
+          "votes": [
+            "1:31",
+            "1:47",
+            "0:82"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.31890",
+        "whitelisting_accounts": [
+          "1.2.15903"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.34",
+      "worker_account": "1.2.30665",
+      "work_begin_date": "2016-03-21T00:00:00",
+      "work_end_date": "2016-05-21T00:00:00",
+      "daily_pay": 2500000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.650"
+        }
+      ],
+      "vote_for": "2:156",
+      "vote_against": "2:157",
+      "total_votes_for": "1344584536573",
+      "total_votes_against": 0,
+      "name": "svk - Bitshares GUI Development and Maintenance #2",
+      "url": "https://docs.google.com/document/d/1c4acxn0BAAln2EPd9WcE6cU3fqpxbeyOTL0JrfMbT7E/edit?usp=sharing",
+      "worker_account_details": {
+        "registrar": "1.2.30665",
+        "referrer": "1.2.30665",
+        "lifetime_referrer": "1.2.30665",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "dev.bitsharesblocks",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8eLeqSZZtB1YHdw7KjQxRSRmaKAseCxhUSqaLxUdqvdGpp6nck",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8eLeqSZZtB1YHdw7KjQxRSRmaKAseCxhUSqaLxUdqvdGpp6nck",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8eLeqSZZtB1YHdw7KjQxRSRmaKAseCxhUSqaLxUdqvdGpp6nck",
+          "voting_account": "1.2.24157",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.30665",
+        "whitelisting_accounts": [
+          "1.2.126253"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.35",
+      "worker_account": "1.2.666",
+      "work_begin_date": "2016-03-25T00:00:00",
+      "work_end_date": "2032-12-31T00:00:00",
+      "daily_pay": "200000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.685"
+        }
+      ],
+      "vote_for": "2:158",
+      "vote_against": "2:159",
+      "total_votes_for": "202112582964",
+      "total_votes_against": 0,
+      "name": "Fund to pay dividend",
+      "url": "https://bitsharestalk.org/index.php/topic,22041.new.html#new",
+      "worker_account_details": {
+        "registrar": "1.2.666",
+        "referrer": "1.2.666",
+        "lifetime_referrer": "1.2.666",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "dacs",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS68NmWbKLxNSdz3Cwhgh9ruPVhg1XSdub3Td4LyXXbsxkqJWsDS",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS68NmWbKLxNSdz3Cwhgh9ruPVhg1XSdub3Td4LyXXbsxkqJWsDS",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS68NmWbKLxNSdz3Cwhgh9ruPVhg1XSdub3Td4LyXXbsxkqJWsDS",
+          "voting_account": "1.2.5",
+          "num_witness": 8,
+          "num_committee": 5,
+          "votes": [
+            "1:33",
+            "1:45",
+            "1:47",
+            "2:65",
+            "0:85",
+            "0:111",
+            "0:112",
+            "1:114",
+            "2:121",
+            "2:123",
+            "2:127",
+            "2:129",
+            "2:131",
+            "2:133",
+            "2:135",
+            "0:141",
+            "1:143",
+            "2:158",
+            "2:160",
+            "1:164",
+            "1:165",
+            "0:173",
+            "1:190"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.666",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.36",
+      "worker_account": "1.2.666",
+      "work_begin_date": "2016-03-26T00:00:00",
+      "work_end_date": "2032-12-31T00:00:00",
+      "daily_pay": "18000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.687"
+        }
+      ],
+      "vote_for": "2:160",
+      "vote_against": "2:161",
+      "total_votes_for": "181828437942",
+      "total_votes_against": 0,
+      "name": "Fund to pay dividend",
+      "url": "https://bitsharestalk.org/index.php/topic,22041.new.html#new",
+      "worker_account_details": {
+        "registrar": "1.2.666",
+        "referrer": "1.2.666",
+        "lifetime_referrer": "1.2.666",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "dacs",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS68NmWbKLxNSdz3Cwhgh9ruPVhg1XSdub3Td4LyXXbsxkqJWsDS",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS68NmWbKLxNSdz3Cwhgh9ruPVhg1XSdub3Td4LyXXbsxkqJWsDS",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS68NmWbKLxNSdz3Cwhgh9ruPVhg1XSdub3Td4LyXXbsxkqJWsDS",
+          "voting_account": "1.2.5",
+          "num_witness": 8,
+          "num_committee": 5,
+          "votes": [
+            "1:33",
+            "1:45",
+            "1:47",
+            "2:65",
+            "0:85",
+            "0:111",
+            "0:112",
+            "1:114",
+            "2:121",
+            "2:123",
+            "2:127",
+            "2:129",
+            "2:131",
+            "2:133",
+            "2:135",
+            "0:141",
+            "1:143",
+            "2:158",
+            "2:160",
+            "1:164",
+            "1:165",
+            "0:173",
+            "1:190"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.666",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.37",
+      "worker_account": "1.2.31489",
+      "work_begin_date": "2016-05-01T00:00:00",
+      "work_end_date": "2016-05-12T00:00:00",
+      "daily_pay": "10000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.779"
+        }
+      ],
+      "vote_for": "2:167",
+      "vote_against": "2:168",
+      "total_votes_for": 3712163478,
+      "total_votes_against": 0,
+      "name": "bitARS smartcoin creation",
+      "url": "https://bitsharestalk.org/index.php/topic,22231.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.31489",
+        "referrer": "1.2.31489",
+        "lifetime_referrer": "1.2.31489",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "elmato",
+        "owner": {
+          "weight_threshold": 2,
+          "account_auths": [
+            [
+              "1.2.0",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS6DyMRhAshVj8wyq5VrSxvR6SyNPk8SwWnV1vVESvWswiPWGku3",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7QMEzJ5kfzgnbCQaYS6awcyfLiFn9DGCSNEvvV1px5w3sHb4dd",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6HihtEB8LfvLe4cSSrqtyxkdfKDkeMocKwu7PJkb6W8gqddi3R",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [
+            "2:167"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.31489",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.38",
+      "worker_account": "1.2.110851",
+      "work_begin_date": "2016-06-01T00:00:00",
+      "work_end_date": "2016-08-31T00:00:00",
+      "daily_pay": 1666600000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.824"
+        }
+      ],
+      "vote_for": "2:171",
+      "vote_against": "2:172",
+      "total_votes_for": "31467797259",
+      "total_votes_against": 0,
+      "name": "Chronos Crypto Videos",
+      "url": "https://bitsharestalk.org/index.php/topic,22487.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.110851",
+        "referrer": "1.2.110851",
+        "lifetime_referrer": "1.2.110851",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 6000,
+        "name": "chronos-youtube",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7qaTtwufEbpvy4MEkHk2XJJuy2QiUwHtb4rxjhFn9ZuRuR6JVc",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7CjuLQKpP6ZMPbjdQzWVrQ5JG4FRjsMQiFUprBBAQQEQMU5ifE",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7CjuLQKpP6ZMPbjdQzWVrQ5JG4FRjsMQiFUprBBAQQEQMU5ifE",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [
+            "1:170"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.110851",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.39",
+      "worker_account": "1.2.121",
+      "work_begin_date": "2016-05-24T10:00:00",
+      "work_end_date": "2016-06-01T00:00:00",
+      "daily_pay": 1,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.830"
+        }
+      ],
+      "vote_for": "2:174",
+      "vote_against": "2:175",
+      "total_votes_for": 3395340,
+      "total_votes_against": 0,
+      "name": "to optimize the force settlement parameter of bitCNY",
+      "url": "https://bitsharestalk.org/index.php/topic,22416.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.121",
+        "referrer": "1.2.121",
+        "lifetime_referrer": "1.2.121",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "bitcrab",
+        "owner": {
+          "weight_threshold": 3,
+          "account_auths": [
+            [
+              "1.2.964",
+              1
+            ],
+            [
+              "1.2.149047",
+              1
+            ],
+            [
+              "1.2.152878",
+              2
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7JFp7uKFTiKfmR8XkWtdGozdLJB2m9y6awXWjBKUeBs5EkS6mw",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7JFp7uKFTiKfmR8XkWtdGozdLJB2m9y6awXWjBKUeBs5EkS6mw",
+          "voting_account": "1.2.5",
+          "num_witness": 46,
+          "num_committee": 11,
+          "votes": [
+            "1:23",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:31",
+            "1:32",
+            "1:33",
+            "1:34",
+            "1:36",
+            "1:37",
+            "1:38",
+            "1:39",
+            "1:40",
+            "1:42",
+            "1:43",
+            "1:45",
+            "1:48",
+            "1:49",
+            "1:51",
+            "1:52",
+            "1:55",
+            "1:56",
+            "1:57",
+            "1:63",
+            "2:65",
+            "1:75",
+            "1:77",
+            "1:83",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:111",
+            "0:112",
+            "1:114",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:162",
+            "1:163",
+            "1:164",
+            "1:165",
+            "1:166",
+            "1:169",
+            "1:170",
+            "0:173",
+            "1:185",
+            "1:190",
+            "1:191",
+            "2:194",
+            "1:196",
+            "0:213",
+            "1:214",
+            "1:216",
+            "1:218",
+            "1:219",
+            "0:223",
+            "2:224",
+            "2:233",
+            "1:235",
+            "2:246",
+            "2:251",
+            "1:253",
+            "2:258",
+            "2:260",
+            "2:262",
+            "2:264",
+            "2:266"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.121",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.40",
+      "worker_account": "1.2.282",
+      "work_begin_date": "2016-05-27T14:00:00",
+      "work_end_date": "2016-06-01T00:00:00",
+      "daily_pay": 1,
+      "worker": [
+        0,
+        {
+          "total_burned": 0
+        }
+      ],
+      "vote_for": "2:177",
+      "vote_against": "2:178",
+      "total_votes_for": 250701092,
+      "total_votes_against": 0,
+      "name": "NO changes to bitCNY force settlement",
+      "url": "https://bitsharestalk.org/index.php/topic,22416.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.282",
+        "referrer": "1.2.282",
+        "lifetime_referrer": "1.2.282",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "xeroc",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5WaszCsqVN9hDkXZPMyiUib3dyrEA4yd5kSMgu28Wz47B3wUqa",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5TPTziKkLexhVKsQKtSpo4bAv5RnB8oXcG4sMHEwCcTf3r7dqE",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5TPTziKkLexhVKsQKtSpo4bAv5RnB8oXcG4sMHEwCcTf3r7dqE",
+          "voting_account": "1.2.5",
+          "num_witness": 15,
+          "num_committee": 9,
+          "votes": [
+            "1:27",
+            "1:30",
+            "1:32",
+            "1:38",
+            "1:44",
+            "1:45",
+            "1:56",
+            "0:82",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:190",
+            "1:196",
+            "1:212",
+            "1:214",
+            "0:215",
+            "1:216",
+            "0:223",
+            "2:224",
+            "2:231",
+            "2:233",
+            "1:235",
+            "2:244",
+            "2:246",
+            "1:253",
+            "2:256",
+            "2:258",
+            "2:260",
+            "2:262",
+            "2:264",
+            "2:266",
+            "2:269"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.282",
+        "whitelisting_accounts": [
+          "1.2.5178",
+          "1.2.12376"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.41",
+      "worker_account": "1.2.30665",
+      "work_begin_date": "2016-06-12T00:00:00",
+      "work_end_date": "2016-09-12T00:00:00",
+      "daily_pay": 3500000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.850"
+        }
+      ],
+      "vote_for": "2:179",
+      "vote_against": "2:180",
+      "total_votes_for": "29801279651",
+      "total_votes_against": 0,
+      "name": "Bitshares GUI Development and Maintenance",
+      "url": "https://docs.google.com/document/d/1c4acxn0BAAln2EPd9WcE6cU3fqpxbeyOTL0JrfMbT7E/edit?usp=sharing",
+      "worker_account_details": {
+        "registrar": "1.2.30665",
+        "referrer": "1.2.30665",
+        "lifetime_referrer": "1.2.30665",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "dev.bitsharesblocks",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8eLeqSZZtB1YHdw7KjQxRSRmaKAseCxhUSqaLxUdqvdGpp6nck",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8eLeqSZZtB1YHdw7KjQxRSRmaKAseCxhUSqaLxUdqvdGpp6nck",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8eLeqSZZtB1YHdw7KjQxRSRmaKAseCxhUSqaLxUdqvdGpp6nck",
+          "voting_account": "1.2.24157",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.30665",
+        "whitelisting_accounts": [
+          "1.2.126253"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.42",
+      "worker_account": "1.2.111880",
+      "work_begin_date": "2016-07-07T00:00:00",
+      "work_end_date": "2016-10-10T00:00:00",
+      "daily_pay": 2000000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.878"
+        }
+      ],
+      "vote_for": "2:181",
+      "vote_against": "2:182",
+      "total_votes_for": "135123930325",
+      "total_votes_against": 0,
+      "name": "Ripple Gateway",
+      "url": "https://ripplefox.com/bts/worker",
+      "worker_account_details": {
+        "registrar": "1.2.111880",
+        "referrer": "1.2.111880",
+        "lifetime_referrer": "1.2.111880",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "ripplefox-wallet",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS74KX7yvwLcG3QRPUgmqwmXRftFFgXCnV8BnDvGGrgvD4tskihN",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7oAENvYCZVKdzRNsHtLH6xxmNnSM7HcyD8DoK4rKoc25V5F9EC",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7oAENvYCZVKdzRNsHtLH6xxmNnSM7HcyD8DoK4rKoc25V5F9EC",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [
+            "2:181"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.111880",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.43",
+      "worker_account": "1.2.35939",
+      "work_begin_date": "2016-07-19T00:00:00",
+      "work_end_date": "2016-07-31T00:00:00",
+      "daily_pay": 2525252525,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.901"
+        }
+      ],
+      "vote_for": "2:183",
+      "vote_against": "2:184",
+      "total_votes_for": 3592270916,
+      "total_votes_against": 0,
+      "name": "BitShares Website Mockup",
+      "url": "https://bitsharestalk.org/index.php/topic,22828.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.35939",
+        "referrer": "1.2.35939",
+        "lifetime_referrer": "1.2.35939",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "chris4210",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6TSPsR98bu9i3iAu2JCD2VsPZ6u6NMKM4NxzguK7YFyUtW5Rck",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8f92AiEUb8QdYTKpqTm8PShZYovDRmocZVAEDWcKUroQEMUUqm",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8f92AiEUb8QdYTKpqTm8PShZYovDRmocZVAEDWcKUroQEMUUqm",
+          "voting_account": "1.2.5",
+          "num_witness": 11,
+          "num_committee": 3,
+          "votes": [
+            "1:27",
+            "1:30",
+            "1:33",
+            "1:36",
+            "1:37",
+            "1:44",
+            "0:82",
+            "0:147",
+            "0:173",
+            "1:196",
+            "1:199",
+            "1:214",
+            "1:216",
+            "1:218",
+            "2:224",
+            "2:233",
+            "2:244",
+            "2:246",
+            "2:251",
+            "2:256",
+            "2:258",
+            "2:260"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.35939",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [
+          "1.2.2340"
+        ],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.44",
+      "worker_account": "1.2.110851",
+      "work_begin_date": "2016-09-12T00:00:00",
+      "work_end_date": "2017-03-31T00:00:00",
+      "daily_pay": 16666,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1012"
+        }
+      ],
+      "vote_for": "2:186",
+      "vote_against": "2:187",
+      "total_votes_for": "125412881181",
+      "total_votes_against": 0,
+      "name": "Chronos Crypto Videos",
+      "url": "https://bitsharestalk.org/index.php/topic,23291.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.110851",
+        "referrer": "1.2.110851",
+        "lifetime_referrer": "1.2.110851",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 6000,
+        "name": "chronos-youtube",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7qaTtwufEbpvy4MEkHk2XJJuy2QiUwHtb4rxjhFn9ZuRuR6JVc",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7CjuLQKpP6ZMPbjdQzWVrQ5JG4FRjsMQiFUprBBAQQEQMU5ifE",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7CjuLQKpP6ZMPbjdQzWVrQ5JG4FRjsMQiFUprBBAQQEQMU5ifE",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [
+            "1:170"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.110851",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.45",
+      "worker_account": "1.2.110851",
+      "work_begin_date": "2016-09-12T00:00:00",
+      "work_end_date": "2017-03-31T00:00:00",
+      "daily_pay": 1666600000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1013"
+        }
+      ],
+      "vote_for": "2:188",
+      "vote_against": "2:189",
+      "total_votes_for": "1132163061713",
+      "total_votes_against": 0,
+      "name": "Chronos Crypto Videos",
+      "url": "https://bitsharestalk.org/index.php/topic,23291.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.110851",
+        "referrer": "1.2.110851",
+        "lifetime_referrer": "1.2.110851",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 6000,
+        "name": "chronos-youtube",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7qaTtwufEbpvy4MEkHk2XJJuy2QiUwHtb4rxjhFn9ZuRuR6JVc",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7CjuLQKpP6ZMPbjdQzWVrQ5JG4FRjsMQiFUprBBAQQEQMU5ifE",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7CjuLQKpP6ZMPbjdQzWVrQ5JG4FRjsMQiFUprBBAQQEQMU5ifE",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [
+            "1:170"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.110851",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.46",
+      "worker_account": "1.2.138721",
+      "work_begin_date": "2016-11-09T00:00:00",
+      "work_end_date": "2016-12-31T23:59:59",
+      "daily_pay": 1000000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1089"
+        }
+      ],
+      "vote_for": "2:192",
+      "vote_against": "2:193",
+      "total_votes_for": 30308856,
+      "total_votes_against": 0,
+      "name": "Project administration & essential maintenance",
+      "url": "https://bitsharestalk.org/index.php/topic,23495.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.138721",
+        "referrer": "1.2.138721",
+        "lifetime_referrer": "1.2.138721",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "soledger",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6iNQpoBWyXCVQKbUksTYq99K4grhRjeQVPqmDbRDC6xTF2WEpy",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8dzqHe9fpcC94RWbwZZbnw3tvbzAvC68CDLLtPhGmXAyvDUDRF",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8dzqHe9fpcC94RWbwZZbnw3tvbzAvC68CDLLtPhGmXAyvDUDRF",
+          "voting_account": "1.2.282",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.138721",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.47",
+      "worker_account": "1.2.138721",
+      "work_begin_date": "2016-11-09T00:00:00",
+      "work_end_date": "2017-12-31T23:59:59",
+      "daily_pay": 1000000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1090"
+        }
+      ],
+      "vote_for": "2:194",
+      "vote_against": "2:195",
+      "total_votes_for": "27083909320155",
+      "total_votes_against": 0,
+      "name": "Project administration & essential maintenance",
+      "url": "https://bitsharestalk.org/index.php/topic,23495.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.138721",
+        "referrer": "1.2.138721",
+        "lifetime_referrer": "1.2.138721",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "soledger",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6iNQpoBWyXCVQKbUksTYq99K4grhRjeQVPqmDbRDC6xTF2WEpy",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8dzqHe9fpcC94RWbwZZbnw3tvbzAvC68CDLLtPhGmXAyvDUDRF",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8dzqHe9fpcC94RWbwZZbnw3tvbzAvC68CDLLtPhGmXAyvDUDRF",
+          "voting_account": "1.2.282",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.138721",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.48",
+      "worker_account": "1.2.30665",
+      "work_begin_date": "2017-01-09T00:00:00",
+      "work_end_date": "2017-04-09T00:00:00",
+      "daily_pay": "5000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1152"
+        }
+      ],
+      "vote_for": "2:197",
+      "vote_against": "2:198",
+      "total_votes_for": "123750867069",
+      "total_votes_against": 0,
+      "name": "GUI Development - svk",
+      "url": "https://docs.google.com/document/d/1c4acxn0BAAln2EPd9WcE6cU3fqpxbeyOTL0JrfMbT7E/edit?usp=sharing",
+      "worker_account_details": {
+        "registrar": "1.2.30665",
+        "referrer": "1.2.30665",
+        "lifetime_referrer": "1.2.30665",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "dev.bitsharesblocks",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8eLeqSZZtB1YHdw7KjQxRSRmaKAseCxhUSqaLxUdqvdGpp6nck",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8eLeqSZZtB1YHdw7KjQxRSRmaKAseCxhUSqaLxUdqvdGpp6nck",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8eLeqSZZtB1YHdw7KjQxRSRmaKAseCxhUSqaLxUdqvdGpp6nck",
+          "voting_account": "1.2.24157",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.30665",
+        "whitelisting_accounts": [
+          "1.2.126253"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.49",
+      "worker_account": "1.2.117601",
+      "work_begin_date": "2017-01-23T00:00:00",
+      "work_end_date": "2017-07-24T00:00:00",
+      "daily_pay": 896063333,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1166"
+        }
+      ],
+      "vote_for": "2:200",
+      "vote_against": "2:201",
+      "total_votes_for": "390558436926",
+      "total_votes_against": 0,
+      "name": "Alfredo Garcia, Bitshares Core Dev",
+      "url": "https://bitsharestalk.org/index.php/topic,23698.0.html",
+      "worker_account_details": {
+        "registrar": "1.2.117601",
+        "referrer": "1.2.117601",
+        "lifetime_referrer": "1.2.117601",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "bitshares-munich-devs",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS78Q777Jebsisx4Z1FNsWvNfSqjcuJEJttGD8BHyoVzWQzRwSds",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5E3MNHW1ZvMuUvSotRZyn5EgSvAEUKCF7yxDd4ZbNY8B5CEGUu",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5E3MNHW1ZvMuUvSotRZyn5EgSvAEUKCF7yxDd4ZbNY8B5CEGUu",
+          "voting_account": "1.2.114893",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.117601",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.50",
+      "worker_account": "1.2.121",
+      "work_begin_date": "2017-02-02T00:00:00",
+      "work_end_date": "2017-02-17T00:00:00",
+      "daily_pay": 100000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1186"
+        }
+      ],
+      "vote_for": "2:202",
+      "vote_against": "2:203",
+      "total_votes_for": "1537634640524",
+      "total_votes_against": 0,
+      "name": "agree to increase witness payment to 4BTS/block",
+      "url": "https://github.com/bitshares/bsips/issues/22",
+      "worker_account_details": {
+        "registrar": "1.2.121",
+        "referrer": "1.2.121",
+        "lifetime_referrer": "1.2.121",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "bitcrab",
+        "owner": {
+          "weight_threshold": 3,
+          "account_auths": [
+            [
+              "1.2.964",
+              1
+            ],
+            [
+              "1.2.149047",
+              1
+            ],
+            [
+              "1.2.152878",
+              2
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7JFp7uKFTiKfmR8XkWtdGozdLJB2m9y6awXWjBKUeBs5EkS6mw",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7JFp7uKFTiKfmR8XkWtdGozdLJB2m9y6awXWjBKUeBs5EkS6mw",
+          "voting_account": "1.2.5",
+          "num_witness": 46,
+          "num_committee": 11,
+          "votes": [
+            "1:23",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:31",
+            "1:32",
+            "1:33",
+            "1:34",
+            "1:36",
+            "1:37",
+            "1:38",
+            "1:39",
+            "1:40",
+            "1:42",
+            "1:43",
+            "1:45",
+            "1:48",
+            "1:49",
+            "1:51",
+            "1:52",
+            "1:55",
+            "1:56",
+            "1:57",
+            "1:63",
+            "2:65",
+            "1:75",
+            "1:77",
+            "1:83",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:111",
+            "0:112",
+            "1:114",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:162",
+            "1:163",
+            "1:164",
+            "1:165",
+            "1:166",
+            "1:169",
+            "1:170",
+            "0:173",
+            "1:185",
+            "1:190",
+            "1:191",
+            "2:194",
+            "1:196",
+            "0:213",
+            "1:214",
+            "1:216",
+            "1:218",
+            "1:219",
+            "0:223",
+            "2:224",
+            "2:233",
+            "1:235",
+            "2:246",
+            "2:251",
+            "1:253",
+            "2:258",
+            "2:260",
+            "2:262",
+            "2:264",
+            "2:266"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.121",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.51",
+      "worker_account": "1.2.121",
+      "work_begin_date": "2017-02-02T00:00:00",
+      "work_end_date": "2017-02-17T00:00:00",
+      "daily_pay": 100000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1187"
+        }
+      ],
+      "vote_for": "2:204",
+      "vote_against": "2:205",
+      "total_votes_for": 4152984906,
+      "total_votes_against": 0,
+      "name": "object to increase witness payment to 4BTS/block",
+      "url": "https://github.com/bitshares/bsips/issues/22",
+      "worker_account_details": {
+        "registrar": "1.2.121",
+        "referrer": "1.2.121",
+        "lifetime_referrer": "1.2.121",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "bitcrab",
+        "owner": {
+          "weight_threshold": 3,
+          "account_auths": [
+            [
+              "1.2.964",
+              1
+            ],
+            [
+              "1.2.149047",
+              1
+            ],
+            [
+              "1.2.152878",
+              2
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7JFp7uKFTiKfmR8XkWtdGozdLJB2m9y6awXWjBKUeBs5EkS6mw",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7JFp7uKFTiKfmR8XkWtdGozdLJB2m9y6awXWjBKUeBs5EkS6mw",
+          "voting_account": "1.2.5",
+          "num_witness": 46,
+          "num_committee": 11,
+          "votes": [
+            "1:23",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:31",
+            "1:32",
+            "1:33",
+            "1:34",
+            "1:36",
+            "1:37",
+            "1:38",
+            "1:39",
+            "1:40",
+            "1:42",
+            "1:43",
+            "1:45",
+            "1:48",
+            "1:49",
+            "1:51",
+            "1:52",
+            "1:55",
+            "1:56",
+            "1:57",
+            "1:63",
+            "2:65",
+            "1:75",
+            "1:77",
+            "1:83",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:111",
+            "0:112",
+            "1:114",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:162",
+            "1:163",
+            "1:164",
+            "1:165",
+            "1:166",
+            "1:169",
+            "1:170",
+            "0:173",
+            "1:185",
+            "1:190",
+            "1:191",
+            "2:194",
+            "1:196",
+            "0:213",
+            "1:214",
+            "1:216",
+            "1:218",
+            "1:219",
+            "0:223",
+            "2:224",
+            "2:233",
+            "1:235",
+            "2:246",
+            "2:251",
+            "1:253",
+            "2:258",
+            "2:260",
+            "2:262",
+            "2:264",
+            "2:266"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.121",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.52",
+      "worker_account": "1.2.154380",
+      "work_begin_date": "2017-02-15T00:00:00",
+      "work_end_date": "2017-05-15T00:00:00",
+      "daily_pay": "9000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1188"
+        }
+      ],
+      "vote_for": "2:206",
+      "vote_against": "2:207",
+      "total_votes_for": "241639011450",
+      "total_votes_against": 0,
+      "name": "Python-steem and uptick",
+      "url": "https://github.com/xeroc/worker-proposals",
+      "worker_account_details": {
+        "registrar": "1.2.154380",
+        "referrer": "1.2.154380",
+        "lifetime_referrer": "1.2.154380",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "multisig-worker-2017-01",
+        "owner": {
+          "weight_threshold": 3,
+          "account_auths": [
+            [
+              "1.2.0",
+              3
+            ],
+            [
+              "1.2.5178",
+              1
+            ],
+            [
+              "1.2.30665",
+              1
+            ],
+            [
+              "1.2.32567",
+              1
+            ],
+            [
+              "1.2.126986",
+              1
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 3,
+          "account_auths": [
+            [
+              "1.2.167",
+              1
+            ],
+            [
+              "1.2.5178",
+              1
+            ],
+            [
+              "1.2.30665",
+              1
+            ],
+            [
+              "1.2.32567",
+              1
+            ],
+            [
+              "1.2.126986",
+              1
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS51y7F4GBf6wBSfpREh5BTsejMXRr3drvVdPuf6npNbDsx5kwNJ",
+          "voting_account": "1.2.282",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.154380",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.53",
+      "worker_account": "1.2.964",
+      "work_begin_date": "2017-02-07T14:00:00",
+      "work_end_date": "2017-02-17T00:00:00",
+      "daily_pay": 100000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1191"
+        }
+      ],
+      "vote_for": "2:208",
+      "vote_against": "2:209",
+      "total_votes_for": 2083306,
+      "total_votes_against": 0,
+      "name": "agree to increase witness payment to 3BTS/block",
+      "url": "https://github.com/bitshares/bsips/issues/22",
+      "worker_account_details": {
+        "registrar": "1.2.964",
+        "referrer": "1.2.964",
+        "lifetime_referrer": "1.2.964",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "jerryliu",
+        "owner": {
+          "weight_threshold": 3,
+          "account_auths": [
+            [
+              "1.2.121",
+              1
+            ],
+            [
+              "1.2.149047",
+              1
+            ],
+            [
+              "1.2.152878",
+              2
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 2,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS67fCbuPgJ6Rtr59i5YW4d27wJ3YirJxx68quUipmKPwMc4MpjW",
+              1
+            ],
+            [
+              "BTS8NHvMyHiXqo6rgjxaJKNnyyqvjJGP7jY8VSH3v4JhDYN8JheAE",
+              2
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8NHvMyHiXqo6rgjxaJKNnyyqvjJGP7jY8VSH3v4JhDYN8JheAE",
+          "voting_account": "1.2.121",
+          "num_witness": 20,
+          "num_committee": 10,
+          "votes": [
+            "1:23",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:32",
+            "1:33",
+            "1:37",
+            "1:44",
+            "1:45",
+            "1:47",
+            "1:56",
+            "1:60",
+            "2:65",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:111",
+            "0:112",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:164",
+            "1:165",
+            "1:166",
+            "0:173",
+            "1:190",
+            "2:194",
+            "1:196",
+            "1:199",
+            "2:200",
+            "2:206",
+            "0:213",
+            "0:217"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.964",
+        "whitelisting_accounts": [
+          "1.2.523410"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.54",
+      "worker_account": "1.2.964",
+      "work_begin_date": "2017-02-20T00:00:00",
+      "work_end_date": "2017-03-22T00:00:00",
+      "daily_pay": 840000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1194"
+        }
+      ],
+      "vote_for": "2:210",
+      "vote_against": "2:211",
+      "total_votes_for": "63614680607",
+      "total_votes_against": 0,
+      "name": "Advertisement on 8btc.com",
+      "url": "https://bitsharestalk.org/index.php/topic,23785.msg302608",
+      "worker_account_details": {
+        "registrar": "1.2.964",
+        "referrer": "1.2.964",
+        "lifetime_referrer": "1.2.964",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "jerryliu",
+        "owner": {
+          "weight_threshold": 3,
+          "account_auths": [
+            [
+              "1.2.121",
+              1
+            ],
+            [
+              "1.2.149047",
+              1
+            ],
+            [
+              "1.2.152878",
+              2
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 2,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS67fCbuPgJ6Rtr59i5YW4d27wJ3YirJxx68quUipmKPwMc4MpjW",
+              1
+            ],
+            [
+              "BTS8NHvMyHiXqo6rgjxaJKNnyyqvjJGP7jY8VSH3v4JhDYN8JheAE",
+              2
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8NHvMyHiXqo6rgjxaJKNnyyqvjJGP7jY8VSH3v4JhDYN8JheAE",
+          "voting_account": "1.2.121",
+          "num_witness": 20,
+          "num_committee": 10,
+          "votes": [
+            "1:23",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:32",
+            "1:33",
+            "1:37",
+            "1:44",
+            "1:45",
+            "1:47",
+            "1:56",
+            "1:60",
+            "2:65",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:111",
+            "0:112",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:164",
+            "1:165",
+            "1:166",
+            "0:173",
+            "1:190",
+            "2:194",
+            "1:196",
+            "1:199",
+            "2:200",
+            "2:206",
+            "0:213",
+            "0:217"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.964",
+        "whitelisting_accounts": [
+          "1.2.523410"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.55",
+      "worker_account": "1.2.356589",
+      "work_begin_date": "2017-07-12T00:00:00",
+      "work_end_date": "2018-01-08T00:00:00",
+      "daily_pay": 218700000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1608"
+        }
+      ],
+      "vote_for": "2:224",
+      "vote_against": "2:225",
+      "total_votes_for": "84347607335579",
+      "total_votes_against": 0,
+      "name": "Alfredo Garcia - Core Developer for the second half of 2017",
+      "url": "https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2017.md",
+      "worker_account_details": {
+        "registrar": "1.2.356589",
+        "referrer": "1.2.356589",
+        "lifetime_referrer": "1.2.356589",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "alfredo-worker",
+        "owner": {
+          "weight_threshold": 4,
+          "account_auths": [
+            [
+              "1.2.167",
+              1
+            ],
+            [
+              "1.2.30665",
+              1
+            ],
+            [
+              "1.2.31489",
+              1
+            ],
+            [
+              "1.2.90314",
+              1
+            ],
+            [
+              "1.2.126986",
+              1
+            ],
+            [
+              "1.2.152768",
+              1
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 4,
+          "account_auths": [
+            [
+              "1.2.167",
+              1
+            ],
+            [
+              "1.2.30665",
+              1
+            ],
+            [
+              "1.2.31489",
+              1
+            ],
+            [
+              "1.2.90314",
+              1
+            ],
+            [
+              "1.2.126986",
+              1
+            ],
+            [
+              "1.2.152768",
+              1
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6kY7wQtCAbagTj8YmyRXBDTrdLra6Qh8F4oucCiqZRMAWtMPif",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.356589",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.56",
+      "worker_account": "1.2.364315",
+      "work_begin_date": "2017-07-15T00:00:00",
+      "work_end_date": "2017-10-31T00:00:00",
+      "daily_pay": 640000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1661"
+        }
+      ],
+      "vote_for": "2:228",
+      "vote_against": "2:229",
+      "total_votes_for": "992296216639",
+      "total_votes_against": 0,
+      "name": "201707-bsip18",
+      "url": "http://www.bitshares.foundation/workers/2017-07-peter-conrad",
+      "worker_account_details": {
+        "registrar": "1.2.364315",
+        "referrer": "1.2.364315",
+        "lifetime_referrer": "1.2.364315",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 5000,
+        "name": "workers.bitshares.foundation",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.0",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS7omzi3GpBJEn2A9uiSb7onoZLzHLAAFTjRa8NsUTpERSHFNKtb",
+              1
+            ],
+            [
+              "BTS8Gku7k9XQgCzBoYGdvb4ft9bK7pNDxwYoUoEdo1GZCuSGzEWgB",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5ttLsGRgtSTzzoXmw88BV4ExeEc9bCfSquNMg9fY44dKEgYo5j",
+              1
+            ],
+            [
+              "BTS7cR5fMnvgj2L3Cs2isCYPs2ATNWbpBVpsaNChBWsEEMEckrczn",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5LKaNYUyf4q91fqJCfXzkGCx5erx5pVV9ZUYZVpLdB7YJutwmN",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.364315",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.57",
+      "worker_account": "1.2.100665",
+      "work_begin_date": "2017-08-03T12:47:20",
+      "work_end_date": "2035-12-31T00:00:00",
+      "daily_pay": "10000000000",
+      "worker": [
+        0,
+        {
+          "total_burned": 0
+        }
+      ],
+      "vote_for": "2:231",
+      "vote_against": "2:232",
+      "total_votes_for": "26256916411724",
+      "total_votes_against": 0,
+      "name": "refund100k",
+      "url": "",
+      "worker_account_details": {
+        "registrar": "1.2.100665",
+        "referrer": "1.2.100665",
+        "lifetime_referrer": "1.2.100665",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "pay.xeroc",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.282",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS4vkQj9k4cf4WmYzGwm9EW435A29AzSBoQyZn5hHVvruZeUgU1U",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.282",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS5AjtESJLTuBmL5hDSLeuigpkWDTe4ZUSjugwAvHSzMJWEUbDAf",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5AjtESJLTuBmL5hDSLeuigpkWDTe4ZUSjugwAvHSzMJWEUbDAf",
+          "voting_account": "1.2.282",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.100665",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.58",
+      "worker_account": "1.2.364315",
+      "work_begin_date": "2017-08-15T00:00:00",
+      "work_end_date": "2018-02-15T00:00:00",
+      "daily_pay": 1400000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1737"
+        }
+      ],
+      "vote_for": "2:233",
+      "vote_against": "2:234",
+      "total_votes_for": "83818669885439",
+      "total_votes_against": 0,
+      "name": "201708-bitsharesui",
+      "url": "http://www.bitshares.foundation/workers/2017-08-bill-butler",
+      "worker_account_details": {
+        "registrar": "1.2.364315",
+        "referrer": "1.2.364315",
+        "lifetime_referrer": "1.2.364315",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 5000,
+        "name": "workers.bitshares.foundation",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.0",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS7omzi3GpBJEn2A9uiSb7onoZLzHLAAFTjRa8NsUTpERSHFNKtb",
+              1
+            ],
+            [
+              "BTS8Gku7k9XQgCzBoYGdvb4ft9bK7pNDxwYoUoEdo1GZCuSGzEWgB",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5ttLsGRgtSTzzoXmw88BV4ExeEc9bCfSquNMg9fY44dKEgYo5j",
+              1
+            ],
+            [
+              "BTS7cR5fMnvgj2L3Cs2isCYPs2ATNWbpBVpsaNChBWsEEMEckrczn",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5LKaNYUyf4q91fqJCfXzkGCx5erx5pVV9ZUYZVpLdB7YJutwmN",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.364315",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.59",
+      "worker_account": "1.2.364315",
+      "work_begin_date": "2017-09-20T00:00:00",
+      "work_end_date": "2017-10-20T00:00:00",
+      "daily_pay": 450000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.1862"
+        }
+      ],
+      "vote_for": "2:240",
+      "vote_against": "2:241",
+      "total_votes_for": "56418841036",
+      "total_votes_against": 0,
+      "name": "201709-steemfest",
+      "url": "http://www.bitshares.foundation/workers/2017-09-steemfest",
+      "worker_account_details": {
+        "registrar": "1.2.364315",
+        "referrer": "1.2.364315",
+        "lifetime_referrer": "1.2.364315",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 5000,
+        "name": "workers.bitshares.foundation",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.0",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS7omzi3GpBJEn2A9uiSb7onoZLzHLAAFTjRa8NsUTpERSHFNKtb",
+              1
+            ],
+            [
+              "BTS8Gku7k9XQgCzBoYGdvb4ft9bK7pNDxwYoUoEdo1GZCuSGzEWgB",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5ttLsGRgtSTzzoXmw88BV4ExeEc9bCfSquNMg9fY44dKEgYo5j",
+              1
+            ],
+            [
+              "BTS7cR5fMnvgj2L3Cs2isCYPs2ATNWbpBVpsaNChBWsEEMEckrczn",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5LKaNYUyf4q91fqJCfXzkGCx5erx5pVV9ZUYZVpLdB7YJutwmN",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.364315",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.60",
+      "worker_account": "1.2.364315",
+      "work_begin_date": "2017-10-18T00:00:00",
+      "work_end_date": "2018-12-31T00:00:00",
+      "daily_pay": 400000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.2114"
+        }
+      ],
+      "vote_for": "2:244",
+      "vote_against": "2:245",
+      "total_votes_for": "33686633515304",
+      "total_votes_against": 0,
+      "name": "201710-compliance",
+      "url": "None",
+      "worker_account_details": {
+        "registrar": "1.2.364315",
+        "referrer": "1.2.364315",
+        "lifetime_referrer": "1.2.364315",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 5000,
+        "name": "workers.bitshares.foundation",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.0",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS7omzi3GpBJEn2A9uiSb7onoZLzHLAAFTjRa8NsUTpERSHFNKtb",
+              1
+            ],
+            [
+              "BTS8Gku7k9XQgCzBoYGdvb4ft9bK7pNDxwYoUoEdo1GZCuSGzEWgB",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5ttLsGRgtSTzzoXmw88BV4ExeEc9bCfSquNMg9fY44dKEgYo5j",
+              1
+            ],
+            [
+              "BTS7cR5fMnvgj2L3Cs2isCYPs2ATNWbpBVpsaNChBWsEEMEckrczn",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5LKaNYUyf4q91fqJCfXzkGCx5erx5pVV9ZUYZVpLdB7YJutwmN",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.364315",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.61",
+      "worker_account": "1.2.364315",
+      "work_begin_date": "2017-10-18T00:00:00",
+      "work_end_date": "2018-12-31T00:00:00",
+      "daily_pay": 450000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.2115"
+        }
+      ],
+      "vote_for": "2:246",
+      "vote_against": "2:247",
+      "total_votes_for": "78172718826108",
+      "total_votes_against": 0,
+      "name": "201710-spokesperson",
+      "url": "None",
+      "worker_account_details": {
+        "registrar": "1.2.364315",
+        "referrer": "1.2.364315",
+        "lifetime_referrer": "1.2.364315",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 5000,
+        "name": "workers.bitshares.foundation",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.0",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS7omzi3GpBJEn2A9uiSb7onoZLzHLAAFTjRa8NsUTpERSHFNKtb",
+              1
+            ],
+            [
+              "BTS8Gku7k9XQgCzBoYGdvb4ft9bK7pNDxwYoUoEdo1GZCuSGzEWgB",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5ttLsGRgtSTzzoXmw88BV4ExeEc9bCfSquNMg9fY44dKEgYo5j",
+              1
+            ],
+            [
+              "BTS7cR5fMnvgj2L3Cs2isCYPs2ATNWbpBVpsaNChBWsEEMEckrczn",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5LKaNYUyf4q91fqJCfXzkGCx5erx5pVV9ZUYZVpLdB7YJutwmN",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.364315",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.62",
+      "worker_account": "1.2.127117",
+      "work_begin_date": "2017-10-22T00:00:00",
+      "work_end_date": "2017-10-23T00:00:00",
+      "daily_pay": 30300000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.2150"
+        }
+      ],
+      "vote_for": "2:249",
+      "vote_against": "2:250",
+      "total_votes_for": "4813093698",
+      "total_votes_against": 0,
+      "name": "\"elmato\" witness feed out of date - 2 days old!",
+      "url": "https://roelandp.nl/bitshareswitnesslog/",
+      "worker_account_details": {
+        "registrar": "1.2.127117",
+        "referrer": "1.2.127117",
+        "lifetime_referrer": "1.2.127117",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "fhdfhr568m0yb",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6JcnBibEG14vwbLmtPZTarryp5Ls5sspmrG8EyFUYaaj1FsVBE",
+              1
+            ],
+            [
+              "BTS59g7zfnL3996rrG4LGAxn9ydiYSMSRyXMYuMnaUwppVJAyFcbb",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7rjPR6J2FqobrGM3jWr2gxq6JcuKgkRooQmcE3hhjrbnmCrjNn",
+              1
+            ],
+            [
+              "BTS7xgwnCyfbEdEXQsTJ5i1uTvRr9z4P8xQRkAxZ4geHRQjoNdGQL",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8Zu4ttERaELc1Ypv8sAq5wGqQLVHFLJnQZf3ZTjVXKfRaaPN4a",
+          "voting_account": "1.2.21106",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.127117",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.63",
+      "worker_account": "1.2.449675",
+      "work_begin_date": "2017-11-01T00:00:00",
+      "work_end_date": "2018-05-01T00:00:00",
+      "daily_pay": 939200000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.2198"
+        }
+      ],
+      "vote_for": "2:251",
+      "vote_against": "2:252",
+      "total_votes_for": "58944520707454",
+      "total_votes_against": 0,
+      "name": "BitShares Greater China Representative",
+      "url": "https://steemit.com/bitshares/@lzmlam/bts-greater-china-representative-worker-proposal-bilingual",
+      "worker_account_details": {
+        "registrar": "1.2.449675",
+        "referrer": "1.2.449675",
+        "lifetime_referrer": "1.2.449675",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "workers.bitshares.representativecn",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8WEsCtchxUXXc3JzQ7LfmGkdDpta38NThSsSreW7TVqjMSFout",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 51,
+          "account_auths": [
+            [
+              "1.2.121",
+              33
+            ],
+            [
+              "1.2.3061",
+              33
+            ],
+            [
+              "1.2.12376",
+              33
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6YHCbBvFdLJXKZeN5vmLdvERijNpuxofqxREfvBtCWgccE59RZ",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.449675",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.64",
+      "worker_account": "1.2.457684",
+      "work_begin_date": "2017-11-10T00:00:00",
+      "work_end_date": "2017-12-10T00:00:00",
+      "daily_pay": "6000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.2272"
+        }
+      ],
+      "vote_for": "2:254",
+      "vote_against": "2:255",
+      "total_votes_for": "2558056850396",
+      "total_votes_against": 0,
+      "name": "Joint Marketing Campaign of Exchanges WP",
+      "url": "https://steemit.com/cn/@lzmlam/bts-bts-joint-marketing-campaign-of-exchanges-wp-bilingual",
+      "worker_account_details": {
+        "registrar": "1.2.457684",
+        "referrer": "1.2.457684",
+        "lifetime_referrer": "1.2.457684",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "worker.joint-marketing-campaign-exchanges",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS82HHc6yHcFii4bpskfRBXnGfErejNNfKLWtbbeySGtBUXR2Q6G",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8Uex9eFPCBADnupNzp3b3AeAVVuzMLRoUJrHuERNAv11pRHKns",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8Uex9eFPCBADnupNzp3b3AeAVVuzMLRoUJrHuERNAv11pRHKns",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.457684",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.65",
+      "worker_account": "1.2.457684",
+      "work_begin_date": "2017-11-24T00:00:00",
+      "work_end_date": "2017-12-24T00:00:00",
+      "daily_pay": "6000000000",
+      "worker": [
+        1,
+        {
+          "balance": "1.13.2282"
+        }
+      ],
+      "vote_for": "2:256",
+      "vote_against": "2:257",
+      "total_votes_for": "52446179110409",
+      "total_votes_against": 0,
+      "name": "Joint Marketing Campaign of Exchanges WP",
+      "url": "https://steemit.com/cn/@lzmlam/bts-bts-joint-marketing-campaign-of-exchanges-wp-bilingual",
+      "worker_account_details": {
+        "registrar": "1.2.457684",
+        "referrer": "1.2.457684",
+        "lifetime_referrer": "1.2.457684",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "worker.joint-marketing-campaign-exchanges",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS82HHc6yHcFii4bpskfRBXnGfErejNNfKLWtbbeySGtBUXR2Q6G",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8Uex9eFPCBADnupNzp3b3AeAVVuzMLRoUJrHuERNAv11pRHKns",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8Uex9eFPCBADnupNzp3b3AeAVVuzMLRoUJrHuERNAv11pRHKns",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.457684",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.66",
+      "worker_account": "1.2.459901",
+      "work_begin_date": "2017-12-01T00:00:00",
+      "work_end_date": "2018-03-31T23:59:00",
+      "daily_pay": 206000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.2299"
+        }
+      ],
+      "vote_for": "2:258",
+      "vote_against": "2:259",
+      "total_votes_for": "82433110278564",
+      "total_votes_against": 0,
+      "name": "Abit - Core Developer - 201712~201803",
+      "url": "https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md",
+      "worker_account_details": {
+        "registrar": "1.2.459901",
+        "referrer": "1.2.459901",
+        "lifetime_referrer": "1.2.459901",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "abit-worker",
+        "owner": {
+          "weight_threshold": 4,
+          "account_auths": [
+            [
+              "1.2.121",
+              1
+            ],
+            [
+              "1.2.12376",
+              1
+            ],
+            [
+              "1.2.20148",
+              1
+            ],
+            [
+              "1.2.25010",
+              1
+            ],
+            [
+              "1.2.126986",
+              1
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 4,
+          "account_auths": [
+            [
+              "1.2.121",
+              1
+            ],
+            [
+              "1.2.12376",
+              1
+            ],
+            [
+              "1.2.20148",
+              1
+            ],
+            [
+              "1.2.25010",
+              1
+            ],
+            [
+              "1.2.126986",
+              1
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6fUJfBNkD88eDmoBhHGu3r98aTnieVwwqZVSzkzDaxzF57c4ce",
+          "voting_account": "1.2.12376",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.459901",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.67",
+      "worker_account": "1.2.364315",
+      "work_begin_date": "2017-12-01T00:00:00",
+      "work_end_date": "2018-05-31T00:00:00",
+      "daily_pay": 270000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.2307"
+        }
+      ],
+      "vote_for": "2:260",
+      "vote_against": "2:261",
+      "total_votes_for": "73658417147061",
+      "total_votes_against": 0,
+      "name": "201712-infrastructure",
+      "url": "http://www.bitshares.foundation/workers/2017-12-infrastructure",
+      "worker_account_details": {
+        "registrar": "1.2.364315",
+        "referrer": "1.2.364315",
+        "lifetime_referrer": "1.2.364315",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 5000,
+        "name": "workers.bitshares.foundation",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.0",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS7omzi3GpBJEn2A9uiSb7onoZLzHLAAFTjRa8NsUTpERSHFNKtb",
+              1
+            ],
+            [
+              "BTS8Gku7k9XQgCzBoYGdvb4ft9bK7pNDxwYoUoEdo1GZCuSGzEWgB",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5ttLsGRgtSTzzoXmw88BV4ExeEc9bCfSquNMg9fY44dKEgYo5j",
+              1
+            ],
+            [
+              "BTS7cR5fMnvgj2L3Cs2isCYPs2ATNWbpBVpsaNChBWsEEMEckrczn",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5LKaNYUyf4q91fqJCfXzkGCx5erx5pVV9ZUYZVpLdB7YJutwmN",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.364315",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.68",
+      "worker_account": "1.2.364315",
+      "work_begin_date": "2017-12-01T00:00:00",
+      "work_end_date": "2018-05-31T00:00:00",
+      "daily_pay": 250000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.2325"
+        }
+      ],
+      "vote_for": "2:262",
+      "vote_against": "2:263",
+      "total_votes_for": "64110813952867",
+      "total_votes_against": 0,
+      "name": "2017-12-blockchainacademy",
+      "url": "http://www.bitshares.foundation/workers/2017-12-blockchainacademy",
+      "worker_account_details": {
+        "registrar": "1.2.364315",
+        "referrer": "1.2.364315",
+        "lifetime_referrer": "1.2.364315",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 5000,
+        "name": "workers.bitshares.foundation",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.0",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS7omzi3GpBJEn2A9uiSb7onoZLzHLAAFTjRa8NsUTpERSHFNKtb",
+              1
+            ],
+            [
+              "BTS8Gku7k9XQgCzBoYGdvb4ft9bK7pNDxwYoUoEdo1GZCuSGzEWgB",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5ttLsGRgtSTzzoXmw88BV4ExeEc9bCfSquNMg9fY44dKEgYo5j",
+              1
+            ],
+            [
+              "BTS7cR5fMnvgj2L3Cs2isCYPs2ATNWbpBVpsaNChBWsEEMEckrczn",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5LKaNYUyf4q91fqJCfXzkGCx5erx5pVV9ZUYZVpLdB7YJutwmN",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.364315",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.69",
+      "worker_account": "1.2.12376",
+      "work_begin_date": "2018-01-01T00:00:00",
+      "work_end_date": "2018-05-01T00:00:00",
+      "daily_pay": 100000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.2355"
+        }
+      ],
+      "vote_for": "2:264",
+      "vote_against": "2:265",
+      "total_votes_for": "66072986558438",
+      "total_votes_against": 0,
+      "name": "Poll - BSIP26 - Refund Original Order Creation Fee on Cancel",
+      "url": "https://github.com/bitshares/bsips/blob/master/bsip-0026.md",
+      "worker_account_details": {
+        "registrar": "1.2.12376",
+        "referrer": "1.2.12376",
+        "lifetime_referrer": "1.2.12376",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "abit",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8T9Qx72LGQ8i8cQcqreeoJqdMsnKBCDXRU82rAzy8W3Ef2Tgxz",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6EdcjfyuM2wqzCYYyYAVjKDJ8FAwRufrvfX5zNRLYNv1jfAgcq",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7NLcZJzqq3mvKfcqoN52ainajDckyMp5SYRgzicfbHD6u587ib",
+          "voting_account": "1.2.5",
+          "num_witness": 28,
+          "num_committee": 10,
+          "votes": [
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:30",
+            "1:32",
+            "1:34",
+            "1:36",
+            "1:38",
+            "1:40",
+            "1:44",
+            "1:45",
+            "1:47",
+            "1:48",
+            "1:56",
+            "1:59",
+            "2:65",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:112",
+            "0:141",
+            "0:142",
+            "1:143",
+            "0:147",
+            "1:164",
+            "1:165",
+            "1:166",
+            "1:190",
+            "1:191",
+            "1:196",
+            "1:212",
+            "0:213",
+            "1:214",
+            "1:216",
+            "1:218",
+            "0:223",
+            "2:224",
+            "1:235",
+            "2:244",
+            "2:246",
+            "2:251",
+            "1:253",
+            "2:260",
+            "2:262",
+            "2:264",
+            "2:266"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.12376",
+        "whitelisting_accounts": [
+          "1.2.351639"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [
+          "1.2.282"
+        ],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.70",
+      "worker_account": "1.2.12376",
+      "work_begin_date": "2018-01-01T00:00:00",
+      "work_end_date": "2018-05-01T00:00:00",
+      "daily_pay": 100000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.2356"
+        }
+      ],
+      "vote_for": "2:266",
+      "vote_against": "2:267",
+      "total_votes_for": "65641370148892",
+      "total_votes_against": 0,
+      "name": "Poll - BSIP27 - Asset Issuer Reclaim Fee Pool Funds",
+      "url": "https://github.com/bitshares/bsips/blob/master/bsip-0027.md",
+      "worker_account_details": {
+        "registrar": "1.2.12376",
+        "referrer": "1.2.12376",
+        "lifetime_referrer": "1.2.12376",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "abit",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8T9Qx72LGQ8i8cQcqreeoJqdMsnKBCDXRU82rAzy8W3Ef2Tgxz",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6EdcjfyuM2wqzCYYyYAVjKDJ8FAwRufrvfX5zNRLYNv1jfAgcq",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7NLcZJzqq3mvKfcqoN52ainajDckyMp5SYRgzicfbHD6u587ib",
+          "voting_account": "1.2.5",
+          "num_witness": 28,
+          "num_committee": 10,
+          "votes": [
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:30",
+            "1:32",
+            "1:34",
+            "1:36",
+            "1:38",
+            "1:40",
+            "1:44",
+            "1:45",
+            "1:47",
+            "1:48",
+            "1:56",
+            "1:59",
+            "2:65",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:112",
+            "0:141",
+            "0:142",
+            "1:143",
+            "0:147",
+            "1:164",
+            "1:165",
+            "1:166",
+            "1:190",
+            "1:191",
+            "1:196",
+            "1:212",
+            "0:213",
+            "1:214",
+            "1:216",
+            "1:218",
+            "0:223",
+            "2:224",
+            "1:235",
+            "2:244",
+            "2:246",
+            "2:251",
+            "1:253",
+            "2:260",
+            "2:262",
+            "2:264",
+            "2:266"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.12376",
+        "whitelisting_accounts": [
+          "1.2.351639"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [
+          "1.2.282"
+        ],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.71",
+      "worker_account": "1.2.364315",
+      "work_begin_date": "2018-01-01T00:00:00",
+      "work_end_date": "2018-06-30T00:00:00",
+      "daily_pay": 35000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.2826"
+        }
+      ],
+      "vote_for": "2:269",
+      "vote_against": "2:270",
+      "total_votes_for": "28453269442319",
+      "total_votes_against": 0,
+      "name": "201801-budget-chinese-translations",
+      "url": "http://www.bitshares.foundation/worker/budget/2018-01-budget-chinese-translations",
+      "worker_account_details": {
+        "registrar": "1.2.364315",
+        "referrer": "1.2.364315",
+        "lifetime_referrer": "1.2.364315",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 5000,
+        "name": "workers.bitshares.foundation",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [
+            [
+              "1.2.0",
+              1
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS7omzi3GpBJEn2A9uiSb7onoZLzHLAAFTjRa8NsUTpERSHFNKtb",
+              1
+            ],
+            [
+              "BTS8Gku7k9XQgCzBoYGdvb4ft9bK7pNDxwYoUoEdo1GZCuSGzEWgB",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5ttLsGRgtSTzzoXmw88BV4ExeEc9bCfSquNMg9fY44dKEgYo5j",
+              1
+            ],
+            [
+              "BTS7cR5fMnvgj2L3Cs2isCYPs2ATNWbpBVpsaNChBWsEEMEckrczn",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5LKaNYUyf4q91fqJCfXzkGCx5erx5pVV9ZUYZVpLdB7YJutwmN",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.364315",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.72",
+      "worker_account": "1.2.438065",
+      "work_begin_date": "2017-12-30T00:00:00",
+      "work_end_date": "2018-05-05T00:00:00",
+      "daily_pay": 200000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.3608"
+        }
+      ],
+      "vote_for": "2:275",
+      "vote_against": "2:276",
+      "total_votes_for": "4920034557",
+      "total_votes_against": 0,
+      "name": "Crypto-Solutions",
+      "url": "http://www.cryptosolutons.uk",
+      "worker_account_details": {
+        "registrar": "1.2.438065",
+        "referrer": "1.2.438065",
+        "lifetime_referrer": "1.2.438065",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "crypto-solutions",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8PJz3AzUtZYN8dAycbAQnDuBKV6YkJWdKKFES1tD1iJRLQvGBC",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5oHf5QBwErtPyksxxAPMNJwmeBdDVkwjiMcc9KMnLjGprVx3KC",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5oHf5QBwErtPyksxxAPMNJwmeBdDVkwjiMcc9KMnLjGprVx3KC",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [
+            "2:275"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.438065",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.73",
+      "worker_account": "1.2.522699",
+      "work_begin_date": "2018-01-01T00:00:00",
+      "work_end_date": "2018-12-31T00:00:00",
+      "daily_pay": 660000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.3609"
+        }
+      ],
+      "vote_for": "2:277",
+      "vote_against": "2:278",
+      "total_votes_for": "2502920034717",
+      "total_votes_against": 0,
+      "name": "DEXBot - User Friendly BitShares Market Making Bots ($660/d)",
+      "url": "https://docs.google.com/document/d/1frX-I1JeQxDNDZ270clEQei2LT15ncGYW5n1Lx8xkeY/edit?usp=sharing",
+      "worker_account_details": {
+        "registrar": "1.2.522699",
+        "referrer": "1.2.522699",
+        "lifetime_referrer": "1.2.522699",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "dexbot-worker-escrow",
+        "owner": {
+          "weight_threshold": 35,
+          "account_auths": [
+            [
+              "1.2.22656",
+              10
+            ],
+            [
+              "1.2.378443",
+              10
+            ],
+            [
+              "1.2.429182",
+              10
+            ],
+            [
+              "1.2.528099",
+              10
+            ],
+            [
+              "1.2.528771",
+              10
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS62iqzUyYexVECZpddkdEswyQMJsx4rcd2xP15wHyGmUERbT6pt",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 25,
+          "account_auths": [
+            [
+              "1.2.22656",
+              10
+            ],
+            [
+              "1.2.378443",
+              10
+            ],
+            [
+              "1.2.429182",
+              10
+            ],
+            [
+              "1.2.528099",
+              10
+            ],
+            [
+              "1.2.528771",
+              10
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5ms8aTGJvDQQqgopn9hE2MnLq54s4B1DXxSTVKdPvmKmZzdsin",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [
+            "2:277"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.522699",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    },
+    {
+      "id": "1.14.74",
+      "worker_account": "1.2.522699",
+      "work_begin_date": "2018-01-01T00:00:00",
+      "work_end_date": "2018-12-31T00:00:00",
+      "daily_pay": 660000000,
+      "worker": [
+        1,
+        {
+          "balance": "1.13.3614"
+        }
+      ],
+      "vote_for": "2:279",
+      "vote_against": "2:280",
+      "total_votes_for": "1238973292100",
+      "total_votes_against": 0,
+      "name": "DEXBot - User Friendly BitShares Market Making Software",
+      "url": "https://docs.google.com/document/d/1frX-I1JeQxDNDZ270clEQei2LT15ncGYW5n1Lx8xkeY/edit?usp=sharing",
+      "worker_account_details": {
+        "registrar": "1.2.522699",
+        "referrer": "1.2.522699",
+        "lifetime_referrer": "1.2.522699",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "dexbot-worker-escrow",
+        "owner": {
+          "weight_threshold": 35,
+          "account_auths": [
+            [
+              "1.2.22656",
+              10
+            ],
+            [
+              "1.2.378443",
+              10
+            ],
+            [
+              "1.2.429182",
+              10
+            ],
+            [
+              "1.2.528099",
+              10
+            ],
+            [
+              "1.2.528771",
+              10
+            ]
+          ],
+          "key_auths": [
+            [
+              "BTS62iqzUyYexVECZpddkdEswyQMJsx4rcd2xP15wHyGmUERbT6pt",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 25,
+          "account_auths": [
+            [
+              "1.2.22656",
+              10
+            ],
+            [
+              "1.2.378443",
+              10
+            ],
+            [
+              "1.2.429182",
+              10
+            ],
+            [
+              "1.2.528099",
+              10
+            ],
+            [
+              "1.2.528771",
+              10
+            ]
+          ],
+          "key_auths": [],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5ms8aTGJvDQQqgopn9hE2MnLq54s4B1DXxSTVKdPvmKmZzdsin",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [
+            "2:277"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.522699",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      }
+    }
+  ],
+  "valid_key": true,
+  "took": 1.917311580997193
+}

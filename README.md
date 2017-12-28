@@ -162,11 +162,17 @@ More info: [python-bitshares docs](https://python-bitshares.readthedocs.io/en/la
 
 ### get_asset
 
-Retrieve basic information about an input asset & return in JSON!
+Retrieve basic information about an individual asset & return in JSON!
 
 #### [Run Command](https://btsapi.grcnode.co.uk/get_asset?asset_name=USD&api_key=123abc
 
-Usage: `https://subdomain.domain.tld/get_asset?asset_name=USD&api_key=123abc`
+##### Parameters
+
+* asset_name `string`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/get_asset?asset_name=USD&api_key=123abc`
 
 #### [Example JSON output](./example_json/get_asset.json)
 
@@ -178,9 +184,14 @@ More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/blockch
 
 A high level overview of the Bitshares chain information.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/chain_info?&api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/chain_info?&api_key=API_KEY`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/chain_info?&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/chain_info?&api_key=123abc)
 
 #### Example JSON output
 
@@ -209,9 +220,14 @@ Usage: `https://subdomain.domain.tld/chain_info?&api_key=API_KEY`
 
 Get chain properties, return in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_chain_properties?api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/get_chain_properties?api_key=API_KEY`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/get_chain_properties?api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_chain_properties?api_key=123abc)
 
 #### Example JSON output
 
@@ -236,9 +252,14 @@ Usage: `https://subdomain.domain.tld/get_chain_properties?api_key=API_KEY`
 
 Return BTS network information in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_network?api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/get_network?api_key=API_KEY`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/get_network?api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_network?api_key=123abc)
 
 #### Example JSON output
 
@@ -258,9 +279,14 @@ Usage: `https://subdomain.domain.tld/get_network?api_key=API_KEY`
 
 This call returns the dynamic global properties in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_info?api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/get_info?api_key=API_KEY`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/get_info?api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_info?api_key=123abc)
 
 #### Example JSON output
 
@@ -291,9 +317,14 @@ Usage: `https://subdomain.domain.tld/get_info?api_key=API_KEY`
 
 Returns object 2.0.0 in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_config?api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/get_config?api_key=API_KEY`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/get_config?api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_config?api_key=123abc)
 
 #### [Example JSON output](./example_json/get_config.json)
 
@@ -301,9 +332,15 @@ Usage: `https://subdomain.domain.tld/get_config?api_key=API_KEY`
 
 Retrieve the specified block's date/time details, return in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_block_details?block_number=10&api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/get_block_details?block_number=10&api_key=API_KEY`
+* block_number `number`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/get_block_details?block_number=10&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_block_details?block_number=10&api_key=123abc)
 
 #### Example JSON output
 
@@ -329,9 +366,14 @@ Usage: `https://subdomain.domain.tld/get_block_details?block_number=10&api_key=A
 
 Retrieve the details of the latest block, return in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_latest_block?api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/get_latest_block?api_key=API_KEY`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/get_latest_block?api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_latest_block?api_key=123abc)
 
 #### [Example JSON output](./example_json/get_latest_block.json)
 
@@ -339,9 +381,14 @@ Usage: `https://subdomain.domain.tld/get_latest_block?api_key=API_KEY`
 
 Retrieve all Bitshares account names. Takes a while!
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_all_accounts?api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/get_all_accounts?api_key=API_KEY`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/get_all_accounts?api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_all_accounts?api_key=123abc)
 
 #### Example JSON output
 
@@ -362,9 +409,15 @@ More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/account
 
 Given a valid account name, output the user's balances in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_balances?account_name=xeroc&api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/account_balances?account=example_usera&api_key=API_KEY`
+* account `string`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/account_balances?account=example_usera&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/account_balances?account_name=xeroc&api_key=123abc)
 
 #### Example JSON output
 
@@ -387,9 +440,15 @@ Note: 'balances' has been concatenated to save space in this example.
 
 Given a valid account name, output the user's open orders in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_open_orders?account=xeroc&api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/account_open_orders?account=example_usera&api_key=API_KEY`
+* account `string`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/account_open_orders?account=example_usera&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/account_open_orders?account=xeroc&api_key=123abc)
 
 #### Example JSON output
 
@@ -410,9 +469,16 @@ Given a valid account name, output the user's call positions in JSON.
 
 Note: Highly verbose! Example contains 26k lines of JSON!
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_callpositions?account_name=abit&api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/account_callpositions?account=example_usera&api_key=API_KEY`
+* account `string`
+* tx_limit `number`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/account_callpositions?account=example_usera&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/account_callpositions?account_name=abit&api_key=123abc)
 
 #### [Example JSON output](./example_json/account_callposition.json)
 
@@ -420,9 +486,16 @@ Usage: `https://subdomain.domain.tld/account_callpositions?account=example_usera
 
 Given a valid account name and transaction history limit (int), output the user's transaction history in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_history?account=xeroc&tx_limit=10&api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/account_history?account=example_user&tx_limit=10&api_key=API_KEY`
+* account `string`
+* tx_limit `number`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/account_history?account=example_user&tx_limit=10&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/account_history?account=xeroc&tx_limit=10&api_key=123abc)
 
 #### [Example JSON output](./example_json/account_history.json)
 
@@ -430,9 +503,15 @@ Usage: `https://subdomain.domain.tld/account_history?account=example_user&tx_lim
 
 Given a valid account name, check if the user has LTM.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_is_ltm?account=xeroc&api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/account_is_ltm?account=example_user&api_key=API_KEY`
+* account `string`
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/account_is_ltm?account=example_user&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/account_is_ltm?account=xeroc&api_key=123abc)
 
 #### Example JSON output
 
@@ -454,9 +533,15 @@ More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/dex.htm
 
 Retrieve the currently implemented fees in JSON format.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/list_fees?api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/list_fees?api_key=API_KEY`
+* list_fees
+* api_key
+
+##### Usage
+`https://subdomain.domain.tld/list_fees?api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/list_fees?api_key=123abc)
 
 #### [Example JSON output](./example_json/list_fees.json)
 
@@ -468,9 +553,16 @@ More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/market.
 
 Given a valid market pair (e.g. USD:BTS), output the market pair's ticker information in JSON.
 
+##### Parameters
+
+* market_pair `ASSET1:ASSET2`
+* api_key
+
+##### Usage
+`https://subdomain.domain.tld/market_ticker?market_pair=USD:BTS&api_key=API_KEY`
+
 #### [Run Command](https://btsapi.grcnode.co.uk/market_ticker?market_pair=USD:BTS&api_key=123abc)
 
-Usage: `https://subdomain.domain.tld/market_ticker?market_pair=USD:BTS&api_key=API_KEY`
 
 #### [Example JSON output](./example_json/market_ticker.json)
 
@@ -478,9 +570,16 @@ Usage: `https://subdomain.domain.tld/market_ticker?market_pair=USD:BTS&api_key=A
 
 Given a valid market pair (e.g. USD:BTS) and your desired orderbook size limit, output the market pair's orderbook (buy/sell order) information in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=API_KEY`
+* market_pair `ASSET1:ASSET2`
+* orderbook_limit `25`
+* api_key
+
+##### Usage
+`https://subdomain.domain.tld/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=123abc)
 
 #### [Example JSON output](./example_json/market_orderbook.json)
 
@@ -488,9 +587,16 @@ Usage: `https://subdomain.domain.tld/market_orderbook?market_pair=USD:BTS&orderb
 
 Given a valid market_pair (e.g. USD:BTS), output their 24hr market volume in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/market_24hr_vol?market_pair=USD:BTS&api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/market_24hr_vol?market_pair=USD:BTS&api_key=API_KEY`
+* market_pair `ASSET1:ASSET2`
+* tx_limit
+* api_key
+
+##### Usage
+`https://subdomain.domain.tld/market_24hr_vol?market_pair=USD:BTS&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/market_24hr_vol?market_pair=USD:BTS&api_key=123abc)
 
 #### [Example JSON output](./example_json/market_24hr_vol.json)
 
@@ -498,9 +604,16 @@ Usage: `https://subdomain.domain.tld/market_24hr_vol?market_pair=USD:BTS&api_key
 
 Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the market's trade history in JSON.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/market_trade_history?market_pair=USD:BTS&tx_limit=10&api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/market_trade_history?market_pair=USD:BTS&tx_limit=10&api_key=API_KEY`
+* market_pair `ASSET1:ASSET2`
+* tx_limit
+* api_key
+
+##### Usage
+`https://subdomain.domain.tld/market_trade_history?market_pair=USD:BTS&tx_limit=10&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/market_trade_history?market_pair=USD:BTS&tx_limit=10&api_key=123abc)
 
 #### Example JSON output
 
@@ -538,9 +651,15 @@ More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/witness
 
 Find details about a specific witness.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/find_witness?witness_name=sc-ol&api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/find_witness?witness_name=blockchained&api_key=API_KEY`
+* witness_name
+* api_key
+
+##### Usage
+`https://subdomain.domain.tld/find_witness?witness_name=blockchained&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/find_witness?witness_name=sc-ol&api_key=123abc)
 
 #### [Example JSON output](./example_json/find_witness.json)
 
@@ -548,26 +667,63 @@ Usage: `https://subdomain.domain.tld/find_witness?witness_name=blockchained&api_
 
 Retrieve a list of available witnesses.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/list_of_witnesses?api_key=123abc)
+##### Parameters
 
-Usage: `https://subdomain.domain.tld/list_of_witnesses?api_key=API_KEY`
+* api_key
+
+##### Usage
+`https://subdomain.domain.tld/list_of_witnesses?api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/list_of_witnesses?api_key=123abc)
 
 #### [Example JSON output](./example_json/list_of_witnesses.json)
 
----
+## Committee functions
 
-# TODO
+To implement this, we need to use the '[Requests](http://docs.python-requests.org/en/master/)' python library to access functionality currently not present in the python-bitshares library (AFAIK).
 
-## Worker Proposal functions
+### get_committee_members
 
-More info: [python-bitshares docs](http://docs.pybitshares.com/en/latest/proposal.html)
+Get a list of all committee members, and their Bitshares account details.
 
-May not be possible - tx proposals, not worker proposals?
+#### [Run Command](https://btsapi.grcnode.co.uk/get_committee_members?api_key=123abc)
 
-### list_worker_proposals
+##### Usage
+`https://subdomain.domain.tld/get_committee_members?api_key=API_KEY`
 
-Retrieve a list of worker proposals.
+#### [Example JSON output](./example_json/get_committee_members.json)
 
-### find_worker_proposal
+## Worker functions
 
-Find a specific worker proposal.
+Similar to the committee function, we need to use the '[Requests](http://docs.python-requests.org/en/master/)' python library to access functionality currently not present in the python-bitshares library (AFAIK).
+
+### get_worker
+
+Retrieve an individual worker proposal & its associated proposer account details.
+
+##### Parameters:
+
+* worker_id `1.14.x`
+* api_key
+
+##### Usage
+`https://subdomain.domain.tld/get_worker?worker_id=1.14.x&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_worker?worker_id=1.14.50&api_key=123abc)
+
+#### [Example JSON output](./example_json/get_worker.json)
+
+### get_worker_proposals
+
+Retrieve a list of all worker proposals (including past/inactive) and the worker account details.
+
+##### Parameters:
+
+* api_key
+
+##### Usage
+`https://subdomain.domain.tld/get_worker_proposals?api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_worker_proposals?api_key=123abc)
+
+#### [Example JSON output](./example_json/get_worker_proposals.json)

@@ -1,0 +1,111 @@
+{
+  "worker": {
+    "id": "1.14.1",
+    "worker_account": "1.2.22517",
+    "work_begin_date": "2015-10-23T00:00:00",
+    "work_end_date": "2015-11-23T00:00:00",
+    "daily_pay": 10000,
+    "worker": [
+      1,
+      {
+        "balance": "1.13.232"
+      }
+    ],
+    "vote_for": "2:67",
+    "vote_against": "2:68",
+    "total_votes_for": "217902528338",
+    "total_votes_against": 0,
+    "name": "mindphlux-bitasset-poolfund",
+    "url": "",
+    "worker_account_details": {
+      "registrar": "1.2.22517",
+      "referrer": "1.2.22517",
+      "lifetime_referrer": "1.2.22517",
+      "network_fee_percentage": 2000,
+      "lifetime_referrer_fee_percentage": 8000,
+      "referrer_rewards_percentage": 0,
+      "name": "mindphlux",
+      "owner": {
+        "weight_threshold": 1,
+        "account_auths": [],
+        "key_auths": [
+          [
+            "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+            1
+          ]
+        ],
+        "address_auths": []
+      },
+      "active": {
+        "weight_threshold": 1,
+        "account_auths": [],
+        "key_auths": [
+          [
+            "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+            1
+          ]
+        ],
+        "address_auths": []
+      },
+      "options": {
+        "memo_key": "BTS7piPcCkNano63VbgQq7RJh3xx5n61yWEC7PLrJ2vNVxGvZ2KYS",
+        "voting_account": "1.2.5",
+        "num_witness": 18,
+        "num_committee": 8,
+        "votes": [
+          "1:22",
+          "1:23",
+          "1:24",
+          "1:25",
+          "1:26",
+          "1:27",
+          "1:28",
+          "1:29",
+          "1:30",
+          "1:31",
+          "1:35",
+          "1:36",
+          "1:37",
+          "1:44",
+          "1:45",
+          "0:50",
+          "1:53",
+          "1:56",
+          "1:60",
+          "2:65",
+          "0:76",
+          "0:84",
+          "0:87",
+          "0:88",
+          "0:91",
+          "0:141",
+          "0:147",
+          "2:148",
+          "2:150",
+          "2:152",
+          "2:154",
+          "2:171",
+          "2:177"
+        ],
+        "extensions": []
+      },
+      "statistics": "2.6.22517",
+      "whitelisting_accounts": [],
+      "blacklisting_accounts": [],
+      "whitelisted_accounts": [],
+      "blacklisted_accounts": [],
+      "owner_special_authority": [
+        0,
+        {}
+      ],
+      "active_special_authority": [
+        0,
+        {}
+      ],
+      "top_n_control_flags": 0
+    }
+  },
+  "valid_worker": true,
+  "valid_key": true,
+  "took": 0.057204110024031
+}
