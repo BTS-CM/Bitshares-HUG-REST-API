@@ -692,6 +692,22 @@ Retrieve a list of available witnesses.
 
 To implement this, we need to use the '[Requests](http://docs.python-requests.org/en/master/)' python library to access functionality currently not present in the python-bitshares library (AFAIK).
 
+### get_committee_member
+
+Retrieve a single committee member's full account (and role) information.
+
+##### Parameters
+
+* committee_id `1.5.0` (`string`)
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/get_committee_member?committee_id=1.5.10&api_key=API_KEY`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_committee_member?committee_id=1.5.10&api_key=123abc)
+
+#### [Example JSON output](./example_json/get_committee_member.json)
+
 ### get_committee_members
 
 Get a list of all committee members, and their Bitshares account details.
