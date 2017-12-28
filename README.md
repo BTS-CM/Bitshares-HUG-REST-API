@@ -82,7 +82,7 @@ We create the 'btsapi' user, however you could rename this to whatever you want,
 
 #### Install required applications
 
-    sudo apt-get install libffi-dev libssl-dev python3-pip python3-dev build-essential git nginx python3-setuptools virtualenv
+    sudo apt-get install libffi-dev libssl-dev python3-pip python3-dev build-essential git nginx python3-setuptools virtualenv libcurl4-openssl-dev
 
 #### Create Python virtual environment
 
@@ -97,6 +97,7 @@ We create the 'btsapi' user, however you could rename this to whatever you want,
     pip3 install --upgrade pip
     pip3 install --upgrade setuptools
     pip3 install --upgrade wheel
+    pip3 install --user requests
     pip3 install hug
     pip3 install gunicorn
     git clone https://github.com/xeroc/python-bitshares.git -b develop
@@ -154,6 +155,20 @@ If you want to monitor Gunicorn:
 This section will detail the functionality which will be available to the public through GET requests.
 
 The functions are currently all read-only functions, enabling the public to request data from the network without the risk of exposing critical wallet controls.
+
+## Asset functions
+
+More info: [python-bitshares docs](https://python-bitshares.readthedocs.io/en/latest/asset.html)
+
+### get_asset
+
+Retrieve basic information about an input asset & return in JSON!
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_asset?asset_name=USD&api_key=123abc
+
+Usage: `https://subdomain.domain.tld/get_asset?asset_name=USD&api_key=123abc`
+
+#### [Example JSON output](./example_json/get_asset.json)
 
 ## Blockchain functions
 
@@ -294,12 +309,19 @@ Usage: `https://subdomain.domain.tld/get_block_details?block_number=10&api_key=A
 
 ```
 {
-  "block_date": "2015-10-13T14:13:00",
-  "block_timestamp": 1444745580,
-  "block_number": 10,
+  "previous": "000f4241228468f8b08682ff539967bd4c49e097",
+  "timestamp": "2015-11-17T14:36:42",
+  "witness": "1.6.27",
+  "transaction_merkle_root": "0000000000000000000000000000000000000000",
+  "extensions": [],
+  "witness_signature": "20296b1aa5636be25ec076f66eb25e2da2d419ffc22cb259e8cae2fa24b3cefca22303ff69da41c359afb2015e00c7479e8ff8ac777c8688a0060b46f10d041533",
+  "transactions": [],
+  "id": "1000002",
+  "date": "2015-11-17T14:36:42",
+  "block_number": 1000002,
   "valid_block_number": true,
   "valid_key": true,
-  "took": 0.05997
+  "took": 0.02726
 }
 ```
 
@@ -311,18 +333,7 @@ Retrieve the details of the latest block, return in JSON.
 
 Usage: `https://subdomain.domain.tld/get_latest_block?api_key=API_KEY`
 
-#### Example JSON Output
-
-```
-{
-  "block_date": "2017-12-26T23:54:03",
-  "block_timestamp": 1514332443,
-  "block_number": 22999590,
-  "valid_block_number": true,
-  "valid_key": true,
-  "took": 0.14057
-}
-```
+#### [Example JSON output](./example_json/get_latest_block.json)
 
 ### get_all_accounts
 

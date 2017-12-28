@@ -1,0 +1,102 @@
+{
+  "previous": "015f69fff17b3026e80c07bd26520ba8f1b3a03e",
+  "timestamp": "2017-12-28T01:32:03",
+  "witness": "1.6.71",
+  "transaction_merkle_root": "f9304a4fffcb004403cbf801501c1281677046f8",
+  "extensions": [],
+  "witness_signature": "20793adf8c34a49dd98cd0e320dc28ec3359cc1cb20754868ee980ff1a64695668681fdbf66109ad35c57ee14d8f3788e551ed46a2934cdf09c02ed4377bad1985",
+  "transactions": [
+    {
+      "ref_block_num": 27134,
+      "ref_block_prefix": 3695153680,
+      "expiration": "2017-12-28T01:32:27",
+      "operations": [
+        [
+          19,
+          {
+            "fee": {
+              "amount": 121,
+              "asset_id": "1.3.0"
+            },
+            "publisher": "1.2.133999",
+            "asset_id": "1.3.103",
+            "feed": {
+              "settlement_price": {
+                "base": {
+                  "amount": 3548,
+                  "asset_id": "1.3.103"
+                },
+                "quote": {
+                  "amount": 94883,
+                  "asset_id": "1.3.0"
+                }
+              },
+              "maintenance_collateral_ratio": 1750,
+              "maximum_short_squeeze_ratio": 1100,
+              "core_exchange_rate": {
+                "base": {
+                  "amount": 2770,
+                  "asset_id": "1.3.103"
+                },
+                "quote": {
+                  "amount": 61731,
+                  "asset_id": "1.3.0"
+                }
+              }
+            },
+            "extensions": []
+          }
+        ]
+      ],
+      "extensions": [],
+      "signatures": [
+        "1f5f550a119058ae59c710344efca74eee0a56970a603df9aa8208ca2f02bdddd948807617c0dbe0cca0adc3977253bd6d47e2ae2fb8735122d752333e822726f3"
+      ],
+      "operation_results": [
+        [
+          0,
+          {}
+        ]
+      ]
+    },
+    {
+      "ref_block_num": 27135,
+      "ref_block_prefix": 640711665,
+      "expiration": "2017-12-28T01:32:30",
+      "operations": [
+        [
+          0,
+          {
+            "fee": {
+              "amount": 21851,
+              "asset_id": "1.3.0"
+            },
+            "from": "1.2.132843",
+            "to": "1.2.477471",
+            "amount": {
+              "amount": 8879144,
+              "asset_id": "1.3.0"
+            },
+            "extensions": []
+          }
+        ]
+      ],
+      "extensions": [],
+      "signatures": [
+        "203cd6867472553c1fc73bb5744edd5164b7a8edfd6788cd33f74a069f5642f50126443ca8bd780a21967ac04cd2b63e04b3a0fbb2f0b12d7e28975b56ee607dfa"
+      ],
+      "operation_results": [
+        [
+          0,
+          {}
+        ]
+      ]
+    }
+  ],
+  "id": "23030272",
+  "block_date": "2017-12-28T01:32:03",
+  "block_number": 23030272,
+  "valid_block_number": true,
+  "valid_key": true,
+  "took": 0.05094
+}

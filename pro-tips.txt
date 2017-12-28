@@ -1,0 +1,6 @@
+# Fabian wrote:
+# If you ever want to call stuff via rpc directly .. then I recommend you use something like this:
+
+from bitshares import BitShares
+bts  = BitShares('ws://localhost:8090')
+bts.rpc.get_objects(["1.3.0"])
