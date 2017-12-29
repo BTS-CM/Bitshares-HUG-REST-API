@@ -2,12 +2,6 @@
 
 ![BTS HUG API Banner](https://i.imgur.com/secsyPh.png "BTS HUG API Banner")
 
-# Updates
-
-* Added new functions: get_bts_object, get_committee_member, get_committee_members, get_worker_proposals, get_worker.
-* Changed formatting of readme & added more example json snippets.
-*
-
 ## About
 
 The intention of this Bitshares HUG REST API repo is to provide the Bitshares network an open-source high performance interface to the Bitshares network through simple GET requests.
