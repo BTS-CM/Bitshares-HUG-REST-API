@@ -1,0 +1,20 @@
+{
+  "chain_info": {
+    "id": "2.1.0",
+    "head_block_number": 23082362,
+    "head_block_id": "0160357a9334ca8829bd3de6a74003ba1157a883",
+    "time": "2017-12-29T21:42:03",
+    "current_witness": "1.6.59",
+    "next_maintenance_time": "2017-12-29T22:00:00",
+    "last_budget_time": "2017-12-29T21:00:00",
+    "witness_budget": 40200000,
+    "accounts_registered_this_interval": 59,
+    "recently_missed_count": 0,
+    "current_aslot": 23222668,
+    "recent_slots_filled": "319012122838702930637256568958720409535",
+    "dynamic_flags": 0,
+    "last_irreversible_block_num": 23082347
+  },
+  "valid_key": true,
+  "took": 0.02238
+}

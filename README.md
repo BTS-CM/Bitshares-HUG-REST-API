@@ -90,7 +90,8 @@ We create the 'btsapi' user, however you could rename this to whatever you want,
     pip3 install --upgrade pip
     pip3 install --upgrade setuptools
     pip3 install --upgrade wheel
-    pip3 install --user requests
+    pip3 install requests
+    pip3 install lomond
     pip3 install hug
     pip3 install gunicorn
     git clone https://github.com/xeroc/python-bitshares.git -b develop
@@ -255,7 +256,7 @@ Get chain properties, return in JSON.
     }
   },
   "valid_key": true,
-  "took": 0.01332
+  "took": 0.01954
 }
 ```
 
@@ -305,22 +306,22 @@ This call returns the dynamic global properties in JSON.
 {
   "chain_info": {
     "id": "2.1.0",
-    "head_block_number": 22988592,
-    "head_block_id": "015ec73077ef571e12193ae0ae512f7f55b971fb",
-    "time": "2017-12-26T14:42:48",
-    "current_witness": "1.6.75",
-    "next_maintenance_time": "2017-12-26T15:00:00",
-    "last_budget_time": "2017-12-26T14:00:00",
-    "witness_budget": 34700000,
-    "accounts_registered_this_interval": 118,
+    "head_block_number": 23081714,
+    "head_block_id": "016032f26d5d2b6e4db544171a8e3bf62678f089",
+    "time": "2017-12-29T21:08:00",
+    "current_witness": "1.6.16",
+    "next_maintenance_time": "2017-12-29T22:00:00",
+    "last_budget_time": "2017-12-29T21:00:00",
+    "witness_budget": 105000000,
+    "accounts_registered_this_interval": 9,
     "recently_missed_count": 0,
-    "current_aslot": 23128120,
-    "recent_slots_filled": "340282366920938463463374607431768211455",
+    "current_aslot": 23221987,
+    "recent_slots_filled": "329648522671011592715401352840342405119",
     "dynamic_flags": 0,
-    "last_irreversible_block_num": 22988579
+    "last_irreversible_block_num": 23081696
   },
   "valid_key": true,
-  "took": 0.13397
+  "took": 0.18104
 }
 ```
 
@@ -357,19 +358,19 @@ Retrieve the specified block's date/time details, return in JSON.
 
 ```
 {
-  "previous": "000f4241228468f8b08682ff539967bd4c49e097",
-  "timestamp": "2015-11-17T14:36:42",
-  "witness": "1.6.27",
+  "previous": "0000003157e4849fe0d04e1f60462764d2a1f3d1",
+  "timestamp": "2015-10-13T14:15:00",
+  "witness": "1.6.5",
   "transaction_merkle_root": "0000000000000000000000000000000000000000",
   "extensions": [],
-  "witness_signature": "20296b1aa5636be25ec076f66eb25e2da2d419ffc22cb259e8cae2fa24b3cefca22303ff69da41c359afb2015e00c7479e8ff8ac777c8688a0060b46f10d041533",
+  "witness_signature": "1f0441febc1a8ce32287749ba5ec2797be8202eab82e6275340c508e16238cd7af21aba15a1c09bbeca03751fd4abb10580e1fea69a4f4dde17b9b54b4beeb654b",
   "transactions": [],
-  "id": "1000002",
-  "date": "2015-11-17T14:36:42",
-  "block_number": 1000002,
+  "id": "50",
+  "date": "2015-10-13T14:15:00",
+  "block_number": 50,
   "valid_block_number": true,
   "valid_key": true,
-  "took": 0.02726
+  "took": 0.04568
 }
 ```
 
@@ -483,7 +484,6 @@ Note: Highly verbose! Example contains 26k lines of JSON!
 ##### Parameters
 
 * account `string`
-* tx_limit `number`
 * api_key `string`
 
 ##### Usage
@@ -500,13 +500,12 @@ Given a valid account name and transaction history limit (int), output the user'
 ##### Parameters
 
 * account_name `string`
-* tx_limit `number`
 * api_key `string`
 
 ##### Usage
-`https://subdomain.domain.tld/account_history?account_name=example_user&tx_limit=10&api_key=API_KEY`
+`https://subdomain.domain.tld/account_history?account_name=example_user&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_history?account_name=xeroc&tx_limit=10&api_key=123abc)
+#### [Run Command](https://btsapi.grcnode.co.uk/account_history?account_name=xeroc&api_key=123abc)
 
 #### [Example JSON output](./example_json/account_history.json)
 
@@ -565,7 +564,7 @@ Given a valid market pair (e.g. USD:BTS), output the market pair's ticker inform
 
 ##### Parameters
 
-* market_pair `ASSET1:ASSET2` (`string`)
+* market_pair `base:quote` (`string`)
 * api_key `string`
 
 ##### Usage
@@ -582,7 +581,7 @@ Given a valid market pair (e.g. USD:BTS) and your desired orderbook size limit, 
 
 ##### Parameters
 
-* market_pair `ASSET1:ASSET2` (`string`)
+* market_pair `base:quote` (`string`)
 * orderbook_limit `number`
 * api_key `string`
 
@@ -599,8 +598,7 @@ Given a valid market_pair (e.g. USD:BTS), output their 24hr market volume in JSO
 
 ##### Parameters
 
-* market_pair `ASSET1:ASSET2`
-* tx_limit `number`
+* market_pair `base:quote` (`string`)
 * api_key `string`
 
 ##### Usage
@@ -616,14 +614,13 @@ Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the market's trade
 
 ##### Parameters
 
-* market_pair `ASSET1:ASSET2`
-* tx_limit `number`
+* market_pair `base:quote` (`string`)
 * api_key `string`
 
 ##### Usage
-`https://subdomain.domain.tld/market_trade_history?market_pair=USD:BTS&tx_limit=10&api_key=API_KEY`
+`https://subdomain.domain.tld/market_trade_history?market_pair=USD:BTS&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/market_trade_history?market_pair=USD:BTS&tx_limit=10&api_key=123abc)
+#### [Run Command](https://btsapi.grcnode.co.uk/market_trade_history?market_pair=USD:BTS&api_key=123abc)
 
 #### Example JSON output
 
@@ -667,7 +664,7 @@ Find details about a specific witness.
 * api_key `string`
 
 ##### Usage
-`https://subdomain.domain.tld/find_witness?witness_name=blockchained&api_key=API_KEY`
+`https://subdomain.domain.tld/find_witness?witness_name=sc-ol&api_key=API_KEY`
 
 #### [Run Command](https://btsapi.grcnode.co.uk/find_witness?witness_name=sc-ol&api_key=123abc)
 

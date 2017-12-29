@@ -9,16 +9,18 @@
       "worker": [
         0,
         {
-          "total_burned": "17968536894200"
+          "total_burned": "17998209685898"
         }
       ],
       "vote_for": "2:65",
       "vote_against": "2:66",
-      "total_votes_for": "54927751876995",
+      "total_votes_for": "54125103565992",
       "total_votes_against": 0,
       "name": "refund400k",
       "url": "",
       "worker_account_details": {
+        "id": "1.2.90742",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.90742",
         "referrer": "1.2.90742",
         "lifetime_referrer": "1.2.90742",
@@ -61,6 +63,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.102",
         "owner_special_authority": [
           0,
           {}
@@ -91,6 +94,8 @@
       "name": "mindphlux-bitasset-poolfund",
       "url": "",
       "worker_account_details": {
+        "id": "1.2.22517",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.22517",
         "referrer": "1.2.22517",
         "lifetime_referrer": "1.2.22517",
@@ -167,6 +172,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.19",
         "owner_special_authority": [
           0,
           {}
@@ -197,6 +203,8 @@
       "name": "mindphlux-bitasset-poolfund",
       "url": "",
       "worker_account_details": {
+        "id": "1.2.22517",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.22517",
         "referrer": "1.2.22517",
         "lifetime_referrer": "1.2.22517",
@@ -273,6 +281,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.19",
         "owner_special_authority": [
           0,
           {}
@@ -303,6 +312,8 @@
       "name": "mindphlux-bitasset-poolfund",
       "url": "https://bitsharestalk.org/index.php/topic,19317.0.html",
       "worker_account_details": {
+        "id": "1.2.22517",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.22517",
         "referrer": "1.2.22517",
         "lifetime_referrer": "1.2.22517",
@@ -379,6 +390,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.19",
         "owner_special_authority": [
           0,
           {}
@@ -404,11 +416,13 @@
       ],
       "vote_for": "2:73",
       "vote_against": "2:74",
-      "total_votes_for": "244525980276",
+      "total_votes_for": "244525980155",
       "total_votes_against": 0,
       "name": "bitasset-fund-pool",
       "url": "https://bitsharestalk.org/index.php/topic,19317.0.html",
       "worker_account_details": {
+        "id": "1.2.22517",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.22517",
         "referrer": "1.2.22517",
         "lifetime_referrer": "1.2.22517",
@@ -485,6 +499,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.19",
         "owner_special_authority": [
           0,
           {}
@@ -515,6 +530,8 @@
       "name": "Debian/Ubuntu-based PPA",
       "url": "https://bitsharestalk.org/index.php/topic,19485.msg250031.html",
       "worker_account_details": {
+        "id": "1.2.6004",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.6004",
         "referrer": "1.2.6004",
         "lifetime_referrer": "1.2.6004",
@@ -563,6 +580,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.132",
         "owner_special_authority": [
           0,
           {}
@@ -593,6 +611,8 @@
       "name": "Debian/Ubuntu-based PPA",
       "url": "https://bitsharestalk.org/index.php/topic,19485.msg250031.html",
       "worker_account_details": {
+        "id": "1.2.6004",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.6004",
         "referrer": "1.2.6004",
         "lifetime_referrer": "1.2.6004",
@@ -641,6 +661,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.132",
         "owner_special_authority": [
           0,
           {}
@@ -666,11 +687,13 @@
       ],
       "vote_for": "2:92",
       "vote_against": "2:93",
-      "total_votes_for": "224421991026",
+      "total_votes_for": "224421990905",
       "total_votes_against": 0,
       "name": "Refund Create Order Fees on Cancel",
       "url": "https://github.com/cryptonomex/graphene/issues/445",
       "worker_account_details": {
+        "id": "1.2.97845",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.97845",
         "referrer": "1.2.97845",
         "lifetime_referrer": "1.2.97845",
@@ -757,6 +780,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.386",
         "owner_special_authority": [
           0,
           {}
@@ -787,6 +811,8 @@
       "name": "Bitshares UI Project Manager",
       "url": "https://docs.google.com/document/d/14d9bBAyUoB9wcBpFnYoGpE1MF0RnOwMKpF2Z8eh0QkI/edit?usp=sharing",
       "worker_account_details": {
+        "id": "1.2.21594",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.21594",
         "referrer": "1.2.21594",
         "lifetime_referrer": "1.2.21594",
@@ -819,19 +845,18 @@
         "options": {
           "memo_key": "BTS62cZit4AJKV4Z7gGb9TVvPXfbQM7HBAL7XBWCptrdv8hMnSCVT",
           "voting_account": "1.2.5",
-          "num_witness": 21,
+          "num_witness": 22,
           "num_committee": 13,
           "votes": [
             "1:26",
             "1:27",
-            "1:28",
             "1:30",
+            "1:31",
             "1:32",
-            "1:36",
+            "1:37",
             "1:38",
             "1:44",
             "1:45",
-            "1:47",
             "0:50",
             "1:56",
             "0:82",
@@ -843,7 +868,9 @@
             "0:141",
             "1:143",
             "0:147",
+            "1:164",
             "1:165",
+            "1:166",
             "0:173",
             "1:190",
             "1:196",
@@ -876,6 +903,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.281",
         "owner_special_authority": [
           0,
           {}
@@ -906,6 +934,8 @@
       "name": "Bitshares UI Project Coordinator",
       "url": "https://docs.google.com/document/d/14d9bBAyUoB9wcBpFnYoGpE1MF0RnOwMKpF2Z8eh0QkI/edit?usp=sharing",
       "worker_account_details": {
+        "id": "1.2.21594",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.21594",
         "referrer": "1.2.21594",
         "lifetime_referrer": "1.2.21594",
@@ -938,19 +968,18 @@
         "options": {
           "memo_key": "BTS62cZit4AJKV4Z7gGb9TVvPXfbQM7HBAL7XBWCptrdv8hMnSCVT",
           "voting_account": "1.2.5",
-          "num_witness": 21,
+          "num_witness": 22,
           "num_committee": 13,
           "votes": [
             "1:26",
             "1:27",
-            "1:28",
             "1:30",
+            "1:31",
             "1:32",
-            "1:36",
+            "1:37",
             "1:38",
             "1:44",
             "1:45",
-            "1:47",
             "0:50",
             "1:56",
             "0:82",
@@ -962,7 +991,9 @@
             "0:141",
             "1:143",
             "0:147",
+            "1:164",
             "1:165",
+            "1:166",
             "0:173",
             "1:190",
             "1:196",
@@ -995,6 +1026,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.281",
         "owner_special_authority": [
           0,
           {}
@@ -1025,6 +1057,8 @@
       "name": "BTS Cryptoexchange worker 1",
       "url": "https://bitsharestalk.org/index.php/topic,19351.0.html",
       "worker_account_details": {
+        "id": "1.2.98347",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.98347",
         "referrer": "1.2.98347",
         "lifetime_referrer": "1.2.98347",
@@ -1067,6 +1101,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.416",
         "owner_special_authority": [
           0,
           {}
@@ -1097,6 +1132,8 @@
       "name": "BTS Cryptoexchange worker 2",
       "url": "https://bitsharestalk.org/index.php/topic,19351.0.html",
       "worker_account_details": {
+        "id": "1.2.98347",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.98347",
         "referrer": "1.2.98347",
         "lifetime_referrer": "1.2.98347",
@@ -1139,6 +1176,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.416",
         "owner_special_authority": [
           0,
           {}
@@ -1169,6 +1207,8 @@
       "name": "BTS Cryptoexchange worker 3",
       "url": "https://bitsharestalk.org/index.php/topic,19351.0.html",
       "worker_account_details": {
+        "id": "1.2.98347",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.98347",
         "referrer": "1.2.98347",
         "lifetime_referrer": "1.2.98347",
@@ -1211,6 +1251,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.416",
         "owner_special_authority": [
           0,
           {}
@@ -1241,6 +1282,8 @@
       "name": "BTS Cryptoexchange worker 4",
       "url": "https://bitsharestalk.org/index.php/topic,19351.0.html",
       "worker_account_details": {
+        "id": "1.2.98347",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.98347",
         "referrer": "1.2.98347",
         "lifetime_referrer": "1.2.98347",
@@ -1283,6 +1326,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.416",
         "owner_special_authority": [
           0,
           {}
@@ -1313,6 +1357,8 @@
       "name": "BTS Cryptoexchange worker 5",
       "url": "https://bitsharestalk.org/index.php/topic,19351.0.html",
       "worker_account_details": {
+        "id": "1.2.98347",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.98347",
         "referrer": "1.2.98347",
         "lifetime_referrer": "1.2.98347",
@@ -1355,6 +1401,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.416",
         "owner_special_authority": [
           0,
           {}
@@ -1385,6 +1432,8 @@
       "name": "BTS Cryptoexchange worker 6",
       "url": "https://bitsharestalk.org/index.php/topic,19351.0.html",
       "worker_account_details": {
+        "id": "1.2.98347",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.98347",
         "referrer": "1.2.98347",
         "lifetime_referrer": "1.2.98347",
@@ -1427,6 +1476,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.416",
         "owner_special_authority": [
           0,
           {}
@@ -1452,11 +1502,13 @@
       ],
       "vote_for": "2:115",
       "vote_against": "2:116",
-      "total_votes_for": "571884799900",
+      "total_votes_for": "573426647255",
       "total_votes_against": 0,
       "name": "GUI Development and Maintenance by svk",
       "url": "https://docs.google.com/document/d/1c4acxn0BAAln2EPd9WcE6cU3fqpxbeyOTL0JrfMbT7E/edit?usp=sharing",
       "worker_account_details": {
+        "id": "1.2.30665",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.30665",
         "referrer": "1.2.30665",
         "lifetime_referrer": "1.2.30665",
@@ -1501,6 +1553,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.482",
         "owner_special_authority": [
           0,
           {}
@@ -1526,11 +1579,13 @@
       ],
       "vote_for": "2:117",
       "vote_against": "2:118",
-      "total_votes_for": "569226105169",
+      "total_votes_for": "570742105544",
       "total_votes_against": 0,
       "name": "Documentation/Technical Support/Python+UI Development",
       "url": "https://github.com/xeroc/worker-proposals",
       "worker_account_details": {
+        "id": "1.2.282",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.282",
         "referrer": "1.2.282",
         "lifetime_referrer": "1.2.282",
@@ -1613,6 +1668,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.241",
         "owner_special_authority": [
           0,
           {}
@@ -1638,11 +1694,13 @@
       ],
       "vote_for": "2:119",
       "vote_against": "2:120",
-      "total_votes_for": "541235780931",
+      "total_votes_for": "541235799163",
       "total_votes_against": 0,
       "name": "STEALTH",
       "url": "https://github.com/bitshares/bsips/blob/master/bsip-0008.md",
       "worker_account_details": {
+        "id": "1.2.282",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.282",
         "referrer": "1.2.282",
         "lifetime_referrer": "1.2.282",
@@ -1725,6 +1783,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.241",
         "owner_special_authority": [
           0,
           {}
@@ -1755,6 +1814,8 @@
       "name": "burn-100k-1",
       "url": "http://bitshares.org",
       "worker_account_details": {
+        "id": "1.2.0",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.0",
         "referrer": "1.2.0",
         "lifetime_referrer": "1.2.0",
@@ -1769,51 +1830,51 @@
           "address_auths": []
         },
         "active": {
-          "weight_threshold": 168453,
+          "weight_threshold": 167447,
           "account_auths": [
             [
               "1.2.121",
-              41072
+              40762
             ],
             [
               "1.2.159",
-              21951
+              21887
             ],
             [
               "1.2.282",
-              35088
+              34911
             ],
             [
               "1.2.8891",
-              31395
+              31231
             ],
             [
               "1.2.12376",
-              40054
+              39896
             ],
             [
               "1.2.21106",
-              19100
+              18942
             ],
             [
               "1.2.25010",
-              32299
+              32117
             ],
             [
               "1.2.35939",
-              21627
+              21567
             ],
             [
               "1.2.97845",
-              31516
+              31440
             ],
             [
               "1.2.130258",
-              37250
+              36881
             ],
             [
               "1.2.158781",
-              25552
+              25258
             ]
           ],
           "key_auths": [],
@@ -1862,6 +1923,8 @@
       "name": "burn-100k-2",
       "url": "http://bitshares.org",
       "worker_account_details": {
+        "id": "1.2.0",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.0",
         "referrer": "1.2.0",
         "lifetime_referrer": "1.2.0",
@@ -1876,51 +1939,51 @@
           "address_auths": []
         },
         "active": {
-          "weight_threshold": 168453,
+          "weight_threshold": 167447,
           "account_auths": [
             [
               "1.2.121",
-              41072
+              40762
             ],
             [
               "1.2.159",
-              21951
+              21887
             ],
             [
               "1.2.282",
-              35088
+              34911
             ],
             [
               "1.2.8891",
-              31395
+              31231
             ],
             [
               "1.2.12376",
-              40054
+              39896
             ],
             [
               "1.2.21106",
-              19100
+              18942
             ],
             [
               "1.2.25010",
-              32299
+              32117
             ],
             [
               "1.2.35939",
-              21627
+              21567
             ],
             [
               "1.2.97845",
-              31516
+              31440
             ],
             [
               "1.2.130258",
-              37250
+              36881
             ],
             [
               "1.2.158781",
-              25552
+              25258
             ]
           ],
           "key_auths": [],
@@ -1969,6 +2032,8 @@
       "name": "burn-100k-3",
       "url": "http://bitshares.org",
       "worker_account_details": {
+        "id": "1.2.0",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.0",
         "referrer": "1.2.0",
         "lifetime_referrer": "1.2.0",
@@ -1983,51 +2048,51 @@
           "address_auths": []
         },
         "active": {
-          "weight_threshold": 168453,
+          "weight_threshold": 167447,
           "account_auths": [
             [
               "1.2.121",
-              41072
+              40762
             ],
             [
               "1.2.159",
-              21951
+              21887
             ],
             [
               "1.2.282",
-              35088
+              34911
             ],
             [
               "1.2.8891",
-              31395
+              31231
             ],
             [
               "1.2.12376",
-              40054
+              39896
             ],
             [
               "1.2.21106",
-              19100
+              18942
             ],
             [
               "1.2.25010",
-              32299
+              32117
             ],
             [
               "1.2.35939",
-              21627
+              21567
             ],
             [
               "1.2.97845",
-              31516
+              31440
             ],
             [
               "1.2.130258",
-              37250
+              36881
             ],
             [
               "1.2.158781",
-              25552
+              25258
             ]
           ],
           "key_auths": [],
@@ -2076,6 +2141,8 @@
       "name": "burn-100k-4",
       "url": "http://bitshares.org",
       "worker_account_details": {
+        "id": "1.2.0",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.0",
         "referrer": "1.2.0",
         "lifetime_referrer": "1.2.0",
@@ -2090,51 +2157,51 @@
           "address_auths": []
         },
         "active": {
-          "weight_threshold": 168453,
+          "weight_threshold": 167447,
           "account_auths": [
             [
               "1.2.121",
-              41072
+              40762
             ],
             [
               "1.2.159",
-              21951
+              21887
             ],
             [
               "1.2.282",
-              35088
+              34911
             ],
             [
               "1.2.8891",
-              31395
+              31231
             ],
             [
               "1.2.12376",
-              40054
+              39896
             ],
             [
               "1.2.21106",
-              19100
+              18942
             ],
             [
               "1.2.25010",
-              32299
+              32117
             ],
             [
               "1.2.35939",
-              21627
+              21567
             ],
             [
               "1.2.97845",
-              31516
+              31440
             ],
             [
               "1.2.130258",
-              37250
+              36881
             ],
             [
               "1.2.158781",
-              25552
+              25258
             ]
           ],
           "key_auths": [],
@@ -2183,6 +2250,8 @@
       "name": "refund-100k-1",
       "url": "http://bitshares.org",
       "worker_account_details": {
+        "id": "1.2.0",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.0",
         "referrer": "1.2.0",
         "lifetime_referrer": "1.2.0",
@@ -2197,51 +2266,51 @@
           "address_auths": []
         },
         "active": {
-          "weight_threshold": 168453,
+          "weight_threshold": 167447,
           "account_auths": [
             [
               "1.2.121",
-              41072
+              40762
             ],
             [
               "1.2.159",
-              21951
+              21887
             ],
             [
               "1.2.282",
-              35088
+              34911
             ],
             [
               "1.2.8891",
-              31395
+              31231
             ],
             [
               "1.2.12376",
-              40054
+              39896
             ],
             [
               "1.2.21106",
-              19100
+              18942
             ],
             [
               "1.2.25010",
-              32299
+              32117
             ],
             [
               "1.2.35939",
-              21627
+              21567
             ],
             [
               "1.2.97845",
-              31516
+              31440
             ],
             [
               "1.2.130258",
-              37250
+              36881
             ],
             [
               "1.2.158781",
-              25552
+              25258
             ]
           ],
           "key_auths": [],
@@ -2285,11 +2354,13 @@
       ],
       "vote_for": "2:131",
       "vote_against": "2:132",
-      "total_votes_for": "499891236706",
+      "total_votes_for": "499891189306",
       "total_votes_against": 0,
       "name": "refund-100k-2",
       "url": "http://bitshares.org",
       "worker_account_details": {
+        "id": "1.2.0",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.0",
         "referrer": "1.2.0",
         "lifetime_referrer": "1.2.0",
@@ -2304,51 +2375,51 @@
           "address_auths": []
         },
         "active": {
-          "weight_threshold": 168453,
+          "weight_threshold": 167447,
           "account_auths": [
             [
               "1.2.121",
-              41072
+              40762
             ],
             [
               "1.2.159",
-              21951
+              21887
             ],
             [
               "1.2.282",
-              35088
+              34911
             ],
             [
               "1.2.8891",
-              31395
+              31231
             ],
             [
               "1.2.12376",
-              40054
+              39896
             ],
             [
               "1.2.21106",
-              19100
+              18942
             ],
             [
               "1.2.25010",
-              32299
+              32117
             ],
             [
               "1.2.35939",
-              21627
+              21567
             ],
             [
               "1.2.97845",
-              31516
+              31440
             ],
             [
               "1.2.130258",
-              37250
+              36881
             ],
             [
               "1.2.158781",
-              25552
+              25258
             ]
           ],
           "key_auths": [],
@@ -2392,11 +2463,13 @@
       ],
       "vote_for": "2:133",
       "vote_against": "2:134",
-      "total_votes_for": "503545016886",
+      "total_votes_for": "503568744271",
       "total_votes_against": 0,
       "name": "refund-100k-3",
       "url": "http://bitshares.org",
       "worker_account_details": {
+        "id": "1.2.0",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.0",
         "referrer": "1.2.0",
         "lifetime_referrer": "1.2.0",
@@ -2411,51 +2484,51 @@
           "address_auths": []
         },
         "active": {
-          "weight_threshold": 168453,
+          "weight_threshold": 167447,
           "account_auths": [
             [
               "1.2.121",
-              41072
+              40762
             ],
             [
               "1.2.159",
-              21951
+              21887
             ],
             [
               "1.2.282",
-              35088
+              34911
             ],
             [
               "1.2.8891",
-              31395
+              31231
             ],
             [
               "1.2.12376",
-              40054
+              39896
             ],
             [
               "1.2.21106",
-              19100
+              18942
             ],
             [
               "1.2.25010",
-              32299
+              32117
             ],
             [
               "1.2.35939",
-              21627
+              21567
             ],
             [
               "1.2.97845",
-              31516
+              31440
             ],
             [
               "1.2.130258",
-              37250
+              36881
             ],
             [
               "1.2.158781",
-              25552
+              25258
             ]
           ],
           "key_auths": [],
@@ -2504,6 +2577,8 @@
       "name": "refund-100k-4",
       "url": "http://bitshares.org",
       "worker_account_details": {
+        "id": "1.2.0",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.0",
         "referrer": "1.2.0",
         "lifetime_referrer": "1.2.0",
@@ -2518,51 +2593,51 @@
           "address_auths": []
         },
         "active": {
-          "weight_threshold": 168453,
+          "weight_threshold": 167447,
           "account_auths": [
             [
               "1.2.121",
-              41072
+              40762
             ],
             [
               "1.2.159",
-              21951
+              21887
             ],
             [
               "1.2.282",
-              35088
+              34911
             ],
             [
               "1.2.8891",
-              31395
+              31231
             ],
             [
               "1.2.12376",
-              40054
+              39896
             ],
             [
               "1.2.21106",
-              19100
+              18942
             ],
             [
               "1.2.25010",
-              32299
+              32117
             ],
             [
               "1.2.35939",
-              21627
+              21567
             ],
             [
               "1.2.97845",
-              31516
+              31440
             ],
             [
               "1.2.130258",
-              37250
+              36881
             ],
             [
               "1.2.158781",
-              25552
+              25258
             ]
           ],
           "key_auths": [],
@@ -2611,6 +2686,8 @@
       "name": "Graphic Design / UI/UX Design / Web Development",
       "url": "https://github.com/cassiopaia/worker-proposals-bts",
       "worker_account_details": {
+        "id": "1.2.5178",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.5178",
         "referrer": "1.2.5178",
         "lifetime_referrer": "1.2.5178",
@@ -2685,6 +2762,7 @@
           "1.2.126986"
         ],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.216",
         "owner_special_authority": [
           0,
           {}
@@ -2710,11 +2788,13 @@
       ],
       "vote_for": "2:139",
       "vote_against": "2:140",
-      "total_votes_for": "282548512348",
+      "total_votes_for": "284064494370",
       "total_votes_against": 0,
       "name": "Graphic Design / UI/UX Design / Web Development",
       "url": "https://github.com/cassiopaia/worker-proposals-bts",
       "worker_account_details": {
+        "id": "1.2.5178",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.5178",
         "referrer": "1.2.5178",
         "lifetime_referrer": "1.2.5178",
@@ -2789,6 +2869,7 @@
           "1.2.126986"
         ],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.216",
         "owner_special_authority": [
           0,
           {}
@@ -2814,11 +2895,13 @@
       ],
       "vote_for": "2:145",
       "vote_against": "2:146",
-      "total_votes_for": "1321846656508",
+      "total_votes_for": "1323386384268",
       "total_votes_against": 0,
       "name": "[BSIP10] Percentage-based transfer fee solution based on CER",
       "url": "https://github.com/bitshares/bsips/blob/master/bsip-0010.md",
       "worker_account_details": {
+        "id": "1.2.100886",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.100886",
         "referrer": "1.2.100886",
         "lifetime_referrer": "1.2.100886",
@@ -2869,6 +2952,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.557",
         "owner_special_authority": [
           0,
           {}
@@ -2894,11 +2978,13 @@
       ],
       "vote_for": "2:148",
       "vote_against": "2:149",
-      "total_votes_for": "1389795191857",
+      "total_votes_for": "1391334919617",
       "total_votes_against": 0,
       "name": "Blockchain maintenance developer",
       "url": "https://bitsharestalk.org/index.php/topic,21296.msg276680.html#msg276680",
       "worker_account_details": {
+        "id": "1.2.8284",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.8284",
         "referrer": "1.2.8284",
         "lifetime_referrer": "1.2.8284",
@@ -2974,6 +3060,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.117",
         "owner_special_authority": [
           0,
           {}
@@ -2999,11 +3086,13 @@
       ],
       "vote_for": "2:150",
       "vote_against": "2:151",
-      "total_votes_for": "1371864351613",
+      "total_votes_for": "1373380351988",
       "total_votes_against": 0,
       "name": "Python Library and Applications",
       "url": "https://github.com/xeroc/worker-proposals",
       "worker_account_details": {
+        "id": "1.2.100665",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.100665",
         "referrer": "1.2.100665",
         "lifetime_referrer": "1.2.100665",
@@ -3056,6 +3145,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.576",
         "owner_special_authority": [
           0,
           {}
@@ -3081,11 +3171,13 @@
       ],
       "vote_for": "2:152",
       "vote_against": "2:153",
-      "total_votes_for": "1369470081149",
+      "total_votes_for": "1370986081524",
       "total_votes_against": 0,
       "name": "Documentation and Technical Support",
       "url": "https://github.com/xeroc/worker-proposals",
       "worker_account_details": {
+        "id": "1.2.100665",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.100665",
         "referrer": "1.2.100665",
         "lifetime_referrer": "1.2.100665",
@@ -3138,6 +3230,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.576",
         "owner_special_authority": [
           0,
           {}
@@ -3163,11 +3256,13 @@
       ],
       "vote_for": "2:154",
       "vote_against": "2:155",
-      "total_votes_for": "1344227609442",
+      "total_votes_for": "1345743609817",
       "total_votes_against": 0,
       "name": "Blockchain Explorer and API Development",
       "url": "https://bitsharestalk.org/index.php/topic,21532.0.html",
       "worker_account_details": {
+        "id": "1.2.31890",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.31890",
         "referrer": "1.2.31890",
         "lifetime_referrer": "1.2.31890",
@@ -3216,6 +3311,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.20",
         "owner_special_authority": [
           0,
           {}
@@ -3241,11 +3337,13 @@
       ],
       "vote_for": "2:156",
       "vote_against": "2:157",
-      "total_votes_for": "1344584536573",
+      "total_votes_for": "1344608282190",
       "total_votes_against": 0,
       "name": "svk - Bitshares GUI Development and Maintenance #2",
       "url": "https://docs.google.com/document/d/1c4acxn0BAAln2EPd9WcE6cU3fqpxbeyOTL0JrfMbT7E/edit?usp=sharing",
       "worker_account_details": {
+        "id": "1.2.30665",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.30665",
         "referrer": "1.2.30665",
         "lifetime_referrer": "1.2.30665",
@@ -3290,6 +3388,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.482",
         "owner_special_authority": [
           0,
           {}
@@ -3315,11 +3414,13 @@
       ],
       "vote_for": "2:158",
       "vote_against": "2:159",
-      "total_votes_for": "202112582964",
+      "total_votes_for": "202642798213",
       "total_votes_against": 0,
       "name": "Fund to pay dividend",
       "url": "https://bitsharestalk.org/index.php/topic,22041.new.html#new",
       "worker_account_details": {
+        "id": "1.2.666",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.666",
         "referrer": "1.2.666",
         "lifetime_referrer": "1.2.666",
@@ -3386,6 +3487,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.686",
         "owner_special_authority": [
           0,
           {}
@@ -3411,11 +3513,13 @@
       ],
       "vote_for": "2:160",
       "vote_against": "2:161",
-      "total_votes_for": "181828437942",
+      "total_votes_for": "181076968946",
       "total_votes_against": 0,
       "name": "Fund to pay dividend",
       "url": "https://bitsharestalk.org/index.php/topic,22041.new.html#new",
       "worker_account_details": {
+        "id": "1.2.666",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.666",
         "referrer": "1.2.666",
         "lifetime_referrer": "1.2.666",
@@ -3482,6 +3586,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.686",
         "owner_special_authority": [
           0,
           {}
@@ -3512,6 +3617,8 @@
       "name": "bitARS smartcoin creation",
       "url": "https://bitsharestalk.org/index.php/topic,22231.0.html",
       "worker_account_details": {
+        "id": "1.2.31489",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.31489",
         "referrer": "1.2.31489",
         "lifetime_referrer": "1.2.31489",
@@ -3561,6 +3668,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.27",
         "owner_special_authority": [
           0,
           {}
@@ -3591,6 +3699,8 @@
       "name": "Chronos Crypto Videos",
       "url": "https://bitsharestalk.org/index.php/topic,22487.0.html",
       "worker_account_details": {
+        "id": "1.2.110851",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.110851",
         "referrer": "1.2.110851",
         "lifetime_referrer": "1.2.110851",
@@ -3635,6 +3745,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.823",
         "owner_special_authority": [
           0,
           {}
@@ -3660,11 +3771,13 @@
       ],
       "vote_for": "2:174",
       "vote_against": "2:175",
-      "total_votes_for": 3395340,
+      "total_votes_for": 803190970,
       "total_votes_against": 0,
       "name": "to optimize the force settlement parameter of bitCNY",
       "url": "https://bitsharestalk.org/index.php/topic,22416.0.html",
       "worker_account_details": {
+        "id": "1.2.121",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.121",
         "referrer": "1.2.121",
         "lifetime_referrer": "1.2.121",
@@ -3705,7 +3818,7 @@
         "options": {
           "memo_key": "BTS7JFp7uKFTiKfmR8XkWtdGozdLJB2m9y6awXWjBKUeBs5EkS6mw",
           "voting_account": "1.2.5",
-          "num_witness": 46,
+          "num_witness": 45,
           "num_committee": 11,
           "votes": [
             "1:23",
@@ -3770,7 +3883,6 @@
             "1:235",
             "2:246",
             "2:251",
-            "1:253",
             "2:258",
             "2:260",
             "2:262",
@@ -3784,6 +3896,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.282",
         "owner_special_authority": [
           0,
           {}
@@ -3814,6 +3927,8 @@
       "name": "NO changes to bitCNY force settlement",
       "url": "https://bitsharestalk.org/index.php/topic,22416.0.html",
       "worker_account_details": {
+        "id": "1.2.282",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.282",
         "referrer": "1.2.282",
         "lifetime_referrer": "1.2.282",
@@ -3896,6 +4011,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.241",
         "owner_special_authority": [
           0,
           {}
@@ -3926,6 +4042,8 @@
       "name": "Bitshares GUI Development and Maintenance",
       "url": "https://docs.google.com/document/d/1c4acxn0BAAln2EPd9WcE6cU3fqpxbeyOTL0JrfMbT7E/edit?usp=sharing",
       "worker_account_details": {
+        "id": "1.2.30665",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.30665",
         "referrer": "1.2.30665",
         "lifetime_referrer": "1.2.30665",
@@ -3970,6 +4088,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.482",
         "owner_special_authority": [
           0,
           {}
@@ -4000,6 +4119,8 @@
       "name": "Ripple Gateway",
       "url": "https://ripplefox.com/bts/worker",
       "worker_account_details": {
+        "id": "1.2.111880",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.111880",
         "referrer": "1.2.111880",
         "lifetime_referrer": "1.2.111880",
@@ -4044,6 +4165,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.879",
         "owner_special_authority": [
           0,
           {}
@@ -4074,6 +4196,8 @@
       "name": "BitShares Website Mockup",
       "url": "https://bitsharestalk.org/index.php/topic,22828.0.html",
       "worker_account_details": {
+        "id": "1.2.35939",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.35939",
         "referrer": "1.2.35939",
         "lifetime_referrer": "1.2.35939",
@@ -4141,6 +4265,7 @@
         "blacklisted_accounts": [
           "1.2.2340"
         ],
+        "cashback_vb": "1.13.332",
         "owner_special_authority": [
           0,
           {}
@@ -4166,11 +4291,13 @@
       ],
       "vote_for": "2:186",
       "vote_against": "2:187",
-      "total_votes_for": "125412881181",
+      "total_votes_for": "125412899989",
       "total_votes_against": 0,
       "name": "Chronos Crypto Videos",
       "url": "https://bitsharestalk.org/index.php/topic,23291.0.html",
       "worker_account_details": {
+        "id": "1.2.110851",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.110851",
         "referrer": "1.2.110851",
         "lifetime_referrer": "1.2.110851",
@@ -4215,6 +4342,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.823",
         "owner_special_authority": [
           0,
           {}
@@ -4240,11 +4368,13 @@
       ],
       "vote_for": "2:188",
       "vote_against": "2:189",
-      "total_votes_for": "1132163061713",
+      "total_votes_for": "1131989687692",
       "total_votes_against": 0,
       "name": "Chronos Crypto Videos",
       "url": "https://bitsharestalk.org/index.php/topic,23291.0.html",
       "worker_account_details": {
+        "id": "1.2.110851",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.110851",
         "referrer": "1.2.110851",
         "lifetime_referrer": "1.2.110851",
@@ -4289,6 +4419,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.823",
         "owner_special_authority": [
           0,
           {}
@@ -4319,6 +4450,8 @@
       "name": "Project administration & essential maintenance",
       "url": "https://bitsharestalk.org/index.php/topic,23495.0.html",
       "worker_account_details": {
+        "id": "1.2.138721",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.138721",
         "referrer": "1.2.138721",
         "lifetime_referrer": "1.2.138721",
@@ -4361,6 +4494,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1091",
         "owner_special_authority": [
           0,
           {}
@@ -4386,11 +4520,13 @@
       ],
       "vote_for": "2:194",
       "vote_against": "2:195",
-      "total_votes_for": "27083909320155",
+      "total_votes_for": "27179874121805",
       "total_votes_against": 0,
       "name": "Project administration & essential maintenance",
       "url": "https://bitsharestalk.org/index.php/topic,23495.0.html",
       "worker_account_details": {
+        "id": "1.2.138721",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.138721",
         "referrer": "1.2.138721",
         "lifetime_referrer": "1.2.138721",
@@ -4433,6 +4569,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1091",
         "owner_special_authority": [
           0,
           {}
@@ -4458,11 +4595,13 @@
       ],
       "vote_for": "2:197",
       "vote_against": "2:198",
-      "total_votes_for": "123750867069",
+      "total_votes_for": "130902994798",
       "total_votes_against": 0,
       "name": "GUI Development - svk",
       "url": "https://docs.google.com/document/d/1c4acxn0BAAln2EPd9WcE6cU3fqpxbeyOTL0JrfMbT7E/edit?usp=sharing",
       "worker_account_details": {
+        "id": "1.2.30665",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.30665",
         "referrer": "1.2.30665",
         "lifetime_referrer": "1.2.30665",
@@ -4507,6 +4646,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.482",
         "owner_special_authority": [
           0,
           {}
@@ -4532,11 +4672,13 @@
       ],
       "vote_for": "2:200",
       "vote_against": "2:201",
-      "total_votes_for": "390558436926",
+      "total_votes_for": "397880317008",
       "total_votes_against": 0,
       "name": "Alfredo Garcia, Bitshares Core Dev",
       "url": "https://bitsharestalk.org/index.php/topic,23698.0.html",
       "worker_account_details": {
+        "id": "1.2.117601",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.117601",
         "referrer": "1.2.117601",
         "lifetime_referrer": "1.2.117601",
@@ -4579,6 +4721,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1167",
         "owner_special_authority": [
           0,
           {}
@@ -4604,11 +4747,13 @@
       ],
       "vote_for": "2:202",
       "vote_against": "2:203",
-      "total_votes_for": "1537634640524",
+      "total_votes_for": "1532924544667",
       "total_votes_against": 0,
       "name": "agree to increase witness payment to 4BTS/block",
       "url": "https://github.com/bitshares/bsips/issues/22",
       "worker_account_details": {
+        "id": "1.2.121",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.121",
         "referrer": "1.2.121",
         "lifetime_referrer": "1.2.121",
@@ -4649,7 +4794,7 @@
         "options": {
           "memo_key": "BTS7JFp7uKFTiKfmR8XkWtdGozdLJB2m9y6awXWjBKUeBs5EkS6mw",
           "voting_account": "1.2.5",
-          "num_witness": 46,
+          "num_witness": 45,
           "num_committee": 11,
           "votes": [
             "1:23",
@@ -4714,7 +4859,6 @@
             "1:235",
             "2:246",
             "2:251",
-            "1:253",
             "2:258",
             "2:260",
             "2:262",
@@ -4728,6 +4872,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.282",
         "owner_special_authority": [
           0,
           {}
@@ -4753,11 +4898,13 @@
       ],
       "vote_for": "2:204",
       "vote_against": "2:205",
-      "total_votes_for": 4152984906,
+      "total_votes_for": 4152982966,
       "total_votes_against": 0,
       "name": "object to increase witness payment to 4BTS/block",
       "url": "https://github.com/bitshares/bsips/issues/22",
       "worker_account_details": {
+        "id": "1.2.121",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.121",
         "referrer": "1.2.121",
         "lifetime_referrer": "1.2.121",
@@ -4798,7 +4945,7 @@
         "options": {
           "memo_key": "BTS7JFp7uKFTiKfmR8XkWtdGozdLJB2m9y6awXWjBKUeBs5EkS6mw",
           "voting_account": "1.2.5",
-          "num_witness": 46,
+          "num_witness": 45,
           "num_committee": 11,
           "votes": [
             "1:23",
@@ -4863,7 +5010,6 @@
             "1:235",
             "2:246",
             "2:251",
-            "1:253",
             "2:258",
             "2:260",
             "2:262",
@@ -4877,6 +5023,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.282",
         "owner_special_authority": [
           0,
           {}
@@ -4902,11 +5049,13 @@
       ],
       "vote_for": "2:206",
       "vote_against": "2:207",
-      "total_votes_for": "241639011450",
+      "total_votes_for": "248960841883",
       "total_votes_against": 0,
       "name": "Python-steem and uptick",
       "url": "https://github.com/xeroc/worker-proposals",
       "worker_account_details": {
+        "id": "1.2.154380",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.154380",
         "referrer": "1.2.154380",
         "lifetime_referrer": "1.2.154380",
@@ -4981,6 +5130,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1189",
         "owner_special_authority": [
           0,
           {}
@@ -5011,6 +5161,8 @@
       "name": "agree to increase witness payment to 3BTS/block",
       "url": "https://github.com/bitshares/bsips/issues/22",
       "worker_account_details": {
+        "id": "1.2.964",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.964",
         "referrer": "1.2.964",
         "lifetime_referrer": "1.2.964",
@@ -5102,6 +5254,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.410",
         "owner_special_authority": [
           0,
           {}
@@ -5132,6 +5285,8 @@
       "name": "Advertisement on 8btc.com",
       "url": "https://bitsharestalk.org/index.php/topic,23785.msg302608",
       "worker_account_details": {
+        "id": "1.2.964",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.964",
         "referrer": "1.2.964",
         "lifetime_referrer": "1.2.964",
@@ -5223,6 +5378,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.410",
         "owner_special_authority": [
           0,
           {}
@@ -5248,11 +5404,13 @@
       ],
       "vote_for": "2:224",
       "vote_against": "2:225",
-      "total_votes_for": "84347607335579",
+      "total_votes_for": "83999325916096",
       "total_votes_against": 0,
       "name": "Alfredo Garcia - Core Developer for the second half of 2017",
       "url": "https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2017.md",
       "worker_account_details": {
+        "id": "1.2.356589",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.356589",
         "referrer": "1.2.356589",
         "lifetime_referrer": "1.2.356589",
@@ -5335,6 +5493,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1609",
         "owner_special_authority": [
           0,
           {}
@@ -5360,11 +5519,13 @@
       ],
       "vote_for": "2:228",
       "vote_against": "2:229",
-      "total_votes_for": "992296216639",
+      "total_votes_for": "971327478768",
       "total_votes_against": 0,
       "name": "201707-bsip18",
       "url": "http://www.bitshares.foundation/workers/2017-07-peter-conrad",
       "worker_account_details": {
+        "id": "1.2.364315",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.364315",
         "referrer": "1.2.364315",
         "lifetime_referrer": "1.2.364315",
@@ -5420,6 +5581,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1662",
         "owner_special_authority": [
           0,
           {}
@@ -5445,11 +5607,13 @@
       ],
       "vote_for": "2:231",
       "vote_against": "2:232",
-      "total_votes_for": "26256916411724",
+      "total_votes_for": "26267060489287",
       "total_votes_against": 0,
       "name": "refund100k",
       "url": "",
       "worker_account_details": {
+        "id": "1.2.100665",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.100665",
         "referrer": "1.2.100665",
         "lifetime_referrer": "1.2.100665",
@@ -5502,6 +5666,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.576",
         "owner_special_authority": [
           0,
           {}
@@ -5527,11 +5692,13 @@
       ],
       "vote_for": "2:233",
       "vote_against": "2:234",
-      "total_votes_for": "83818669885439",
+      "total_votes_for": "83474189238807",
       "total_votes_against": 0,
       "name": "201708-bitsharesui",
       "url": "http://www.bitshares.foundation/workers/2017-08-bill-butler",
       "worker_account_details": {
+        "id": "1.2.364315",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.364315",
         "referrer": "1.2.364315",
         "lifetime_referrer": "1.2.364315",
@@ -5587,6 +5754,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1662",
         "owner_special_authority": [
           0,
           {}
@@ -5612,11 +5780,13 @@
       ],
       "vote_for": "2:240",
       "vote_against": "2:241",
-      "total_votes_for": "56418841036",
+      "total_votes_for": "25321788109",
       "total_votes_against": 0,
       "name": "201709-steemfest",
       "url": "http://www.bitshares.foundation/workers/2017-09-steemfest",
       "worker_account_details": {
+        "id": "1.2.364315",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.364315",
         "referrer": "1.2.364315",
         "lifetime_referrer": "1.2.364315",
@@ -5672,6 +5842,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1662",
         "owner_special_authority": [
           0,
           {}
@@ -5697,11 +5868,13 @@
       ],
       "vote_for": "2:244",
       "vote_against": "2:245",
-      "total_votes_for": "33686633515304",
+      "total_votes_for": "33710954567885",
       "total_votes_against": 0,
       "name": "201710-compliance",
       "url": "None",
       "worker_account_details": {
+        "id": "1.2.364315",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.364315",
         "referrer": "1.2.364315",
         "lifetime_referrer": "1.2.364315",
@@ -5757,6 +5930,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1662",
         "owner_special_authority": [
           0,
           {}
@@ -5782,11 +5956,13 @@
       ],
       "vote_for": "2:246",
       "vote_against": "2:247",
-      "total_votes_for": "78172718826108",
+      "total_votes_for": "77858094523969",
       "total_votes_against": 0,
       "name": "201710-spokesperson",
       "url": "None",
       "worker_account_details": {
+        "id": "1.2.364315",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.364315",
         "referrer": "1.2.364315",
         "lifetime_referrer": "1.2.364315",
@@ -5842,6 +6018,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1662",
         "owner_special_authority": [
           0,
           {}
@@ -5872,6 +6049,8 @@
       "name": "\"elmato\" witness feed out of date - 2 days old!",
       "url": "https://roelandp.nl/bitshareswitnesslog/",
       "worker_account_details": {
+        "id": "1.2.127117",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.127117",
         "referrer": "1.2.127117",
         "lifetime_referrer": "1.2.127117",
@@ -5922,6 +6101,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1065",
         "owner_special_authority": [
           0,
           {}
@@ -5947,11 +6127,13 @@
       ],
       "vote_for": "2:251",
       "vote_against": "2:252",
-      "total_votes_for": "58944520707454",
+      "total_votes_for": "58337205371631",
       "total_votes_against": 0,
       "name": "BitShares Greater China Representative",
       "url": "https://steemit.com/bitshares/@lzmlam/bts-greater-china-representative-worker-proposal-bilingual",
       "worker_account_details": {
+        "id": "1.2.449675",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.449675",
         "referrer": "1.2.449675",
         "lifetime_referrer": "1.2.449675",
@@ -6002,6 +6184,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.2199",
         "owner_special_authority": [
           0,
           {}
@@ -6027,11 +6210,13 @@
       ],
       "vote_for": "2:254",
       "vote_against": "2:255",
-      "total_votes_for": "2558056850396",
+      "total_votes_for": "2536002699368",
       "total_votes_against": 0,
       "name": "Joint Marketing Campaign of Exchanges WP",
       "url": "https://steemit.com/cn/@lzmlam/bts-bts-joint-marketing-campaign-of-exchanges-wp-bilingual",
       "worker_account_details": {
+        "id": "1.2.457684",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.457684",
         "referrer": "1.2.457684",
         "lifetime_referrer": "1.2.457684",
@@ -6074,6 +6259,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.2273",
         "owner_special_authority": [
           0,
           {}
@@ -6099,11 +6285,13 @@
       ],
       "vote_for": "2:256",
       "vote_against": "2:257",
-      "total_votes_for": "52446179110409",
+      "total_votes_for": "41668853392566",
       "total_votes_against": 0,
       "name": "Joint Marketing Campaign of Exchanges WP",
       "url": "https://steemit.com/cn/@lzmlam/bts-bts-joint-marketing-campaign-of-exchanges-wp-bilingual",
       "worker_account_details": {
+        "id": "1.2.457684",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.457684",
         "referrer": "1.2.457684",
         "lifetime_referrer": "1.2.457684",
@@ -6146,6 +6334,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.2273",
         "owner_special_authority": [
           0,
           {}
@@ -6171,11 +6360,13 @@
       ],
       "vote_for": "2:258",
       "vote_against": "2:259",
-      "total_votes_for": "82433110278564",
+      "total_votes_for": "82046282832528",
       "total_votes_against": 0,
       "name": "Abit - Core Developer - 201712~201803",
       "url": "https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md",
       "worker_account_details": {
+        "id": "1.2.459901",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.459901",
         "referrer": "1.2.459901",
         "lifetime_referrer": "1.2.459901",
@@ -6250,6 +6441,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.2298",
         "owner_special_authority": [
           0,
           {}
@@ -6275,11 +6467,13 @@
       ],
       "vote_for": "2:260",
       "vote_against": "2:261",
-      "total_votes_for": "73658417147061",
+      "total_votes_for": "73267324418661",
       "total_votes_against": 0,
       "name": "201712-infrastructure",
       "url": "http://www.bitshares.foundation/workers/2017-12-infrastructure",
       "worker_account_details": {
+        "id": "1.2.364315",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.364315",
         "referrer": "1.2.364315",
         "lifetime_referrer": "1.2.364315",
@@ -6335,6 +6529,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1662",
         "owner_special_authority": [
           0,
           {}
@@ -6360,11 +6555,13 @@
       ],
       "vote_for": "2:262",
       "vote_against": "2:263",
-      "total_votes_for": "64110813952867",
+      "total_votes_for": "63579308607169",
       "total_votes_against": 0,
       "name": "2017-12-blockchainacademy",
       "url": "http://www.bitshares.foundation/workers/2017-12-blockchainacademy",
       "worker_account_details": {
+        "id": "1.2.364315",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.364315",
         "referrer": "1.2.364315",
         "lifetime_referrer": "1.2.364315",
@@ -6420,6 +6617,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1662",
         "owner_special_authority": [
           0,
           {}
@@ -6445,11 +6643,13 @@
       ],
       "vote_for": "2:264",
       "vote_against": "2:265",
-      "total_votes_for": "66072986558438",
+      "total_votes_for": "65814750821765",
       "total_votes_against": 0,
       "name": "Poll - BSIP26 - Refund Original Order Creation Fee on Cancel",
       "url": "https://github.com/bitshares/bsips/blob/master/bsip-0026.md",
       "worker_account_details": {
+        "id": "1.2.12376",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.12376",
         "referrer": "1.2.12376",
         "lifetime_referrer": "1.2.12376",
@@ -6544,6 +6744,7 @@
           "1.2.282"
         ],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.431",
         "owner_special_authority": [
           0,
           {}
@@ -6569,11 +6770,13 @@
       ],
       "vote_for": "2:266",
       "vote_against": "2:267",
-      "total_votes_for": "65641370148892",
+      "total_votes_for": "65094862484483",
       "total_votes_against": 0,
       "name": "Poll - BSIP27 - Asset Issuer Reclaim Fee Pool Funds",
       "url": "https://github.com/bitshares/bsips/blob/master/bsip-0027.md",
       "worker_account_details": {
+        "id": "1.2.12376",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.12376",
         "referrer": "1.2.12376",
         "lifetime_referrer": "1.2.12376",
@@ -6668,6 +6871,7 @@
           "1.2.282"
         ],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.431",
         "owner_special_authority": [
           0,
           {}
@@ -6693,11 +6897,13 @@
       ],
       "vote_for": "2:269",
       "vote_against": "2:270",
-      "total_votes_for": "28453269442319",
+      "total_votes_for": "28476416169234",
       "total_votes_against": 0,
       "name": "201801-budget-chinese-translations",
       "url": "http://www.bitshares.foundation/worker/budget/2018-01-budget-chinese-translations",
       "worker_account_details": {
+        "id": "1.2.364315",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.364315",
         "referrer": "1.2.364315",
         "lifetime_referrer": "1.2.364315",
@@ -6753,6 +6959,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1662",
         "owner_special_authority": [
           0,
           {}
@@ -6783,6 +6990,8 @@
       "name": "Crypto-Solutions",
       "url": "http://www.cryptosolutons.uk",
       "worker_account_details": {
+        "id": "1.2.438065",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.438065",
         "referrer": "1.2.438065",
         "lifetime_referrer": "1.2.438065",
@@ -6827,6 +7036,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.2335",
         "owner_special_authority": [
           0,
           {}
@@ -6852,11 +7062,13 @@
       ],
       "vote_for": "2:277",
       "vote_against": "2:278",
-      "total_votes_for": "2502920034717",
+      "total_votes_for": "5971579088055",
       "total_votes_against": 0,
       "name": "DEXBot - User Friendly BitShares Market Making Bots ($660/d)",
       "url": "https://docs.google.com/document/d/1frX-I1JeQxDNDZ270clEQei2LT15ncGYW5n1Lx8xkeY/edit?usp=sharing",
       "worker_account_details": {
+        "id": "1.2.522699",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.522699",
         "referrer": "1.2.522699",
         "lifetime_referrer": "1.2.522699",
@@ -6938,6 +7150,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.3610",
         "owner_special_authority": [
           0,
           {}
@@ -6963,11 +7176,13 @@
       ],
       "vote_for": "2:279",
       "vote_against": "2:280",
-      "total_votes_for": "1238973292100",
+      "total_votes_for": "482985870139",
       "total_votes_against": 0,
       "name": "DEXBot - User Friendly BitShares Market Making Software",
       "url": "https://docs.google.com/document/d/1frX-I1JeQxDNDZ270clEQei2LT15ncGYW5n1Lx8xkeY/edit?usp=sharing",
       "worker_account_details": {
+        "id": "1.2.522699",
+        "membership_expiration_date": "1969-12-31T23:59:59",
         "registrar": "1.2.522699",
         "referrer": "1.2.522699",
         "lifetime_referrer": "1.2.522699",
@@ -7049,6 +7264,7 @@
         "blacklisting_accounts": [],
         "whitelisted_accounts": [],
         "blacklisted_accounts": [],
+        "cashback_vb": "1.13.3610",
         "owner_special_authority": [
           0,
           {}
@@ -7062,5 +7278,5 @@
     }
   ],
   "valid_key": true,
-  "took": 1.917311580997193
+  "took": 2.597949122999125
 }

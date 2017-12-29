@@ -1,1680 +1,1892 @@
 {
   "witnesses": [
     {
-      "id": "1.6.65",
-      "witness_account": "1.2.4952",
-      "witness_account_data": [
-        {
-          "id": "1.2.4952",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.4952",
-          "referrer": "1.2.4952",
-          "lifetime_referrer": "1.2.4952",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "abc123",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS6SjirG3Sz5V1TcZa3gbm4KhC6kqPBJGZaC8KSQmvUVDRbmNSSK",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS6SjirG3Sz5V1TcZa3gbm4KhC6kqPBJGZaC8KSQmvUVDRbmNSSK",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS6SjirG3Sz5V1TcZa3gbm4KhC6kqPBJGZaC8KSQmvUVDRbmNSSK",
-            "voting_account": "1.2.5",
-            "num_witness": 0,
-            "num_committee": 0,
-            "votes": [
-              "1:166"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.4952",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.772",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.35",
+        "witness_account": "1.2.35248",
+        "last_aslot": 23222594,
+        "signing_key": "BTS5hEKbh1FhVfmbfmtEaQ8diQ5MK1W14z6tBGWSPV879sg6pxzu8",
+        "pay_vb": "1.13.128",
+        "vote_id": "1:45",
+        "total_votes": "89344043430139",
+        "url": "https://github.com/abitmore",
+        "total_missed": 711,
+        "last_confirmed_block_num": 23082291
+      },
+      "witness_account_data": {
+        "id": "1.2.35248",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.35248",
+        "referrer": "1.2.35248",
+        "lifetime_referrer": "1.2.35248",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "in.abit",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8YMpb1uAREZaU8YGeC92JF71fTfmakD77iM5SrqecgZ2kgKWBM",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7SakKqZ8HamkTr7FdPn9qYxYmtSh2QzFNn49CiFAkdFAvQVMg6",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127408,
-      "signing_key": "BTS8QjC5GnhKinPKNfEprAJirYywRrGZ83P32Z5Rsjr9k5xnFZgjf",
-      "pay_vb": "1.13.815",
-      "vote_id": "1:166",
-      "total_votes": "70246452399184",
-      "url": "http://www.btsabc.org/",
-      "total_missed": 1274,
-      "last_confirmed_block_num": 22987880
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7SakKqZ8HamkTr7FdPn9qYxYmtSh2QzFNn49CiFAkdFAvQVMg6",
+          "voting_account": "1.2.12376",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.35248",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.68",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.84",
-      "witness_account": "1.2.369",
-      "witness_account_data": [
-        {
-          "id": "1.2.369",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.369",
-          "referrer": "1.2.369",
-          "lifetime_referrer": "1.2.369",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "crazybit",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS4u9SXAmzTWjioNUHWGkuqYUHBcHhH5YWtZb5PoxQrryLjZsvZJ",
-                1
-              ]
+      "witness_role_data": {
+        "id": "1.6.75",
+        "witness_account": "1.2.152739",
+        "last_aslot": 23222592,
+        "signing_key": "BTS5ffxzUfM52pA5nHZ7TCHGUeQxmi6shJCrnXX45Ns75soyPBDDt",
+        "pay_vb": "1.13.1337",
+        "vote_id": "1:216",
+        "total_votes": "75162919746734",
+        "url": "https://steemit.com/blockchain/@blockchained/bitshares-wintess-proposal-vote-for-blckchnd",
+        "total_missed": 919,
+        "last_confirmed_block_num": 23082289
+      },
+      "witness_account_data": {
+        "id": "1.2.152739",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.152739",
+        "referrer": "1.2.152739",
+        "lifetime_referrer": "1.2.152739",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "blckchnd",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5gFXYY3k7psJraXrwxjEdSxzovadLNDRoGWzRaTJWPB27nkjjC",
+              1
             ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS4u9SXAmzTWjioNUHWGkuqYUHBcHhH5YWtZb5PoxQrryLjZsvZJ",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS4u9SXAmzTWjioNUHWGkuqYUHBcHhH5YWtZb5PoxQrryLjZsvZJ",
-            "voting_account": "1.2.5",
-            "num_witness": 0,
-            "num_committee": 0,
-            "votes": [],
-            "extensions": []
-          },
-          "statistics": "2.6.369",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.1619",
-          "owner_special_authority": [
-            0,
-            {}
+            [
+              "BTS6EuDZrugiYsq55REUua2Pyqx2Vd8noViUWJ6Cvx8cg8vGjJpcK",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7PRcxppXc8NMSzVjEwkezbq4XekaUuFZ3GfX6r9nsySbyeazTG",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127409,
-      "signing_key": "BTS6naPodhtnvgTyfMu9vzjv7N9nac22mz9c2Co4d3otDS3jZ6kLD",
-      "pay_vb": "1.13.1851",
-      "vote_id": "1:235",
-      "total_votes": "68432708940524",
-      "url": "bitasset.info",
-      "total_missed": 457,
-      "last_confirmed_block_num": 22987881
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7PRcxppXc8NMSzVjEwkezbq4XekaUuFZ3GfX6r9nsySbyeazTG",
+          "voting_account": "1.2.5",
+          "num_witness": 14,
+          "num_committee": 5,
+          "votes": [
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:36",
+            "1:44",
+            "1:45",
+            "1:56",
+            "0:85",
+            "0:87",
+            "0:91",
+            "0:141",
+            "0:147",
+            "1:165",
+            "1:166",
+            "1:212",
+            "1:214",
+            "1:216",
+            "1:218",
+            "2:224",
+            "2:233",
+            "2:246",
+            "2:251",
+            "1:253",
+            "2:258",
+            "2:260",
+            "2:262"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.152739",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1210",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.76",
-      "witness_account": "1.2.158783",
-      "witness_account_data": [
-        {
-          "id": "1.2.158783",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.158783",
-          "referrer": "1.2.158783",
-          "lifetime_referrer": "1.2.158783",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "openledger-dc",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS75bRnRUx9eRsC5WoPASZrmKYRUt1aWr2N5bJwHRBvSj4vzuXh4",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS5ZuiSb4VM9DJmGwdkh61gKAcvZvaKThz2kQppbbPomoH684w5S",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS5ZuiSb4VM9DJmGwdkh61gKAcvZvaKThz2kQppbbPomoH684w5S",
-            "voting_account": "1.2.158781",
-            "num_witness": 12,
-            "num_committee": 11,
-            "votes": [
-              "1:23",
-              "1:27",
-              "1:28",
-              "1:32",
-              "1:45",
-              "2:65",
-              "0:85",
-              "0:87",
-              "0:88",
-              "0:91",
-              "0:111",
-              "0:112",
-              "0:141",
-              "0:147",
-              "1:166",
-              "0:173",
-              "1:196",
-              "1:199",
-              "1:212",
-              "0:213",
-              "1:214",
-              "1:216",
-              "1:218",
-              "0:223",
-              "2:224",
-              "2:233",
-              "2:256",
-              "2:258",
-              "2:260"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.158783",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.1274",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.21",
+        "witness_account": "1.2.28788",
+        "last_aslot": 23222599,
+        "signing_key": "BTS5ARpXg6yWZptHgik721dyXek57v53op6XT7rwTj7Kmb8CGwWEM",
+        "pay_vb": "1.13.35",
+        "vote_id": "1:31",
+        "total_votes": "43547515234383",
+        "url": "http://bts-witness.quisquis.de/",
+        "total_missed": 3539,
+        "last_confirmed_block_num": 23082296
+      },
+      "witness_account_data": {
+        "id": "1.2.28788",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.28788",
+        "referrer": "1.2.28788",
+        "lifetime_referrer": "1.2.28788",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "cyrano",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6MkMxwBjFWmcDjXRoJ4mW9Hd4LCSPwtv9tKG1qYW5Kgu4AhoZy",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8P81BWgssYQoxNg8yMKJgGPxWSzAN7WuPLgyHH82KtuvtKc3jB",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127410,
-      "signing_key": "BTS6t9nirTdNfmiegVK5dQRUABooP6RLPNXyjxdStFP8qhtQnKR4d",
-      "pay_vb": "1.13.1304",
-      "vote_id": "1:218",
-      "total_votes": "96169754937126",
-      "url": "https://bitsharestalk.org/index.php/topic,23992.0.html",
-      "total_missed": 612,
-      "last_confirmed_block_num": 22987882
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6MkMxwBjFWmcDjXRoJ4mW9Hd4LCSPwtv9tKG1qYW5Kgu4AhoZy",
+          "voting_account": "1.2.5",
+          "num_witness": 27,
+          "num_committee": 11,
+          "votes": [
+            "1:23",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:30",
+            "1:31",
+            "1:32",
+            "1:33",
+            "1:34",
+            "1:35",
+            "1:37",
+            "1:38",
+            "1:44",
+            "1:45",
+            "1:56",
+            "1:59",
+            "1:60",
+            "2:65",
+            "0:82",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:111",
+            "1:114",
+            "0:141",
+            "0:142",
+            "1:143",
+            "0:147",
+            "1:165",
+            "1:196",
+            "1:199",
+            "1:212",
+            "0:213",
+            "1:214",
+            "1:216",
+            "1:218",
+            "0:223",
+            "2:224",
+            "2:233",
+            "2:244",
+            "2:246",
+            "2:258",
+            "2:260"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.28788",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.26",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.20",
-      "witness_account": "1.2.31489",
-      "witness_account_data": [
-        {
-          "id": "1.2.31489",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.31489",
-          "referrer": "1.2.31489",
-          "lifetime_referrer": "1.2.31489",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "elmato",
-          "owner": {
-            "weight_threshold": 2,
-            "account_auths": [
-              [
-                "1.2.0",
-                1
-              ]
-            ],
-            "key_auths": [
-              [
-                "BTS6DyMRhAshVj8wyq5VrSxvR6SyNPk8SwWnV1vVESvWswiPWGku3",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS7QMEzJ5kfzgnbCQaYS6awcyfLiFn9DGCSNEvvV1px5w3sHb4dd",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS6HihtEB8LfvLe4cSSrqtyxkdfKDkeMocKwu7PJkb6W8gqddi3R",
-            "voting_account": "1.2.5",
-            "num_witness": 0,
-            "num_committee": 0,
-            "votes": [
-              "2:167"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.31489",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.27",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.73",
+        "witness_account": "1.2.157641",
+        "last_aslot": 23222601,
+        "signing_key": "BTS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",
+        "pay_vb": "1.13.1275",
+        "vote_id": "1:212",
+        "total_votes": "50027790376951",
+        "url": "https://bitsharestalk.org/index.php/topic,23996.0.html",
+        "total_missed": 937,
+        "last_confirmed_block_num": 23082298
+      },
+      "witness_account_data": {
+        "id": "1.2.157641",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.157641",
+        "referrer": "1.2.157641",
+        "lifetime_referrer": "1.2.157641",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "sahkan-bitshares",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6WtKdGV2ZjkpZW3RsECYRKrXJogNcP4CGXCAZ8MAZVaPQoh9XH",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7vLMfKBjzh8zowqCQWf9qmGBSXSUtdTq5UgsiyP4493TMjy6ih",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127411,
-      "signing_key": "BTS7TrF5cDX66egLWPLJ7YCnZD5vHeFTgNbPChV8MDQnVKMzDfPrK",
-      "pay_vb": "1.13.37",
-      "vote_id": "1:30",
-      "total_votes": "63117953036526",
-      "url": "http://about:blank",
-      "total_missed": 4269,
-      "last_confirmed_block_num": 22987883
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7vLMfKBjzh8zowqCQWf9qmGBSXSUtdTq5UgsiyP4493TMjy6ih",
+          "voting_account": "1.2.5",
+          "num_witness": 27,
+          "num_committee": 10,
+          "votes": [
+            "1:23",
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:30",
+            "1:32",
+            "1:33",
+            "1:36",
+            "1:38",
+            "1:41",
+            "1:44",
+            "1:45",
+            "1:47",
+            "1:56",
+            "1:60",
+            "0:82",
+            "0:85",
+            "0:87",
+            "0:90",
+            "0:91",
+            "0:111",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:164",
+            "1:165",
+            "1:166",
+            "1:190",
+            "1:196",
+            "1:212",
+            "0:213",
+            "1:214",
+            "0:215",
+            "1:216",
+            "1:218",
+            "1:227",
+            "1:253",
+            "2:258",
+            "2:260"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.157641",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1236",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.28",
-      "witness_account": "1.2.30889",
-      "witness_account_data": [
-        {
-          "id": "1.2.30889",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.30889",
-          "referrer": "1.2.30889",
-          "lifetime_referrer": "1.2.30889",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "delegate-1.lafona",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS5DCL5nbhL13sXBh1mwQp5pUBSw7rmwjWeiiy5b2Z2UxuYf8spU",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS6Hbbf65u3NHHu4t4GKpPbNn1cPjjmqTzR3XrrZ5tsyXcm5sNJL",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS5DCL5nbhL13sXBh1mwQp5pUBSw7rmwjWeiiy5b2Z2UxuYf8spU",
-            "voting_account": "1.2.5",
-            "num_witness": 0,
-            "num_committee": 0,
-            "votes": [],
-            "extensions": []
-          },
-          "statistics": "2.6.30889",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.40",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.34",
+        "witness_account": "1.2.91787",
+        "last_aslot": 23222602,
+        "signing_key": "BTS66V6iobfybRtTXosFVkxdm7Rmmd9VnjBApQxFhvJdpgXZ3G2nU",
+        "pay_vb": "1.13.70",
+        "vote_id": "1:44",
+        "total_votes": "53454180625679",
+        "url": "https://bitsharestalk.org/index.php/topic,23902.0.html",
+        "total_missed": 3848,
+        "last_confirmed_block_num": 23082299
+      },
+      "witness_account_data": {
+        "id": "1.2.91787",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.91787",
+        "referrer": "1.2.91787",
+        "lifetime_referrer": "1.2.91787",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 100,
+        "name": "verbaltech2",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5Q53G6XutTmUnktTT9XswYspCaBaECSoxDsWeDpE2y9DjHgvVt",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6oxUUKFD8SfGoXb6AwDBEoBt8WM7g4Mtz8SWdinUeHemr9yoxi",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127392,
-      "signing_key": "BTS66qci9rpf9p87cHuqHdVtDUKAubLx9U5TDkneBnTkqs72Eheqv",
-      "pay_vb": "1.13.59",
-      "vote_id": "1:38",
-      "total_votes": "80111160134701",
-      "url": "https://github.com/lafona/delegate-1.lafona",
-      "total_missed": 4396,
-      "last_confirmed_block_num": 22987864
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6oxUUKFD8SfGoXb6AwDBEoBt8WM7g4Mtz8SWdinUeHemr9yoxi",
+          "voting_account": "1.2.282",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.91787",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.69",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.17",
-      "witness_account": "1.2.25010",
-      "witness_account_data": [
-        {
-          "id": "1.2.25010",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.25010",
-          "referrer": "1.2.25010",
-          "lifetime_referrer": "1.2.25010",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "bhuz",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS7YFfmNBLpcrhe7hf39NLQfgBjGvtYBtAAc4nDvZKWxVQjF4CeL",
-                1
-              ]
+      "witness_role_data": {
+        "id": "1.6.59",
+        "witness_account": "1.2.14035",
+        "last_aslot": 23222603,
+        "signing_key": "BTS7sanqxmPfZZ4Z6ETzMnxNxay79e41kwJ1QJ1maHUkq3Gcpgd2z",
+        "pay_vb": "1.13.854",
+        "vote_id": "1:143",
+        "total_votes": "79544630606632",
+        "url": "https://btsgo.net",
+        "total_missed": 2821,
+        "last_confirmed_block_num": 23082300
+      },
+      "witness_account_data": {
+        "id": "1.2.14035",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.14035",
+        "referrer": "1.2.14035",
+        "lifetime_referrer": "1.2.14035",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "xn-delegate",
+        "owner": {
+          "weight_threshold": 2,
+          "account_auths": [
+            [
+              "1.2.9518",
+              1
             ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS7YFfmNBLpcrhe7hf39NLQfgBjGvtYBtAAc4nDvZKWxVQjF4CeL",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS7YFfmNBLpcrhe7hf39NLQfgBjGvtYBtAAc4nDvZKWxVQjF4CeL",
-            "voting_account": "1.2.5",
-            "num_witness": 30,
-            "num_committee": 11,
-            "votes": [
-              "1:22",
-              "1:23",
-              "1:24",
-              "1:25",
-              "1:26",
-              "1:27",
-              "1:28",
-              "1:30",
-              "1:31",
-              "1:32",
-              "1:33",
-              "1:35",
-              "1:36",
-              "1:37",
-              "1:38",
-              "1:40",
-              "1:44",
-              "1:45",
-              "1:47",
-              "1:48",
-              "1:51",
-              "1:53",
-              "1:54",
-              "1:55",
-              "1:56",
-              "1:57",
-              "1:60",
-              "2:65",
-              "0:76",
-              "0:84",
-              "0:85",
-              "0:87",
-              "0:88",
-              "0:90",
-              "0:91",
-              "0:141",
-              "0:147",
-              "0:173",
-              "1:199",
-              "0:213",
-              "1:214",
-              "1:218",
-              "2:224",
-              "2:233",
-              "2:258"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.25010",
-          "whitelisting_accounts": [
-            "1.2.398619"
+            [
+              "1.2.131086",
+              1
+            ]
           ],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.13",
-          "owner_special_authority": [
-            0,
-            {}
+          "key_auths": [
+            [
+              "BTS52mACuL8c3GE2Fft8rsAjtHZ2PD39PnTrWxwUU143QNxFY7m3F",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7mv31dmCVeQfusjc1wdfapGcU7HpdNddVokSAfauans4T6P17W",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127388,
-      "signing_key": "BTS6wV9VeA5RabRaQi1Dwn94BcpcYNxZ51XQmJ3NVAdpziZaxffZJ",
-      "pay_vb": "1.13.34",
-      "vote_id": "1:27",
-      "total_votes": "88315359727213",
-      "url": "",
-      "total_missed": 1576,
-      "last_confirmed_block_num": 22987860
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8D7BFD4j2eCyLHTBTTb8hZJ8JcE4qYtjd1B2oWxMChnoBH8fSj",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [
+            "1:143"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.14035",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.544",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.45",
-      "witness_account": "1.2.31810",
-      "witness_account_data": [
-        {
-          "id": "1.2.31810",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.31810",
-          "referrer": "1.2.31810",
-          "lifetime_referrer": "1.2.31810",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "rnglab",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS8KTX2mQqwcYeczmFGLncdDRtqXxJBSC8RtmEPgCVnHTdRPg2am",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS8TQMAXUjRho49fsiS2wYVYKYFQdse2JJeiStWNrKBh8ujVCy7g",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS8TQMAXUjRho49fsiS2wYVYKYFQdse2JJeiStWNrKBh8ujVCy7g",
-            "voting_account": "1.2.5",
-            "num_witness": 23,
-            "num_committee": 9,
-            "votes": [
-              "1:26",
-              "1:27",
-              "1:28",
-              "1:30",
-              "1:31",
-              "1:32",
-              "1:36",
-              "1:38",
-              "1:44",
-              "1:45",
-              "1:47",
-              "1:56",
-              "0:85",
-              "0:87",
-              "0:88",
-              "0:91",
-              "0:112",
-              "0:141",
-              "1:143",
-              "0:147",
-              "1:164",
-              "1:165",
-              "1:190",
-              "1:196",
-              "1:212",
-              "0:213",
-              "1:214",
-              "1:216",
-              "1:218",
-              "0:223",
-              "2:224",
-              "2:231",
-              "2:233",
-              "1:235",
-              "2:244",
-              "2:246",
-              "2:251",
-              "1:253",
-              "2:256",
-              "2:258",
-              "2:260"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.31810",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.144",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.76",
+        "witness_account": "1.2.158783",
+        "last_aslot": 23222604,
+        "signing_key": "BTS6t9nirTdNfmiegVK5dQRUABooP6RLPNXyjxdStFP8qhtQnKR4d",
+        "pay_vb": "1.13.1304",
+        "vote_id": "1:218",
+        "total_votes": "60646224460530",
+        "url": "https://bitsharestalk.org/index.php/topic,23992.0.html",
+        "total_missed": 613,
+        "last_confirmed_block_num": 23082301
+      },
+      "witness_account_data": {
+        "id": "1.2.158783",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.158783",
+        "referrer": "1.2.158783",
+        "lifetime_referrer": "1.2.158783",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "openledger-dc",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS75bRnRUx9eRsC5WoPASZrmKYRUt1aWr2N5bJwHRBvSj4vzuXh4",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5ZuiSb4VM9DJmGwdkh61gKAcvZvaKThz2kQppbbPomoH684w5S",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127393,
-      "signing_key": "BTS8XW8yetT7CqXH8J1VmJXxbP16SWQPm8M2ZHuppWhbfjuCQwveD",
-      "pay_vb": "1.13.166",
-      "vote_id": "1:56",
-      "total_votes": "66473743941768",
-      "url": "",
-      "total_missed": 2078,
-      "last_confirmed_block_num": 22987865
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5ZuiSb4VM9DJmGwdkh61gKAcvZvaKThz2kQppbbPomoH684w5S",
+          "voting_account": "1.2.158781",
+          "num_witness": 12,
+          "num_committee": 11,
+          "votes": [
+            "1:23",
+            "1:27",
+            "1:28",
+            "1:32",
+            "1:45",
+            "2:65",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:111",
+            "0:112",
+            "0:141",
+            "0:147",
+            "1:166",
+            "0:173",
+            "1:196",
+            "1:199",
+            "1:212",
+            "0:213",
+            "1:214",
+            "1:216",
+            "1:218",
+            "0:223",
+            "2:224",
+            "2:233",
+            "2:256",
+            "2:258",
+            "2:260"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.158783",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1274",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.71",
-      "witness_account": "1.2.130210",
-      "witness_account_data": [
-        {
-          "id": "1.2.130210",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.130210",
-          "referrer": "1.2.130210",
-          "lifetime_referrer": "1.2.130210",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "witness.yao",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS8kTdUpB52Vmrdzq2KXLLYUW1zC2MdffpCqDKCgdXnPiZP2KTeM",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS8ksTfGV1otkYQg6G5RRCyk2aVEiUYTGn9YNevAea7HyqTeZPSX",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS8ksTfGV1otkYQg6G5RRCyk2aVEiUYTGn9YNevAea7HyqTeZPSX",
-            "voting_account": "1.2.285",
-            "num_witness": 1,
-            "num_committee": 0,
-            "votes": [
-              "1:196"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.130210",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.1144",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.22",
+        "witness_account": "1.2.564",
+        "last_aslot": 23222605,
+        "signing_key": "BTS86RmbRTt6g5mY2mnWyCEJRYLu5NyqnoFd42cCZYQCi4nYWV4xS",
+        "pay_vb": "1.13.36",
+        "vote_id": "1:32",
+        "total_votes": "69010117403272",
+        "url": "",
+        "total_missed": 2257,
+        "last_confirmed_block_num": 23082302
+      },
+      "witness_account_data": {
+        "id": "1.2.564",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.564",
+        "referrer": "1.2.564",
+        "lifetime_referrer": "1.2.564",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "xeldal",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7RYcutQ5eZdTFL4a9unumbauoVzAa5XSgiQWXucPVn9C2sm7dM",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7RYcutQ5eZdTFL4a9unumbauoVzAa5XSgiQWXucPVn9C2sm7dM",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127395,
-      "signing_key": "BTS6nDkh4ZBLNMsfb3dY2NLtz4NWPGskk4tHNJH6JPqfFJiqh34pG",
-      "pay_vb": "1.13.1151",
-      "vote_id": "1:196",
-      "total_votes": "92539418134843",
-      "url": "https://bitsharestalk.org/index.php/topic,23628.0.html",
-      "total_missed": 3557,
-      "last_confirmed_block_num": 22987867
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7RYcutQ5eZdTFL4a9unumbauoVzAa5XSgiQWXucPVn9C2sm7dM",
+          "voting_account": "1.2.5",
+          "num_witness": 17,
+          "num_committee": 10,
+          "votes": [
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:32",
+            "1:36",
+            "1:37",
+            "1:45",
+            "1:56",
+            "2:65",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:112",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:165",
+            "1:166",
+            "0:173",
+            "1:190",
+            "1:196",
+            "1:212",
+            "0:213",
+            "1:214",
+            "1:216",
+            "1:218",
+            "0:223",
+            "2:224",
+            "2:233",
+            "2:251",
+            "2:258"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.564",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.31",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.69",
-      "witness_account": "1.2.130258",
-      "witness_account_data": [
-        {
-          "id": "1.2.130258",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.130258",
-          "referrer": "1.2.130258",
-          "lifetime_referrer": "1.2.130258",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "witness.still",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS7mK44tWN2ndwUQsKZyKosZwF5oGjZMgm6sKrFyekzedcx1Yhoq",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS7qdtFVbJwC91JeEXh9fR5Ruw7gW836rvENYx6xxmBVt9fC8dA2",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS7qdtFVbJwC91JeEXh9fR5Ruw7gW836rvENYx6xxmBVt9fC8dA2",
-            "voting_account": "1.2.3061",
-            "num_witness": 1,
-            "num_committee": 1,
-            "votes": [
-              "1:190",
-              "0:223"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.130258",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.1026",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.69",
+        "witness_account": "1.2.130258",
+        "last_aslot": 23222606,
+        "signing_key": "BTS5XfJVbe2NEcmgUF9cv2J3gCm6LPbyiTM2dVom4EnSxizjeVn8s",
+        "pay_vb": "1.13.1043",
+        "vote_id": "1:190",
+        "total_votes": "80932284640636",
+        "url": "http://www.weibo.com/callmeluc",
+        "total_missed": 9190,
+        "last_confirmed_block_num": 23082303
+      },
+      "witness_account_data": {
+        "id": "1.2.130258",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.130258",
+        "referrer": "1.2.130258",
+        "lifetime_referrer": "1.2.130258",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "witness.still",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7mK44tWN2ndwUQsKZyKosZwF5oGjZMgm6sKrFyekzedcx1Yhoq",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7qdtFVbJwC91JeEXh9fR5Ruw7gW836rvENYx6xxmBVt9fC8dA2",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127391,
-      "signing_key": "BTS5XfJVbe2NEcmgUF9cv2J3gCm6LPbyiTM2dVom4EnSxizjeVn8s",
-      "pay_vb": "1.13.1043",
-      "vote_id": "1:190",
-      "total_votes": "91245819980718",
-      "url": "http://www.weibo.com/callmeluc",
-      "total_missed": 9190,
-      "last_confirmed_block_num": 22987863
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7qdtFVbJwC91JeEXh9fR5Ruw7gW836rvENYx6xxmBVt9fC8dA2",
+          "voting_account": "1.2.3061",
+          "num_witness": 1,
+          "num_committee": 1,
+          "votes": [
+            "1:190",
+            "0:223"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.130258",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1026",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.18",
-      "witness_account": "1.2.277",
-      "witness_account_data": [
-        {
-          "id": "1.2.277",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.277",
-          "referrer": "1.2.277",
-          "lifetime_referrer": "1.2.277",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "wackou",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS8SCY7ZFAK72uL1jQjWtchDRvf3nz1m7rkDeEn818WRdZiqEo5f",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS8SCY7ZFAK72uL1jQjWtchDRvf3nz1m7rkDeEn818WRdZiqEo5f",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS8SCY7ZFAK72uL1jQjWtchDRvf3nz1m7rkDeEn818WRdZiqEo5f",
-            "voting_account": "1.2.282",
-            "num_witness": 0,
-            "num_committee": 0,
-            "votes": [],
-            "extensions": []
-          },
-          "statistics": "2.6.277",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.30",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.84",
+        "witness_account": "1.2.369",
+        "last_aslot": 23222607,
+        "signing_key": "BTS6naPodhtnvgTyfMu9vzjv7N9nac22mz9c2Co4d3otDS3jZ6kLD",
+        "pay_vb": "1.13.1851",
+        "vote_id": "1:235",
+        "total_votes": "67750103852213",
+        "url": "https://github.com/crazybits",
+        "total_missed": 458,
+        "last_confirmed_block_num": 23082304
+      },
+      "witness_account_data": {
+        "id": "1.2.369",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.369",
+        "referrer": "1.2.369",
+        "lifetime_referrer": "1.2.369",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "crazybit",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS4u9SXAmzTWjioNUHWGkuqYUHBcHhH5YWtZb5PoxQrryLjZsvZJ",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS4u9SXAmzTWjioNUHWGkuqYUHBcHhH5YWtZb5PoxQrryLjZsvZJ",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127383,
-      "signing_key": "BTS8C1Cz3LDu732VT74bYvNE2G25NLghV96zcMnFwLd4Z6aXWup9i",
-      "pay_vb": "1.13.33",
-      "vote_id": "1:28",
-      "total_votes": "62558142340988",
-      "url": "http://digitalgaia.io",
-      "total_missed": 1861,
-      "last_confirmed_block_num": 22987855
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS4u9SXAmzTWjioNUHWGkuqYUHBcHhH5YWtZb5PoxQrryLjZsvZJ",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.369",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1619",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.63",
-      "witness_account": "1.2.31359",
-      "witness_account_data": [
-        {
-          "id": "1.2.31359",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.31359",
-          "referrer": "1.2.31359",
-          "lifetime_referrer": "1.2.31359",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "delegate.freedom",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS82gpUjKxNDPHBqxeBCBdF3jC8k95mo9Hs5PhugDtH7VskgqQce",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS82gpUjKxNDPHBqxeBCBdF3jC8k95mo9Hs5PhugDtH7VskgqQce",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS82gpUjKxNDPHBqxeBCBdF3jC8k95mo9Hs5PhugDtH7VskgqQce",
-            "voting_account": "1.2.5",
-            "num_witness": 2,
-            "num_committee": 0,
-            "votes": [
-              "1:33",
-              "1:164"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.31359",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.760",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.17",
+        "witness_account": "1.2.25010",
+        "last_aslot": 23222608,
+        "signing_key": "BTS6wV9VeA5RabRaQi1Dwn94BcpcYNxZ51XQmJ3NVAdpziZaxffZJ",
+        "pay_vb": "1.13.34",
+        "vote_id": "1:27",
+        "total_votes": "78394561262357",
+        "url": "",
+        "total_missed": 1577,
+        "last_confirmed_block_num": 23082305
+      },
+      "witness_account_data": {
+        "id": "1.2.25010",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.25010",
+        "referrer": "1.2.25010",
+        "lifetime_referrer": "1.2.25010",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "bhuz",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7YFfmNBLpcrhe7hf39NLQfgBjGvtYBtAAc4nDvZKWxVQjF4CeL",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7YFfmNBLpcrhe7hf39NLQfgBjGvtYBtAAc4nDvZKWxVQjF4CeL",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127394,
-      "signing_key": "BTS64VtxZum6GMV3T4zWLZMYYTyoXV5fe3enkomDGCCB55FJaUDzf",
-      "pay_vb": "1.13.763",
-      "vote_id": "1:164",
-      "total_votes": "62767580242958",
-      "url": "https://bitsharestalk.org",
-      "total_missed": 4861,
-      "last_confirmed_block_num": 22987866
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7YFfmNBLpcrhe7hf39NLQfgBjGvtYBtAAc4nDvZKWxVQjF4CeL",
+          "voting_account": "1.2.5",
+          "num_witness": 30,
+          "num_committee": 11,
+          "votes": [
+            "1:22",
+            "1:23",
+            "1:24",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:30",
+            "1:31",
+            "1:32",
+            "1:33",
+            "1:35",
+            "1:36",
+            "1:37",
+            "1:38",
+            "1:40",
+            "1:44",
+            "1:45",
+            "1:47",
+            "1:48",
+            "1:51",
+            "1:53",
+            "1:54",
+            "1:55",
+            "1:56",
+            "1:57",
+            "1:60",
+            "2:65",
+            "0:76",
+            "0:84",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:90",
+            "0:91",
+            "0:141",
+            "0:147",
+            "0:173",
+            "1:199",
+            "0:213",
+            "1:214",
+            "1:218",
+            "2:224",
+            "2:233",
+            "2:258"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.25010",
+        "whitelisting_accounts": [
+          "1.2.398619"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.13",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.34",
-      "witness_account": "1.2.91787",
-      "witness_account_data": [
-        {
-          "id": "1.2.91787",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.91787",
-          "referrer": "1.2.91787",
-          "lifetime_referrer": "1.2.91787",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 100,
-          "name": "verbaltech2",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS5Q53G6XutTmUnktTT9XswYspCaBaECSoxDsWeDpE2y9DjHgvVt",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS6oxUUKFD8SfGoXb6AwDBEoBt8WM7g4Mtz8SWdinUeHemr9yoxi",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS6oxUUKFD8SfGoXb6AwDBEoBt8WM7g4Mtz8SWdinUeHemr9yoxi",
-            "voting_account": "1.2.282",
-            "num_witness": 0,
-            "num_committee": 0,
-            "votes": [],
-            "extensions": []
-          },
-          "statistics": "2.6.91787",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.69",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.45",
+        "witness_account": "1.2.31810",
+        "last_aslot": 23222609,
+        "signing_key": "BTS8XW8yetT7CqXH8J1VmJXxbP16SWQPm8M2ZHuppWhbfjuCQwveD",
+        "pay_vb": "1.13.166",
+        "vote_id": "1:56",
+        "total_votes": "66213864156458",
+        "url": "",
+        "total_missed": 2079,
+        "last_confirmed_block_num": 23082306
+      },
+      "witness_account_data": {
+        "id": "1.2.31810",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.31810",
+        "referrer": "1.2.31810",
+        "lifetime_referrer": "1.2.31810",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "rnglab",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8KTX2mQqwcYeczmFGLncdDRtqXxJBSC8RtmEPgCVnHTdRPg2am",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8TQMAXUjRho49fsiS2wYVYKYFQdse2JJeiStWNrKBh8ujVCy7g",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127398,
-      "signing_key": "BTS66V6iobfybRtTXosFVkxdm7Rmmd9VnjBApQxFhvJdpgXZ3G2nU",
-      "pay_vb": "1.13.70",
-      "vote_id": "1:44",
-      "total_votes": "63237159821999",
-      "url": "https://bitsharestalk.org/index.php/topic,23902.0.html",
-      "total_missed": 3848,
-      "last_confirmed_block_num": 22987870
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8TQMAXUjRho49fsiS2wYVYKYFQdse2JJeiStWNrKBh8ujVCy7g",
+          "voting_account": "1.2.5",
+          "num_witness": 23,
+          "num_committee": 9,
+          "votes": [
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:30",
+            "1:31",
+            "1:32",
+            "1:36",
+            "1:38",
+            "1:44",
+            "1:45",
+            "1:47",
+            "1:56",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:112",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:164",
+            "1:165",
+            "1:190",
+            "1:196",
+            "1:212",
+            "0:213",
+            "1:214",
+            "1:216",
+            "1:218",
+            "0:223",
+            "2:224",
+            "2:231",
+            "2:233",
+            "1:235",
+            "2:244",
+            "2:246",
+            "2:251",
+            "1:253",
+            "2:256",
+            "2:258",
+            "2:260"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.31810",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.144",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.75",
-      "witness_account": "1.2.152739",
-      "witness_account_data": [
-        {
-          "id": "1.2.152739",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.152739",
-          "referrer": "1.2.152739",
-          "lifetime_referrer": "1.2.152739",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "blckchnd",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS5gFXYY3k7psJraXrwxjEdSxzovadLNDRoGWzRaTJWPB27nkjjC",
-                1
-              ],
-              [
-                "BTS6EuDZrugiYsq55REUua2Pyqx2Vd8noViUWJ6Cvx8cg8vGjJpcK",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS7PRcxppXc8NMSzVjEwkezbq4XekaUuFZ3GfX6r9nsySbyeazTG",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS7PRcxppXc8NMSzVjEwkezbq4XekaUuFZ3GfX6r9nsySbyeazTG",
-            "voting_account": "1.2.5",
-            "num_witness": 14,
-            "num_committee": 5,
-            "votes": [
-              "1:26",
-              "1:27",
-              "1:28",
-              "1:36",
-              "1:44",
-              "1:45",
-              "1:56",
-              "0:85",
-              "0:87",
-              "0:91",
-              "0:141",
-              "0:147",
-              "1:165",
-              "1:166",
-              "1:212",
-              "1:214",
-              "1:216",
-              "1:218",
-              "2:224",
-              "2:233",
-              "2:246",
-              "2:251",
-              "1:253",
-              "2:258",
-              "2:260",
-              "2:262"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.152739",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.1210",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.71",
+        "witness_account": "1.2.130210",
+        "last_aslot": 23222610,
+        "signing_key": "BTS6nDkh4ZBLNMsfb3dY2NLtz4NWPGskk4tHNJH6JPqfFJiqh34pG",
+        "pay_vb": "1.13.1151",
+        "vote_id": "1:196",
+        "total_votes": "82216753910303",
+        "url": "https://bitsharestalk.org/index.php/topic,23628.0.html",
+        "total_missed": 3557,
+        "last_confirmed_block_num": 23082307
+      },
+      "witness_account_data": {
+        "id": "1.2.130210",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.130210",
+        "referrer": "1.2.130210",
+        "lifetime_referrer": "1.2.130210",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "witness.yao",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8kTdUpB52Vmrdzq2KXLLYUW1zC2MdffpCqDKCgdXnPiZP2KTeM",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8ksTfGV1otkYQg6G5RRCyk2aVEiUYTGn9YNevAea7HyqTeZPSX",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127401,
-      "signing_key": "BTS5ffxzUfM52pA5nHZ7TCHGUeQxmi6shJCrnXX45Ns75soyPBDDt",
-      "pay_vb": "1.13.1337",
-      "vote_id": "1:216",
-      "total_votes": "85132503284392",
-      "url": "https://steemit.com/blockchain/@blockchained/bitshares-wintess-proposal-vote-for-blckchnd",
-      "total_missed": 919,
-      "last_confirmed_block_num": 22987873
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS8ksTfGV1otkYQg6G5RRCyk2aVEiUYTGn9YNevAea7HyqTeZPSX",
+          "voting_account": "1.2.285",
+          "num_witness": 1,
+          "num_committee": 0,
+          "votes": [
+            "1:196"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.130210",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1144",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.35",
-      "witness_account": "1.2.35248",
-      "witness_account_data": [
-        {
-          "id": "1.2.35248",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.35248",
-          "referrer": "1.2.35248",
-          "lifetime_referrer": "1.2.35248",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "in.abit",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS8YMpb1uAREZaU8YGeC92JF71fTfmakD77iM5SrqecgZ2kgKWBM",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS7SakKqZ8HamkTr7FdPn9qYxYmtSh2QzFNn49CiFAkdFAvQVMg6",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS7SakKqZ8HamkTr7FdPn9qYxYmtSh2QzFNn49CiFAkdFAvQVMg6",
-            "voting_account": "1.2.12376",
-            "num_witness": 0,
-            "num_committee": 0,
-            "votes": [],
-            "extensions": []
-          },
-          "statistics": "2.6.35248",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.68",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.63",
+        "witness_account": "1.2.31359",
+        "last_aslot": 23222611,
+        "signing_key": "BTS64VtxZum6GMV3T4zWLZMYYTyoXV5fe3enkomDGCCB55FJaUDzf",
+        "pay_vb": "1.13.763",
+        "vote_id": "1:164",
+        "total_votes": "52965856082316",
+        "url": "https://bitsharestalk.org",
+        "total_missed": 4861,
+        "last_confirmed_block_num": 23082308
+      },
+      "witness_account_data": {
+        "id": "1.2.31359",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.31359",
+        "referrer": "1.2.31359",
+        "lifetime_referrer": "1.2.31359",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "delegate.freedom",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS82gpUjKxNDPHBqxeBCBdF3jC8k95mo9Hs5PhugDtH7VskgqQce",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS82gpUjKxNDPHBqxeBCBdF3jC8k95mo9Hs5PhugDtH7VskgqQce",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127402,
-      "signing_key": "BTS5hEKbh1FhVfmbfmtEaQ8diQ5MK1W14z6tBGWSPV879sg6pxzu8",
-      "pay_vb": "1.13.128",
-      "vote_id": "1:45",
-      "total_votes": "99699176872296",
-      "url": "https://github.com/abitmore",
-      "total_missed": 711,
-      "last_confirmed_block_num": 22987874
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS82gpUjKxNDPHBqxeBCBdF3jC8k95mo9Hs5PhugDtH7VskgqQce",
+          "voting_account": "1.2.5",
+          "num_witness": 2,
+          "num_committee": 0,
+          "votes": [
+            "1:33",
+            "1:164"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.31359",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.760",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.22",
-      "witness_account": "1.2.564",
-      "witness_account_data": [
-        {
-          "id": "1.2.564",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.564",
-          "referrer": "1.2.564",
-          "lifetime_referrer": "1.2.564",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "xeldal",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS7RYcutQ5eZdTFL4a9unumbauoVzAa5XSgiQWXucPVn9C2sm7dM",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS7RYcutQ5eZdTFL4a9unumbauoVzAa5XSgiQWXucPVn9C2sm7dM",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS7RYcutQ5eZdTFL4a9unumbauoVzAa5XSgiQWXucPVn9C2sm7dM",
-            "voting_account": "1.2.5",
-            "num_witness": 17,
-            "num_committee": 10,
-            "votes": [
-              "1:26",
-              "1:27",
-              "1:28",
-              "1:32",
-              "1:36",
-              "1:37",
-              "1:45",
-              "1:56",
-              "2:65",
-              "0:85",
-              "0:87",
-              "0:88",
-              "0:91",
-              "0:112",
-              "0:141",
-              "1:143",
-              "0:147",
-              "1:165",
-              "1:166",
-              "0:173",
-              "1:190",
-              "1:196",
-              "1:212",
-              "0:213",
-              "1:214",
-              "1:216",
-              "1:218",
-              "0:223",
-              "2:224",
-              "2:233",
-              "2:251",
-              "2:258"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.564",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.31",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.64",
+        "witness_account": "1.2.2850",
+        "last_aslot": 23222612,
+        "signing_key": "BTS7euVUZg96FzihMGLJGnh2tUtKGqiS2spQUQMCGu2TD99HKDHVx",
+        "pay_vb": "1.13.778",
+        "vote_id": "1:165",
+        "total_votes": "57041349011557",
+        "url": "https://yoyow.org/",
+        "total_missed": 1642,
+        "last_confirmed_block_num": 23082309
+      },
+      "witness_account_data": {
+        "id": "1.2.2850",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.2850",
+        "referrer": "1.2.2850",
+        "lifetime_referrer": "1.2.2850",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "xman",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS8aCSNKm9TAD5UBEPh6MGFV1YUgQrFY5BqbEL6JmZynroS6tp2J",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6QiSvTN17rv2rNd9xu7B2JCGzzLMrwSxEsGXMPwGHWbAzGp8kA",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127403,
-      "signing_key": "BTS86RmbRTt6g5mY2mnWyCEJRYLu5NyqnoFd42cCZYQCi4nYWV4xS",
-      "pay_vb": "1.13.36",
-      "vote_id": "1:32",
-      "total_votes": "78817026208610",
-      "url": "",
-      "total_missed": 2257,
-      "last_confirmed_block_num": 22987875
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6QiSvTN17rv2rNd9xu7B2JCGzzLMrwSxEsGXMPwGHWbAzGp8kA",
+          "voting_account": "1.2.5",
+          "num_witness": 25,
+          "num_committee": 6,
+          "votes": [
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:30",
+            "1:32",
+            "1:34",
+            "1:36",
+            "1:38",
+            "1:44",
+            "1:45",
+            "1:47",
+            "1:51",
+            "1:56",
+            "0:85",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:164",
+            "1:165",
+            "1:166",
+            "0:173",
+            "1:190",
+            "1:196",
+            "1:212",
+            "0:213",
+            "1:214",
+            "1:216",
+            "1:218",
+            "0:223",
+            "1:235"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.2850",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.766",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.74",
-      "witness_account": "1.2.133999",
-      "witness_account_data": [
-        {
-          "id": "1.2.133999",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.133999",
-          "referrer": "1.2.133999",
-          "lifetime_referrer": "1.2.133999",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 10000,
-          "name": "roelandp",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS6xptQ1sPnytemQDEh3sBWbkXipzx627FPkHKKn98rcY3fsnZgS",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS6xptQ1sPnytemQDEh3sBWbkXipzx627FPkHKKn98rcY3fsnZgS",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS6xptQ1sPnytemQDEh3sBWbkXipzx627FPkHKKn98rcY3fsnZgS",
-            "voting_account": "1.2.5",
-            "num_witness": 34,
-            "num_committee": 12,
-            "votes": [
-              "1:23",
-              "1:25",
-              "1:26",
-              "1:27",
-              "1:28",
-              "1:30",
-              "1:31",
-              "1:32",
-              "1:33",
-              "1:34",
-              "1:36",
-              "1:37",
-              "1:38",
-              "1:40",
-              "1:41",
-              "1:44",
-              "1:45",
-              "1:47",
-              "1:56",
-              "1:59",
-              "1:60",
-              "2:65",
-              "0:82",
-              "0:85",
-              "0:87",
-              "0:88",
-              "0:91",
-              "0:111",
-              "0:112",
-              "0:141",
-              "1:143",
-              "0:147",
-              "1:164",
-              "1:165",
-              "1:166",
-              "0:173",
-              "1:190",
-              "1:196",
-              "1:199",
-              "1:212",
-              "0:213",
-              "1:214",
-              "0:215",
-              "1:216",
-              "1:218",
-              "2:224",
-              "2:233",
-              "1:235",
-              "2:244",
-              "2:246",
-              "2:251",
-              "1:253",
-              "2:256",
-              "2:258",
-              "2:260",
-              "2:262",
-              "2:264",
-              "2:266"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.133999",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.1181",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.65",
+        "witness_account": "1.2.4952",
+        "last_aslot": 23222600,
+        "signing_key": "BTS8QjC5GnhKinPKNfEprAJirYywRrGZ83P32Z5Rsjr9k5xnFZgjf",
+        "pay_vb": "1.13.815",
+        "vote_id": "1:166",
+        "total_votes": "60226515773954",
+        "url": "http://www.btsabc.org/",
+        "total_missed": 1274,
+        "last_confirmed_block_num": 23082297
+      },
+      "witness_account_data": {
+        "id": "1.2.4952",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.4952",
+        "referrer": "1.2.4952",
+        "lifetime_referrer": "1.2.4952",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "abc123",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6SjirG3Sz5V1TcZa3gbm4KhC6kqPBJGZaC8KSQmvUVDRbmNSSK",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6SjirG3Sz5V1TcZa3gbm4KhC6kqPBJGZaC8KSQmvUVDRbmNSSK",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127404,
-      "signing_key": "BTS7Q2wS9rhqrkY7nAGNMG5MqscSUTY7gupwTQAybcEjUB77vD9a4",
-      "pay_vb": "1.13.1286",
-      "vote_id": "1:214",
-      "total_votes": "85631446135581",
-      "url": "https://bitsharestalk.org/index.php/topic,24017.msg304832.html",
-      "total_missed": 30,
-      "last_confirmed_block_num": 22987876
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6SjirG3Sz5V1TcZa3gbm4KhC6kqPBJGZaC8KSQmvUVDRbmNSSK",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [
+            "1:166"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.4952",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.772",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.73",
-      "witness_account": "1.2.157641",
-      "witness_account_data": [
-        {
-          "id": "1.2.157641",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.157641",
-          "referrer": "1.2.157641",
-          "lifetime_referrer": "1.2.157641",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "sahkan-bitshares",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS6WtKdGV2ZjkpZW3RsECYRKrXJogNcP4CGXCAZ8MAZVaPQoh9XH",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS7vLMfKBjzh8zowqCQWf9qmGBSXSUtdTq5UgsiyP4493TMjy6ih",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS7vLMfKBjzh8zowqCQWf9qmGBSXSUtdTq5UgsiyP4493TMjy6ih",
-            "voting_account": "1.2.5",
-            "num_witness": 27,
-            "num_committee": 10,
-            "votes": [
-              "1:23",
-              "1:26",
-              "1:27",
-              "1:28",
-              "1:30",
-              "1:32",
-              "1:33",
-              "1:36",
-              "1:38",
-              "1:41",
-              "1:44",
-              "1:45",
-              "1:47",
-              "1:56",
-              "1:60",
-              "0:82",
-              "0:85",
-              "0:87",
-              "0:90",
-              "0:91",
-              "0:111",
-              "0:141",
-              "1:143",
-              "0:147",
-              "1:164",
-              "1:165",
-              "1:166",
-              "1:190",
-              "1:196",
-              "1:212",
-              "0:213",
-              "1:214",
-              "0:215",
-              "1:216",
-              "1:218",
-              "1:227",
-              "1:253",
-              "2:258",
-              "2:260"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.157641",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.1236",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.74",
+        "witness_account": "1.2.133999",
+        "last_aslot": 23222580,
+        "signing_key": "BTS7Q2wS9rhqrkY7nAGNMG5MqscSUTY7gupwTQAybcEjUB77vD9a4",
+        "pay_vb": "1.13.1286",
+        "vote_id": "1:214",
+        "total_votes": "76701265635392",
+        "url": "https://bitsharestalk.org/index.php/topic,24017.msg304832.html",
+        "total_missed": 30,
+        "last_confirmed_block_num": 23082278
+      },
+      "witness_account_data": {
+        "id": "1.2.133999",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.133999",
+        "referrer": "1.2.133999",
+        "lifetime_referrer": "1.2.133999",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 10000,
+        "name": "roelandp",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6xptQ1sPnytemQDEh3sBWbkXipzx627FPkHKKn98rcY3fsnZgS",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6xptQ1sPnytemQDEh3sBWbkXipzx627FPkHKKn98rcY3fsnZgS",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127405,
-      "signing_key": "BTS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",
-      "pay_vb": "1.13.1275",
-      "vote_id": "1:212",
-      "total_votes": "59888297820155",
-      "url": "https://bitsharestalk.org/index.php/topic,23996.0.html",
-      "total_missed": 898,
-      "last_confirmed_block_num": 22987877
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6xptQ1sPnytemQDEh3sBWbkXipzx627FPkHKKn98rcY3fsnZgS",
+          "voting_account": "1.2.5",
+          "num_witness": 34,
+          "num_committee": 12,
+          "votes": [
+            "1:23",
+            "1:25",
+            "1:26",
+            "1:27",
+            "1:28",
+            "1:30",
+            "1:31",
+            "1:32",
+            "1:33",
+            "1:34",
+            "1:36",
+            "1:37",
+            "1:38",
+            "1:40",
+            "1:41",
+            "1:44",
+            "1:45",
+            "1:47",
+            "1:56",
+            "1:59",
+            "1:60",
+            "2:65",
+            "0:82",
+            "0:85",
+            "0:87",
+            "0:88",
+            "0:91",
+            "0:111",
+            "0:112",
+            "0:141",
+            "1:143",
+            "0:147",
+            "1:164",
+            "1:165",
+            "1:166",
+            "0:173",
+            "1:190",
+            "1:196",
+            "1:199",
+            "1:212",
+            "0:213",
+            "1:214",
+            "0:215",
+            "1:216",
+            "1:218",
+            "2:224",
+            "2:233",
+            "1:235",
+            "2:244",
+            "2:246",
+            "2:251",
+            "1:253",
+            "2:256",
+            "2:258",
+            "2:260",
+            "2:262",
+            "2:264",
+            "2:266"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.133999",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.1181",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.59",
-      "witness_account": "1.2.14035",
-      "witness_account_data": [
-        {
-          "id": "1.2.14035",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.14035",
-          "referrer": "1.2.14035",
-          "lifetime_referrer": "1.2.14035",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "xn-delegate",
-          "owner": {
-            "weight_threshold": 2,
-            "account_auths": [
-              [
-                "1.2.9518",
-                1
-              ],
-              [
-                "1.2.131086",
-                1
-              ]
-            ],
-            "key_auths": [
-              [
-                "BTS52mACuL8c3GE2Fft8rsAjtHZ2PD39PnTrWxwUU143QNxFY7m3F",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS7mv31dmCVeQfusjc1wdfapGcU7HpdNddVokSAfauans4T6P17W",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS8D7BFD4j2eCyLHTBTTb8hZJ8JcE4qYtjd1B2oWxMChnoBH8fSj",
-            "voting_account": "1.2.5",
-            "num_witness": 0,
-            "num_committee": 0,
-            "votes": [
-              "1:143"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.14035",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.544",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.28",
+        "witness_account": "1.2.30889",
+        "last_aslot": 23222590,
+        "signing_key": "BTS66qci9rpf9p87cHuqHdVtDUKAubLx9U5TDkneBnTkqs72Eheqv",
+        "pay_vb": "1.13.59",
+        "vote_id": "1:38",
+        "total_votes": "70235013980650",
+        "url": "https://github.com/lafona/delegate-1.lafona",
+        "total_missed": 4396,
+        "last_confirmed_block_num": 23082287
+      },
+      "witness_account_data": {
+        "id": "1.2.30889",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.30889",
+        "referrer": "1.2.30889",
+        "lifetime_referrer": "1.2.30889",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "delegate-1.lafona",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5DCL5nbhL13sXBh1mwQp5pUBSw7rmwjWeiiy5b2Z2UxuYf8spU",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6Hbbf65u3NHHu4t4GKpPbNn1cPjjmqTzR3XrrZ5tsyXcm5sNJL",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127406,
-      "signing_key": "BTS7sanqxmPfZZ4Z6ETzMnxNxay79e41kwJ1QJ1maHUkq3Gcpgd2z",
-      "pay_vb": "1.13.854",
-      "vote_id": "1:143",
-      "total_votes": "89871853751903",
-      "url": "https://btsgo.net",
-      "total_missed": 2821,
-      "last_confirmed_block_num": 22987878
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5DCL5nbhL13sXBh1mwQp5pUBSw7rmwjWeiiy5b2Z2UxuYf8spU",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.30889",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.40",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     },
     {
-      "id": "1.6.64",
-      "witness_account": "1.2.2850",
-      "witness_account_data": [
-        {
-          "id": "1.2.2850",
-          "membership_expiration_date": "1969-12-31T23:59:59",
-          "registrar": "1.2.2850",
-          "referrer": "1.2.2850",
-          "lifetime_referrer": "1.2.2850",
-          "network_fee_percentage": 2000,
-          "lifetime_referrer_fee_percentage": 8000,
-          "referrer_rewards_percentage": 0,
-          "name": "xman",
-          "owner": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS8aCSNKm9TAD5UBEPh6MGFV1YUgQrFY5BqbEL6JmZynroS6tp2J",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "active": {
-            "weight_threshold": 1,
-            "account_auths": [],
-            "key_auths": [
-              [
-                "BTS6QiSvTN17rv2rNd9xu7B2JCGzzLMrwSxEsGXMPwGHWbAzGp8kA",
-                1
-              ]
-            ],
-            "address_auths": []
-          },
-          "options": {
-            "memo_key": "BTS6QiSvTN17rv2rNd9xu7B2JCGzzLMrwSxEsGXMPwGHWbAzGp8kA",
-            "voting_account": "1.2.5",
-            "num_witness": 25,
-            "num_committee": 6,
-            "votes": [
-              "1:25",
-              "1:26",
-              "1:27",
-              "1:28",
-              "1:30",
-              "1:32",
-              "1:34",
-              "1:36",
-              "1:38",
-              "1:44",
-              "1:45",
-              "1:47",
-              "1:51",
-              "1:56",
-              "0:85",
-              "0:141",
-              "1:143",
-              "0:147",
-              "1:164",
-              "1:165",
-              "1:166",
-              "0:173",
-              "1:190",
-              "1:196",
-              "1:212",
-              "0:213",
-              "1:214",
-              "1:216",
-              "1:218",
-              "0:223",
-              "1:235"
-            ],
-            "extensions": []
-          },
-          "statistics": "2.6.2850",
-          "whitelisting_accounts": [],
-          "blacklisting_accounts": [],
-          "whitelisted_accounts": [],
-          "blacklisted_accounts": [],
-          "cashback_vb": "1.13.766",
-          "owner_special_authority": [
-            0,
-            {}
+      "witness_role_data": {
+        "id": "1.6.27",
+        "witness_account": "1.2.29205",
+        "last_aslot": 23222581,
+        "signing_key": "BTS5CBBJDrwus41WRDdh4reEbJpgh9fVqBG4Vd7oScPVejj5LHBBU",
+        "pay_vb": "1.13.46",
+        "vote_id": "1:37",
+        "total_votes": "42963208888089",
+        "url": "bitshares.kr",
+        "total_missed": 5198,
+        "last_confirmed_block_num": 23082279
+      },
+      "witness_account_data": {
+        "id": "1.2.29205",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.29205",
+        "referrer": "1.2.29205",
+        "lifetime_referrer": "1.2.29205",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "delegate-clayop",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6YnsFfU7TKZPa9awCtRAYKtoM4qBNqb4YXbF6DYdbz1YJLyzpG",
+              1
+            ]
           ],
-          "active_special_authority": [
-            0,
-            {}
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS6YnsFfU7TKZPa9awCtRAYKtoM4qBNqb4YXbF6DYdbz1YJLyzpG",
+              1
+            ]
           ],
-          "top_n_control_flags": 0
-        }
-      ],
-      "last_aslot": 23127407,
-      "signing_key": "BTS7euVUZg96FzihMGLJGnh2tUtKGqiS2spQUQMCGu2TD99HKDHVx",
-      "pay_vb": "1.13.778",
-      "vote_id": "1:165",
-      "total_votes": "67361991366969",
-      "url": "https://yoyow.org/",
-      "total_missed": 1642,
-      "last_confirmed_block_num": 22987879
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS6YnsFfU7TKZPa9awCtRAYKtoM4qBNqb4YXbF6DYdbz1YJLyzpG",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.29205",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.41",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
+    },
+    {
+      "witness_role_data": {
+        "id": "1.6.16",
+        "witness_account": "1.2.167",
+        "last_aslot": 23222585,
+        "signing_key": "BTS6D2dhWchBN9EFRDZ8tZYiHFN1WcJvLV1hg7P53xo2N73DYJg2t",
+        "pay_vb": "1.13.32",
+        "vote_id": "1:26",
+        "total_votes": "48330448666036",
+        "url": ".",
+        "total_missed": 3609,
+        "last_confirmed_block_num": 23082282
+      },
+      "witness_account_data": {
+        "id": "1.2.167",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.167",
+        "referrer": "1.2.167",
+        "lifetime_referrer": "1.2.167",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "fox",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7Tb498vc8hCUqa8FnEhaztPPbUWysDsETZZjuAcLNs7Rch6MWc",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS7Tb498vc8hCUqa8FnEhaztPPbUWysDsETZZjuAcLNs7Rch6MWc",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS7Tb498vc8hCUqa8FnEhaztPPbUWysDsETZZjuAcLNs7Rch6MWc",
+          "voting_account": "1.2.282",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [],
+          "extensions": []
+        },
+        "statistics": "2.6.167",
+        "whitelisting_accounts": [
+          "1.2.398619"
+        ],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.16",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
+    },
+    {
+      "witness_role_data": {
+        "id": "1.6.38",
+        "witness_account": "1.2.10091",
+        "last_aslot": 18322522,
+        "signing_key": "BTS6oRYTjcbQU8s9TAtEY4qZknY7Xaw3E29ore3L3xX611KxFE5Nr",
+        "pay_vb": "1.13.256",
+        "vote_id": "1:48",
+        "total_votes": "40862059589925",
+        "url": "url-to-proposal",
+        "total_missed": 2551,
+        "last_confirmed_block_num": 18199109
+      },
+      "witness_account_data": {
+        "id": "1.2.10091",
+        "membership_expiration_date": "1969-12-31T23:59:59",
+        "registrar": "1.2.10091",
+        "referrer": "1.2.10091",
+        "lifetime_referrer": "1.2.10091",
+        "network_fee_percentage": 2000,
+        "lifetime_referrer_fee_percentage": 8000,
+        "referrer_rewards_percentage": 0,
+        "name": "delegate.taolje",
+        "owner": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5TuKkiAbEo3ZDxmXYk9DgFMVEwwbMjiAMp63YnbhRVX8Q73UeJ",
+              1
+            ],
+            [
+              "BTS6BDCn7wtPVPkfrganYzeWMDQTcrRrtyFaFtyRunuvkKs2ddvoT",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "active": {
+          "weight_threshold": 1,
+          "account_auths": [],
+          "key_auths": [
+            [
+              "BTS5TuKkiAbEo3ZDxmXYk9DgFMVEwwbMjiAMp63YnbhRVX8Q73UeJ",
+              1
+            ],
+            [
+              "BTS897g9QKPSwDLdVsx6AhbHfCqXngKMMqBV54mjqH17e2a2MgLCv",
+              1
+            ]
+          ],
+          "address_auths": []
+        },
+        "options": {
+          "memo_key": "BTS5TuKkiAbEo3ZDxmXYk9DgFMVEwwbMjiAMp63YnbhRVX8Q73UeJ",
+          "voting_account": "1.2.5",
+          "num_witness": 0,
+          "num_committee": 0,
+          "votes": [
+            "1:48"
+          ],
+          "extensions": []
+        },
+        "statistics": "2.6.10091",
+        "whitelisting_accounts": [],
+        "blacklisting_accounts": [],
+        "whitelisted_accounts": [],
+        "blacklisted_accounts": [],
+        "cashback_vb": "1.13.79",
+        "owner_special_authority": [
+          0,
+          {}
+        ],
+        "active_special_authority": [
+          0,
+          {}
+        ],
+        "top_n_control_flags": 0
+      },
+      "witness_status": true
     }
   ],
-  "witness_count": 19,
+  "witness_count": 21,
   "valid_key": true,
-  "took": 0.68179
+  "took": 1.36013
 }

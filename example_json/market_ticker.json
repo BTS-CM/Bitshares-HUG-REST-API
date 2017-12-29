@@ -56,7 +56,7 @@
           "description": ""
         },
         "symbol": "BTS",
-        "amount": 0.42109
+        "amount": 0.99194
       },
       "quote": {
         "asset": {
@@ -72,11 +72,11 @@
             "flags": 128,
             "core_exchange_rate": {
               "base": {
-                "amount": 2559,
+                "amount": 6871,
                 "asset_id": "1.3.121"
               },
               "quote": {
-                "amount": 42109,
+                "amount": 99194,
                 "asset_id": "1.3.0"
               }
             },
@@ -114,9 +114,9 @@
           "description": "1 United States dollar"
         },
         "symbol": "USD",
-        "amount": 0.2559
+        "amount": 0.6871
       },
-      "price": 1.6455255959359125
+      "price": 1.443661766846165
     },
     "quoteSettlement_price": {
       "base": {
@@ -174,7 +174,7 @@
           "description": ""
         },
         "symbol": "BTS",
-        "amount": 8881
+        "amount": 100
       },
       "quote": {
         "asset": {
@@ -190,11 +190,11 @@
             "flags": 128,
             "core_exchange_rate": {
               "base": {
-                "amount": 2559,
+                "amount": 6871,
                 "asset_id": "1.3.121"
               },
               "quote": {
-                "amount": 42109,
+                "amount": 99194,
                 "asset_id": "1.3.0"
               }
             },
@@ -232,9 +232,9 @@
           "description": "1 United States dollar"
         },
         "symbol": "USD",
-        "amount": 4507
+        "amount": 57.5316
       },
-      "price": 1.9704903483470158
+      "price": 1.7381751941541692
     },
     "baseVolume": {
       "asset": {
@@ -290,7 +290,7 @@
         },
         "description": ""
       },
-      "amount": 7704761.025130026,
+      "amount": 3812833.884030018,
       "symbol": "BTS"
     },
     "quoteVolume": {
@@ -307,11 +307,11 @@
           "flags": 128,
           "core_exchange_rate": {
             "base": {
-              "amount": 2559,
+              "amount": 6871,
               "asset_id": "1.3.121"
             },
             "quote": {
-              "amount": 42109,
+              "amount": 99194,
               "asset_id": "1.3.0"
             }
           },
@@ -348,7 +348,7 @@
         },
         "description": "1 United States dollar"
       },
-      "amount": 4350446.534799977,
+      "amount": 2146030.1918000034,
       "symbol": "USD"
     },
     "lowestAsk": {
@@ -366,11 +366,11 @@
             "flags": 128,
             "core_exchange_rate": {
               "base": {
-                "amount": 2559,
+                "amount": 6871,
                 "asset_id": "1.3.121"
               },
               "quote": {
-                "amount": 42109,
+                "amount": 99194,
                 "asset_id": "1.3.0"
               }
             },
@@ -407,7 +407,7 @@
           },
           "description": "1 United States dollar"
         },
-        "amount": 17531,
+        "amount": 54659,
         "symbol": "USD"
       },
       "base": {
@@ -464,10 +464,10 @@
           },
           "description": ""
         },
-        "amount": 33527,
+        "amount": 93568,
         "symbol": "BTS"
       },
-      "price": 1.9124408191204152
+      "price": 1.7118498325984741
     },
     "highestBid": {
       "quote": {
@@ -484,11 +484,11 @@
             "flags": 128,
             "core_exchange_rate": {
               "base": {
-                "amount": 2559,
+                "amount": 6871,
                 "asset_id": "1.3.121"
               },
               "quote": {
-                "amount": 42109,
+                "amount": 99194,
                 "asset_id": "1.3.0"
               }
             },
@@ -525,7 +525,7 @@
           },
           "description": "1 United States dollar"
         },
-        "amount": 87647,
+        "amount": 10000,
         "symbol": "USD"
       },
       "base": {
@@ -582,10 +582,10 @@
           },
           "description": ""
         },
-        "amount": 166786,
+        "amount": 17011,
         "symbol": "BTS"
       },
-      "price": 1.9029287939119421
+      "price": 1.7011
     },
     "latest": {
       "quote": {
@@ -602,11 +602,11 @@
             "flags": 128,
             "core_exchange_rate": {
               "base": {
-                "amount": 2559,
+                "amount": 6871,
                 "asset_id": "1.3.121"
               },
               "quote": {
-                "amount": 42109,
+                "amount": 99194,
                 "asset_id": "1.3.0"
               }
             },
@@ -643,7 +643,7 @@
           },
           "description": "1 United States dollar"
         },
-        "amount": 1,
+        "amount": 93407,
         "symbol": "USD"
       },
       "base": {
@@ -700,15 +700,15 @@
           },
           "description": ""
         },
-        "amount": 2,
+        "amount": 159669,
         "symbol": "BTS"
       },
-      "price": 2
+      "price": 1.7093900885372617
     },
-    "percentChange": 7.0000044940002
+    "percentChange": -14.113687771036753
   },
   "market": "USD:BTS",
   "valid_market": true,
   "valid_key": true,
-  "took": 0.14502
+  "took": 0.18131
 }

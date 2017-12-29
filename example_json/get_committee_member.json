@@ -48,8 +48,8 @@
       "statistics": {
         "id": "2.6.90752",
         "owner": "1.2.90752",
-        "most_recent_op": "2.9.0",
-        "total_ops": 0,
+        "most_recent_op": "2.9.809412",
+        "total_ops": 21,
         "removed_ops": 0,
         "total_core_in_orders": 0,
         "lifetime_fees_paid": 6000000,
@@ -145,5 +145,5 @@
     }
   },
   "valid_key": true,
-  "took": 0.064635679009371
+  "took": 0.256367494002916
 }

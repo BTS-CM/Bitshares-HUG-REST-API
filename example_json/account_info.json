@@ -1,16 +1,5 @@
 {
-  "witness_role_data": {
-    "id": "1.6.82",
-    "witness_account": "1.2.166442",
-    "last_aslot": 0,
-    "signing_key": "BTS5AtihYi36icBnXVFyUTpxkPe8kpsXjHPaDtwG87nqPmRi1KRvB",
-    "vote_id": "1:227",
-    "total_votes": "14407564786143",
-    "url": "https://steemit.com/bitshares/@sc-steemit/joining-in-as-bitshares-witness",
-    "total_missed": 0,
-    "last_confirmed_block_num": 0
-  },
-  "witness_account_data": {
+  "account_info": {
     "id": "1.2.166442",
     "membership_expiration_date": "1969-12-31T23:59:59",
     "registrar": "1.2.166442",
@@ -71,8 +60,6 @@
     ],
     "top_n_control_flags": 0
   },
-  "active_witness": false,
-  "valid_witness": true,
   "valid_key": true,
-  "took": 0.06431
+  "took": 1.0863
 }

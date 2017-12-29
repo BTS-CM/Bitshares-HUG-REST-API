@@ -1,0 +1,608 @@
+{
+  "market_trade_history": [
+    {
+      "datetime": "2017-12-29T21:35:21",
+      "bought": "240.5632 USD",
+      "sold": "408.54025 BTS",
+      "rate ": "1.698265778 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:35:18",
+      "bought": "35.3862 USD",
+      "sold": "60.09532 BTS",
+      "rate ": "1.698269947 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:35:15",
+      "bought": "85.5765 USD",
+      "sold": "145.33161 BTS",
+      "rate ": "1.698265412 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:35:15",
+      "bought": "394.3373 USD",
+      "sold": "669.68936 BTS",
+      "rate ": "1.698265318 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:30:54",
+      "bought": "8.1476 USD",
+      "sold": "13.85988 BTS",
+      "rate ": "1.701099710 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:30:51",
+      "bought": "91.8524 USD",
+      "sold": "156.25011 BTS",
+      "rate ": "1.701099917 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:29:30",
+      "bought": "131.5115 USD",
+      "sold": "224.24993 BTS",
+      "rate ": "1.705173540 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:29:12",
+      "bought": "75.6486 USD",
+      "sold": "128.99399 BTS",
+      "rate ": "1.705173526 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:26:24",
+      "bought": "76.1133 USD",
+      "sold": "130.11340 BTS",
+      "rate ": "1.709469961 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:26:06",
+      "bought": "2.4304 USD",
+      "sold": "4.15486 BTS",
+      "rate ": "1.709537525 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:25:36",
+      "bought": "15.4318 USD",
+      "sold": "26.38020 BTS",
+      "rate ": "1.709470055 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:24:57",
+      "bought": "61.3508 USD",
+      "sold": "104.87732 BTS",
+      "rate ": "1.709469477 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:24:57",
+      "bought": "1.5659 USD",
+      "sold": "2.67694 BTS",
+      "rate ": "1.709521681 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:24:48",
+      "bought": "17.2677 USD",
+      "sold": "29.51947 BTS",
+      "rate ": "1.709519508 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:24:39",
+      "bought": "31.1664 USD",
+      "sold": "53.27957 BTS",
+      "rate ": "1.709519547 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:24:39",
+      "bought": "7.4966 USD",
+      "sold": "12.84693 BTS",
+      "rate ": "1.713700878 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:24:30",
+      "bought": "77.0399 USD",
+      "sold": "132.02329 BTS",
+      "rate ": "1.713700174 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:24:30",
+      "bought": "4.4128 USD",
+      "sold": "7.56244 BTS",
+      "rate ": "1.713750906 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:24:30",
+      "bought": "0.8431 USD",
+      "sold": "1.44491 BTS",
+      "rate ": "1.713806191 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:24:15",
+      "bought": "9.1569 USD",
+      "sold": "15.69309 BTS",
+      "rate ": "1.713799430 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:24:00",
+      "bought": "25.4511 USD",
+      "sold": "43.88121 BTS",
+      "rate ": "1.724138053 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:57",
+      "bought": "54.1158 USD",
+      "sold": "93.30311 BTS",
+      "rate ": "1.724138052 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:57",
+      "bought": "71.5294 USD",
+      "sold": "123.32656 BTS",
+      "rate ": "1.724138047 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:57",
+      "bought": "28.7241 USD",
+      "sold": "49.52433 BTS",
+      "rate ": "1.724138615 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:57",
+      "bought": "31.4701 USD",
+      "sold": "54.25882 BTS",
+      "rate ": "1.724138786 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:57",
+      "bought": "47.0819 USD",
+      "sold": "81.17573 BTS",
+      "rate ": "1.724138788 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:57",
+      "bought": "31.4701 USD",
+      "sold": "54.25882 BTS",
+      "rate ": "1.724138786 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:57",
+      "bought": "84.4826 USD",
+      "sold": "145.65968 BTS",
+      "rate ": "1.724138225 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:57",
+      "bought": "1,141.4739 USD",
+      "sold": "1,968.05851 BTS",
+      "rate ": "1.724137985 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:57",
+      "bought": "768.0000 USD",
+      "sold": "1,324.13791 BTS",
+      "rate ": "1.724137904 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:57",
+      "bought": "45.5872 USD",
+      "sold": "78.59634 BTS",
+      "rate ": "1.724087902 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:57",
+      "bought": "45.5872 USD",
+      "sold": "78.12507 BTS",
+      "rate ": "1.713750132 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:54",
+      "bought": "123.0430 USD",
+      "sold": "210.85881 BTS",
+      "rate ": "1.713700170 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "404.9580 USD",
+      "sold": "698.20358 BTS",
+      "rate ": "1.724138256 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "116.9999 USD",
+      "sold": "201.72396 BTS",
+      "rate ": "1.724137884 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "299.2500 USD",
+      "sold": "515.94826 BTS",
+      "rate ": "1.724137878 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "50.0000 USD",
+      "sold": "86.20689 BTS",
+      "rate ": "1.724137800 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "207.0697 USD",
+      "sold": "356.62962 BTS",
+      "rate ": "1.722268492 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "75.3815 USD",
+      "sold": "129.82718 BTS",
+      "rate ": "1.722268461 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "362.5749 USD",
+      "sold": "624.45138 BTS",
+      "rate ": "1.722268640 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "330.0436 USD",
+      "sold": "568.42379 BTS",
+      "rate ": "1.722268785 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "2,500.0000 USD",
+      "sold": "4,302.92598 BTS",
+      "rate ": "1.721170392 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "76.8248 USD",
+      "sold": "132.12486 BTS",
+      "rate ": "1.719820423 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "999.0000 USD",
+      "sold": "1,716.49484 BTS",
+      "rate ": "1.718213053 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "171.8519 USD",
+      "sold": "295.27355 BTS",
+      "rate ": "1.718186124 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "10.0002 USD",
+      "sold": "17.18170 BTS",
+      "rate ": "1.718135637 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "24.1122 USD",
+      "sold": "41.41820 BTS",
+      "rate ": "1.717727955 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "666.1689 USD",
+      "sold": "1,142.65677 BTS",
+      "rate ": "1.715265858 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:36",
+      "bought": "16.8980 USD",
+      "sold": "28.97959 BTS",
+      "rate ": "1.714971594 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:30",
+      "bought": "283.1020 USD",
+      "sold": "485.51200 BTS",
+      "rate ": "1.714971989 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:23:30",
+      "bought": "300.0000 USD",
+      "sold": "514.48800 BTS",
+      "rate ": "1.714960000 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:19:51",
+      "bought": "63.8311 USD",
+      "sold": "109.48743 BTS",
+      "rate ": "1.715267793 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:19:51",
+      "bought": "19.4917 USD",
+      "sold": "33.43247 BTS",
+      "rate ": "1.715215707 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:19:45",
+      "bought": "30.5083 USD",
+      "sold": "52.32844 BTS",
+      "rate ": "1.715219793 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:19:45",
+      "bought": "152.0747 USD",
+      "sold": "260.61040 BTS",
+      "rate ": "1.713699912 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:19:36",
+      "bought": "55.5114 USD",
+      "sold": "95.12989 BTS",
+      "rate ": "1.713700069 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:19:36",
+      "bought": "27.8409 USD",
+      "sold": "47.65984 BTS",
+      "rate ": "1.711864200 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:19:09",
+      "bought": "27.8409 USD",
+      "sold": "47.65944 BTS",
+      "rate ": "1.711849832 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:10:33",
+      "bought": "1,621.2893 USD",
+      "sold": "2,771.41586 BTS",
+      "rate ": "1.709390088 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:10:21",
+      "bought": "7,000.1950 USD",
+      "sold": "11,966.06338 BTS",
+      "rate ": "1.709390007 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:51",
+      "bought": "171.9737 USD",
+      "sold": "293.97012 BTS",
+      "rate ": "1.709389982 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:45",
+      "bought": "5.7130 USD",
+      "sold": "9.76574 BTS",
+      "rate ": "1.709389113 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:45",
+      "bought": "22.8518 USD",
+      "sold": "39.06263 BTS",
+      "rate ": "1.709389632 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:45",
+      "bought": "34.6529 USD",
+      "sold": "59.23532 BTS",
+      "rate ": "1.709389979 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:45",
+      "bought": "215.3843 USD",
+      "sold": "368.17577 BTS",
+      "rate ": "1.709390007 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:45",
+      "bought": "11.4259 USD",
+      "sold": "19.53131 BTS",
+      "rate ": "1.709389195 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:45",
+      "bought": "5.3394 USD",
+      "sold": "9.12711 BTS",
+      "rate ": "1.709388695 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:45",
+      "bought": "6.1153 USD",
+      "sold": "10.45343 BTS",
+      "rate ": "1.709389564 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:45",
+      "bought": "2.5246 USD",
+      "sold": "4.31552 BTS",
+      "rate ": "1.709387626 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:45",
+      "bought": "5.3688 USD",
+      "sold": "9.17737 BTS",
+      "rate ": "1.709389435 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:45",
+      "bought": "14.4128 USD",
+      "sold": "24.63709 BTS",
+      "rate ": "1.709389570 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:42",
+      "bought": "45.7035 USD",
+      "sold": "78.12510 BTS",
+      "rate ": "1.709389872 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:42",
+      "bought": "2.2852 USD",
+      "sold": "3.90629 BTS",
+      "rate ": "1.709386487 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:42",
+      "bought": "77.0763 USD",
+      "sold": "131.75345 BTS",
+      "rate ": "1.709389916 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:42",
+      "bought": "5.5434 USD",
+      "sold": "9.47583 BTS",
+      "rate ": "1.709389544 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:42",
+      "bought": "54.0192 USD",
+      "sold": "92.33988 BTS",
+      "rate ": "1.709389995 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:09:24",
+      "bought": "682.7450 USD",
+      "sold": "1,167.07748 BTS",
+      "rate ": "1.709390007 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:08:18",
+      "bought": "41.5592 USD",
+      "sold": "71.14384 BTS",
+      "rate ": "1.711867408 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:08:18",
+      "bought": "124.7312 USD",
+      "sold": "213.33268 BTS",
+      "rate ": "1.710339354 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:08:18",
+      "bought": "20.6911 USD",
+      "sold": "35.36940 BTS",
+      "rate ": "1.709401627 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:08:18",
+      "bought": "332.4385 USD",
+      "sold": "568.27101 BTS",
+      "rate ": "1.709401919 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:08:18",
+      "bought": "872.7488 USD",
+      "sold": "1,491.87846 BTS",
+      "rate ": "1.709401904 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:08:15",
+      "bought": "23.0378 USD",
+      "sold": "39.38090 BTS",
+      "rate ": "1.709403676 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:08:15",
+      "bought": "543.2061 USD",
+      "sold": "928.55767 BTS",
+      "rate ": "1.709402140 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:08:15",
+      "bought": "7.8328 USD",
+      "sold": "13.38953 BTS",
+      "rate ": "1.709418088 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:08:15",
+      "bought": "151.6651 USD",
+      "sold": "259.25671 BTS",
+      "rate ": "1.709402559 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:08:15",
+      "bought": "2,830.7048 USD",
+      "sold": "4,838.81223 BTS",
+      "rate ": "1.709401924 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:08:15",
+      "bought": "80.8477 USD",
+      "sold": "138.20030 BTS",
+      "rate ": "1.709390620 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:07:36",
+      "bought": "5.7130 USD",
+      "sold": "9.76574 BTS",
+      "rate ": "1.709389113 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:07:33",
+      "bought": "3.5337 USD",
+      "sold": "6.04047 BTS",
+      "rate ": "1.709389592 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:07:33",
+      "bought": "5.6631 USD",
+      "sold": "9.68044 BTS",
+      "rate ": "1.709388851 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:07:33",
+      "bought": "326.3453 USD",
+      "sold": "557.85139 BTS",
+      "rate ": "1.709389993 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:07:33",
+      "bought": "296.1822 USD",
+      "sold": "506.29089 BTS",
+      "rate ": "1.709389997 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:07:33",
+      "bought": "525.0391 USD",
+      "sold": "897.50274 BTS",
+      "rate ": "1.709401719 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:07:33",
+      "bought": "1.4609 USD",
+      "sold": "2.49726 BTS",
+      "rate ": "1.709398316 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:06:12",
+      "bought": "4,782.3250 USD",
+      "sold": "8,174.85856 BTS",
+      "rate ": "1.709390006 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:05:24",
+      "bought": "20.0000 USD",
+      "sold": "34.18780 BTS",
+      "rate ": "1.709390000 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:04:18",
+      "bought": "100.0000 USD",
+      "sold": "170.93900 BTS",
+      "rate ": "1.709390000 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:04:18",
+      "bought": "200.0000 USD",
+      "sold": "341.87800 BTS",
+      "rate ": "1.709390000 BTS/USD"
+    },
+    {
+      "datetime": "2017-12-29T21:03:54",
+      "bought": "2,096.2870 USD",
+      "sold": "3,583.37203 BTS",
+      "rate ": "1.709389998 BTS/USD"
+    }
+  ],
+  "market": "USD:BTS",
+  "valid_market": true,
+  "valid_key": true,
+  "took": 0.10464
+}

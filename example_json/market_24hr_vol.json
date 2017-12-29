@@ -54,7 +54,7 @@
         },
         "description": ""
       },
-      "amount": 7665034.741170015,
+      "amount": 3693652.2461700183,
       "symbol": "BTS"
     },
     "USD": {
@@ -71,11 +71,11 @@
           "flags": 128,
           "core_exchange_rate": {
             "base": {
-              "amount": 487490,
+              "amount": 6871,
               "asset_id": "1.3.121"
             },
             "quote": {
-              "amount": 8000000,
+              "amount": 99194,
               "asset_id": "1.3.0"
             }
           },
@@ -112,12 +112,12 @@
         },
         "description": "1 United States dollar"
       },
-      "amount": 4322950.205499985,
+      "amount": 2086823.633200005,
       "symbol": "USD"
     }
   },
   "market": "USD:BTS",
   "valid_market": true,
   "valid_key": true,
-  "took": 2.50767
+  "took": 0.11127
 }
