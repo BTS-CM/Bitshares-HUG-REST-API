@@ -2,6 +2,12 @@
 
 ![BTS HUG API Banner](https://i.imgur.com/secsyPh.png "BTS HUG API Banner")
 
+# Updates
+
+* Added new functions: get_bts_object, get_committee_member, get_committee_members, get_worker_proposals, get_worker.
+* Changed formatting of readme & added more example json snippets.
+*
+
 ## About
 
 The intention of this Bitshares HUG REST API repo is to provide the Bitshares network an open-source high performance interface to the Bitshares network through simple GET requests.
@@ -13,9 +19,9 @@ This HUG REST API makes heavy use of the [python-bitshares](https://github.com/x
 ## TODO
 
     Improve the NGINX & Gunicorn configurations
-    Implement additional HUG functions.
-    Work on ./WIP.py - Difficult broken code staging file.
-    Correctly handle 'datetime' user input for ranges of data requests (E.g. TX history between Feb & Mar 2017).
+    Implement additional HUG functions using websockets to access data inaccessible via python-bitshares.
+    Work on date range input for iterable objects like market_history, trade_history and asset_holder data. (See: [Issue #30](https://github.com/xeroc/python-bitshares/issues/30)).
+    Investigate functions for dumping large amounts of data (years of data).
 
 ## License
 
@@ -205,28 +211,7 @@ A high level overview of the Bitshares chain information.
 
 #### [Run Command](https://btsapi.grcnode.co.uk/chain_info?&api_key=123abc)
 
-#### Example JSON output
-
-```
-{
- "id": "2.1.0",
- "head_block_number": 22901637,
- "head_block_id": "015d73858661412b31201155f6f77c772d044a95",
- "time": "2017-12-23T14:04:03",
- "current_witness": "1.6.16",
- "next_maintenance_time": "2017-12-23T15:00:00",
- "last_budget_time": "2017-12-23T14:00:00",
- "witness_budget": 112200000,
- "accounts_registered_this_interval": 10,
- "recently_missed_count": 0,
- "current_aslot": 23041161,
- "recent_slots_filled": "340282366920938463463374607431768211455",
- "dynamic_flags": 0,
- "last_irreversible_block_num": 22901622,
- "valid_key": true,
- "took": 0.12855
-}
-```
+#### [Example JSON output](./example_json/chain_info.json)
 
 ###  get_chain_properties
 
@@ -300,30 +285,7 @@ This call returns the dynamic global properties in JSON.
 
 #### [Run Command](https://btsapi.grcnode.co.uk/get_info?api_key=123abc)
 
-#### Example JSON output
-
-```
-{
-  "chain_info": {
-    "id": "2.1.0",
-    "head_block_number": 23081714,
-    "head_block_id": "016032f26d5d2b6e4db544171a8e3bf62678f089",
-    "time": "2017-12-29T21:08:00",
-    "current_witness": "1.6.16",
-    "next_maintenance_time": "2017-12-29T22:00:00",
-    "last_budget_time": "2017-12-29T21:00:00",
-    "witness_budget": 105000000,
-    "accounts_registered_this_interval": 9,
-    "recently_missed_count": 0,
-    "current_aslot": 23221987,
-    "recent_slots_filled": "329648522671011592715401352840342405119",
-    "dynamic_flags": 0,
-    "last_irreversible_block_num": 23081696
-  },
-  "valid_key": true,
-  "took": 0.18104
-}
-```
+#### [Example JSON output](./example_json/get_info.json)
 
 ### get_config
 
@@ -431,22 +393,7 @@ Given a valid account name, output the user's balances in JSON.
 
 #### [Run Command](https://btsapi.grcnode.co.uk/account_balances?account_name=xeroc&api_key=123abc)
 
-#### Example JSON output
-
-Note: 'balances' has been concatenated to save space in this example.
-
-```
-{
-  "balances": [{"BTS": 780.3515},
-              {"ROSE": 999.0},
-              {"FASTCASS": 8.0},
-              {"DELETIP": 12760.0}],
- "account_has_balances": true,
- "valid_account": true,
- "valid_key": true,
- "took": 0.50434
-}
-```
+#### [Example JSON output](./example_json/account_balances.json)
 
 ### account_open_orders
 
@@ -462,18 +409,7 @@ Given a valid account name, output the user's open orders in JSON.
 
 #### [Run Command](https://btsapi.grcnode.co.uk/account_open_orders?account_name=abit&api_key=123abc)
 
-#### Example JSON output
-
-```
-{
-  "open_orders": [{"Sell: USD": "558.8355", "Buy: OPEN.PPY": "553.30247", "USD/OPEN.PPY": 1.0100000095788477},
-                 {"Sell: BEYONDBIT": "500", "Buy: WHALESHARE": "12500", "BEYONDBIT/WHALESHARE": 0.04}],
-  "account_has_open_orders": true,
-  "valid_account": true,
-  "valid_key": true,
-  "took": 0.24319
-}
-```
+#### [Example JSON output](./example_json/account_open_orders.json)
 
 ### account_callpositions
 
@@ -622,33 +558,7 @@ Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the market's trade
 
 #### [Run Command](https://btsapi.grcnode.co.uk/market_trade_history?market_pair=USD:BTS&api_key=123abc)
 
-#### Example JSON output
-
-```
-{
-  "market_trade_history": [
-    {
-      "date": "2017-12-24",
-      "time": "15:54:36",
-      "bought": "55.7395 USD",
-      "sold": "107.13165 BTS",
-      "rate ": "1.922005938 BTS/USD"
-    },
-    {
-      "date": "2017-12-24",
-      "time": "15:54:36",
-      "bought": "100.0000 USD",
-      "sold": "192.19944 BTS",
-      "rate ": "1.921994400 BTS/USD"
-    }
-  ],
-  "market": "USD:BTS",
-  "valid_market": true,
-  "valid_tx_limit": true,
-  "valid_key": true,
-  "took": 0.17249
-}
-```
+#### [Example JSON output](./example_json/market_trade_history.json)
 
 ## Witness functions
 
