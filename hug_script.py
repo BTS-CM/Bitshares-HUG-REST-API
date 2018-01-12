@@ -74,16 +74,16 @@ def extract_object(input_object):
 	return temp_dict
 
 def get_hertz_feed(reference_timestamp, current_timestamp, period_days, phase_days, reference_asset_value, amplitude):
-    """
-    Given the reference timestamp, the current timestamp, the period (in days), the phase (in days), the reference asset value (ie 1.00) and the amplitude (> 0 && < 1), output the current hertz value.
-    You can use this for an alternative HERTZ asset!
-    """
-    hz_reference_timestamp = pendulum.parse(reference_timestamp).timestamp() # Retrieving the Bitshares2.0 genesis block timestamp
-    hz_period = pendulum.SECONDS_PER_DAY * period_days
-    hz_phase = pendulum.SECONDS_PER_DAY * phase_days
-    hz_waveform = math.sin(((((current_timestamp - (hz_reference_timestamp + hz_phase))/hz_period) % 1) * hz_period) * ((2*math.pi)/hz_period)) # Only change for an alternative HERTZ ABA.
-    hz_value = reference_asset_value + ((amplitude * reference_asset_value) * hz_waveform)
-    return hz_value
+	"""
+	Given the reference timestamp, the current timestamp, the period (in days), the phase (in days), the reference asset value (ie 1.00) and the amplitude (> 0 && < 1), output the current hertz value.
+	You can use this for an alternative HERTZ asset!
+	"""
+	hz_reference_timestamp = pendulum.parse(reference_timestamp).timestamp() # Retrieving the Bitshares2.0 genesis block timestamp
+	hz_period = pendulum.SECONDS_PER_DAY * period_days
+	hz_phase = pendulum.SECONDS_PER_DAY * phase_days
+	hz_waveform = math.sin(((((current_timestamp - (hz_reference_timestamp + hz_phase))/hz_period) % 1) * hz_period) * ((2*math.pi)/hz_period)) # Only change for an alternative HERTZ ABA.
+	hz_value = reference_asset_value + ((amplitude * reference_asset_value) * hz_waveform)
+	return hz_value
 
 @hug.get(examples='api_key=API_KEY')
 def get_hertz_value(api_key: hug.types.text, hug_timer=15):
@@ -99,12 +99,16 @@ def get_hertz_value(api_key: hug.types.text, hug_timer=15):
 
 		hertz_value = get_hertz_feed(hertz_reference_timestamp, hertz_current_timestamp, hertz_period_days, hertz_phase_days, hertz_reference_asset_value, hertz_amplitude)
 
+		#market = Market("USD:BTS") # Set reference market to USD:BTS
+		#price = market.ticker()["quoteSettlement_price"] # Get Settlement price of USD
+		#price.invert() # Switching from quantity of BTS per USD to USD price of one BTS.
+		#hertz = Price(hertz_value, "USD/HERTZ") # Limit the hertz_usd decimal places & convert from float.
+		#hertz_bts = hertz / price # Calculate HERTZ price in BTS
+
 		market = Market("USD:BTS") # Set reference market to USD:BTS
 		price = market.ticker()["quoteSettlement_price"] # Get Settlement price of USD
-		price.invert() # Switching from quantity of BTS per USD to USD price of one BTS.
 		hertz = Price(hertz_value, "USD/HERTZ") # Limit the hertz_usd decimal places & convert from float.
-
-		hertz_bts = hertz / price # Calculate HERTZ price in BTS
+		hertz_bts = hertz / price # Calculate HERTZ price in BTS (THIS IS WHAT YOU PUBLISH!)
 
 		########
 
@@ -126,8 +130,8 @@ def get_hertz_value(api_key: hug.types.text, hug_timer=15):
 		witness_feeds = bitasset_data['feeds']
 		current_feeds = bitasset_data['current_feed']
 
-		return {'unofficial_reference_price_in_usd': hertz,
-				'unofficial_reference_price_in_bts': hertz_bts,
+		return {'unofficial_reference_hertz_price_in_usd': hertz['price'],
+				'unofficial_reference_hertz_price_in_bts': hertz_bts['price'],
 				'witness_feeds': witness_feeds,
 				'current_feeds': current_feeds,
 				'valid_key': True,
