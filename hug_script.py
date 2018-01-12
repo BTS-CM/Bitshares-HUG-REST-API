@@ -126,8 +126,8 @@ def get_hertz_value(api_key: hug.types.text, hug_timer=15):
 		witness_feeds = bitasset_data['feeds']
 		current_feeds = bitasset_data['current_feed']
 
-		return {'price_in_usd': hertz,
-				'price_in_bts': hertz_bts,
+		return {'unofficial_reference_price_in_usd': hertz,
+				'unofficial_reference_price_in_bts': hertz_bts,
 				'witness_feeds': witness_feeds,
 				'current_feeds': current_feeds,
 				'valid_key': True,
