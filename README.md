@@ -170,6 +170,21 @@ Retrieve basic information about an individual asset & return in JSON!
 
 #### [Example JSON output](./example_json/get_asset.json)
 
+### get_hertz_value
+
+Get reference Hertz price feed information.
+
+##### Parameters
+
+* api_key `string`
+
+##### Usage
+`https://subdomain.domain.tld/get_hertz_value?api_key=123abc`
+
+#### [Run Command](https://btsapi.grcnode.co.uk/get_hertz_value?api_key=123abc)
+
+#### [Example JSON output](./example_json/get_hertz_value.json)
+
 ## MISC functions
 
 ### get_bts_oject
