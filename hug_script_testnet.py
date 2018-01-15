@@ -24,17 +24,7 @@ import math
 Configure Full/API node for querying network info
 Only enable ONE of the following API nodes!
 """
-full_node_url = 'wss://bitshares.openledger.info/ws' # Berlin, Germany. Telegram: @xeroc
-#full_node_url = 'wss://singapore.bitshares.apasia.tech/ws', # Singapore. Telegram: @murda_ra
-#full_node_url = 'wss://japan.bitshares.apasia.tech/ws', # Tokyo, Japan. Telegram: @murda_ra
-#full_node_url = 'wss://seattle.bitshares.apasia.tech/ws', # Seattle, WA, USA. Telegram: @murda_ra
-#full_node_url = 'wss://us-ny.bitshares.apasia.tech/ws', # New York, NY, USA. Telegram: @murda_ra
-#full_node_url = 'wss://bitshares.apasia.tech/ws', # Bangkok, Thailand. Telegram: @murda_ra
-#full_node_url = 'wss://slovenia.bitshares.apasia.tech/ws', # Slovenia. Telegram: @murda_ra
-#full_node_url = 'wss://openledger.hk/ws', # Hone Kong. Telegram: @ronnyb
-#full_node_url = 'wss://dex.rnglab.org", # Netherlands. Telegram: @naueh
-#full_node_url = 'wss://bitshares.crypto.fans/ws', # https://crypto.fans/ Telegram: @startail
-#full_node_url = 'wss://eu.openledger.info/ws', # Nuremberg, Germany. Telegram: @xeroc
+full_node_url = 'wss://node.testnet.bitshares.eu'
 bitshares_full_node = BitShares(full_node_url, nobroadcast=False)
 set_shared_bitshares_instance(bitshares_full_node)
 # End of node configuration
@@ -73,120 +63,9 @@ def extract_object(input_object):
 		temp_dict[str(item)] = input_object[item]
 	return temp_dict
 
-def get_hertz_feed(reference_timestamp, current_timestamp, period_days, phase_days, reference_asset_value, amplitude):
-	"""
-	Given the reference timestamp, the current timestamp, the period (in days), the phase (in days), the reference asset value (ie 1.00) and the amplitude (> 0 && < 1), output the current hertz value.
-	You can use this for an alternative HERTZ asset!
-	"""
-	hz_reference_timestamp = pendulum.parse(reference_timestamp).timestamp() # Retrieving the Bitshares2.0 genesis block timestamp
-	hz_period = pendulum.SECONDS_PER_DAY * period_days
-	hz_phase = pendulum.SECONDS_PER_DAY * phase_days
-	hz_waveform = math.sin(((((current_timestamp - (hz_reference_timestamp + hz_phase))/hz_period) % 1) * hz_period) * ((2*math.pi)/hz_period)) # Only change for an alternative HERTZ ABA.
-	hz_value = reference_asset_value + ((amplitude * reference_asset_value) * hz_waveform)
-	return hz_value
-
-@hug.get(examples='api_key=API_KEY')
-def get_hertz_value(api_key: hug.types.text, hug_timer=15):
-	"""Retrieve reference Hertz feed price value in JSON."""
-	if (check_api_token(api_key) == True): # Check the api key
-
-		hertz_reference_timestamp = "2015-10-13T14:12:24+00:00" # Bitshares 2.0 genesis block timestamp
-		hertz_current_timestamp = pendulum.now().timestamp() # Current timestamp for reference within the hertz script
-		hertz_amplitude = 0.14 # 14% fluctuating the price feed $+-0.14 (1% per day)
-		hertz_period_days = 28 # Aka wavelength, time for one full SIN wave cycle.
-		hertz_phase_days = 0.908056 # Time offset from genesis till the first wednesday, to set wednesday as the primary Hz day.
-		hertz_reference_asset_value = 1.00 # $1.00 USD, not much point changing as the ratio will be the same.
-
-		hertz_value = get_hertz_feed(hertz_reference_timestamp, hertz_current_timestamp, hertz_period_days, hertz_phase_days, hertz_reference_asset_value, hertz_amplitude)
-
-		#market = Market("USD:BTS") # Set reference market to USD:BTS
-		#price = market.ticker()["quoteSettlement_price"] # Get Settlement price of USD
-		#price.invert() # Switching from quantity of BTS per USD to USD price of one BTS.
-		#hertz = Price(hertz_value, "USD/HERTZ") # Limit the hertz_usd decimal places & convert from float.
-		#hertz_bts = hertz / price # Calculate HERTZ price in BTS
-
-		market = Market("USD:BTS") # Set reference market to USD:BTS
-		price = market.ticker()["quoteSettlement_price"] # Get Settlement price of USD
-		hertz = Price(hertz_value, "USD/HERTZ") # Limit the hertz_usd decimal places & convert from float.
-		hertz_bts = hertz / price # Calculate HERTZ price in BTS (THIS IS WHAT YOU PUBLISH!)
-
-		unofficial_data = {'hertz_price_in_usd': hertz['price'],
-						   'hertz_price_in_bts': hertz_bts['price'],
-						   'bts_price_in_usd': price.invert()['price']}
-		########
-
-		try:
-		  target_asset = Asset("HERTZ", full=True)
-		except:
-		  return {'valid_asset': False,
-				  'valid_key': True,
-				  'took': float(hug_timer)}
-
-		try:
-		  bitasset_data = target_asset['bitasset_data_id']
-		except:
-		  bitasset_data = None
-
-		extracted_object = extract_object(target_asset)
-
-		bitasset_data = extracted_object['bitasset_data']
-		current_feeds = bitasset_data['current_feed']
-
-		witness_feeds = bitasset_data['feeds']
-		witness_feed_data = {}
-		witness_iterator = 0
-
-		for witness_feed in witness_feeds:
-			# Extract that data!
-			witness_id = witness_feed[0]
-
-			try:
-			  target_account = Account(str(witness_id))
-			except:
-			  print("Witness account doesn't work?!")
-
-			extracted_object = extract_object(target_account)
-
-			witness_name = extracted_object['name']
-			publish_timestamp = witness_feed[1][0]
-			feed_data = witness_feed[1][1]
-			settlement_price = feed_data['settlement_price']
-			maintenance_collateral_ratio = feed_data['maintenance_collateral_ratio']
-			maximum_short_squeeze_ratio = feed_data['maximum_short_squeeze_ratio']
-			core_exchange_rate = feed_data['core_exchange_rate']
-
-			target_witness = Witness(witness_name)
-			witness_role_data = extract_object(target_witness)
-			witness_identity = witness_role_data['id']
-			witness_url = witness_role_data['url']
-
-			settlement_price['api_calculated_rate'] = (int(settlement_price['quote']['amount'])/settlement_price['base']['amount'])/10
-			core_exchange_rate['api_calculated_rate'] = (int(core_exchange_rate['quote']['amount'])/core_exchange_rate['base']['amount'])/10
-
-			witness_feed_data[str(witness_iterator)] = ({'witness_account_id': witness_id,
-									  'witness_name': witness_name,
-									  'witness_id': witness_identity,
-									  'witness_url': witness_url,
-									  'publish_timestamp': publish_timestamp,
-									  'settlement_price': settlement_price,
-									  'maintenance_collateral_ratio': maintenance_collateral_ratio,
-									  'maximum_short_squeeze_ratio': maximum_short_squeeze_ratio,
-									  'core_exchange_rate': core_exchange_rate})
-			witness_iterator += 1
-
-		return {'unofficial_reference': unofficial_data,
-				'witness_feeds': witness_feed_data,
-				'current_feeds': current_feeds,
-				'valid_key': True,
-				'took': float(hug_timer)}
-	else:
-	# API KEY INVALID!
-		return {'valid_key': False,
-				'took': float(hug_timer)}
-
 @hug.get(examples='object_id=1.2.0&api_key=API_KEY')
 def get_bts_oject(object_id: hug.types.text, api_key: hug.types.text, hug_timer=15):
-	"""Enable retrieving and displaying any BTS object in JSON."""
+	"""Enable retrieving and displaying any TEST object in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
 		try:
 			retrieved_object = bitshares_full_node.rpc.get_objects([object_id])[0]
@@ -760,7 +639,7 @@ def account_is_ltm(account_name: hug.types.text, api_key: hug.types.text, hug_ti
 		return {'valid_key': False,
 				'took': float(hug_timer)}
 
-@hug.get(examples='market_pair=USD:BTS&api_key=API_KEY')
+@hug.get(examples='market_pair=USD:TEST&api_key=API_KEY')
 def market_ticker(market_pair: hug.types.text, api_key: hug.types.text, hug_timer=5):
 	"""Given a valid market pair, retrieve ticker data & output as JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
@@ -787,9 +666,9 @@ def market_ticker(market_pair: hug.types.text, api_key: hug.types.text, hug_time
 		return {'valid_key': False,
 				'took': float(hug_timer)}
 
-@hug.get(examples='market_pair=USD:BTS&api_key=API_KEY')
+@hug.get(examples='market_pair=USD:TEST&api_key=API_KEY')
 def market_orderbook(market_pair: hug.types.text, api_key: hug.types.text, hug_timer=5):
-	"""Given a valid market pair (e.g. USD:BTS) and your desired orderbook size limit, output the market pair's orderbook (buy/sell order) information in JSON."""
+	"""Given a valid market pair (e.g. USD:TEST) and your desired orderbook size limit, output the market pair's orderbook (buy/sell order) information in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
 		try:
@@ -812,9 +691,9 @@ def market_orderbook(market_pair: hug.types.text, api_key: hug.types.text, hug_t
 		return {'valid_key': False,
 				'took': float(hug_timer)}
 
-@hug.get(examples='market_pair=USD:BTS&api_key=API_KEY')
+@hug.get(examples='market_pair=USD:TEST&api_key=API_KEY')
 def market_24hr_vol(market_pair: hug.types.text, api_key: hug.types.text, hug_timer=5):
-	"""Given a valid market_pair (e.g. USD:BTS), output their 24hr market volume in JSON."""
+	"""Given a valid market_pair (e.g. USD:TEST), output their 24hr market volume in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
 		try:
@@ -836,9 +715,9 @@ def market_24hr_vol(market_pair: hug.types.text, api_key: hug.types.text, hug_ti
 				'took': float(hug_timer)}
 # &start_time=2017-07-01T00:00:00Z&stop_time=2017-07-10T00:00:00Z
 # start_time: hug.types.text, stop_time: hug.types.text,
-@hug.get(examples='market_pair=USD:BTS&api_key=API_KEY')
+@hug.get(examples='market_pair=USD:TEST&api_key=API_KEY')
 def market_trade_history(market_pair: hug.types.text, api_key: hug.types.text, hug_timer=5):
-	"""Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the market's trade history in JSON."""
+	"""Given a valid market_pair (e.g. USD:TEST) & a TX limit, output the market's trade history in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
 		try:
@@ -852,11 +731,11 @@ def market_trade_history(market_pair: hug.types.text, api_key: hug.types.text, h
 		temp_market_history = list(target_market.trades(limit=100))
 
 		#print(temp_market_history)
-		# (2017-12-24 15:37:21) 55.8699 USD 106.84792 BTS @ 1.912441583 BTS/USD
+		# (2017-12-24 15:37:21) 55.8699 USD 106.84792 TEST @ 1.912441583 TEST/USD
 		market_history_json_list = []
 		for market_trade in temp_market_history:
-			str_market_trade = str(market_trade).split(" @ ") # ["(2017-12-24 15:37:21) 55.8699 USD 106.84792 BTS", "1.912441583 BTS/USD"]
-			trade_rate = str_market_trade[1] # "1.912441583 BTS/USD"
+			str_market_trade = str(market_trade).split(" @ ") # ["(2017-12-24 15:37:21) 55.8699 USD 106.84792 TEST", "1.912441583 TEST/USD"]
+			trade_rate = str_market_trade[1] # "1.912441583 TEST/USD"
 			trade_time = (str_market_trade[0].split(") ")[0]).replace("(", "")
 			trade_details = str_market_trade[0].split(") ")[1]
 			split_trade = trade_details.split(" ")

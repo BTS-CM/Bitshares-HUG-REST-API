@@ -166,13 +166,16 @@ Retrieve basic information about an individual asset & return in JSON!
 ##### Usage
 `https://subdomain.domain.tld/get_asset?asset_name=USD&api_key=123abc`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_asset?asset_name=USD&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_asset?asset_name=USD&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_asset?asset_name=USD&api_key=123abc)
 
 #### [Example JSON output](./example_json/get_asset.json)
 
 ### get_hertz_value
 
 Get reference Hertz price feed information.
+
+Currently unavailable in the Public testnet HUG REST API server. The reason is that the script references USD price via the BTS DEX, which isn't an active MPA in the public Bitshares testnet. To be fair, concerns of diverging from reference Hertz formula could be disregarded considering that this is for an unofficial reference.
 
 ##### Parameters
 
@@ -181,7 +184,7 @@ Get reference Hertz price feed information.
 ##### Usage
 `https://subdomain.domain.tld/get_hertz_value?api_key=123abc`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_hertz_value?api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_hertz_value?api_key=123abc)
 
 #### [Example JSON output](./example_json/get_hertz_value.json)
 
@@ -201,7 +204,8 @@ Request any Bitshares object's high level overview. Does not provide in depth de
 ##### Usage
 `https://subdomain.domain.tld/get_bts_oject?object_id=2.0.0&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_bts_oject?object_id=2.13.1&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_bts_oject?object_id=2.13.1&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_bts_oject?object_id=2.13.1&api_key=123abc)
 
 ## Blockchain functions
 
@@ -218,7 +222,8 @@ A high level overview of the Bitshares chain information.
 ##### Usage
 `https://subdomain.domain.tld/chain_info?&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/chain_info?&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/chain_info?&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/chain_info?&api_key=123abc)
 
 #### [Example JSON output](./example_json/chain_info.json)
 
@@ -233,7 +238,8 @@ Get chain properties, return in JSON.
 ##### Usage
 `https://subdomain.domain.tld/get_chain_properties?api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_chain_properties?api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_chain_properties?api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_chain_properties?api_key=123abc)
 
 #### Example JSON output
 
@@ -265,7 +271,8 @@ Return BTS network information in JSON.
 ##### Usage
 `https://subdomain.domain.tld/get_network?api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_network?api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_network?api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_network?api_key=123abc)
 
 #### Example JSON output
 
@@ -292,7 +299,8 @@ This call returns the dynamic global properties in JSON.
 ##### Usage
 `https://subdomain.domain.tld/get_info?api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_info?api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_info?api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_info?api_key=123abc)
 
 #### [Example JSON output](./example_json/get_info.json)
 
@@ -307,7 +315,8 @@ Returns object 2.0.0 in JSON.
 ##### Usage
 `https://subdomain.domain.tld/get_config?api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_config?api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_config?api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_config?api_key=123abc)
 
 #### [Example JSON output](./example_json/get_config.json)
 
@@ -323,7 +332,8 @@ Retrieve the specified block's date/time details, return in JSON.
 ##### Usage
 `https://subdomain.domain.tld/get_block_details?block_number=10&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_block_details?block_number=10&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_block_details?block_number=10&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_block_details?block_number=10&api_key=123abc)
 
 #### Example JSON output
 
@@ -356,7 +366,8 @@ Retrieve the details of the latest block, return in JSON.
 ##### Usage
 `https://subdomain.domain.tld/get_latest_block?api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_latest_block?api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_latest_block?api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_latest_block?api_key=123abc)
 
 #### [Example JSON output](./example_json/get_latest_block.json)
 
@@ -371,7 +382,8 @@ Retrieve all Bitshares account names. Takes a while!
 ##### Usage
 `https://subdomain.domain.tld/get_all_accounts?api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_all_accounts?api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_all_accounts?api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_all_accounts?api_key=123abc)
 
 #### Example JSON output
 
@@ -400,7 +412,8 @@ Given a valid account name, output the user's balances in JSON.
 ##### Usage
 `https://subdomain.domain.tld/account_balances?account=example_usera&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_balances?account_name=xeroc&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/account_balances?account_name=xeroc&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/account_balances?account_name=xeroc&api_key=123abc)
 
 #### [Example JSON output](./example_json/account_balances.json)
 
@@ -416,7 +429,8 @@ Given a valid account name, output the user's open orders in JSON.
 ##### Usage
 `https://subdomain.domain.tld/account_open_orders?account_name=example_usera&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_open_orders?account_name=abit&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/account_open_orders?account_name=abit&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/account_open_orders?account_name=abit&api_key=123abc)
 
 #### [Example JSON output](./example_json/account_open_orders.json)
 
@@ -434,7 +448,8 @@ Note: Highly verbose! Example contains 26k lines of JSON!
 ##### Usage
 `https://subdomain.domain.tld/account_callpositions?account=example_usera&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_callpositions?account_name=abit&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/account_callpositions?account_name=abit&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/account_callpositions?account_name=abit&api_key=123abc)
 
 #### [Example JSON output](./example_json/account_callposition.json)
 
@@ -450,7 +465,8 @@ Given a valid account name and transaction history limit (int), output the user'
 ##### Usage
 `https://subdomain.domain.tld/account_history?account_name=example_user&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_history?account_name=xeroc&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/account_history?account_name=xeroc&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/account_history?account_name=xeroc&api_key=123abc)
 
 #### [Example JSON output](./example_json/account_history.json)
 
@@ -466,7 +482,8 @@ Given a valid account name, check if the user has LTM.
 ##### Usage
 `https://subdomain.domain.tld/account_is_ltm?account_name=example_user&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/account_is_ltm?account_name=xeroc&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/account_is_ltm?account_name=xeroc&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/account_is_ltm?account_name=xeroc&api_key=123abc)
 
 #### Example JSON output
 
@@ -495,7 +512,8 @@ Retrieve the currently implemented fees in JSON format.
 ##### Usage
 `https://subdomain.domain.tld/list_fees?api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/list_fees?api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/list_fees?api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/list_fees?api_key=123abc)
 
 #### [Example JSON output](./example_json/list_fees.json)
 
@@ -515,7 +533,8 @@ Given a valid market pair (e.g. USD:BTS), output the market pair's ticker inform
 ##### Usage
 `https://subdomain.domain.tld/market_ticker?market_pair=USD:BTS&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/market_ticker?market_pair=USD:BTS&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/market_ticker?market_pair=USD:BTS&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/market_ticker?market_pair=USD:BTS&api_key=123abc)
 
 
 #### [Example JSON output](./example_json/market_ticker.json)
@@ -533,7 +552,8 @@ Given a valid market pair (e.g. USD:BTS) and your desired orderbook size limit, 
 ##### Usage
 `https://subdomain.domain.tld/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/market_orderbook?market_pair=USD:BTS&orderbook_limit=25&api_key=123abc)
 
 #### [Example JSON output](./example_json/market_orderbook.json)
 
@@ -549,7 +569,8 @@ Given a valid market_pair (e.g. USD:BTS), output their 24hr market volume in JSO
 ##### Usage
 `https://subdomain.domain.tld/market_24hr_vol?market_pair=USD:BTS&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/market_24hr_vol?market_pair=USD:BTS&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/market_24hr_vol?market_pair=USD:BTS&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/market_24hr_vol?market_pair=USD:BTS&api_key=123abc)
 
 #### [Example JSON output](./example_json/market_24hr_vol.json)
 
@@ -565,7 +586,8 @@ Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the market's trade
 ##### Usage
 `https://subdomain.domain.tld/market_trade_history?market_pair=USD:BTS&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/market_trade_history?market_pair=USD:BTS&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/market_trade_history?market_pair=USD:BTS&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/market_trade_history?market_pair=USD:BTS&api_key=123abc)
 
 #### [Example JSON output](./example_json/market_trade_history.json)
 
@@ -585,7 +607,8 @@ Find details about a specific witness.
 ##### Usage
 `https://subdomain.domain.tld/find_witness?witness_name=sc-ol&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/find_witness?witness_name=sc-ol&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/find_witness?witness_name=sc-ol&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/find_witness?witness_name=sc-ol&api_key=123abc)
 
 #### [Example JSON output](./example_json/find_witness.json)
 
@@ -600,7 +623,8 @@ Retrieve a list of available witnesses.
 ##### Usage
 `https://subdomain.domain.tld/list_of_witnesses?api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/list_of_witnesses?api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/list_of_witnesses?api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/list_of_witnesses?api_key=123abc)
 
 #### [Example JSON output](./example_json/list_of_witnesses.json)
 
@@ -620,7 +644,8 @@ Retrieve a single committee member's full account (and role) information.
 ##### Usage
 `https://subdomain.domain.tld/get_committee_member?committee_id=1.5.10&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_committee_member?committee_id=1.5.10&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_committee_member?committee_id=1.5.10&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_committee_member?committee_id=1.5.10&api_key=123abc)
 
 #### [Example JSON output](./example_json/get_committee_member.json)
 
@@ -628,7 +653,8 @@ Retrieve a single committee member's full account (and role) information.
 
 Get a list of all committee members, and their Bitshares account details.
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_committee_members?api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_committee_members?api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_committee_members?api_key=123abc)
 
 ##### Usage
 `https://subdomain.domain.tld/get_committee_members?api_key=API_KEY`
@@ -651,7 +677,8 @@ Retrieve an individual worker proposal & its associated proposer account details
 ##### Usage
 `https://subdomain.domain.tld/get_worker?worker_id=1.14.x&api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_worker?worker_id=1.14.50&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_worker?worker_id=1.14.50&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_worker?worker_id=1.14.50&api_key=123abc)
 
 #### [Example JSON output](./example_json/get_worker.json)
 
@@ -666,6 +693,7 @@ Retrieve a list of all worker proposals (including past/inactive) and the worker
 ##### Usage
 `https://subdomain.domain.tld/get_worker_proposals?api_key=API_KEY`
 
-#### [Run Command](https://btsapi.grcnode.co.uk/get_worker_proposals?api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_worker_proposals?api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_worker_proposals?api_key=123abc)
 
 #### [Example JSON output](./example_json/get_worker_proposals.json)
