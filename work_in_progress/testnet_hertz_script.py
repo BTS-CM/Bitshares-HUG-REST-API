@@ -76,28 +76,31 @@ def get_hertz_value(api_key: hug.types.text, hug_timer=15):
 			publish_timestamp = witness_feed[1][0]
 			feed_data = witness_feed[1][1]
 			settlement_price = feed_data['settlement_price']
-			maintenance_collateral_ratio = feed_data['maintenance_collateral_ratio']
-			maximum_short_squeeze_ratio = feed_data['maximum_short_squeeze_ratio']
-			core_exchange_rate = feed_data['core_exchange_rate']
 
-			target_witness = Witness(witness_name)
-			witness_role_data = extract_object(target_witness)
-			witness_identity = witness_role_data['id']
-			witness_url = witness_role_data['url']
+			if (int(settlement_price['quote']['amount']) > 0):
+				maintenance_collateral_ratio = feed_data['maintenance_collateral_ratio']
+				maximum_short_squeeze_ratio = feed_data['maximum_short_squeeze_ratio']
+				core_exchange_rate = feed_data['core_exchange_rate']
 
-			settlement_price['api_calculated_rate'] = (int(settlement_price['quote']['amount'])/settlement_price['base']['amount'])/10
-			core_exchange_rate['api_calculated_rate'] = (int(core_exchange_rate['quote']['amount'])/core_exchange_rate['base']['amount'])/10
+				target_witness = Witness(witness_name)
+				witness_role_data = extract_object(target_witness)
+				witness_identity = witness_role_data['id']
+				witness_url = witness_role_data['url']
 
-			witness_feed_data[str(witness_iterator)] = ({'witness_account_id': witness_id,
-									  'witness_name': witness_name,
-									  'witness_id': witness_identity,
-									  'witness_url': witness_url,
-									  'publish_timestamp': publish_timestamp,
-									  'settlement_price': settlement_price,
-									  'maintenance_collateral_ratio': maintenance_collateral_ratio,
-									  'maximum_short_squeeze_ratio': maximum_short_squeeze_ratio,
-									  'core_exchange_rate': core_exchange_rate})
-			witness_iterator += 1
+				settlement_price['api_calculated_rate'] = (int(settlement_price['quote']['amount'])/settlement_price['base']['amount'])/10
+				core_exchange_rate['api_calculated_rate'] = (int(core_exchange_rate['quote']['amount'])/core_exchange_rate['base']['amount'])/10
+
+				witness_feed_data[str(witness_iterator)] = ({'witness_account_id': witness_id,
+										  'witness_name': witness_name,
+										  'witness_id': witness_identity,
+										  'witness_url': witness_url,
+										  'publish_timestamp': publish_timestamp,
+										  'settlement_price': settlement_price,
+										  'maintenance_collateral_ratio': maintenance_collateral_ratio,
+										  'maximum_short_squeeze_ratio': maximum_short_squeeze_ratio,
+										  'core_exchange_rate': core_exchange_rate})
+			else:
+				continue
 
 		return {'unofficial_reference': unofficial_data,
 				'witness_feeds': witness_feed_data,
