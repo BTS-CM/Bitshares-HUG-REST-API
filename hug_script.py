@@ -88,6 +88,9 @@ def get_hertz_feed(reference_timestamp, current_timestamp, period_days, phase_da
 
 @hug.get('/home', output=hug.output_format.html)
 def root():
+	"""
+	Hertz price feed HTML page
+	"""
 	hertz_json = get_hertz_value('123abc')
 	html_start = "<html><head><title>Hertz Price feed page!</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/tables-min.css' integrity='sha256-V3z3FoW8AUbK98fJsgyLL7scF5dNrNStj6Rp8tPsJs0=' crossorigin='anonymous' /></head><body>"
 	table_start = "<h1>Hertz price feeds</h1><h2><a href='https://sites.google.com/view/hertz-aba/'>Hertz technical documentation</a></h2><h3>Attention Committee: <a href='https://bitsharestalk.org/index.php/topic,25803.0.html'>Active global variable change request</a></h3><table class='pure-table pure-table-bordered'><thead><tr><th>Name</th><th>Timestamp</th><th>Settlement Price</th><th>CER</th><th>MCR</th><th>MSSR</th><th>URL</th></tr></thead><tbody>"
