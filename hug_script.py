@@ -19,6 +19,7 @@ import hug
 import requests
 import pendulum
 import math
+import statistics
 
 """
 Configure Full/API node for querying network info
@@ -85,10 +86,79 @@ def get_hertz_feed(reference_timestamp, current_timestamp, period_days, phase_da
 	hz_value = reference_asset_value + ((amplitude * reference_asset_value) * hz_waveform)
 	return hz_value
 
+@hug.get('/home', output=hug.output_format.html)
+def root():
+	hertz_json = get_hertz_value('123abc')
+	html_start = "<html><head><title>Hertz Price feed page!</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/tables-min.css' integrity='sha256-V3z3FoW8AUbK98fJsgyLL7scF5dNrNStj6Rp8tPsJs0=' crossorigin='anonymous' /></head><body>"
+	table_start = "<h1>Hertz price feeds</h1><h2><a href='https://sites.google.com/view/hertz-aba/'>Hertz technical documentation</a></h2><h3>Attention Committee: <a href='https://bitsharestalk.org/index.php/topic,25803.0.html'>Active global variable change request</a></h3><table class='pure-table pure-table-bordered'><thead><tr><th>Name</th><th>Timestamp</th><th>Settlement Price</th><th>CER</th><th>MCR</th><th>MSSR</th><th>URL</th></tr></thead><tbody>"
+	table_rows = ""
+
+	witness = hertz_json['witness_feeds']
+
+	settlement_price_list = []
+	cer_list = []
+
+	for key, value in witness.items():
+		settlement_price = value['settlement_price']['api_calculated_rate']
+
+		if (settlement_price > 0):
+			settlement_price_list.append(settlement_price)
+
+			try:
+				witness_url = value['witness_url']
+			except:
+				witness_url = None
+
+			core_exchange_rate = value['core_exchange_rate']['api_calculated_rate']
+			cer_list.append(core_exchange_rate)
+
+			maintenance_collateral_ratio = value['maintenance_collateral_ratio']
+			maximum_short_squeeze_ratio = value['maximum_short_squeeze_ratio']
+			witness_name = value['witness_name']
+			parsed_timestamp = pendulum.parse(value['publish_timestamp'])
+			current_timestamp = pendulum.now()
+			time_difference = str(current_timestamp.diff(parsed_timestamp).in_minutes()) + " Mins ago"
+
+			if witness_url is None:
+				table_rows += "<tr><td>" + str(witness_name) + "</td><td>" + time_difference + "</td><td>" + "{0:.2f}".format(settlement_price) + "</td><td>" + "{0:.2f}".format(core_exchange_rate) + "</td><td>" + str(maintenance_collateral_ratio/10) + "%</td><td>" + str(maximum_short_squeeze_ratio/10) + "%</td><td>N/A</td></tr>"
+			else:
+				table_rows += "<tr><td>" + str(witness_name) + "</td><td>" + time_difference + "</td><td>" + "{0:.2f}".format(settlement_price) + "</td><td>" + "{0:.2f}".format(core_exchange_rate) + "</td><td>" + str(maintenance_collateral_ratio/10) + "%</td><td>" + str(maximum_short_squeeze_ratio/10) + "%</td><td><a href='" + str(witness_url) + "'>Link</a></td></tr>"
+		else:
+			continue
+
+	# Unofficial reference row
+	unofficial_reference = hertz_json['unofficial_reference']
+
+	table_rows += "<tr><td>Unofficial reference</td><td>Now</td><td>" + "{0:.2f}".format(unofficial_reference['hertz_price_in_bts']) + "</td><td>" + "{0:.2f}".format(unofficial_reference['core_exchange_rate']) + "</td><td>200.0%</td><td>110.0%</td><td><a href='https://btsapi.grcnode.co.uk'>Link</a></td></tr>"
+	table_end = "</tbody></table></br>"
+
+	active_feeds = hertz_json['current_feeds']
+	if (active_feeds['settlement_price']['api_calculated_rate'] > 0):
+		hertz_status = "Active"
+	else:
+		hertz_status = "Not Active"
+
+	active_details = "<h2>Price feed summary</h2><ul><li>Status: " + hertz_status + "</li><li>Settlement rate: " + "{0:.2f}".format(active_feeds['settlement_price']['api_calculated_rate']) + "</li><li>CER: " + "{0:.2f}".format(active_feeds['core_exchange_rate']['api_calculated_rate']) + "</li><li>MCR: " + "{0:.2f}".format(active_feeds['maintenance_collateral_ratio']) + "</li><li>MSSR: " + "{0:.2f}".format(active_feeds['maximum_short_squeeze_ratio']) + "</li></ul>"
+
+	settlement_price_median = statistics.median(settlement_price_list)
+	cer_median = statistics.median(cer_list)
+
+	extra_details = "<h2>Extra reference info</h2><ul><li>Median settle price: " + "{0:.2f}".format(settlement_price_median) + "</li><li>Median CER: " + "{0:.2f}".format(cer_median) + "</li><li>BTS price in USD: " + "{0:.2f}".format(unofficial_reference['bts_price_in_usd']) + "</li><li>USD price in BTS: " + "{0:.2f}".format(unofficial_reference['usd_price_in_bts']) + "</li><li> Hertz price in USD: " + "{0:.2f}".format(unofficial_reference['hertz_price_in_usd']) + "</li><li><a href='https://btsapi.grcnode.co.uk/get_hertz_value?api_key=123abc'>Hertz JSON price feed data</a></li></ul>"
+	html_end = "</body></html>"
+
+	output_html = html_start + table_start + table_rows + table_end + active_details + extra_details + html_end
+
+	return output_html
+
 @hug.get(examples='api_key=API_KEY')
 def get_hertz_value(api_key: hug.types.text, hug_timer=15):
 	"""Retrieve reference Hertz feed price value in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
+
+		# Getting the value of USD in BTS
+		market = Market("USD:BTS") # Set reference market to USD:BTS
+		price = market.ticker()["quoteSettlement_price"] # Get Settlement price of USD
+		price.invert() # Switching from quantity of BTS per USD to USD price of one BTS.
 
 		hertz_reference_timestamp = "2015-10-13T14:12:24+00:00" # Bitshares 2.0 genesis block timestamp
 		hertz_current_timestamp = pendulum.now().timestamp() # Current timestamp for reference within the hertz script
@@ -98,21 +168,16 @@ def get_hertz_value(api_key: hug.types.text, hug_timer=15):
 		hertz_reference_asset_value = 1.00 # $1.00 USD, not much point changing as the ratio will be the same.
 
 		hertz_value = get_hertz_feed(hertz_reference_timestamp, hertz_current_timestamp, hertz_period_days, hertz_phase_days, hertz_reference_asset_value, hertz_amplitude)
-
-		#market = Market("USD:BTS") # Set reference market to USD:BTS
-		#price = market.ticker()["quoteSettlement_price"] # Get Settlement price of USD
-		#price.invert() # Switching from quantity of BTS per USD to USD price of one BTS.
-		#hertz = Price(hertz_value, "USD/HERTZ") # Limit the hertz_usd decimal places & convert from float.
-		#hertz_bts = hertz / price # Calculate HERTZ price in BTS
-
-		market = Market("USD:BTS") # Set reference market to USD:BTS
-		price = market.ticker()["quoteSettlement_price"] # Get Settlement price of USD
 		hertz = Price(hertz_value, "USD/HERTZ") # Limit the hertz_usd decimal places & convert from float.
-		hertz_bts = hertz / price # Calculate HERTZ price in BTS (THIS IS WHAT YOU PUBLISH!)
+
+		# Calculate HERTZ price in BTS (THIS IS WHAT YOU PUBLISH!)
+		hertz_bts = price.as_base("BTS") * hertz.as_quote("HERTZ")
 
 		unofficial_data = {'hertz_price_in_usd': hertz['price'],
 						   'hertz_price_in_bts': hertz_bts['price'],
-						   'bts_price_in_usd': price.invert()['price']}
+						   'core_exchange_rate': hertz_bts['price']*0.80,
+						   'usd_price_in_bts': 1/price['price'],
+						   'bts_price_in_usd': price['price']}
 		########
 
 		try:
@@ -131,6 +196,18 @@ def get_hertz_value(api_key: hug.types.text, hug_timer=15):
 
 		bitasset_data = extracted_object['bitasset_data']
 		current_feeds = bitasset_data['current_feed']
+		current_feed_settlement_price = current_feeds['settlement_price']
+		current_feed_cer = current_feeds['core_exchange_rate']
+
+		if (current_feed_settlement_price['base']['amount'] > 0 and current_feed_settlement_price['quote']['amount'] > 0):
+			current_feed_settlement_price['api_calculated_rate'] = int(current_feed_settlement_price['quote']['amount'])/int(current_feed_settlement_price['base']['amount'])
+		else:
+			current_feed_settlement_price['api_calculated_rate'] = 0
+
+		if (current_feed_cer['base']['amount'] > 0 and current_feed_cer['quote']['amount'] > 0):
+			current_feed_cer['api_calculated_rate'] = int(current_feed_cer['quote']['amount'])/int(current_feed_cer['base']['amount'])
+		else:
+			current_feed_cer['api_calculated_rate'] = 0
 
 		witness_feeds = bitasset_data['feeds']
 		witness_feed_data = {}
@@ -163,10 +240,13 @@ def get_hertz_value(api_key: hug.types.text, hug_timer=15):
 				witness_identity = witness_role_data['id']
 				witness_url = witness_role_data['url']
 
-				settlement_price['api_calculated_rate'] = (int(settlement_price['quote']['amount'])/settlement_price['base']['amount'])/10
-				core_exchange_rate['api_calculated_rate'] = (int(core_exchange_rate['quote']['amount'])/core_exchange_rate['base']['amount'])/10
+				settlement_price_before = int(settlement_price['quote']['amount'])/int(settlement_price['base']['amount'])
+				core_exchange_rate_before = int(core_exchange_rate['quote']['amount'])/(int(core_exchange_rate['base']['amount']))
 
-				witness_feed_data[str(witness_iterator)] = ({'witness_account_id': witness_id,
+				settlement_price['api_calculated_rate'] = settlement_price_before / 10
+				core_exchange_rate['api_calculated_rate'] = core_exchange_rate_before / 10
+
+				witness_feed_data[str(witness_iterator)] = {'witness_account_id': witness_id,
 										  'witness_name': witness_name,
 										  'witness_id': witness_identity,
 										  'witness_url': witness_url,
@@ -174,7 +254,7 @@ def get_hertz_value(api_key: hug.types.text, hug_timer=15):
 										  'settlement_price': settlement_price,
 										  'maintenance_collateral_ratio': maintenance_collateral_ratio,
 										  'maximum_short_squeeze_ratio': maximum_short_squeeze_ratio,
-										  'core_exchange_rate': core_exchange_rate})
+										  'core_exchange_rate': core_exchange_rate}
 			else:
 				continue
 
