@@ -27,19 +27,19 @@ full_node_list = [
 	"wss://sg.nodes.bitshares.works", #location: "Singapore - BitShares Infrastructure Program"
 	"wss://bitshares.crypto.fans/ws", #location: "Munich, Germany"
 	"wss://bit.btsabc.org/ws", #location: "Hong Kong"
-	"wss://api.bts.blckchnd.com" #location: "Falkenstein, Germany"
+	"wss://api.bts.blckchnd.com", #location: "Falkenstein, Germany"
 	"wss://openledger.hk/ws", #location: "Hong Kong"
 	"wss://bitshares-api.wancloud.io/ws", #location:  "China"
 	"wss://dex.rnglab.org", #location: "Netherlands"
 	"wss://dexnode.net/ws", #location: "Dallas, USA"
 	"wss://kc-us-dex.xeldal.com/ws", #location: "Kansas City, USA"
-	"wss://la.dexnode.net/ws", #location: "Los Angeles, USA"
+	"wss://la.dexnode.net/ws" #location: "Los Angeles, USA"
 ]
 
 full_node_list_http = [
 	"https://bitshares.crypto.fans/ws", #location: "Munich, Germany"
 	"https://bit.btsabc.org/ws", #location: "Hong Kong"
-	"https://api.bts.blckchnd.com" #location: "Falkenstein, Germany"
+	"https://api.bts.blckchnd.com", #location: "Falkenstein, Germany"
 	"https://openledger.hk/ws", #location: "Hong Kong"
 	"https://bitshares-api.wancloud.io/ws", #location:  "China"
 	"https://dex.rnglab.org", #location: "Netherlands"
