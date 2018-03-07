@@ -1,25 +1,4 @@
-# Required for rest of hug scripts
-from bitshares import BitShares
-from bitshares.account import Account
-from bitshares.amount import Amount
-from bitshares.asset import Asset
-from bitshares.blockchain import Blockchain
-from bitshares.block import Block
-from bitshares.dex import Dex
-from bitshares.price import Price
-from bitshares.market import Market
-from bitshares.witness import Witness # Retrieving 1
-from bitshares.witness import Witnesses # Listing many
-from bitshares.proposal import Proposal # Retrieving 1
-from bitshares.proposal import Proposals # Listing many
-from bitshares.instance import shared_bitshares_instance # Used to reduce bitshares instance load
-from bitshares.instance import set_shared_bitshares_instance # Used to reduce bitshares instance load
-import bitshares
-import hug
 import requests
-import pendulum
-import math
-import statistics
 import json
 
 full_node_list_http = [
@@ -36,13 +15,6 @@ full_node_list_http = [
 	"https://us.nodes.bitshares.works", #location: "U.S. West Coast - BitShares Infrastructure Program"
 	"https://sg.nodes.bitshares.works" #location: "Singapore - BitShares Infrastructure Program"
 ]
-
-def check_api_token(api_key):
-	"""Check if the user's API key is valid. Change the API key if you want it to be private!"""
-	if (api_key == '123abc'):
-		return True
-	else:
-		return False
 
 def request_json(input_data):
 	"""Request JSON data from full node, given request data input.
