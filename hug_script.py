@@ -21,23 +21,23 @@ import pendulum
 import math
 import statistics
 
-"""
-Configure Full/API node for querying network info
-Only enable ONE of the following API nodes!
-"""
-full_node_url = 'wss://bitshares.openledger.info/ws' # Berlin, Germany. Telegram: @xeroc
-#full_node_url = 'wss://singapore.bitshares.apasia.tech/ws', # Singapore. Telegram: @murda_ra
-#full_node_url = 'wss://japan.bitshares.apasia.tech/ws', # Tokyo, Japan. Telegram: @murda_ra
-#full_node_url = 'wss://seattle.bitshares.apasia.tech/ws', # Seattle, WA, USA. Telegram: @murda_ra
-#full_node_url = 'wss://us-ny.bitshares.apasia.tech/ws', # New York, NY, USA. Telegram: @murda_ra
-#full_node_url = 'wss://bitshares.apasia.tech/ws', # Bangkok, Thailand. Telegram: @murda_ra
-#full_node_url = 'wss://slovenia.bitshares.apasia.tech/ws', # Slovenia. Telegram: @murda_ra
-#full_node_url = 'wss://openledger.hk/ws', # Hone Kong. Telegram: @ronnyb
-#full_node_url = 'wss://dex.rnglab.org", # Netherlands. Telegram: @naueh
-#full_node_url = 'wss://bitshares.crypto.fans/ws', # https://crypto.fans/ Telegram: @startail
-#full_node_url = 'wss://eu.openledger.info/ws', # Nuremberg, Germany. Telegram: @xeroc
-bitshares_full_node = BitShares(full_node_url, nobroadcast=False)
-set_shared_bitshares_instance(bitshares_full_node)
+full_node_list = [
+	"wss://eu.nodes.bitshares.works", #location: "Central Europe - BitShares Infrastructure Program"
+	"wss://us.nodes.bitshares.works", #location: "U.S. West Coast - BitShares Infrastructure Program"
+	"wss://sg.nodes.bitshares.works", #location: "Singapore - BitShares Infrastructure Program"
+	"wss://bitshares.crypto.fans/ws", #location: "Munich, Germany"
+	"wss://bit.btsabc.org/ws", #location: "Hong Kong"
+	"wss://api.bts.blckchnd.com" #location: "Falkenstein, Germany"
+	"wss://openledger.hk/ws", #location: "Hong Kong"
+	"wss://bitshares-api.wancloud.io/ws", #location:  "China"
+	"wss://dex.rnglab.org", #location: "Netherlands"
+	"wss://dexnode.net/ws", #location: "Dallas, USA"
+	"wss://kc-us-dex.xeldal.com/ws", #location: "Kansas City, USA"
+	"wss://la.dexnode.net/ws", #location: "Los Angeles, USA"
+]
+
+bitshares_api_node = BitShares(full_node_list, nobroadcast=True)
+set_shared_bitshares_instance(bitshares_api_node)
 # End of node configuration
 
 def check_api_token(api_key):
@@ -93,10 +93,12 @@ def root():
 	"""
 	hertz_json = get_hertz_value('123abc')
 	html_start = "<html><head><title>Hertz Price feed page!</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/tables-min.css' integrity='sha256-V3z3FoW8AUbK98fJsgyLL7scF5dNrNStj6Rp8tPsJs0=' crossorigin='anonymous' /></head><body>"
-	table_start = "<h1>Hertz price feeds</h1><h2><a href='https://sites.google.com/view/hertz-aba/'>Hertz technical documentation</a></h2><h3>Attention Committee: <a href='https://bitsharestalk.org/index.php/topic,25803.0.html'>Active global variable change request</a></h3><table class='pure-table pure-table-bordered'><thead><tr><th>Name</th><th>Timestamp</th><th>Settlement Price</th><th>CER</th><th>MCR</th><th>MSSR</th><th>URL</th></tr></thead><tbody>"
+	table_start = "<h1>Hertz price feeds</h1><h2><a href='https://sites.google.com/view/hertz-aba/'>Hertz technical documentation</a></h2><h3>White Paper: <a href='https://steemit.com/bitshares/@cm-steem/hertz-is-now-live-on-the-bts-dex'>Steemit Post with PDF mirrors</a></h3><table class='pure-table pure-table-bordered'><thead><tr><th>Name</th><th>Timestamp</th><th>Settlement Price</th><th>CER</th><th>MCR</th><th>MSSR</th><th>URL</th></tr></thead><tbody>"
 	table_rows = ""
 
 	witness = hertz_json['witness_feeds']
+	# Unofficial reference row
+	unofficial_reference = hertz_json['unofficial_reference']
 
 	settlement_price_list = []
 	cer_list = []
@@ -120,17 +122,21 @@ def root():
 			witness_name = value['witness_name']
 			parsed_timestamp = pendulum.parse(value['publish_timestamp'])
 			current_timestamp = pendulum.now()
-			time_difference = str(current_timestamp.diff(parsed_timestamp).in_minutes()) + " Mins ago"
+			time_difference = current_timestamp.diff(parsed_timestamp).in_minutes()
+
+			if (time_difference > 0):
+				time_difference_text = str(time_difference) + " Mins ago"
+			else:
+				time_difference_text = "< 1 Min ago"
+
+			usd_settlement_price = settlement_price * unofficial_reference['bts_price_in_usd']
 
 			if witness_url is None:
-				table_rows += "<tr><td>" + str(witness_name) + "</td><td>" + time_difference + "</td><td>" + "{0:.2f}".format(settlement_price) + "</td><td>" + "{0:.2f}".format(core_exchange_rate) + "</td><td>" + str(maintenance_collateral_ratio/10) + "%</td><td>" + str(maximum_short_squeeze_ratio/10) + "%</td><td>N/A</td></tr>"
+				table_rows += "<tr><td><a href='http://open-explorer.io/#/accounts/" + str(witness_name) + "'>" + str(witness_name) + "</a></td><td>" + time_difference_text + "</td><td>" + "{0:.2f}".format(settlement_price) + " BTS ($" + "{0:.2f}".format(usd_settlement_price) + ")</td><td>" + "{0:.2f}".format(core_exchange_rate) + "</td><td>" + str(maintenance_collateral_ratio/10) + "%</td><td>" + str(maximum_short_squeeze_ratio/10) + "%</td><td>N/A</td></tr>"
 			else:
-				table_rows += "<tr><td>" + str(witness_name) + "</td><td>" + time_difference + "</td><td>" + "{0:.2f}".format(settlement_price) + "</td><td>" + "{0:.2f}".format(core_exchange_rate) + "</td><td>" + str(maintenance_collateral_ratio/10) + "%</td><td>" + str(maximum_short_squeeze_ratio/10) + "%</td><td><a href='" + str(witness_url) + "'>Link</a></td></tr>"
+				table_rows += "<tr><td><a href='http://open-explorer.io/#/accounts/" + str(witness_name) + "'>" + str(witness_name) + "</a></td><td>" + time_difference_text + "</td><td>" + "{0:.2f}".format(settlement_price) + " BTS ($" + "{0:.2f}".format(usd_settlement_price) + ")</td><td>" + "{0:.2f}".format(core_exchange_rate) + "</td><td>" + str(maintenance_collateral_ratio/10) + "%</td><td>" + str(maximum_short_squeeze_ratio/10) + "%</td><td><a href='" + str(witness_url) + "'>Link</a></td></tr>"
 		else:
 			continue
-
-	# Unofficial reference row
-	unofficial_reference = hertz_json['unofficial_reference']
 
 	table_rows += "<tr><td>Unofficial reference</td><td>Now</td><td>" + "{0:.2f}".format(unofficial_reference['hertz_price_in_bts']) + "</td><td>" + "{0:.2f}".format(unofficial_reference['core_exchange_rate']) + "</td><td>200.0%</td><td>110.0%</td><td><a href='https://btsapi.grcnode.co.uk'>Link</a></td></tr>"
 	table_end = "</tbody></table></br>"
@@ -141,15 +147,16 @@ def root():
 	else:
 		hertz_status = "Not Active"
 
-	active_details = "<h2>Price feed summary</h2><ul><li>Status: " + hertz_status + "</li><li>Settlement rate: " + "{0:.2f}".format(active_feeds['settlement_price']['api_calculated_rate']) + "</li><li>CER: " + "{0:.2f}".format(active_feeds['core_exchange_rate']['api_calculated_rate']) + "</li><li>MCR: " + "{0:.2f}".format(active_feeds['maintenance_collateral_ratio']) + "</li><li>MSSR: " + "{0:.2f}".format(active_feeds['maximum_short_squeeze_ratio']) + "</li></ul>"
+	#active_details = "<h2>Price feed summary</h2><ul><li>Status: " + hertz_status + "</li><li>Settlement rate: " + "{0:.2f}".format(int(active_feeds['settlement_price']['api_calculated_rate'])/10) + "</li><li>CER: " + "{0:.2f}".format(int(active_feeds['core_exchange_rate']['api_calculated_rate'])/10) + "</li><li>MCR: " + "{0:.2f}".format(int(active_feeds['maintenance_collateral_ratio'])/10) + "</li><li>MSSR: " + "{0:.2f}".format((int(active_feeds['maximum_short_squeeze_ratio'])/10)) + "</li></ul>"
 
 	settlement_price_median = statistics.median(settlement_price_list)
+
 	cer_median = statistics.median(cer_list)
 
 	extra_details = "<h2>Extra reference info</h2><ul><li>Median settle price: " + "{0:.2f}".format(settlement_price_median) + "</li><li>Median CER: " + "{0:.2f}".format(cer_median) + "</li><li>BTS price in USD: " + "{0:.2f}".format(unofficial_reference['bts_price_in_usd']) + "</li><li>USD price in BTS: " + "{0:.2f}".format(unofficial_reference['usd_price_in_bts']) + "</li><li> Hertz price in USD: " + "{0:.2f}".format(unofficial_reference['hertz_price_in_usd']) + "</li><li><a href='https://btsapi.grcnode.co.uk/get_hertz_value?api_key=123abc'>Hertz JSON price feed data</a></li></ul>"
 	html_end = "</body></html>"
 
-	output_html = html_start + table_start + table_rows + table_end + active_details + extra_details + html_end
+	output_html = html_start + table_start + table_rows + table_end + extra_details + html_end
 
 	return output_html
 
@@ -202,12 +209,12 @@ def get_hertz_value(api_key: hug.types.text, hug_timer=15):
 		current_feed_settlement_price = current_feeds['settlement_price']
 		current_feed_cer = current_feeds['core_exchange_rate']
 
-		if (current_feed_settlement_price['base']['amount'] > 0 and current_feed_settlement_price['quote']['amount'] > 0):
+		if (int(current_feed_settlement_price['base']['amount']) > 0 and int(current_feed_settlement_price['quote']['amount']) > 0):
 			current_feed_settlement_price['api_calculated_rate'] = int(current_feed_settlement_price['quote']['amount'])/int(current_feed_settlement_price['base']['amount'])
 		else:
 			current_feed_settlement_price['api_calculated_rate'] = 0
 
-		if (current_feed_cer['base']['amount'] > 0 and current_feed_cer['quote']['amount'] > 0):
+		if (int(current_feed_cer['base']['amount']) > 0 and int(current_feed_cer['quote']['amount']) > 0):
 			current_feed_cer['api_calculated_rate'] = int(current_feed_cer['quote']['amount'])/int(current_feed_cer['base']['amount'])
 		else:
 			current_feed_cer['api_calculated_rate'] = 0
@@ -238,26 +245,40 @@ def get_hertz_value(api_key: hug.types.text, hug_timer=15):
 				maximum_short_squeeze_ratio = feed_data['maximum_short_squeeze_ratio']
 				core_exchange_rate = feed_data['core_exchange_rate']
 
-				target_witness = Witness(witness_name)
-				witness_role_data = extract_object(target_witness)
-				witness_identity = witness_role_data['id']
-				witness_url = witness_role_data['url']
-
 				settlement_price_before = int(settlement_price['quote']['amount'])/int(settlement_price['base']['amount'])
 				core_exchange_rate_before = int(core_exchange_rate['quote']['amount'])/(int(core_exchange_rate['base']['amount']))
 
 				settlement_price['api_calculated_rate'] = settlement_price_before / 10
 				core_exchange_rate['api_calculated_rate'] = core_exchange_rate_before / 10
 
-				witness_feed_data[str(witness_iterator)] = {'witness_account_id': witness_id,
-										  'witness_name': witness_name,
-										  'witness_id': witness_identity,
-										  'witness_url': witness_url,
-										  'publish_timestamp': publish_timestamp,
-										  'settlement_price': settlement_price,
-										  'maintenance_collateral_ratio': maintenance_collateral_ratio,
-										  'maximum_short_squeeze_ratio': maximum_short_squeeze_ratio,
-										  'core_exchange_rate': core_exchange_rate}
+				try:
+					target_witness = Witness(witness_name)
+				except:
+					target_witness = None
+
+				if (target_witness is not None):
+					witness_role_data = extract_object(target_witness)
+					witness_identity = witness_role_data['id']
+					witness_url = witness_role_data['url']
+					witness_feed_data[str(witness_iterator)] = {'witness_account_id': witness_id,
+											  'witness_name': witness_name,
+											  'witness_id': witness_identity,
+											  'witness_url': witness_url,
+											  'publish_timestamp': publish_timestamp,
+											  'settlement_price': settlement_price,
+											  'maintenance_collateral_ratio': maintenance_collateral_ratio,
+											  'maximum_short_squeeze_ratio': maximum_short_squeeze_ratio,
+											  'core_exchange_rate': core_exchange_rate}
+				else:
+					witness_feed_data[str(witness_iterator)] = {'witness_account_id': witness_id,
+											  'witness_name': witness_name,
+											  'witness_id': "N/A",
+											  'witness_url': "#",
+											  'publish_timestamp': publish_timestamp,
+											  'settlement_price': settlement_price,
+											  'maintenance_collateral_ratio': maintenance_collateral_ratio,
+											  'maximum_short_squeeze_ratio': maximum_short_squeeze_ratio,
+											  'core_exchange_rate': core_exchange_rate}
 			else:
 				continue
 
@@ -272,11 +293,11 @@ def get_hertz_value(api_key: hug.types.text, hug_timer=15):
 				'took': float(hug_timer)}
 
 @hug.get(examples='object_id=1.2.0&api_key=API_KEY')
-def get_bts_oject(object_id: hug.types.text, api_key: hug.types.text, hug_timer=15):
+def get_bts_object(object_id: hug.types.text, api_key: hug.types.text, hug_timer=15):
 	"""Enable retrieving and displaying any BTS object in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
 		try:
-			retrieved_object = bitshares_full_node.rpc.get_objects([object_id])[0]
+			retrieved_object = bitshares_api_node.rpc.get_objects([object_id])[0]
 		except:
 			return {'valid_object_id': False,
 					'valid_key': True,
@@ -300,7 +321,7 @@ def get_committee_member(committee_id: hug.types.text, api_key: hug.types.text, 
 	"""Retrieve information about a single committee member (inc full account details)!"""
 	if (check_api_token(api_key) == True): # Check the api key
 		try:
-			target_committee_member = bitshares_full_node.rpc.get_objects([committee_id])[0]
+			target_committee_member = bitshares_api_node.rpc.get_objects([committee_id])[0]
 		except:
 			return {'valid_committee_id': False,
 					'valid_key': True,
@@ -347,7 +368,7 @@ def get_committee_members(api_key: hug.types.text, hug_timer=15):
 		committee_member_list = []
 		for member in range(num_committee_members):
 			committee_id = "1.5." + str(member)
-			current_committee_member = bitshares_full_node.rpc.get_objects([committee_id])[0]
+			current_committee_member = bitshares_api_node.rpc.get_objects([committee_id])[0]
 
 			if committee_id in active_committee_members:
 				current_committee_member['status'] = True
@@ -370,7 +391,7 @@ def get_worker(worker_id: hug.types.text, api_key: hug.types.text, hug_timer=15)
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
 		try:
-			target_worker = bitshares_full_node.rpc.get_objects([worker_id])[0]
+			target_worker = bitshares_api_node.rpc.get_objects([worker_id])[0]
 		except:
 			return {'valid_worker': False,
 					'valid_key': True,
@@ -410,7 +431,7 @@ def get_worker_proposals(api_key: hug.types.text, hug_timer=15):
 		worker_list = []
 		for worker in range(num_workers):
 			worker_id = "1.14." + str(worker)
-			current_worker = bitshares_full_node.rpc.get_objects([worker_id])[0]
+			current_worker = bitshares_api_node.rpc.get_objects([worker_id])[0]
 
 			target_account = Account(current_worker['worker_account'])
 			target_account_data = extract_object(target_account)

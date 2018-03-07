@@ -64,7 +64,7 @@ def extract_object(input_object):
 	return temp_dict
 
 @hug.get(examples='object_id=1.2.0&api_key=API_KEY')
-def get_bts_oject(object_id: hug.types.text, api_key: hug.types.text, hug_timer=15):
+def get_bts_object(object_id: hug.types.text, api_key: hug.types.text, hug_timer=15):
 	"""Enable retrieving and displaying any TEST object in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
 		try:

@@ -190,7 +190,7 @@ Currently unavailable in the Public testnet HUG REST API server. The reason is t
 
 ## MISC functions
 
-### get_bts_oject
+### get_bts_object
 
 Request any Bitshares object's high level overview. Does not provide in depth details (ie asset/account/witness/.. details).
 
@@ -202,10 +202,10 @@ Request any Bitshares object's high level overview. Does not provide in depth de
 * api_key `string`
 
 ##### Usage
-`https://subdomain.domain.tld/get_bts_oject?object_id=2.0.0&api_key=API_KEY`
+`https://subdomain.domain.tld/get_bts_object?object_id=2.0.0&api_key=API_KEY`
 
-#### [Run: Production command](https://btsapi.grcnode.co.uk/get_bts_oject?object_id=2.13.1&api_key=123abc)
-#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_bts_oject?object_id=2.13.1&api_key=123abc)
+#### [Run: Production command](https://btsapi.grcnode.co.uk/get_bts_object?object_id=2.13.1&api_key=123abc)
+#### [Run: Testnet command](https://testnetbtsapi.grcnode.co.uk/get_bts_object?object_id=2.13.1&api_key=123abc)
 
 ## Blockchain functions
 
