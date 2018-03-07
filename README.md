@@ -15,7 +15,6 @@ This HUG REST API makes heavy use of the [python-bitshares](https://github.com/x
     Improve the NGINX & Gunicorn configurations
     Implement additional HUG functions using websockets to access data inaccessible via python-bitshares.
     Work on date range input for iterable objects like market_history, trade_history and asset_holder data. (See: [Issue #30](https://github.com/xeroc/python-bitshares/issues/30)).
-    Investigate functions for dumping large amounts of data (years of data).
 
 ## License
 
@@ -56,11 +55,9 @@ Ideally, rather than over-scraping data we should cache it or limit scraping fun
 
 ## Install guide
 
-This is an install guide for Ubuntu 17.10, it uses Python3+, HUG, Gunicorn & NGINX. If you change the OS or server components then the following guide will be less applicable, if you succeed please do provide a separate readme for alternative implementation solutions.
+This is an install guide for Ubuntu 17.10. The HUG REST API uses Python3, HUG, Gunicorn & NGINX. If you change the OS or server components then the following guide will be less applicable, if you succeed please do provide a separate readme for alternative implementation solutions.
 
 ### Setup dependencies & Python environment
-
-NOTE: We use the develop branch of python-bitshares because it uses the pycryptodome package (required since pycrypto is depreciated).
 
 We create the 'btsapi' user, however you could rename this to whatever you want, just remember to change the NGINX & Gunicorn configuration files.
 
@@ -91,11 +88,9 @@ We create the 'btsapi' user, however you could rename this to whatever you want,
     pip3 install --upgrade setuptools
     pip3 install --upgrade wheel
     pip3 install requests
-    pip3 install lomond
     pip3 install hug
     pip3 install gunicorn
-    git clone https://github.com/xeroc/python-bitshares.git -b develop
-    pip3 install -e python-bitshares/
+    pip3 install bitshares
 
 ### Configure NGINX
 

@@ -36,12 +36,24 @@ full_node_list = [
 	"wss://la.dexnode.net/ws", #location: "Los Angeles, USA"
 ]
 
-bitshares_api_node = BitShares(full_node_list, nobroadcast=True)
+full_node_list_http = [
+	"https://bitshares.crypto.fans/ws", #location: "Munich, Germany"
+	"https://bit.btsabc.org/ws", #location: "Hong Kong"
+	"https://api.bts.blckchnd.com" #location: "Falkenstein, Germany"
+	"https://openledger.hk/ws", #location: "Hong Kong"
+	"https://bitshares-api.wancloud.io/ws", #location:  "China"
+	"https://dex.rnglab.org", #location: "Netherlands"
+	"https://dexnode.net/ws", #location: "Dallas, USA"
+	"https://kc-us-dex.xeldal.com/ws", #location: "Kansas City, USA"
+	"https://la.dexnode.net/ws", #location: "Los Angeles, USA"
+]
+
+bitshares_api_node = BitShares(full_node_list, nobroadcast=True) # True prevents TX being broadcast through the HUG REST API
 set_shared_bitshares_instance(bitshares_api_node)
 # End of node configuration
 
 def check_api_token(api_key):
-	"""Check if the user's API key is valid."""
+	"""Check if the user's API key is valid. Change the API key if you want it to be private!"""
 	if (api_key == '123abc'):
 		return True
 	else:
@@ -50,21 +62,22 @@ def check_api_token(api_key):
 def request_json(input_data):
 	"""Request JSON data from full node, given request data input.
 	   More info: http://docs.python-requests.org/en/master/"""
-	request_url = full_node_url.replace("wss://", "https://") # Your selected full node must have HTTPS configured properly!
-	requested_data = requests.get(request_url, data=input_data)
+	requested_data = None # Prevent no state if all servers fail!
+
+	for full_node_url in full_node_list_http:
+		try:
+			requested_data = requests.get(full_node_url, data=input_data)
+		except requests.exceptions.ConnectionError:
+			continue
+
+		if requested_data.status_code is not 200:
+			# Fail! Move onto the next URL!
+			continue
+		else:
+			# Stop iterating through the list of servers!
+			break
+
 	return requested_data
-
-"""
-request = request_json('')
-
-if request.status_code is not 200:
-	# We want to catch any failed GET requests!
-	return {'request_status_code_error': True,
-		  'valid_key': True,
-		  'took': float(hug_timer)}
-
-valid_request_json = request.json()
-"""
 
 def extract_object(input_object):
 	"""Chunk of code to extract the inner JSON from objects.
@@ -351,8 +364,7 @@ def get_committee_member(committee_id: hug.types.text, api_key: hug.types.text, 
 def get_committee_members(api_key: hug.types.text, hug_timer=15):
 	"""Get a list of all committee members!"""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
-
+		# API KEY VALID
 		num_committee_members_request = request_json('{"jsonrpc": "2.0", "method": "get_committee_count", "params": [], "id": 1}')
 
 		if num_committee_members_request.status_code is not 200:
@@ -360,26 +372,27 @@ def get_committee_members(api_key: hug.types.text, hug_timer=15):
 			return {'request_status_code_error': True,
 				  'valid_key': True,
 				  'took': float(hug_timer)}
+		else:
+			# Request was successful
+			active_committee_members = Blockchain().config()['active_committee_members']
 
-		active_committee_members = Blockchain().config()['active_committee_members']
+			num_committee_members = num_committee_members_request.json()['result']
 
-		num_committee_members = num_committee_members_request.json()['result']
+			committee_member_list = []
+			for member in range(num_committee_members):
+				committee_id = "1.5." + str(member)
+				current_committee_member = bitshares_api_node.rpc.get_objects([committee_id])[0]
 
-		committee_member_list = []
-		for member in range(num_committee_members):
-			committee_id = "1.5." + str(member)
-			current_committee_member = bitshares_api_node.rpc.get_objects([committee_id])[0]
+				if committee_id in active_committee_members:
+					current_committee_member['status'] = True
+				else:
+					current_committee_member['status'] = False
 
-			if committee_id in active_committee_members:
-				current_committee_member['status'] = True
-			else:
-				current_committee_member['status'] = False
+				committee_member_list.append(current_committee_member)
 
-			committee_member_list.append(current_committee_member)
-
-		return {'committee_members': committee_member_list,
-				'valid_key': True,
-				'took': float(hug_timer)}
+			return {'committee_members': committee_member_list,
+					'valid_key': True,
+					'took': float(hug_timer)}
 	else:
 	# API KEY INVALID!
 		return {'valid_key': False,
@@ -425,24 +438,25 @@ def get_worker_proposals(api_key: hug.types.text, hug_timer=15):
 			return {'request_status_code_error': True,
 				  'valid_key': True,
 				  'took': float(hug_timer)}
+		else:
+			# Request is valid!
+			num_workers = num_workers_request.json()['result']
 
-		num_workers = num_workers_request.json()['result']
+			worker_list = []
+			for worker in range(num_workers):
+				worker_id = "1.14." + str(worker)
+				current_worker = bitshares_api_node.rpc.get_objects([worker_id])[0]
 
-		worker_list = []
-		for worker in range(num_workers):
-			worker_id = "1.14." + str(worker)
-			current_worker = bitshares_api_node.rpc.get_objects([worker_id])[0]
+				target_account = Account(current_worker['worker_account'])
+				target_account_data = extract_object(target_account)
 
-			target_account = Account(current_worker['worker_account'])
-			target_account_data = extract_object(target_account)
+				current_worker['worker_account_details'] = target_account_data
 
-			current_worker['worker_account_details'] = target_account_data
+				worker_list.append(current_worker)
 
-			worker_list.append(current_worker)
-
-		return {'workers': worker_list,
-				'valid_key': True,
-				'took': float(hug_timer)}
+			return {'workers': worker_list,
+					'valid_key': True,
+					'took': float(hug_timer)}
 	else:
 	# API KEY INVALID!
 		return {'valid_key': False,
