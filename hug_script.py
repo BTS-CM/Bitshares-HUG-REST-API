@@ -333,9 +333,19 @@ def get_bts_object(object_id: hug.types.text, api_key: hug.types.text, hug_timer
 def get_committee_member(committee_id: hug.types.text, api_key: hug.types.text, hug_timer=15):
 	"""Retrieve information about a single committee member (inc full account details)!"""
 	if (check_api_token(api_key) == True): # Check the api key
+		if ("1.5." not in committee_id):
+			return {'valid_committee_id': False,
+					'valid_key': True,
+					'took': float(hug_timer)}
+
 		try:
 			target_committee_member = bitshares_api_node.rpc.get_objects([committee_id])[0]
 		except:
+			return {'valid_committee_id': False,
+					'valid_key': True,
+					'took': float(hug_timer)}
+
+		if target_committee_member is None:
 			return {'valid_committee_id': False,
 					'valid_key': True,
 					'took': float(hug_timer)}
@@ -353,6 +363,7 @@ def get_committee_member(committee_id: hug.types.text, api_key: hug.types.text, 
 		target_committee_member['committee_member_details'] = target_account_data
 
 		return {'get_committee_member': target_committee_member,
+				'valid_committee_id': True,
 				'valid_key': True,
 				'took': float(hug_timer)}
 	else:
@@ -403,6 +414,11 @@ def get_worker(worker_id: hug.types.text, api_key: hug.types.text, hug_timer=15)
 	"""Retrieve a specific worker proposal & the details of the worker's account."""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
+		if '1.14' not in worker_id:
+			return {'valid_worker': False,
+					'valid_key': True,
+					'took': float(hug_timer)}
+
 		try:
 			target_worker = bitshares_api_node.rpc.get_objects([worker_id])[0]
 		except:
@@ -643,14 +659,15 @@ def account_info(account_name: hug.types.text, api_key: hug.types.text, hug_time
 	try:
 	  target_account = Account(account_name)
 	except:
-	  return {'valid_account': False,
-			  'account': account_name,
+	  return {'account': account_name,
+			  'valid_account': False,
 			  'valid_key': True,
 			  'took': float(hug_timer)}
 
 	extracted_object = extract_object(target_account)
 
 	return {'account_info': extracted_object,
+			'valid_account': True,
 			'valid_key': True,
 			'took': float(hug_timer)}
 
@@ -720,7 +737,6 @@ def account_open_orders(account_name: hug.types.text, api_key: hug.types.text, h
 		try:
 		  target_account = Account(account_name)
 		except:
-		  print("Account doesn't exist.")
 		  return {'valid_account': False,
 				  'account': account_name,
 				  'valid_key': True,
@@ -745,6 +761,7 @@ def account_open_orders(account_name: hug.types.text, api_key: hug.types.text, h
 					'account_has_open_orders': True,
 					'account': account_name,
 					'valid_account': True,
+					'valid_key': True,
 					'took': float(hug_timer)}
 		else:
 			return {'account_has_open_orders': False,
@@ -788,7 +805,8 @@ def account_callpositions(account_name: hug.types.text, api_key: hug.types.text,
 					'took': float(hug_timer)}
 	else:
 	# API KEY INVALID!
-		return {'valid_key': False,
+		return {'valid_account': False,
+				'valid_key': False,
 				'took': float(hug_timer)}
 
 @hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
