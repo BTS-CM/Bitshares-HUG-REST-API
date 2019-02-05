@@ -20,6 +20,12 @@ import requests
 import pendulum
 import math
 import statistics
+import uuid
+import os
+
+from bs4 import BeautifulSoup
+import re
+import json
 
 full_node_list = [
 	"wss://eu.nodes.bitshares.works", #location: "Central Europe - BitShares Infrastructure Program"
@@ -51,6 +57,41 @@ full_node_list_http = [
 bitshares_api_node = BitShares(full_node_list, nobroadcast=True) # True prevents TX being broadcast through the HUG REST API
 set_shared_bitshares_instance(bitshares_api_node)
 # End of node configuration
+
+def google_analytics(request, function_name):
+	"""
+	#Tracking usage via Google Analytics (using the measurement protocol).
+	#Why? Because the only insight into the use of HUG currently is the access & error logs (insufficient).
+	"""
+	google_analytics_code = 'ANALYTICS_CODE'
+	user_agent = str(request.user_agent)
+	user_source = str(request.referer)
+	user_request = str(request.uri)
+
+	headers = {'User-Agent': user_agent}
+	#function_dp = 'https://btsapi.grcnode.co.uk/' + function_name
+
+	payload = { 'v': 1,
+				'an': 'HUG',
+				'tid': google_analytics_code,
+				'cid': str(uuid.uuid4()),
+				't': 'pageview',
+				'ec': 'HUG',
+				'ds': 'HUG',
+				'el': 'HUG',
+				'ea': 'Action',
+				'dr': user_source,
+				'de': 'JSON',
+				'ua': user_agent,
+				'dt': function_name,
+				'dl': user_request,
+				'ev': 0}
+
+	try:
+		r = requests.post('https://www.google-analytics.com/collect', params=payload, headers=headers)
+	#	r = requests.post('www.google-analytics.com/collect', data=payload) # Either data or params
+	except:
+		print("COULD NOT POST TO GOOGLE ANALYTICS!")
 
 def check_api_token(api_key):
 	"""Check if the user's API key is valid. Change the API key if you want it to be private!"""
@@ -100,11 +141,16 @@ def get_hertz_feed(reference_timestamp, current_timestamp, period_days, phase_da
 	return hz_value
 
 @hug.get('/home', output=hug.output_format.html)
-def root():
+def root(request, hug_timer=60):
 	"""
 	Hertz price feed HTML page
 	"""
-	hertz_json = get_hertz_value('123abc')
+	try:
+		google_analytics(request, 'hertz price feed page')
+	except:
+		return "<html><body><h4>Internal HUG Server error!</h4></body></html>"
+
+	hertz_json = get_hertz_value('123abc', request)
 	html_start = "<html><head><title>Hertz Price feed page!</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/tables-min.css' integrity='sha256-V3z3FoW8AUbK98fJsgyLL7scF5dNrNStj6Rp8tPsJs0=' crossorigin='anonymous' /></head><body>"
 	table_start = "<h1>Hertz price feeds</h1><h2><a href='https://sites.google.com/view/hertz-aba/'>Hertz technical documentation</a></h2><h3>White Paper: <a href='https://steemit.com/bitshares/@cm-steem/hertz-is-now-live-on-the-bts-dex'>Steemit Post with PDF mirrors</a></h3><table class='pure-table pure-table-bordered'><thead><tr><th>Name</th><th>Timestamp</th><th>Settlement Price</th><th>CER</th><th>MCR</th><th>MSSR</th><th>URL</th></tr></thead><tbody>"
 	table_rows = ""
@@ -174,9 +220,10 @@ def root():
 	return output_html
 
 @hug.get(examples='api_key=API_KEY')
-def get_hertz_value(api_key: hug.types.text, hug_timer=15):
+def get_hertz_value(api_key: hug.types.text, request, hug_timer=15):
 	"""Retrieve reference Hertz feed price value in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
+		google_analytics(request, 'get_hertz_value')
 
 		# Getting the value of USD in BTS
 		market = Market("USD:BTS") # Set reference market to USD:BTS
@@ -306,9 +353,10 @@ def get_hertz_value(api_key: hug.types.text, hug_timer=15):
 				'took': float(hug_timer)}
 
 @hug.get(examples='object_id=1.2.0&api_key=API_KEY')
-def get_bts_object(object_id: hug.types.text, api_key: hug.types.text, hug_timer=15):
+def get_bts_object(object_id: hug.types.text, api_key: hug.types.text, request, hug_timer=15):
 	"""Enable retrieving and displaying any BTS object in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
+		google_analytics(request, 'get_bts_object')
 		try:
 			retrieved_object = bitshares_api_node.rpc.get_objects([object_id])[0]
 		except:
@@ -330,9 +378,10 @@ def get_bts_object(object_id: hug.types.text, api_key: hug.types.text, hug_timer
 				'took': float(hug_timer)}
 
 @hug.get(examples='committee_id=1.5.10&api_key=API_KEY')
-def get_committee_member(committee_id: hug.types.text, api_key: hug.types.text, hug_timer=15):
+def get_committee_member(committee_id: hug.types.text, api_key: hug.types.text, request, hug_timer=15):
 	"""Retrieve information about a single committee member (inc full account details)!"""
 	if (check_api_token(api_key) == True): # Check the api key
+		google_analytics(request, 'get_committee_member')
 		if ("1.5." not in committee_id):
 			return {'valid_committee_id': False,
 					'valid_key': True,
@@ -372,9 +421,10 @@ def get_committee_member(committee_id: hug.types.text, api_key: hug.types.text, 
 				'took': float(hug_timer)}
 
 @hug.get(examples='api_key=API_KEY')
-def get_committee_members(api_key: hug.types.text, hug_timer=15):
+def get_committee_members(api_key: hug.types.text, request, hug_timer=15):
 	"""Get a list of all committee members!"""
 	if (check_api_token(api_key) == True): # Check the api key
+		google_analytics(request, 'get_committee_members')
 		# API KEY VALID
 		num_committee_members_request = request_json('{"jsonrpc": "2.0", "method": "get_committee_count", "params": [], "id": 1}')
 
@@ -396,6 +446,10 @@ def get_committee_members(api_key: hug.types.text, hug_timer=15):
 
 				if committee_id in active_committee_members:
 					current_committee_member['status'] = True
+					# The following needs to be cached, it takes far too long to query even just 11 account names..
+					#target_account = Account(current_committee_member['committee_member_account'])
+					#target_account_data = extract_object(target_account)
+					#current_committee_member['name'] = target_account_data['name']
 				else:
 					current_committee_member['status'] = False
 
@@ -410,10 +464,11 @@ def get_committee_members(api_key: hug.types.text, hug_timer=15):
 				'took': float(hug_timer)}
 
 @hug.get(examples='worker_id=1.14.50&api_key=API_KEY')
-def get_worker(worker_id: hug.types.text, api_key: hug.types.text, hug_timer=15):
+def get_worker(worker_id: hug.types.text, api_key: hug.types.text, request, hug_timer=15):
 	"""Retrieve a specific worker proposal & the details of the worker's account."""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'get_worker')
 		if '1.14' not in worker_id:
 			return {'valid_worker': False,
 					'valid_key': True,
@@ -442,10 +497,11 @@ def get_worker(worker_id: hug.types.text, api_key: hug.types.text, hug_timer=15)
 				'took': float(hug_timer)}
 
 @hug.get(examples='api_key=API_KEY')
-def get_worker_proposals(api_key: hug.types.text, hug_timer=15):
+def get_worker_proposals(api_key: hug.types.text, request, hug_timer=15):
 	"""Get a list of all worker proposals!"""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'get_worker_proposals')
 
 		num_workers_request = request_json('{"jsonrpc": "2.0", "method": "get_worker_count", "params": [], "id": 1}')
 
@@ -479,11 +535,11 @@ def get_worker_proposals(api_key: hug.types.text, hug_timer=15):
 				'took': float(hug_timer)}
 
 @hug.get(examples='asset_name=USD&api_key=API_KEY')
-def get_asset(asset_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
+def get_asset(asset_name: hug.types.text, api_key: hug.types.text, request, hug_timer=5):
 	"""Get info regarding a single input asset."""
 	if (check_api_token(api_key) == True): # Check the api key
 	# API KEY VALID
-
+		google_analytics(request, 'get_asset')
 		try:
 		  target_asset = Asset(asset_name, full=True)
 		except:
@@ -508,11 +564,11 @@ def get_asset(asset_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
 				'took': float(hug_timer)}
 
 @hug.get(examples='api_key=API_KEY')
-def chain_info(api_key: hug.types.text, hug_timer=5):
+def chain_info(api_key: hug.types.text, request, hug_timer=5):
 	"""Bitshares current chain information!"""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
-
+		# API KEY VALID
+		google_analytics(request, 'chain_info')
 		chain = Blockchain()
 		chain_info = chain.info()
 
@@ -527,10 +583,11 @@ def chain_info(api_key: hug.types.text, hug_timer=5):
 				'took': float(hug_timer)}
 
 @hug.get(examples='api_key=API_KEY')
-def get_chain_properties(api_key: hug.types.text, hug_timer=5):
+def get_chain_properties(api_key: hug.types.text, request, hug_timer=5):
 	"""Bitshares current chain properties!"""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'get_chain_properties')
 		chain = Blockchain()
 		chain_properties = chain.get_chain_properties()
 
@@ -543,10 +600,11 @@ def get_chain_properties(api_key: hug.types.text, hug_timer=5):
 				'took': float(hug_timer)}
 
 @hug.get(examples='api_key=API_KEY')
-def get_config(api_key: hug.types.text, hug_timer=5):
+def get_config(api_key: hug.types.text, request, hug_timer=5):
 	"""Bitshares current chain config!"""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'get_config')
 		chain = Blockchain()
 		chain_config = chain.config()
 
@@ -559,10 +617,11 @@ def get_config(api_key: hug.types.text, hug_timer=5):
 				'took': float(hug_timer)}
 
 @hug.get(examples='api_key=API_KEY')
-def get_info(api_key: hug.types.text, hug_timer=5):
+def get_info(api_key: hug.types.text, request, hug_timer=5):
 	"""Bitshares current chain info!"""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'get_info')
 		chain = Blockchain()
 		chain_info = chain.info()
 
@@ -575,10 +634,11 @@ def get_info(api_key: hug.types.text, hug_timer=5):
 				'took': float(hug_timer)}
 
 @hug.get(examples='api_key=API_KEY')
-def get_network(api_key: hug.types.text, hug_timer=5):
+def get_network(api_key: hug.types.text, request, hug_timer=5):
 	"""Bitshares current chain network!"""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'get_network')
 		chain = Blockchain()
 		chain_get_network = chain.get_network()
 
@@ -591,10 +651,12 @@ def get_network(api_key: hug.types.text, hug_timer=5):
 				'took': float(hug_timer)}
 
 @hug.get(examples='block_number=50&api_key=API_KEY')
-def get_block_details(block_number: hug.types.number, api_key: hug.types.text, hug_timer=5):
+def get_block_details(block_number: hug.types.number, api_key: hug.types.text, request, hug_timer=5):
 	"""Retrieve a specific block's details (date & time) & output in JSON!"""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'get_block_details')
+
 		try:
 			target_block = Block(block_number)
 		except:
@@ -625,10 +687,12 @@ def get_block_details(block_number: hug.types.number, api_key: hug.types.text, h
 				'took': float(hug_timer)}
 
 @hug.get(examples='api_key=API_KEY')
-def get_latest_block(api_key: hug.types.text, hug_timer=5):
+def get_latest_block(api_key: hug.types.text, request, hug_timer=5):
 	"""Retrieve the latest block's details (date & time) & output in JSON!"""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'get_latest_block')
+
 		chain = Blockchain()
 		current_block_number = chain.get_current_block_num()
 		block_date = chain.block_time(current_block_number)
@@ -654,8 +718,10 @@ def get_latest_block(api_key: hug.types.text, hug_timer=5):
 				'took': float(hug_timer)}
 
 @hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
-def account_info(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
+def account_info(account_name: hug.types.text, api_key: hug.types.text, request, hug_timer=5):
 	"""Retrieve information about an individual Bitshares account!"""
+	google_analytics(request, 'account_info')
+
 	try:
 	  target_account = Account(account_name)
 	except:
@@ -672,7 +738,7 @@ def account_info(account_name: hug.types.text, api_key: hug.types.text, hug_time
 			'took': float(hug_timer)}
 
 @hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
-def full_account_info(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
+def full_account_info(account_name: hug.types.text, api_key: hug.types.text, request, hug_timer=5):
 	"""Retrieve verbose information about an individual Bitshares account!"""
 	try:
 	  target_account = Account(account_name, full=True)
@@ -689,10 +755,11 @@ def full_account_info(account_name: hug.types.text, api_key: hug.types.text, hug
 			'took': float(hug_timer)}
 
 @hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
-def account_balances(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
+def account_balances(account_name: hug.types.text, api_key: hug.types.text, request, hug_timer=5):
 	"""Bitshares account balances! Simply supply an account name & provide the API key!"""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'account_balances')
 
 		try:
 		  target_account = Account(account_name, full=True)
@@ -729,10 +796,11 @@ def account_balances(account_name: hug.types.text, api_key: hug.types.text, hug_
 				'took': float(hug_timer)}
 
 @hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
-def account_open_orders(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
+def account_open_orders(account_name: hug.types.text, api_key: hug.types.text, request, hug_timer=5):
 	"""Bitshares account open orders! Simply supply an account name & provide the API key!"""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'account_open_orders')
 
 		try:
 		  target_account = Account(account_name)
@@ -775,10 +843,11 @@ def account_open_orders(account_name: hug.types.text, api_key: hug.types.text, h
 				'took': float(hug_timer)}
 
 @hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
-def account_callpositions(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
+def account_callpositions(account_name: hug.types.text, api_key: hug.types.text, request, hug_timer=5):
 	"""Bitshares account call positions! Simply supply an account name & provide the API key!"""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'account_callpositions')
 
 		try:
 		  target_account = Account(account_name)
@@ -810,10 +879,11 @@ def account_callpositions(account_name: hug.types.text, api_key: hug.types.text,
 				'took': float(hug_timer)}
 
 @hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
-def account_history(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
+def account_history(account_name: hug.types.text, api_key: hug.types.text, request, hug_timer=5):
 	"""Given a valid account name, output the user's history in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'account_history')
 
 		try:
 		  target_account = Account(account_name)
@@ -849,10 +919,11 @@ def account_history(account_name: hug.types.text, api_key: hug.types.text, hug_t
 				'took': float(hug_timer)}
 
 @hug.get(examples='account_name=blahblahblah&api_key=API_KEY')
-def account_is_ltm(account_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
+def account_is_ltm(account_name: hug.types.text, api_key: hug.types.text, request, hug_timer=5):
 	"""Given a valid account name, check if they're LTM & output confirmation as JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'account_is_ltm')
 
 		try:
 		  target_account = Account(account_name)
@@ -877,10 +948,11 @@ def account_is_ltm(account_name: hug.types.text, api_key: hug.types.text, hug_ti
 				'took': float(hug_timer)}
 
 @hug.get(examples='market_pair=USD:BTS&api_key=API_KEY')
-def market_ticker(market_pair: hug.types.text, api_key: hug.types.text, hug_timer=5):
+def market_ticker(market_pair: hug.types.text, api_key: hug.types.text, request, hug_timer=5):
 	"""Given a valid market pair, retrieve ticker data & output as JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'market_ticker')
 
 		try:
 		  target_market = Market(market_pair)
@@ -904,10 +976,12 @@ def market_ticker(market_pair: hug.types.text, api_key: hug.types.text, hug_time
 				'took': float(hug_timer)}
 
 @hug.get(examples='market_pair=USD:BTS&api_key=API_KEY')
-def market_orderbook(market_pair: hug.types.text, api_key: hug.types.text, hug_timer=5):
+def market_orderbook(market_pair: hug.types.text, api_key: hug.types.text, request, hug_timer=5):
 	"""Given a valid market pair (e.g. USD:BTS) and your desired orderbook size limit, output the market pair's orderbook (buy/sell order) information in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'market_orderbook')
+
 		try:
 		  target_market = Market(market_pair)
 		except:
@@ -929,10 +1003,12 @@ def market_orderbook(market_pair: hug.types.text, api_key: hug.types.text, hug_t
 				'took': float(hug_timer)}
 
 @hug.get(examples='market_pair=USD:BTS&api_key=API_KEY')
-def market_24hr_vol(market_pair: hug.types.text, api_key: hug.types.text, hug_timer=5):
+def market_24hr_vol(market_pair: hug.types.text, api_key: hug.types.text, request, hug_timer=5):
 	"""Given a valid market_pair (e.g. USD:BTS), output their 24hr market volume in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'market_24hr_vol')
+
 		try:
 		  target_market = Market(market_pair)
 		except:
@@ -953,10 +1029,12 @@ def market_24hr_vol(market_pair: hug.types.text, api_key: hug.types.text, hug_ti
 # &start_time=2017-07-01T00:00:00Z&stop_time=2017-07-10T00:00:00Z
 # start_time: hug.types.text, stop_time: hug.types.text,
 @hug.get(examples='market_pair=USD:BTS&api_key=API_KEY')
-def market_trade_history(market_pair: hug.types.text, api_key: hug.types.text, hug_timer=5):
+def market_trade_history(market_pair: hug.types.text, api_key: hug.types.text, request, hug_timer=5):
 	"""Given a valid market_pair (e.g. USD:BTS) & a TX limit, output the market's trade history in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'market_trade_history')
+
 		try:
 		  target_market = Market(market_pair)
 		except:
@@ -989,10 +1067,12 @@ def market_trade_history(market_pair: hug.types.text, api_key: hug.types.text, h
 				'took': float(hug_timer)}
 
 @hug.get(examples='witness_name=blockchained&api_key=API_KEY')
-def find_witness(witness_name: hug.types.text, api_key: hug.types.text, hug_timer=5):
+def find_witness(witness_name: hug.types.text, api_key: hug.types.text, request, hug_timer=5):
 	"""Given a valid witness name, output witness data in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'find_witness')
+
 		try:
 		  target_witness = Witness(witness_name)
 		except:
@@ -1024,10 +1104,11 @@ def find_witness(witness_name: hug.types.text, api_key: hug.types.text, hug_time
 				'took': float(hug_timer)}
 
 @hug.get(examples='api_key=API_KEY')
-def list_of_witnesses(api_key: hug.types.text, hug_timer=5):
+def list_of_witnesses(api_key: hug.types.text, request, hug_timer=5):
 	"""Output the list of active witnesses in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
+		# API KEY VALID
+		google_analytics(request, 'list_of_witnesses')
 
 		list_of_witnesses = Witnesses()
 
@@ -1058,12 +1139,13 @@ def list_of_witnesses(api_key: hug.types.text, hug_timer=5):
 				'took': float(hug_timer)}
 
 @hug.get(examples='api_key=API_KEY')
-def list_fees(api_key: hug.types.text, hug_timer=5):
+def list_fees(api_key: hug.types.text, request, hug_timer=5):
 	"""Output the current Bitshares network fees in JSON."""
 	if (check_api_token(api_key) == True): # Check the api key
-	# API KEY VALID
-		network_fees = Dex().returnFees()
+		# API KEY VALID
+		google_analytics(request, 'list_fees')
 
+		network_fees = Dex().returnFees()
 		extracted_fees = extract_object(network_fees)
 
 		return {'network_fees': extracted_fees,
@@ -1073,3 +1155,117 @@ def list_fees(api_key: hug.types.text, hug_timer=5):
 	# API KEY INVALID!
 		return {'valid_key': False,
 				'took': float(hug_timer)}
+
+###################################
+
+def create_wordy_phrase(input_csi_str):
+		"""
+		Summarise input comma separated integer
+		"""
+		input_int_str = (str(input_csi_str)).replace(',', '')
+		input_len = len(input_int_str)
+		if (input_len > 3 and input_len < 7):
+				temp = round((int(input_int_str)/1000), 1)
+				return str(temp) + "K"
+		elif (input_len >= 7 and input_len < 10):
+				temp = round((int(input_int_str)/1000000), 2)
+				return str(temp) + "M"
+		elif (input_len >= 10 and input_len < 14):
+				temp = round((int(input_int_str)/1000000000), 3)
+				return str(temp) + "B"
+		else:
+				return input_csi_str
+
+def scrape_blocktivity():
+		"""
+		A function to scrape blocktivity.
+		Outputs to JSON.
+		"""
+		scraped_page = requests.get("https://blocktivity.info")
+		if scraped_page.status_code == 200:
+				soup = BeautifulSoup(scraped_page.text, 'html.parser')
+				crypto_rows = soup.findAll('tr', attrs={'class': 'font_size_row'})
+
+				blocktivity_summary = []
+				for row in crypto_rows:
+						crypto_columns = row.findAll('td')
+						ranking = re.sub('<[^>]+?>', '', str(crypto_columns[0]))
+						#logo = (str(crypto_columns[1]).split('cell">'))[1].split('</td')[0]
+						name = re.sub('<[^>]+?>', '', str(crypto_columns[2])).split(' ⓘ')
+						activity = re.sub('<[^>]+?>', '', str(crypto_columns[3])).strip('Op ').strip('Tx')
+						rounded_activity = create_wordy_phrase(activity)
+						average_7d = re.sub('<[^>]+?>', '', str(crypto_columns[4])).strip('Op ').strip('Tx')
+						rounded_average_7d = create_wordy_phrase(average_7d)
+						record = re.sub('<[^>]+?>', '', str(crypto_columns[5])).strip('Op ').strip('Tx')
+						rounded_record = create_wordy_phrase(record)
+						market_cap = re.sub('<[^>]+?>', '', str(crypto_columns[6]))
+						AVI = re.sub('<[^>]+?>', '', str(crypto_columns[7]))
+						CUI = re.sub('<[^>]+?>', '', str(crypto_columns[8])).strip('ⓘ')
+
+						blocktivity_summary.append({'rank': ranking, 'ticker': name[0], 'name': name[1], 'activity': activity, 'rounded_activity': rounded_activity, 'average_7d':average_7d, 'rounded_average_7d':rounded_average_7d, 'record': record, 'rounded_record': rounded_record, 'market_cap': market_cap, 'AVI': AVI, 'CUI':CUI})
+
+				now = pendulum.now() # Getting the time
+				current_timestamp = int(round(now.timestamp())) # Converting to timestamp
+
+				write_json_to_disk('blocktivity.json', {'timestamp': current_timestamp, 'blocktivity_summary': blocktivity_summary}) # Storing to disk
+
+				return {'timestamp': current_timestamp, 'blocktivity_summary': blocktivity_summary}
+		else:
+				return None
+
+def return_json_file_contents(filename):
+		"""
+		Simple function for returning the contents of the input JSON file
+		"""
+		try:
+				with open(filename) as json_data:
+						return json.load(json_data)
+		except IOError:
+				print("File not found: "+filename)
+				return None
+
+def write_json_to_disk(filename, json_data):
+		"""
+		When called, write the json_data to a json file.
+		"""
+		with open(filename, 'w') as outfile:
+				json.dump(json_data, outfile)
+
+@hug.get(examples='api_key=API_KEY')
+def current_blocktivity(api_key: hug.types.text, hug_timer=5):
+		"""Output the current Blocktivity stats."""
+		if (check_api_token(api_key) == True): # Check the api key
+		# API KEY VALID
+				need_to_download = True
+				MAX_STATS_LIFETIME = 60
+
+				if os.path.isfile("./blocktivity.json"):
+						existing_json = return_json_file_contents("./blocktivity.json")
+						now = pendulum.now() # Getting the time
+						current_timestamp = int(round(now.timestamp())) # Converting to timestamp
+
+						if (current_timestamp - int(existing_json['timestamp']) < MAX_STATS_LIFETIME):
+								"""Data is still valid - let's return it instead of fetching it!"""
+								print("Blocktivity JSON within lifetime - using cached copy!")
+								blocktivity_storage = existing_json
+						else:
+								"""No existing file"""
+								print("Blocktivity JSON too old - downloading fresh copy!")
+								blocktivity_storage = scrape_blocktivity()
+				else:
+						"""File doesn't exist"""
+						blocktivity_storage = scrape_blocktivity()
+
+				if blocktivity_storage != None:
+						return {'result': blocktivity_storage,
+										'valid_key': True,
+										'took': float(hug_timer)}
+				else:
+						return {'valid_key': True,
+										'success': False,
+										'error_message': 'blocktivity storage returned None!',
+										'took': float(hug_timer)}
+		else:
+		# API KEY INVALID!
+				return {'valid_key': False,
+								'took': float(hug_timer)}
