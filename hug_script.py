@@ -27,23 +27,19 @@ from bs4 import BeautifulSoup
 import re
 import json
 
+from pycoingecko import CoinGeckoAPI
+
 full_node_list = [
-	"wss://eu.nodes.bitshares.works", #location: "Central Europe - BitShares Infrastructure Program"
-	"wss://us.nodes.bitshares.works", #location: "U.S. West Coast - BitShares Infrastructure Program"
-	"wss://sg.nodes.bitshares.works", #location: "Singapore - BitShares Infrastructure Program"
-	"wss://bitshares.crypto.fans/ws", #location: "Munich, Germany"
-	"wss://bit.btsabc.org/ws", #location: "Hong Kong"
-	"wss://api.bts.blckchnd.com", #location: "Falkenstein, Germany"
-	"wss://openledger.hk/ws", #location: "Hong Kong"
-	"wss://bitshares-api.wancloud.io/ws", #location:  "China"
-	"wss://dex.rnglab.org", #location: "Netherlands"
-	"wss://dexnode.net/ws", #location: "Dallas, USA"
-	"wss://kc-us-dex.xeldal.com/ws", #location: "Kansas City, USA"
-	"wss://la.dexnode.net/ws" #location: "Los Angeles, USA"
+	"wss://bitshares.openledger.info/ws",
+	"wss://na.openledger.info/ws",
+	"wss://api.bts.blckchnd.com",
+	"wss://eu.nodes.bitshares.ws",
+	"wss://us.nodes.bitshares.ws",
+	"wss://btsws.roelandp.nl/ws"
 ]
 
 full_node_list_http = [
-	"https://bitshares.crypto.fans/ws", #location: "Munich, Germany"
+	#"https://bitshares.crypto.fans/ws", #location: "Munich, Germany"
 	"https://bit.btsabc.org/ws", #location: "Hong Kong"
 	"https://api.bts.blckchnd.com", #location: "Falkenstein, Germany"
 	"https://openledger.hk/ws", #location: "Hong Kong"
@@ -63,7 +59,7 @@ def google_analytics(request, function_name):
 	#Tracking usage via Google Analytics (using the measurement protocol).
 	#Why? Because the only insight into the use of HUG currently is the access & error logs (insufficient).
 	"""
-	google_analytics_code = 'ANALYTICS_CODE'
+	google_analytics_code = 'UA-117263042-1'
 	user_agent = str(request.user_agent)
 	user_source = str(request.referer)
 	user_request = str(request.uri)
@@ -212,7 +208,20 @@ def root(request, hug_timer=60):
 
 	cer_median = statistics.median(cer_list)
 
-	extra_details = "<h2>Extra reference info</h2><ul><li>Median settle price: " + "{0:.2f}".format(settlement_price_median) + "</li><li>Median CER: " + "{0:.2f}".format(cer_median) + "</li><li>BTS price in USD: " + "{0:.2f}".format(unofficial_reference['bts_price_in_usd']) + "</li><li>USD price in BTS: " + "{0:.2f}".format(unofficial_reference['usd_price_in_bts']) + "</li><li> Hertz price in USD: " + "{0:.2f}".format(unofficial_reference['hertz_price_in_usd']) + "</li><li><a href='https://btsapi.grcnode.co.uk/get_hertz_value?api_key=123abc'>Hertz JSON price feed data</a></li></ul>"
+	#extra_details = "<h2>Extra reference info</h2><ul><li>Median settle price: " + "{0:.2f}".format(settlement_price_median) + "</li><li>Median CER: " + "{0:.2f}".format(cer_median) + "</li><li>BTS price in USD: " + "{0:.2f}".format(unofficial_reference['bts_price_in_usd']) + "</li><li>USD price in BTS: " + "{0:.2f}".format(unofficial_reference['usd_price_in_bts']) + "</li><li> Hertz price in USD: " + "{0:.2f}".format(unofficial_reference['hertz_price_in_usd']) + "</li><li><a href='https://btsapi.grcnode.co.uk/get_hertz_value?api_key=123abc'>Hertz JSON price feed data</a></li></ul>"
+
+	extra_details = "<h2>Extra reference info</h2><ul><li>Median settle price: "
+	extra_details += "{0:.2f}".format(settlement_price_median)
+	extra_details += "</li><li>Median CER: "
+	extra_details += "{0:.2f}".format(cer_median)
+	extra_details += "</li><li>BTS price in USD: "
+	extra_details += "{0:.2f}".format(unofficial_reference['bts_price_in_usd'])
+	extra_details += "</li><li>USD price in BTS: "
+	extra_details += "{0:.2f}".format(unofficial_reference['usd_price_in_bts'])
+	extra_details += "</li><li> Hertz price in USD: "
+	extra_details += "{0:.2f}".format(unofficial_reference['hertz_price_in_usd'])
+	extra_details += "</li><li><a href='https://btsapi.grcnode.co.uk/get_hertz_value?api_key=123abc'>Hertz JSON price feed data</a></li></ul>"
+
 	html_end = "</body></html>"
 
 	output_html = html_start + table_start + table_rows + table_end + extra_details + html_end
@@ -226,9 +235,9 @@ def get_hertz_value(api_key: hug.types.text, request, hug_timer=15):
 		google_analytics(request, 'get_hertz_value')
 
 		# Getting the value of USD in BTS
-		market = Market("USD:BTS") # Set reference market to USD:BTS
-		price = market.ticker()["quoteSettlement_price"] # Get Settlement price of USD
-		price.invert() # Switching from quantity of BTS per USD to USD price of one BTS.
+		#market = Market("USD:BTS") # Set reference market to USD:BTS
+		#price = market.ticker()["quoteSettlement_price"] # Get Settlement price of USD
+		#price.invert() # Switching from quantity of BTS per USD to USD price of one BTS.
 
 		hertz_reference_timestamp = "2015-10-13T14:12:24+00:00" # Bitshares 2.0 genesis block timestamp
 		hertz_current_timestamp = pendulum.now().timestamp() # Current timestamp for reference within the hertz script
@@ -240,14 +249,18 @@ def get_hertz_value(api_key: hug.types.text, request, hug_timer=15):
 		hertz_value = get_hertz_feed(hertz_reference_timestamp, hertz_current_timestamp, hertz_period_days, hertz_phase_days, hertz_reference_asset_value, hertz_amplitude)
 		hertz = Price(hertz_value, "USD/HERTZ") # Limit the hertz_usd decimal places & convert from float.
 
-		# Calculate HERTZ price in BTS (THIS IS WHAT YOU PUBLISH!)
-		hertz_bts = price.as_base("BTS") * hertz.as_quote("HERTZ")
+		cg = CoinGeckoAPI() # Initialise coingecko
+		bts_usd_coingecko = cg.get_price(ids='bitshares', vs_currencies='usd') # Price of BTS in USD from coingecko
+		bts_usd_coingecko_value = Price(bts_usd_coingecko["bitshares"]["usd"], "USD/BTS") # Price format
+		hertz_bts = bts_usd_coingecko_value.invert() * hertz.as_quote("HERTZ") # Feed price
 
-		unofficial_data = {'hertz_price_in_usd': hertz['price'],
-						   'hertz_price_in_bts': hertz_bts['price'],
-						   'core_exchange_rate': hertz_bts['price']*0.80,
-						   'usd_price_in_bts': 1/price['price'],
-						   'bts_price_in_usd': price['price']}
+		unofficial_data = {
+			'hertz_price_in_usd': hertz['price'],
+			'hertz_price_in_bts': hertz_bts['price'],
+			'core_exchange_rate': hertz_bts['price']*0.80,
+			'usd_price_in_bts': 1/(bts_usd_coingecko["bitshares"]["usd"]),
+			'bts_price_in_usd': bts_usd_coingecko["bitshares"]["usd"]
+		}
 		########
 
 		try:
@@ -1269,3 +1282,4 @@ def current_blocktivity(api_key: hug.types.text, hug_timer=5):
 		# API KEY INVALID!
 				return {'valid_key': False,
 								'took': float(hug_timer)}
+
